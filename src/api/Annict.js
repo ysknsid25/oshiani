@@ -13,6 +13,13 @@ export const season = {
     winter: "winter",
 };
 
+export const mediaType = {
+    tv: "primary",
+    ova: "secondary",
+    web: "green",
+    movie: "red",
+};
+
 export const getNowSeason = () => {
     const nowMonth = date.getMonth();
     if (-1 < nowMonth && nowMonth < 4) {

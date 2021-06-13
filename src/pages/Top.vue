@@ -7,9 +7,7 @@
           <v-list-item-subtitle> subtext </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
-
       <v-divider></v-divider>
-
       <v-list dense nav>
         <v-list-item v-for="item in items" :key="item.title" link>
           <v-list-item-icon>
@@ -29,6 +27,29 @@
       <v-btn color="secondary" dark icon class="mr-2">
         <v-icon>fas fa-bell</v-icon>
       </v-btn>
+      <v-btn
+        color="secondary"
+        v-if="logined && !sending"
+        dark
+        icon
+        @click="logout"
+      >
+        <v-icon>fas fa-door-open</v-icon>
+      </v-btn>
+      <v-btn
+        color="secondary"
+        v-if="!logined && !sending"
+        dark
+        icon
+        @click="login"
+      >
+        <v-icon>fas fa-door-closed</v-icon>
+      </v-btn>
+      <v-progress-circular
+        v-if="sending"
+        indeterminate
+        color="indigo"
+      ></v-progress-circular>
     </v-app-bar>
     <v-content>
       <v-container v-if="!loading">
@@ -56,10 +77,66 @@
                 max-height="300px"
               >
               </v-img>
-              <v-card-title v-text="workInfo.title"></v-card-title>
+              <v-card-title>
+                {{ workInfo.title }}
+              </v-card-title>
+              <v-card-text>
+                <v-row align="center" class="mx-0">
+                  <v-chip
+                    v-if="workInfo.media !== ''"
+                    :color="getMediaTypeColor(workInfo.media)"
+                    v-text="
+                      workInfo.media_text === '' ? 'Othre' : workInfo.media_text
+                    "
+                  >
+                  </v-chip>
+                  <v-spacer></v-spacer>
+                  <v-rating
+                    :value="4.5"
+                    color="amber"
+                    dense
+                    half-increments
+                    readonly
+                    size="14"
+                  ></v-rating>
+                  <div class="grey--text ms-4">4.5 (413)</div>
+                </v-row>
+              </v-card-text>
+              <v-divider class="mx-4"></v-divider>
               <v-card-actions>
-                <v-icon v-if="workInfo.no_episodes">fas fa-film</v-icon>
-                <v-icon v-if="!workInfo.no_episodes">fas fa-tv</v-icon>
+                <v-menu>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      icon
+                      v-bind="attrs"
+                      v-on="on"
+                      v-if="
+                        isExistpages(
+                          workInfo.official_site_url,
+                          workInfo.wikipedia_url
+                        )
+                      "
+                    >
+                      <v-icon>fas fa-external-link-alt</v-icon>
+                    </v-btn>
+                  </template>
+                  <v-list>
+                    <v-list-item v-if="workInfo.official_site_url !== ''">
+                      <v-list-item-title>
+                        <v-btn text :href="workInfo.official_site_url">
+                          official page
+                        </v-btn>
+                      </v-list-item-title>
+                    </v-list-item>
+                    <v-list-item v-if="workInfo.wikipedia_url !== ''">
+                      <v-list-item-title>
+                        <v-btn text :href="workInfo.wikipedia_url">
+                          wikipedia
+                        </v-btn>
+                      </v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
                 <v-spacer></v-spacer>
                 <v-btn
                   icon
@@ -68,20 +145,18 @@
                 >
                   <v-icon color="#1DA1F2">fab fa-twitter</v-icon>
                 </v-btn>
-
                 <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
+                  <v-icon>fas fa-bookmark</v-icon>
                 </v-btn>
-
-                <v-btn icon>
-                  <v-icon>mdi-bookmark</v-icon>
-                </v-btn>
-
                 <v-btn
                   icon
+                  color="primary"
                   :href="getTweetUrl(workInfo.title, workInfo.twitter_hashtag)"
                 >
-                  <v-icon>mdi-share-variant</v-icon>
+                  <v-icon>fas fa-share-alt</v-icon>
+                </v-btn>
+                <v-btn icon>
+                  <v-icon>fas fa-ellipsis-v</v-icon>
                 </v-btn>
               </v-card-actions>
             </v-card>
@@ -115,7 +190,6 @@
   </v-app>
 </template>
 <script>
-import { noteUrl } from "../constants/links";
 import { getTweetUrl } from "../constants/links";
 import {
   getNowYear,
@@ -123,12 +197,17 @@ import {
   getWorkInfoUrl,
   getTwitterUrl,
   getCount,
+  mediaType,
 } from "../api/Annict";
+import { login, logout, getAuthUserInfo, anl } from "../plugins/firebase";
+import { authorizeUser } from "../firestoreaccess/Users";
 export default {
   name: "Top",
+  components: {},
   data: () => ({
     loading: false,
-    noteUrl: noteUrl,
+    sending: false,
+    logined: false,
     user: "",
     drawer: true,
     items: [
@@ -143,8 +222,32 @@ export default {
   }),
   mounted: async function () {
     await this.getAnimeInfo(this.nowPage);
+    await this.isLogined();
   },
   methods: {
+    async login() {
+      this.sending = true;
+      anl.logEvent("logout detected");
+      this.user = await login();
+      if (this.user.isLoginSuccess) {
+        await authorizeUser(this.user);
+        await this.isLogined();
+      } else {
+        alert("ログイン処理に失敗しました。");
+        this.sending = false;
+      }
+      this.sending = false;
+    },
+    async isLogined() {
+      const userInfo = await getAuthUserInfo();
+      this.logined = userInfo !== "";
+    },
+    async logout() {
+      this.sending = true;
+      await logout();
+      await this.isLogined();
+      this.sending = false;
+    },
     async getAnimeInfo(targetPage) {
       this.loading = true;
       const nowSeason = getNowSeason();
@@ -193,6 +296,15 @@ export default {
     },
     async getNumber(pageNumber) {
       await this.getAnimeInfo(pageNumber);
+    },
+    isExistpages(official, wiki) {
+      return official !== "" && wiki !== "";
+    },
+    getMediaTypeColor(media) {
+      if (media === "") {
+        return media;
+      }
+      return mediaType[media];
     },
   },
 };
