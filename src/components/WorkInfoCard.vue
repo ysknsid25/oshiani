@@ -17,12 +17,10 @@
     </v-card-title>
     <v-card-text>
       <v-row align="center" class="mx-0">
-        <v-chip
-          v-if="workInfo.media !== ''"
-          :color="getMediaTypeColor(workInfo.media)"
-          v-text="workInfo.media_text === '' ? 'Othre' : workInfo.media_text"
-        >
-        </v-chip>
+        <MediaChip
+          :media="workInfo.media"
+          :mediaText="workInfo.media_text"
+        ></MediaChip>
         <v-spacer></v-spacer>
         <v-rating
           :value="4.5"
@@ -48,40 +46,32 @@
         </v-badge>
       </v-btn>
       <v-spacer></v-spacer>
-      <v-btn
-        icon
-        v-if="workInfo.twitter_username !== ''"
-        :href="getTwitterAccountUrl(workInfo.twitter_username)"
-      >
-        <v-icon color="#1DA1F2">fab fa-twitter</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        color="primary"
-        :href="
-          getTweetUrl(
-            workInfo.title,
-            workInfo.twitter_hashtag,
-            workInfo.official_site_url
-          )
-        "
-      >
-        <v-icon>fas fa-share-alt</v-icon>
-      </v-btn>
-      <v-btn icon @click="dispWorkDetail(workInfo)">
-        <v-icon>fas fa-ellipsis-v</v-icon>
-      </v-btn>
+      <OfficialTwitterButton
+        :twitterUserName="workInfo.twitter_username"
+      ></OfficialTwitterButton>
+      <ShareButton
+        :title="workInfo.title"
+        :hashTag="workInfo.twitter_hashtag"
+        :officialSite="workInfo.official_site_url"
+      ></ShareButton>
+      <WorkDetailDialog :workInfo="workInfo"> </WorkDetailDialog>
     </v-card-actions>
   </v-card>
 </template>
 <script>
-import { getTweetUrl } from "../constants/links";
-import { getTwitterUrl, mediaType } from "../api/Annict";
-import ExternalLinkMenu from "./ExternalLinkMenu.vue";
+import ExternalLinkMenu from "./ExternalLinkMenu";
+import WorkDetailDialog from "./WorkDetailDialog";
+import MediaChip from "./MediaChip";
+import ShareButton from "./ShareButton";
+import OfficialTwitterButton from "./OfficialTwitterButton";
 export default {
   name: "WorkInfoCard",
   components: {
     ExternalLinkMenu,
+    WorkDetailDialog,
+    MediaChip,
+    ShareButton,
+    OfficialTwitterButton,
   },
   props: ["workInfo", "logined"],
 
@@ -93,20 +83,6 @@ export default {
         return url;
       }
       return "https://placehold.jp/600x300.png";
-    },
-    getTwitterAccountUrl(url) {
-      const retUrl = getTwitterUrl(url);
-      //console.log(retUrl);
-      return retUrl;
-    },
-    getTweetUrl(title, hashTag, officialSite) {
-      return getTweetUrl(title, hashTag, officialSite);
-    },
-    getMediaTypeColor(media) {
-      if (media === "") {
-        return media;
-      }
-      return mediaType[media];
     },
     dispWorkDetail(workInfo) {
       alert(workInfo.id + "の作品情報を表示します。");

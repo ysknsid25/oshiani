@@ -105,7 +105,7 @@
   </v-app>
 </template>
 <script>
-import WorkInfoCard from "./WorkInfoCard.vue";
+import WorkInfoCard from "../components/WorkInfoCard.vue";
 import {
   getNowYear,
   getNowSeason,

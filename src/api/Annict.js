@@ -53,3 +53,10 @@ export const getWorkInfoUrl = (targetYear, targetSeason, targetPage) => {
         getCount
     );
 };
+
+export const getImage = (url) => {
+    if (url !== "") {
+        return url;
+    }
+    return "https://placehold.jp/600x300.png";
+};
