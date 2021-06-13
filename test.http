@@ -1,0 +1,15 @@
+@baseurl = https://api.annict.com
+@token = A5kKRnr5a2_VBFWr2gPMdbh3g0ZIHoB-VfIVbugvTMU
+### 春=4,5,6 夏=7,8,9 秋=10,11,12 冬=1,2,3
+@season = 2021-autumn
+@actor = 水瀬いのり
+@getNumber = 50
+
+### シーズンを指定して、作品を検索する
+GET {{baseurl}}/v1/works?access_token={{token}}&filter_season={{season}}&per_page={{getNumber}}
+
+### 作品IDを指定して、キャストを検索する
+GET {{baseurl}}/v1/casts?access_token={{token}}&filter_work_id=7227
+
+### 作品IDを指定して、スタッフ情報を検索する
+GET {{baseurl}}/v1/staffs?access_token={{token}}&filter_work_id=7227
