@@ -71,95 +71,10 @@
             xs="12"
             md="6"
           >
-            <v-card>
-              <v-img
-                :src="getImageUrl(workInfo.images.recommended_url)"
-                max-height="300px"
-              >
-              </v-img>
-              <v-card-title>
-                {{ workInfo.title }}
-              </v-card-title>
-              <v-card-text>
-                <v-row align="center" class="mx-0">
-                  <v-chip
-                    v-if="workInfo.media !== ''"
-                    :color="getMediaTypeColor(workInfo.media)"
-                    v-text="
-                      workInfo.media_text === '' ? 'Othre' : workInfo.media_text
-                    "
-                  >
-                  </v-chip>
-                  <v-spacer></v-spacer>
-                  <v-rating
-                    :value="4.5"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
-                  <div class="grey--text ms-4">4.5 (413)</div>
-                </v-row>
-              </v-card-text>
-              <v-divider class="mx-4"></v-divider>
-              <v-card-actions>
-                <v-menu>
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-btn
-                      icon
-                      v-bind="attrs"
-                      v-on="on"
-                      v-if="
-                        isExistpages(
-                          workInfo.official_site_url,
-                          workInfo.wikipedia_url
-                        )
-                      "
-                    >
-                      <v-icon>fas fa-external-link-alt</v-icon>
-                    </v-btn>
-                  </template>
-                  <v-list>
-                    <v-list-item v-if="workInfo.official_site_url !== ''">
-                      <v-list-item-title>
-                        <v-btn text :href="workInfo.official_site_url">
-                          official page
-                        </v-btn>
-                      </v-list-item-title>
-                    </v-list-item>
-                    <v-list-item v-if="workInfo.wikipedia_url !== ''">
-                      <v-list-item-title>
-                        <v-btn text :href="workInfo.wikipedia_url">
-                          wikipedia
-                        </v-btn>
-                      </v-list-item-title>
-                    </v-list-item>
-                  </v-list>
-                </v-menu>
-                <v-spacer></v-spacer>
-                <v-btn
-                  icon
-                  v-if="workInfo.twitter_username !== ''"
-                  :href="getTwitterAccountUrl(workInfo.twitter_username)"
-                >
-                  <v-icon color="#1DA1F2">fab fa-twitter</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon>fas fa-bookmark</v-icon>
-                </v-btn>
-                <v-btn
-                  icon
-                  color="primary"
-                  :href="getTweetUrl(workInfo.title, workInfo.twitter_hashtag)"
-                >
-                  <v-icon>fas fa-share-alt</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon>fas fa-ellipsis-v</v-icon>
-                </v-btn>
-              </v-card-actions>
-            </v-card>
+            <WorkInfoCard
+              :workInfo="workInfo"
+              :logined="logined"
+            ></WorkInfoCard>
           </v-col>
         </v-row>
         <v-row dense class="mb-2">
@@ -190,20 +105,20 @@
   </v-app>
 </template>
 <script>
-import { getTweetUrl } from "../constants/links";
+import WorkInfoCard from "./WorkInfoCard.vue";
 import {
   getNowYear,
   getNowSeason,
   getWorkInfoUrl,
-  getTwitterUrl,
   getCount,
-  mediaType,
 } from "../api/Annict";
 import { login, logout, getAuthUserInfo, anl } from "../plugins/firebase";
 import { authorizeUser } from "../firestoreaccess/Users";
 export default {
   name: "Top",
-  components: {},
+  components: {
+    WorkInfoCard,
+  },
   data: () => ({
     loading: false,
     sending: false,
@@ -240,6 +155,7 @@ export default {
     },
     async isLogined() {
       const userInfo = await getAuthUserInfo();
+      this.user = userInfo;
       this.logined = userInfo !== "";
     },
     async logout() {
@@ -280,31 +196,8 @@ export default {
       }
       return true;
     },
-    getImageUrl(url) {
-      if (url !== "") {
-        return url;
-      }
-      return "https://placehold.jp/600x300.png";
-    },
-    getTwitterAccountUrl(url) {
-      const retUrl = getTwitterUrl(url);
-      //console.log(retUrl);
-      return retUrl;
-    },
-    getTweetUrl(title, hashTag) {
-      return getTweetUrl(title, hashTag);
-    },
     async getNumber(pageNumber) {
       await this.getAnimeInfo(pageNumber);
-    },
-    isExistpages(official, wiki) {
-      return official !== "" && wiki !== "";
-    },
-    getMediaTypeColor(media) {
-      if (media === "") {
-        return media;
-      }
-      return mediaType[media];
     },
   },
 };
