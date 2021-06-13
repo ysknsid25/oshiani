@@ -22,32 +22,84 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar color="white" outlined flat app v-if="!loading">
+    <v-app-bar color="white" app v-if="!loading">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>title</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon color="green darken-4" dark :href="noteUrl">
-        <v-icon>fas fa-sticky-note</v-icon></v-btn
-      >
+      <v-btn color="secondary" dark icon class="mr-2">
+        <v-icon>fas fa-bell</v-icon>
+      </v-btn>
     </v-app-bar>
-    <v-main>
+    <v-content>
       <v-container v-if="!loading">
-        <v-row justify="center">
-          <v-col cols="12"></v-col>
+        <v-row dense class="mb-2">
+          <v-col xs="12" md="12">
+            <v-toolbar>
+              <v-toolbar-title>Discover</v-toolbar-title>
+              <v-spacer></v-spacer>
+              <v-btn icon>
+                <v-icon>mdi-magnify</v-icon>
+              </v-btn>
+            </v-toolbar>
+          </v-col>
         </v-row>
-        <v-row justify="center">
-          <v-col cols="12">
-            <div align="center">
+        <v-row dense>
+          <v-col
+            v-for="workInfo in workInfos"
+            :key="workInfo.id"
+            xs="12"
+            md="6"
+          >
+            <v-card>
               <v-img
-                src="../../public/images/icons/icon-256x256.png"
-                max-height="256"
-                max-width="256"
-              ></v-img>
+                :src="getImageUrl(workInfo.images.recommended_url)"
+                max-height="300px"
+              >
+              </v-img>
+              <v-card-title v-text="workInfo.title"></v-card-title>
+              <v-card-actions>
+                <v-icon v-if="workInfo.no_episodes">fas fa-film</v-icon>
+                <v-icon v-if="!workInfo.no_episodes">fas fa-tv</v-icon>
+                <v-spacer></v-spacer>
+                <v-btn
+                  icon
+                  v-if="workInfo.twitter_username !== ''"
+                  :href="getTwitterAccountUrl(workInfo.twitter_username)"
+                >
+                  <v-icon color="#1DA1F2">fab fa-twitter</v-icon>
+                </v-btn>
+
+                <v-btn icon>
+                  <v-icon>mdi-heart</v-icon>
+                </v-btn>
+
+                <v-btn icon>
+                  <v-icon>mdi-bookmark</v-icon>
+                </v-btn>
+
+                <v-btn
+                  icon
+                  :href="getTweetUrl(workInfo.title, workInfo.twitter_hashtag)"
+                >
+                  <v-icon>mdi-share-variant</v-icon>
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+        <v-row dense class="mb-2">
+          <v-col xs="12" md="12">
+            <div class="text-center">
+              <v-pagination
+                v-model="nowPage"
+                :length="totalPage"
+                @input="getNumber"
+              ></v-pagination>
             </div>
           </v-col>
         </v-row>
       </v-container>
-      <v-container class="mt-12" v-if="loading">
+      <v-container v-if="loading">
         <v-row justify="center">
           <v-col cols="12">
             <div align="center">
@@ -59,14 +111,19 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-main>
+    </v-content>
   </v-app>
 </template>
 <script>
 import { noteUrl } from "../constants/links";
-import { login } from "../plugins/firebase";
-import { authorizeUser } from "../firestoreaccess/Users";
-import { season, getWorkInfoUrl } from "../api/Annict";
+import { getTweetUrl } from "../constants/links";
+import {
+  getNowYear,
+  getNowSeason,
+  getWorkInfoUrl,
+  getTwitterUrl,
+  getCount,
+} from "../api/Annict";
 export default {
   name: "Top",
   data: () => ({
@@ -80,33 +137,62 @@ export default {
       { icon: "hoge", title: "3" },
       { icon: "hoge", title: "4" },
     ],
+    workInfos: [],
+    totalPage: 0,
+    nowPage: 1,
   }),
   mounted: async function () {
-    const targetUrl = getWorkInfoUrl("2021", season.spring);
-    await this.axios
-      .get(targetUrl)
-      .then((response) => {
-        console.log("@@1");
-        console.log(response.data.works);
-      })
-      .catch((error) => {
-        console.log("@@2");
-        console.log(error);
-      });
+    await this.getAnimeInfo(this.nowPage);
   },
   methods: {
-    async login() {
+    async getAnimeInfo(targetPage) {
       this.loading = true;
-      this.user = await login();
-      if (this.user.isLoginSuccess) {
-        await authorizeUser(this.user);
-        this.$router.push("/Main");
-      } else {
-        this.loading = true;
-        alert("ログイン処理に失敗しました。");
-        this.loading = false;
-        this.$router.push("/");
+      const nowSeason = getNowSeason();
+      const nowYear = getNowYear();
+      const targetUrl = getWorkInfoUrl(nowYear, nowSeason, targetPage);
+      await this.axios
+        .get(targetUrl)
+        .then((response) => {
+          //console.log("@@1");
+          //console.log(response.data.works);
+          this.workInfos = response.data.works;
+          this.isExistPage(response.data.total_count);
+        })
+        .catch((error) => {
+          console.log("@@2");
+          console.log(error);
+        });
+      this.loading = false;
+    },
+    isExistPage(totalCount) {
+      if (totalCount === 0) {
+        return false;
       }
+      const baseTotalPage = Math.floor(totalCount / getCount);
+      const isExistAmari = totalCount % getCount !== 0;
+      if (isExistAmari) {
+        this.totalPage = baseTotalPage + 1;
+      } else {
+        this.totalPage = baseTotalPage;
+      }
+      return true;
+    },
+    getImageUrl(url) {
+      if (url !== "") {
+        return url;
+      }
+      return "https://placehold.jp/600x300.png";
+    },
+    getTwitterAccountUrl(url) {
+      const retUrl = getTwitterUrl(url);
+      //console.log(retUrl);
+      return retUrl;
+    },
+    getTweetUrl(title, hashTag) {
+      return getTweetUrl(title, hashTag);
+    },
+    async getNumber(pageNumber) {
+      await this.getAnimeInfo(pageNumber);
     },
   },
 };

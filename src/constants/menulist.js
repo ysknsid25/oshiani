@@ -1,4 +1,4 @@
-import { noteUrl, tweetUrl, googleFormUrl } from "./links";
+import { noteUrl, googleFormUrl } from "./links";
 
 export const menulist = [
     {
@@ -29,7 +29,6 @@ export const menulist = [
         name: "Share Tweet",
         icon: "fab fa-twitter",
         iconColor: "#1DA1F2",
-        url: tweetUrl,
     },
     {
         name: "Release Note",
