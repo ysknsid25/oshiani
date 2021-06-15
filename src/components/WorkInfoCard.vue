@@ -40,7 +40,12 @@
         :hashTag="workInfo.twitter_hashtag"
         :officialSite="workInfo.official_site_url"
       ></ShareButton>
-      <WorkDetailDialog :workInfo="workInfo"> </WorkDetailDialog>
+      <WorkDetailDialog
+        :workInfo="workInfo"
+        :reviewInfo="reviewInfo"
+        :isLogined="isLogined"
+      >
+      </WorkDetailDialog>
     </v-card-actions>
   </v-card>
 </template>

@@ -1,5 +1,6 @@
 const baseUrl = "https://api.annict.com";
 const worksUrl = "/v1/works";
+const castsUrl = "/v1/casts";
 const token = "?access_token=A5kKRnr5a2_VBFWr2gPMdbh3g0ZIHoB-VfIVbugvTMU";
 const twitterBaseUrl = "https://twitter.com/";
 export const getCount = 10;
@@ -53,6 +54,9 @@ export const getWorkInfoUrl = (targetYear, targetSeason, targetPage) => {
         getCount
     );
 };
+
+export const getCastsInfoUrl = (workId) =>
+    baseUrl + castsUrl + token + "&filter_work_id=" + workId;
 
 export const getImage = (url) => {
     if (url !== "") {

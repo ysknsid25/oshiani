@@ -30,7 +30,7 @@ export default {
   props: ["officialSiteUrl", "wikipediaUrl"],
   methods: {
     isExistpages(official, wiki) {
-      return official !== "" && wiki !== "";
+      return official !== "" || wiki !== "";
     },
   },
 };
