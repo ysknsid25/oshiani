@@ -9,7 +9,19 @@
 GET {{baseurl}}/v1/works?access_token={{token}}&filter_season={{season}}&per_page={{getNumber}}
 
 ### 作品IDを指定して、キャストを検索する
-GET {{baseurl}}/v1/casts?access_token={{token}}&filter_work_id=7712
+GET {{baseurl}}/v1/casts?access_token={{token}}&filter_work_id=7227
 
 ### 作品IDを指定して、スタッフ情報を検索する
-GET {{baseurl}}/v1/staffs?access_token={{token}}&filter_work_id=7227
+GET {{baseurl}}/v1/staffs?access_token={{token}}&filter_work_id=7639
+
+### 作品IDを指定して、スタッフ情報を検索する
+GET {{baseurl}}/v1/people?access_token={{token}}&filter_name={{actor}}
+
+### 声優IDを指定して、キャスト情報を検索する
+GET {{baseurl}}/v1/casts?access_token={{token}}&filter_ids=7118
+
+### 作品IDを指定して、レビューを検索する
+GET {{baseurl}}/v1/reviews?access_token={{token}}&filter_work_id=7227
+
+###
+get {{baseurl}}/v1/staffs?access_token=A5kKRnr5a2_VBFWr2gPMdbh3g0ZIHoB-VfIVbugvTMU&filter_work_id=7585

@@ -45,33 +45,76 @@
             <v-expansion-panel-header>キャスト</v-expansion-panel-header>
             <v-expansion-panel-content>
               <v-simple-table :v-if="!castLoading && isExistsCastInfo">
-                <template v-slot:default>
+                <thead>
+                  <tr>
+                    <th class="text-left">登場人物</th>
+                    <th class="text-left">声優</th>
+                    <th class="text-left"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="cast in casts" :key="cast.id">
+                    <td>{{ cast.character.name }}</td>
+                    <td>{{ cast.name }}</td>
+                    <td>
+                      <CastExternalInfo
+                        :officialSiteUrl="cast.person.url"
+                        :wikipediaUrl="cast.person.wikipedia_url"
+                        :twitterUrl="cast.person.twitter_username"
+                      ></CastExternalInfo>
+                    </td>
+                  </tr>
+                </tbody>
+              </v-simple-table>
+              <div align="center" v-if="!castLoading && !isExistsCastInfo">
+                No Data
+              </div>
+              <div align="center" v-if="castLoading">
+                <v-progress-circular
+                  indeterminate
+                  color="indigo"
+                ></v-progress-circular>
+              </div>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>スタッフ</v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <div :v-if="!staffLoading && isExistsStaffInfo">
+                <v-simple-table>
                   <thead>
                     <tr>
-                      <th class="text-left">登場人物</th>
-                      <th class="text-left">声優</th>
+                      <th class="text-left">ロール</th>
+                      <th class="text-left">氏名</th>
                       <th class="text-left"></th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="cast in casts" :key="cast.id">
-                      <td>{{ cast.character.name }}</td>
-                      <td>{{ cast.name }}</td>
+                    <tr v-for="staff in staffs" :key="staff.id">
+                      <td>{{ staff.role_text }}</td>
+                      <td>{{ staff.name }}</td>
                       <td>
                         <CastExternalInfo
-                          :officialSiteUrl="cast.person.url"
-                          :wikipediaUrl="cast.person.wikipedia_url"
-                          :twitterUrl="cast.person.twitter_username"
+                          v-if="typeof staff.person !== 'undefined'"
+                          :officialSiteUrl="staff.person.url"
+                          :wikipediaUrl="staff.person.wikipedia_url"
+                          :twitterUrl="staff.person.twitter_username"
+                        ></CastExternalInfo>
+                        <CastExternalInfo
+                          v-if="typeof staff.organization !== 'undefined'"
+                          :officialSiteUrl="staff.organization.url"
+                          :wikipediaUrl="staff.organization.wikipedia_url"
+                          :twitterUrl="staff.organization.twitter_username"
                         ></CastExternalInfo>
                       </td>
                     </tr>
                   </tbody>
-                </template>
-              </v-simple-table>
-              <div align="center" v-if="castLoading && !isExistsCastInfo">
+                </v-simple-table>
+              </div>
+              <div align="center" v-if="!staffLoading && !isExistsStaffInfo">
                 No Data
               </div>
-              <div align="center" v-if="castLoading">
+              <div align="center" v-if="staffLoading">
                 <v-progress-circular
                   indeterminate
                   color="indigo"
@@ -96,7 +139,7 @@
 import ExternalLinkMenu from "./ExternalLinkMenu";
 import CastExternalInfo from "./CastExternalInfo";
 import MediaChip from "./MediaChip";
-import { getCastsInfoUrl } from "../api/Annict";
+import { getCastsInfoUrl, getStaffsInfoUrl } from "../api/Annict";
 import ShareButton from "./ShareButton";
 import OfficialTwitterButton from "./OfficialTwitterButton";
 import DispRating from "./DispRating";
@@ -117,11 +160,15 @@ export default {
   data: () => ({
     detailDialog: false,
     castLoading: false,
+    staffLoading: false,
     casts: [],
-    isExistsCastInfo: true,
+    staffs: [],
+    isExistsCastInfo: false,
+    isExistsStaffInfo: false,
   }),
   mounted: async function () {
     await this.getCastsInfo();
+    await this.getStaffsInfo();
   },
   methods: {
     getImageUrl(url) {
@@ -139,16 +186,34 @@ export default {
           //console.log("@@1");
           //console.log(response.data.casts);
           this.casts = response.data.casts;
-          this.isExistPage(response.data.total_count);
+          this.isExistCastInfo(response.data.total_count);
         })
         .catch((error) => {
-          console.log("@@2");
           console.log(error);
         });
       this.castLoading = false;
     },
-    isExistPage(count) {
+    async getStaffsInfo() {
+      this.staffLoading = true;
+      const targetUrl = getStaffsInfoUrl(this.workInfo.id);
+      await this.axios
+        .get(targetUrl)
+        .then((response) => {
+          //console.log("@@1");
+          //console.log(response.data.staffs);
+          this.staffs = response.data.staffs;
+          this.isExistStaffInfo(response.data.total_count);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+      this.staffLoading = false;
+    },
+    isExistCastInfo(count) {
       this.isExistsCastInfo = count !== 0;
+    },
+    isExistStaffInfo(count) {
+      this.isExistsStaffInfo = count !== 0;
     },
   },
 };
