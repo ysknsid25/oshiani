@@ -73,7 +73,7 @@
           >
             <WorkInfoCard
               :workInfo="workInfo"
-              :logined="logined"
+              :isLogined="logined"
             ></WorkInfoCard>
           </v-col>
         </v-row>
@@ -88,6 +88,14 @@
             </div>
           </v-col>
         </v-row>
+        <v-snackbar
+          v-model="isOpenSnackbar"
+          :color="snackbarColor"
+          top
+          :timeout="timeout"
+        >
+          {{ snackbarMessage }}
+        </v-snackbar>
       </v-container>
       <v-container v-if="loading">
         <v-row justify="center">
@@ -105,14 +113,14 @@
   </v-app>
 </template>
 <script>
-import WorkInfoCard from "../components/WorkInfoCard.vue";
+import WorkInfoCard from "../components/WorkInfoCard";
 import {
   getNowYear,
   getNowSeason,
   getWorkInfoUrl,
   getCount,
 } from "../api/Annict";
-import { login, logout, getAuthUserInfo, anl } from "../plugins/firebase";
+import { login, logout, anl } from "../plugins/firebase";
 import { authorizeUser } from "../firestoreaccess/Users";
 export default {
   name: "Top",
@@ -123,6 +131,10 @@ export default {
     loading: false,
     sending: false,
     logined: false,
+    isOpenSnackbar: false,
+    snackbarColor: "success",
+    snackbarMessage: "",
+    timeout: 2000,
     user: "",
     drawer: true,
     items: [
@@ -135,33 +147,48 @@ export default {
     totalPage: 0,
     nowPage: 1,
   }),
-  mounted: async function () {
-    await this.getAnimeInfo(this.nowPage);
-    await this.isLogined();
+  mounted: function () {
+    this.getAnimeInfo(this.nowPage);
+    this.isLogined();
   },
   methods: {
     async login() {
       this.sending = true;
       anl.logEvent("logout detected");
       this.user = await login();
+      localStorage.setItem("userInfo", this.user);
       if (this.user.isLoginSuccess) {
         await authorizeUser(this.user);
-        await this.isLogined();
+        this.isLogined();
+        this.openSnackBar("ログインしました。", "success");
       } else {
-        alert("ログイン処理に失敗しました。");
         this.sending = false;
+        this.openSnackBar("ログイン処理に失敗しました。", "error");
       }
       this.sending = false;
     },
-    async isLogined() {
-      const userInfo = await getAuthUserInfo();
-      this.user = userInfo;
-      this.logined = userInfo !== "";
+    openSnackBar(message, type) {
+      this.snackbarMessage = message;
+      this.snackbarColor = type;
+      this.isOpenSnackbar = true;
+    },
+    isLogined() {
+      const userInfo = localStorage.getItem("userInfo");
+      if (userInfo === null) {
+        this.user = "";
+        this.logined = false;
+        console.log(this.logined);
+      } else {
+        this.user = userInfo;
+        this.logined = true;
+      }
     },
     async logout() {
       this.sending = true;
+      localStorage.removeItem("userInfo");
+      this.openSnackBar("ログアウトしました。", "info");
+      this.isLogined();
       await logout();
-      await this.isLogined();
       this.sending = false;
     },
     async getAnimeInfo(targetPage) {

@@ -6,25 +6,25 @@
       </v-btn>
     </template>
     <v-card>
+      <v-app-bar flat color="rgba(0, 0, 0, 0)">
+        <ShareButton
+          :title="workInfo.title"
+          :hashTag="workInfo.twitter_hashtag"
+          :officialSite="workInfo.official_site_url"
+        ></ShareButton>
+        <OfficialTwitterButton
+          :twitterUserName="workInfo.twitter_username"
+        ></OfficialTwitterButton>
+        <v-spacer></v-spacer>
+        <ExternalLinkMenu
+          :officialSiteUrl="workInfo.official_site_url"
+          :wikipediaUrl="workInfo.wikipedia_url"
+        ></ExternalLinkMenu>
+      </v-app-bar>
       <v-img
         :src="getImageUrl(workInfo.images.recommended_url)"
         max-height="300px"
       >
-        <v-app-bar flat color="rgba(0, 0, 0, 0)">
-          <ShareButton
-            :title="workInfo.title"
-            :hashTag="workInfo.twitter_hashtag"
-            :officialSite="workInfo.official_site_url"
-          ></ShareButton>
-          <OfficialTwitterButton
-            :twitterUserName="workInfo.twitter_username"
-          ></OfficialTwitterButton>
-          <v-spacer></v-spacer>
-          <ExternalLinkMenu
-            :officialSiteUrl="workInfo.official_site_url"
-            :wikipediaUrl="workInfo.wikipedia_url"
-          ></ExternalLinkMenu>
-        </v-app-bar>
       </v-img>
       <v-card-title>
         {{ workInfo.title }}
@@ -35,6 +35,8 @@
             :media="workInfo.media"
             :mediaText="workInfo.media_text"
           ></MediaChip>
+          <v-spacer></v-spacer>
+          <DispRating :reviewInfo="reviewInfo"></DispRating>
         </v-row>
       </v-card-text>
       <v-divider></v-divider>

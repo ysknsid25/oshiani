@@ -22,29 +22,15 @@
           :mediaText="workInfo.media_text"
         ></MediaChip>
         <v-spacer></v-spacer>
-        <v-rating
-          :value="4.5"
-          color="amber"
-          dense
-          half-increments
-          readonly
-          size="14"
-        ></v-rating>
-        <div class="grey--text ms-4">4.5 (413)</div>
+        <DispRating :reviewInfo="reviewInfo"></DispRating>
       </v-row>
     </v-card-text>
     <v-divider class="mx-4 mb-2"></v-divider>
     <v-card-actions>
-      <v-btn
-        icon
-        v-if="logined"
-        color="yellow"
-        @click="addWatchList(workInfo.id)"
-      >
-        <v-badge color="green" class="ma-0" content="6">
-          <v-icon> fas fa-bookmark </v-icon>
-        </v-badge>
-      </v-btn>
+      <BookmarkButton
+        :isLogined="isLogined"
+        :workId="workInfo.id"
+      ></BookmarkButton>
       <v-spacer></v-spacer>
       <OfficialTwitterButton
         :twitterUserName="workInfo.twitter_username"
@@ -64,6 +50,8 @@ import WorkDetailDialog from "./WorkDetailDialog";
 import MediaChip from "./MediaChip";
 import ShareButton from "./ShareButton";
 import OfficialTwitterButton from "./OfficialTwitterButton";
+import BookmarkButton from "./BookmarkButton";
+import DispRating from "./DispRating";
 export default {
   name: "WorkInfoCard",
   components: {
@@ -72,10 +60,18 @@ export default {
     MediaChip,
     ShareButton,
     OfficialTwitterButton,
+    BookmarkButton,
+    DispRating,
   },
-  props: ["workInfo", "logined"],
+  props: ["workInfo", "isLogined"],
 
-  data: () => ({}),
+  data: () => ({
+    reviewInfo: {
+      avgStar: 4.5,
+      starColor: "amber",
+      starSize: 14,
+    },
+  }),
 
   methods: {
     getImageUrl(url) {
@@ -86,9 +82,6 @@ export default {
     },
     dispWorkDetail(workInfo) {
       alert(workInfo.id + "の作品情報を表示します。");
-    },
-    addWatchList(id) {
-      alert(id + "ウォッチリストに追加しました。");
     },
   },
 };
