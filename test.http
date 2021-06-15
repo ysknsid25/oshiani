@@ -9,7 +9,7 @@
 GET {{baseurl}}/v1/works?access_token={{token}}&filter_season={{season}}&per_page={{getNumber}}
 
 ### 作品IDを指定して、キャストを検索する
-GET {{baseurl}}/v1/casts?access_token={{token}}&filter_work_id=7227
+GET {{baseurl}}/v1/casts?access_token={{token}}&filter_work_id=7712
 
 ### 作品IDを指定して、スタッフ情報を検索する
 GET {{baseurl}}/v1/staffs?access_token={{token}}&filter_work_id=7227
