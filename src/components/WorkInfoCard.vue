@@ -2,7 +2,7 @@
   <v-card>
     <v-img
       :src="getImageUrl(workInfo.images.recommended_url)"
-      max-height="300px"
+      max-height="600px"
     >
       <v-app-bar flat color="rgba(0, 0, 0, 0)">
         <v-spacer></v-spacer>
@@ -28,6 +28,7 @@
     <v-divider class="mx-4 mb-2"></v-divider>
     <v-card-actions>
       <BookmarkButton
+        v-if="isLogined"
         :isLogined="isLogined"
         :workId="workInfo.id"
       ></BookmarkButton>
@@ -84,9 +85,6 @@ export default {
         return url;
       }
       return "https://placehold.jp/600x300.png";
-    },
-    dispWorkDetail(workInfo) {
-      alert(workInfo.id + "の作品情報を表示します。");
     },
   },
 };

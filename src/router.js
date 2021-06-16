@@ -23,8 +23,14 @@ const menteRoutes = [
 const greenRoutes = [
     {
         path: "/",
-        name: "Top",
-        component: () => import("./pages/Top.vue"),
+        name: "WorkInfoList",
+        component: () => import("./components/WorkInfoList.vue"),
+        meta: { isPublic: true },
+    },
+    {
+        path: "*",
+        name: "NotFound",
+        component: () => import("./pages/NotFound.vue"),
         meta: { isPublic: true },
     },
 ];

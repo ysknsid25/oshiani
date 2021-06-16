@@ -5,7 +5,7 @@
         <v-icon>fas fa-ellipsis-v</v-icon>
       </v-btn>
     </template>
-    <v-card>
+    <v-card class="mx-auto">
       <v-img
         :src="getImageUrl(workInfo.images.recommended_url)"
         max-height="600px"
@@ -29,7 +29,7 @@
         ></BookmarkButton>
       </v-card-title>
       <v-card-text>
-        <v-container>
+        <v-container class="my-2">
           <v-row>
             <MediaChip
               :media="workInfo.media"
@@ -37,6 +37,13 @@
             ></MediaChip>
             <v-spacer></v-spacer>
             <DispRating :reviewInfo="reviewInfo"></DispRating>
+          </v-row>
+          <v-row>
+            <v-spacer></v-spacer>
+            <ExternalLinkMenu
+              :officialSiteUrl="workInfo.official_site_url"
+              :wikipediaUrl="workInfo.wikipedia_url"
+            ></ExternalLinkMenu>
           </v-row>
         </v-container>
 
@@ -78,7 +85,7 @@
             </v-expansion-panel-content>
           </v-expansion-panel>
           <v-expansion-panel>
-            <v-expansion-panel-header>スタッフ</v-expansion-panel-header>
+            <v-expansion-panel-header> スタッフ</v-expansion-panel-header>
             <v-expansion-panel-content>
               <div :v-if="!staffLoading && isExistsStaffInfo">
                 <v-simple-table>
@@ -122,16 +129,71 @@
               </div>
             </v-expansion-panel-content>
           </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>レビュー</v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <div v-if="isLogined">
+                <v-row>
+                  <v-rating
+                    color="yellow"
+                    background-color="grey darken-1"
+                    half-increments
+                    hover
+                    length="5"
+                    size="20"
+                    v-model="rate"
+                  ></v-rating>
+                  ({{ rate }})
+                </v-row>
+                <v-row class="mt-4">
+                  <v-textarea
+                    outlined
+                    counter="1000"
+                    name="comment"
+                    label="コメントする"
+                    :value="comment"
+                    :rules="rules"
+                  ></v-textarea>
+                </v-row>
+                <v-row>
+                  <v-spacer></v-spacer>
+                  <v-btn
+                    outlined
+                    tile
+                    color="secondary"
+                    dark
+                    width="100"
+                    @click="hoge"
+                    >投稿する</v-btn
+                  >
+                </v-row>
+              </div>
+              <div align="center" v-if="!isLogined">
+                レビューするためにはログインが必要です。
+              </div>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
         </v-expansion-panels>
       </v-card-text>
       <v-divider></v-divider>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <ExternalLinkMenu
-          :officialSiteUrl="workInfo.official_site_url"
-          :wikipediaUrl="workInfo.wikipedia_url"
-        ></ExternalLinkMenu>
+        <v-tooltip top>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn icon v-bind="attrs" v-on="on" @click="show = !show">
+              <v-icon>{{
+                show ? "mdi-chevron-up" : "mdi-chevron-down"
+              }}</v-icon>
+            </v-btn>
+          </template>
+          <span>コメント一覧</span>
+        </v-tooltip>
       </v-card-actions>
+      <v-expand-transition>
+        <div v-show="show">
+          <CommentCard></CommentCard>
+        </div>
+      </v-expand-transition>
     </v-card>
   </v-dialog>
 </template>
@@ -144,6 +206,7 @@ import ShareButton from "./ShareButton";
 import OfficialTwitterButton from "./OfficialTwitterButton";
 import DispRating from "./DispRating";
 import BookmarkButton from "./BookmarkButton";
+import CommentCard from "./CommentCard";
 export default {
   name: "WorkDetailDialog",
   components: {
@@ -154,6 +217,7 @@ export default {
     OfficialTwitterButton,
     DispRating,
     BookmarkButton,
+    CommentCard,
   },
   props: ["workInfo", "reviewInfo", "isLogined"],
 
@@ -161,10 +225,14 @@ export default {
     detailDialog: false,
     castLoading: false,
     staffLoading: false,
+    show: false,
     casts: [],
     staffs: [],
     isExistsCastInfo: false,
     isExistsStaffInfo: false,
+    rules: [(v) => v.length <= 1000 || "Max 1000 characters"],
+    comment: "",
+    rate: 3,
   }),
   mounted: async function () {
     await this.getCastsInfo();
@@ -214,6 +282,9 @@ export default {
     },
     isExistStaffInfo(count) {
       this.isExistsStaffInfo = count !== 0;
+    },
+    hoge() {
+      alert(this.rate);
     },
   },
 };
