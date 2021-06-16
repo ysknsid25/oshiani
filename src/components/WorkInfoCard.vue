@@ -2,7 +2,7 @@
   <v-card>
     <v-img
       :src="getImageUrl(workInfo.images.recommended_url)"
-      max-height="600px"
+      max-height="300px"
     >
       <v-app-bar flat color="rgba(0, 0, 0, 0)">
         <v-spacer></v-spacer>

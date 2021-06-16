@@ -4,9 +4,25 @@ const castsUrl = "/v1/casts";
 const staffsUrl = "/v1/staffs";
 const token = "?access_token=A5kKRnr5a2_VBFWr2gPMdbh3g0ZIHoB-VfIVbugvTMU";
 const twitterBaseUrl = "https://twitter.com/";
+const YEAR_DURING = 5;
 export const getCount = 10;
 
 const date = new Date();
+
+export const getSelectYear = () => {
+    let baseYear = date.getFullYear();
+    const thisMonth = date.getMonth();
+    //秋アニメのシーズンには、冬アニメを検索するために年に+1する
+    if (thisMonth > 8) {
+        baseYear += 1;
+    }
+    const firstYear = baseYear - YEAR_DURING;
+    let retArr = [];
+    for (let year = firstYear; year <= baseYear; year++) {
+        retArr.push(year);
+    }
+    return retArr;
+};
 
 export const season = {
     spring: "spring",
@@ -41,14 +57,23 @@ export const getTwitterUrl = (twitterIconUrl) =>
 
 export const getNowYear = () => date.getFullYear();
 
-export const getWorkInfoUrl = (targetYear, targetSeason, targetPage) => {
+export const getWorkInfoUrl = (
+    isWorkName,
+    workName,
+    targetYear,
+    targetSeason,
+    targetPage
+) => {
     const seasonCondition = targetYear + "-" + targetSeason;
+    let searchCondition = "&filter_season=" + seasonCondition;
+    if (isWorkName) {
+        searchCondition = "&filter_title=" + workName;
+    }
     return (
         baseUrl +
         worksUrl +
         token +
-        "&filter_season=" +
-        seasonCondition +
+        searchCondition +
         "&page=" +
         targetPage +
         "&per_page=" +

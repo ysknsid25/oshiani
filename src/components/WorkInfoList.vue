@@ -4,9 +4,36 @@
       <v-row dense class="mb-2">
         <v-col xs="12" md="12">
           <v-toolbar>
-            <v-toolbar-title>Discover</v-toolbar-title>
-            <v-spacer></v-spacer>
-            <v-btn icon>
+            <v-switch
+              v-model="isWorkName"
+              color="secondary"
+              hide-details
+              class="mr-2"
+            ></v-switch>
+            <v-select
+              v-if="!isWorkName"
+              :items="yearList"
+              v-model="targetYear"
+              label="Year"
+              dense
+              class="mr-4 mt-5"
+            ></v-select>
+            <v-select
+              v-if="!isWorkName"
+              :items="seasons"
+              v-model="targetSeason"
+              label="Season"
+              dense
+              class="mr-4 mt-5"
+            ></v-select>
+            <v-text-field
+              v-if="isWorkName"
+              dense
+              class="mr-4 mt-5"
+              label="Work name"
+              v-model="workName"
+            ></v-text-field>
+            <v-btn icon @click="getAnimeInfo(1)">
               <v-icon>mdi-magnify</v-icon>
             </v-btn>
           </v-toolbar>
@@ -54,6 +81,8 @@ import {
   getNowSeason,
   getWorkInfoUrl,
   getCount,
+  getSelectYear,
+  season,
 } from "../api/Annict";
 export default {
   name: "WorkInfoList",
@@ -71,8 +100,18 @@ export default {
     workInfos: [],
     totalPage: 0,
     nowPage: 1,
+    yearList: [],
+    seasons: [],
+    targetYear: "",
+    targetSeason: "",
+    isWorkName: false,
+    workName: "",
   }),
   mounted: function () {
+    this.yearList = getSelectYear();
+    this.seasons = Object.values(season);
+    this.targetYear = getNowYear();
+    this.targetSeason = getNowSeason();
     this.getAnimeInfo(this.nowPage);
     this.isLogined();
   },
@@ -95,9 +134,13 @@ export default {
     },
     async getAnimeInfo(targetPage) {
       this.loading = true;
-      const nowSeason = getNowSeason();
-      const nowYear = getNowYear();
-      const targetUrl = getWorkInfoUrl(nowYear, nowSeason, targetPage);
+      const targetUrl = getWorkInfoUrl(
+        this.isWorkName,
+        this.workName,
+        this.targetYear,
+        this.targetSeason,
+        targetPage
+      );
       await this.axios
         .get(targetUrl)
         .then((response) => {
