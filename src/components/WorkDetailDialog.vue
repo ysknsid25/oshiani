@@ -1,7 +1,7 @@
 <template>
   <v-dialog v-model="detailDialog" max-width="800">
     <template v-slot:activator="{ on, attrs }">
-      <v-btn icon v-bind="attrs" v-on="on">
+      <v-btn icon v-bind="attrs" v-on="on" @click="getDetailInfo()">
         <v-icon>fas fa-ellipsis-v</v-icon>
       </v-btn>
     </template>
@@ -234,16 +234,17 @@ export default {
     comment: "",
     rate: 3,
   }),
-  mounted: async function () {
-    await this.getCastsInfo();
-    await this.getStaffsInfo();
-  },
+
   methods: {
     getImageUrl(url) {
       if (url !== "") {
         return url;
       }
       return "https://placehold.jp/600x300.png";
+    },
+    async getDetailInfo() {
+      await this.getCastsInfo();
+      await this.getStaffsInfo();
     },
     async getCastsInfo() {
       this.castLoading = true;
