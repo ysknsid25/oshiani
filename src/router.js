@@ -28,6 +28,18 @@ const greenRoutes = [
         meta: { isPublic: true },
     },
     {
+        path: "/Profile",
+        name: "Profile",
+        component: () => import("./pages/Profile.vue"),
+        meta: { isPublic: true },
+    },
+    {
+        path: "/About",
+        name: "About",
+        component: () => import("./pages/About.vue"),
+        meta: { isPublic: true },
+    },
+    {
         path: "*",
         name: "NotFound",
         component: () => import("./pages/NotFound.vue"),

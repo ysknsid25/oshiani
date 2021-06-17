@@ -3,30 +3,44 @@
     <v-navigation-drawer app v-model="drawer">
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="text-h6"> Application </v-list-item-title>
-          <v-list-item-subtitle> subtext </v-list-item-subtitle>
+          <v-list-item-title class="text-h6">
+            <div align="center">
+              <v-avatar size="56">
+                <img
+                  alt="oshianilogo"
+                  src="../../public/images/icons/icon-192x192.png"
+                  class="mr-2"
+                />
+              </v-avatar>
+            </div>
+          </v-list-item-title>
+          <v-list-item-subtitle>
+            <div align="center">推しアニ！</div>
+          </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link>
+        <v-list-item
+          v-for="nav_list in nav_lists"
+          :key="nav_list.name"
+          @click="title = nav_list.name"
+          link
+          :to="nav_list.url"
+        >
           <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon :color="nav_list.iconColor">{{ nav_list.icon }}</v-icon>
           </v-list-item-icon>
-
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar color="white" app v-if="!loading">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>title</v-toolbar-title>
+      <v-toolbar-title>{{ title }}</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn color="secondary" dark icon class="mr-2">
-        <v-icon>fas fa-bell</v-icon>
-      </v-btn>
       <v-btn
         color="secondary"
         v-if="logined && !sending"
@@ -67,9 +81,11 @@
 <script>
 import { login, logout, anl } from "../plugins/firebase";
 import { authorizeUser } from "../firestoreaccess/Users";
+import { menulist } from "../constants/menulist";
 export default {
   name: "Top",
   data: () => ({
+    title: menulist[0].name,
     loading: false,
     sending: false,
     logined: false,
@@ -79,12 +95,7 @@ export default {
     timeout: 2000,
     user: "",
     drawer: true,
-    items: [
-      { icon: "hoge", title: "1" },
-      { icon: "hoge", title: "2" },
-      { icon: "hoge", title: "3" },
-      { icon: "hoge", title: "4" },
-    ],
+    nav_lists: menulist,
   }),
   mounted: function () {
     this.isLogined();
@@ -94,7 +105,8 @@ export default {
       this.sending = true;
       anl.logEvent("logout detected");
       this.user = await login();
-      localStorage.setItem("userInfo", this.user);
+      const userInfo = this.user.uid;
+      localStorage.setItem("userInfo", userInfo);
       if (this.user.isLoginSuccess) {
         await authorizeUser(this.user);
         this.isLogined();
@@ -112,7 +124,7 @@ export default {
     },
     isLogined() {
       const userInfo = localStorage.getItem("userInfo");
-      if (userInfo === null) {
+      if (userInfo === null || typeof userInfo === "undefined") {
         this.user = "";
         this.logined = false;
         //console.log(this.logined);

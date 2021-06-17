@@ -67,6 +67,22 @@ const setUserInfo = async (userInfo, action) => {
  * @returns Object UserInfo
  */
 export const getUserInfo = async (uid) => {
-    const userInfo = await COLLECTION_USERS.doc(uid).get();
+    let userInfo = {};
+    await COLLECTION_USERS.doc(uid)
+        .get()
+        .then((doc) => {
+            anl.logEvent("getUserInfo", {
+                function: "getUserInfo",
+            });
+            if (doc.exists) {
+                userInfo = doc.data();
+            }
+        })
+        .catch((error) => {
+            anl.logEvent("errorInfo", {
+                function: "getUserInfo",
+                msg: error,
+            });
+        });
     return userInfo;
 };

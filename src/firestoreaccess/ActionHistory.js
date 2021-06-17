@@ -59,6 +59,7 @@ export const getActionHistoryArr = async (userId) => {
             });
         })
         .catch((error) => {
+            console.log(error);
             anl.logEvent("errorInfo", {
                 function: "getActionHistoryArr",
                 msg: error,
