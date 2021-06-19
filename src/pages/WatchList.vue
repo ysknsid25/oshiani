@@ -21,7 +21,7 @@
         <v-card hover tile>
           <v-img
             :src="getImageUrl(workInfo.images.recommended_url)"
-            max-height="150px"
+            :max-height="$vuetify.breakpoint.xs ? '300px' : '140px'"
           >
           </v-img>
           <v-tooltip top>

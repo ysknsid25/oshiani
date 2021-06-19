@@ -40,7 +40,13 @@
         </v-col>
       </v-row>
       <v-row dense v-if="workInfos.length > 0">
-        <v-col v-for="workInfo in workInfos" :key="workInfo.id" xs="12" md="3">
+        <v-col
+          v-for="workInfo in workInfos"
+          :key="workInfo.id"
+          xs="12"
+          sm="4"
+          md="3"
+        >
           <WorkInfoCard
             :key="logined"
             :workInfo="workInfo"

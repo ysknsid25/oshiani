@@ -91,7 +91,7 @@ export const getImage = (url) => {
     if (url !== "") {
         return url;
     }
-    return "https://placehold.jp/600x300.png";
+    return "./images/noimage.png";
 };
 
 export const getTitle = (title) => {
