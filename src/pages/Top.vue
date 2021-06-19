@@ -36,6 +36,27 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <template v-slot:append>
+        <div class="pa-2 caption text-center">
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                x-small
+                text
+                v-bind="attrs"
+                v-on="on"
+                link
+                href="https://twitter.com/samurai_se"
+              >
+                <v-icon x-small class="mx-1">far fa-copyright</v-icon>
+                {{ new Date().getFullYear() }} —
+                <strong class="ml-1">Ramen Tabetaro</strong>
+              </v-btn>
+            </template>
+            <span>開発者のTwitterへ</span>
+          </v-tooltip>
+        </div>
+      </template>
     </v-navigation-drawer>
     <v-app-bar color="white" app v-if="!loading">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>

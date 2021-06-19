@@ -29,10 +29,11 @@
     </v-card-text>
     <v-divider class="mx-4 mb-2"></v-divider>
     <v-card-actions>
-      <ExternalLinkMenu
-        :officialSiteUrl="workInfo.official_site_url"
-        :wikipediaUrl="workInfo.wikipedia_url"
-      ></ExternalLinkMenu>
+      <BookmarkButton
+        v-if="isLogined"
+        :isLogined="isLogined"
+        :workId="workInfo.id"
+      ></BookmarkButton>
       <v-spacer></v-spacer>
       <OfficialTwitterButton
         :twitterUserName="workInfo.twitter_username"
@@ -56,7 +57,7 @@ import WorkDetailDialog from "./WorkDetailDialog";
 import MediaChip from "./MediaChip";
 import ShareButton from "./ShareButton";
 import OfficialTwitterButton from "./OfficialTwitterButton";
-import ExternalLinkMenu from "./ExternalLinkMenu";
+import BookmarkButton from "./BookmarkButton";
 import DispRating from "./DispRating";
 import { getImage, getTitle } from "../api/Annict";
 export default {
@@ -66,7 +67,7 @@ export default {
     MediaChip,
     ShareButton,
     OfficialTwitterButton,
-    ExternalLinkMenu,
+    BookmarkButton,
     DispRating,
   },
   props: ["workInfo", "isLogined"],
