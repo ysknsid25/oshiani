@@ -1,20 +1,22 @@
 <template>
-  <v-card>
+  <v-card hover tile>
     <v-img
       :src="getImageUrl(workInfo.images.recommended_url)"
-      max-height="300px"
+      max-height="140px"
     >
-      <v-app-bar flat color="rgba(0, 0, 0, 0)">
-        <v-spacer></v-spacer>
-        <ExternalLinkMenu
-          :officialSiteUrl="workInfo.official_site_url"
-          :wikipediaUrl="workInfo.wikipedia_url"
-        ></ExternalLinkMenu>
-      </v-app-bar>
     </v-img>
-    <v-card-title>
-      {{ workInfo.title }}
-    </v-card-title>
+    <v-tooltip top>
+      <template v-slot:activator="{ on, attrs }">
+        <v-card-title
+          v-bind="attrs"
+          v-on="on"
+          class="subtitle-1"
+          v-text="trimTitle(workInfo.title)"
+        ></v-card-title>
+      </template>
+      <span>{{ workInfo.title }}</span>
+    </v-tooltip>
+    <v-card-subtitle v-text="workInfo.season_name"></v-card-subtitle>
     <v-card-text>
       <v-row align="center" class="mx-0">
         <MediaChip
@@ -51,17 +53,16 @@
   </v-card>
 </template>
 <script>
-import ExternalLinkMenu from "./ExternalLinkMenu";
 import WorkDetailDialog from "./WorkDetailDialog";
 import MediaChip from "./MediaChip";
 import ShareButton from "./ShareButton";
 import OfficialTwitterButton from "./OfficialTwitterButton";
 import BookmarkButton from "./BookmarkButton";
 import DispRating from "./DispRating";
+import { getImage, getTitle } from "../api/Annict";
 export default {
   name: "WorkInfoCard",
   components: {
-    ExternalLinkMenu,
     WorkDetailDialog,
     MediaChip,
     ShareButton,
@@ -80,11 +81,11 @@ export default {
   }),
 
   methods: {
+    trimTitle(title) {
+      return getTitle(title);
+    },
     getImageUrl(url) {
-      if (url !== "") {
-        return url;
-      }
-      return "https://placehold.jp/600x300.png";
+      return getImage(url);
     },
   },
 };

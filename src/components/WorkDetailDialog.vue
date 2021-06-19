@@ -201,7 +201,7 @@
 import ExternalLinkMenu from "./ExternalLinkMenu";
 import CastExternalInfo from "./CastExternalInfo";
 import MediaChip from "./MediaChip";
-import { getCastsInfoUrl, getStaffsInfoUrl } from "../api/Annict";
+import { getCastsInfoUrl, getStaffsInfoUrl, getImage } from "../api/Annict";
 import ShareButton from "./ShareButton";
 import OfficialTwitterButton from "./OfficialTwitterButton";
 import DispRating from "./DispRating";
@@ -237,10 +237,7 @@ export default {
 
   methods: {
     getImageUrl(url) {
-      if (url !== "") {
-        return url;
-      }
-      return "https://placehold.jp/600x300.png";
+      return getImage(url);
     },
     async getDetailInfo() {
       await this.getCastsInfo();

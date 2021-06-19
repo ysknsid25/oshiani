@@ -5,7 +5,7 @@ const staffsUrl = "/v1/staffs";
 const token = "?access_token=A5kKRnr5a2_VBFWr2gPMdbh3g0ZIHoB-VfIVbugvTMU";
 const twitterBaseUrl = "https://twitter.com/";
 const YEAR_DURING = 5;
-export const getCount = 10;
+export const getCount = 12;
 
 const date = new Date();
 
@@ -92,4 +92,12 @@ export const getImage = (url) => {
         return url;
     }
     return "https://placehold.jp/600x300.png";
+};
+
+export const getTitle = (title) => {
+    const ishalfWidthCharOnly = title.match(/^[\x20-\x7e]*$/);
+    if (!ishalfWidthCharOnly && title.length > 14) {
+        return title.substring(0, 14) + "…";
+    }
+    return title;
 };

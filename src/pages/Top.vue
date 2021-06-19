@@ -132,6 +132,9 @@ export default {
         this.user = userInfo;
         this.logined = true;
       }
+      this.nav_lists = menulist.filter(
+        (item) => item.needLogin || this.logined
+      );
     },
     async logout() {
       this.sending = true;

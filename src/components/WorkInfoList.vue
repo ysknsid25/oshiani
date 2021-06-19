@@ -39,8 +39,8 @@
           </v-toolbar>
         </v-col>
       </v-row>
-      <v-row dense>
-        <v-col v-for="workInfo in workInfos" :key="workInfo.id" xs="12" md="6">
+      <v-row dense v-if="workInfos.length > 0">
+        <v-col v-for="workInfo in workInfos" :key="workInfo.id" xs="12" md="3">
           <WorkInfoCard
             :key="logined"
             :workInfo="workInfo"
@@ -48,7 +48,12 @@
           ></WorkInfoCard>
         </v-col>
       </v-row>
-      <v-row dense class="mb-2">
+      <v-row dense v-if="workInfos.length === 0">
+        <v-col>
+          <div align="center">No Data</div>
+        </v-col>
+      </v-row>
+      <v-row dense class="mb-2" v-if="workInfos.length > 0">
         <v-col xs="12" md="12">
           <div class="text-center">
             <v-pagination
@@ -134,6 +139,12 @@ export default {
     },
     async getAnimeInfo(targetPage) {
       this.loading = true;
+      //Annictの仕様なのか、空文字で検索されると全件とって来よるので、弾く
+      if (this.isWorkName && this.workName === "") {
+        this.loading = false;
+        this.workInfos = [];
+        return;
+      }
       const targetUrl = getWorkInfoUrl(
         this.isWorkName,
         this.workName,
