@@ -3,7 +3,7 @@ export const googleFormUrl = "https://forms.gle/PD5UiCAkRi41UTbL7";
 const twitterUtl = "https://twitter.com/intent/tweet?";
 const url = encodeURIComponent(location.href);
 export const getTweetUrl = (title, hashTag, officialSite) => {
-    const tweet = "私の'推しアニ！'は『" + title + "』です！ ";
+    const tweet = "私の'推しアニ！'は『" + title + "』です！ " + url;
     const hashTags = hashTag + ",oshiani,推しアニ";
     return (
         twitterUtl +
