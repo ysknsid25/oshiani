@@ -10,7 +10,6 @@ export const COLLECTION_ACTION = db.collection("ActionHistory");
  */
 export const createActionHistory = async (action, message) => {
     const user = await getAuthUserInfo();
-    //    console.log("@@1");
     const actionHistoryRef = COLLECTION_ACTION.doc();
     const actionInfo = {
         action: action,
@@ -18,19 +17,15 @@ export const createActionHistory = async (action, message) => {
         message: typeof message === "undefined" ? "" : message,
         userId: user.uid,
     };
-    //    console.log("@@2");
     actionHistoryRef
         .set(actionInfo)
-        .then(() => {
-            //            console.log("@@3");
-        })
+        .then(() => {})
         .catch((error) => {
             anl.logEvent("errorInfo", {
                 function: "createActionHistory",
                 msg: error,
             });
         });
-    //    console.log("@@4");
 };
 
 /**

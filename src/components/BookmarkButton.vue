@@ -8,7 +8,7 @@
           v-bind="attrs"
           v-on="on"
           color="yellow"
-          @click="addWatchList(workId)"
+          @click="addWatchList()"
         >
           <v-badge color="green" class="ma-0" content="6">
             <v-icon> fas fa-bookmark </v-icon>
@@ -17,15 +17,17 @@
       </template>
       <span>ウォッチリストに追加する</span>
     </v-tooltip>
-    <v-snackbar v-model="isOpen" color="success" top :timeout="timeout">
+    <v-snackbar v-model="isOpen" :color="alertType" top :timeout="timeout">
       {{ message }}
     </v-snackbar>
   </div>
 </template>
 <script>
+import { updateWorkInfo } from "../firestoreaccess/WorkInfo";
+import { addWatchList } from "../firestoreaccess/WatchList";
 export default {
   name: "BookmarkButton",
-  props: ["workId", "isLogined"],
+  props: ["workInfo", "isLogined"],
   data: () => ({
     timeout: 2000,
     isOpen: false,
@@ -37,9 +39,17 @@ export default {
   }),
 
   methods: {
-    addWatchList(id) {
-      console.log(id);
-      this.message = id + this.message;
+    async addWatchList() {
+      const uid = localStorage.getItem("userInfo");
+      const result = await addWatchList(uid, this.workInfo);
+      if (!result) {
+        this.alertType = "error";
+        this.message = "ウォッチリストに追加できませんでした。";
+      } else {
+        updateWorkInfo(this.workInfo, 1, 0, 0);
+        this.alertType = "success";
+        this.message = "ウォッチリストに追加しました。";
+      }
       this.isOpen = true;
     },
   },

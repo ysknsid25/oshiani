@@ -24,7 +24,7 @@
         ></OfficialTwitterButton>
         <BookmarkButton
           :isLogined="isLogined"
-          :workId="workInfo.id"
+          :workInfo="workInfo"
           class="mr-2"
         ></BookmarkButton>
       </v-card-title>
@@ -249,8 +249,6 @@ export default {
       await this.axios
         .get(targetUrl)
         .then((response) => {
-          //console.log("@@1");
-          //console.log(response.data.casts);
           this.casts = response.data.casts;
           this.isExistCastInfo(response.data.total_count);
         })
@@ -265,8 +263,6 @@ export default {
       await this.axios
         .get(targetUrl)
         .then((response) => {
-          //console.log("@@1");
-          //console.log(response.data.staffs);
           this.staffs = response.data.staffs;
           this.isExistStaffInfo(response.data.total_count);
         })

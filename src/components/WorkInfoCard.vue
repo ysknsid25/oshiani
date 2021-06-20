@@ -32,7 +32,7 @@
       <BookmarkButton
         v-if="isLogined"
         :isLogined="isLogined"
-        :workId="workInfo.id"
+        :workInfo="workInfo"
       ></BookmarkButton>
       <v-spacer></v-spacer>
       <OfficialTwitterButton

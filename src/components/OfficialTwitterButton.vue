@@ -23,7 +23,6 @@ export default {
   methods: {
     getTwitterAccountUrl(url) {
       const retUrl = getTwitterUrl(url);
-      //console.log(retUrl);
       return retUrl;
     },
   },

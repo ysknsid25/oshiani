@@ -137,7 +137,6 @@ export default {
       if (userInfo === null) {
         this.user = "";
         this.logined = false;
-        //console.log(this.logined);
       } else {
         this.user = userInfo;
         this.logined = true;
@@ -161,13 +160,10 @@ export default {
       await this.axios
         .get(targetUrl)
         .then((response) => {
-          //console.log("@@1");
-          //console.log(response.data.works);
           this.workInfos = response.data.works;
           this.isExistPage(response.data.total_count);
         })
         .catch((error) => {
-          console.log("@@2");
           console.log(error);
         });
       this.loading = false;

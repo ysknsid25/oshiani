@@ -60,7 +60,7 @@
     </v-navigation-drawer>
     <v-app-bar color="white" app v-if="!loading">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>{{ title }}</v-toolbar-title>
+      <v-toolbar-title></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         color="secondary"
@@ -148,7 +148,6 @@ export default {
       if (userInfo === null || typeof userInfo === "undefined") {
         this.user = "";
         this.logined = false;
-        //console.log(this.logined);
       } else {
         this.user = userInfo;
         this.logined = true;

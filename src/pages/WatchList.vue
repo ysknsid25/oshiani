@@ -10,7 +10,7 @@
         </div>
       </v-col>
     </v-row>
-    <v-row dense v-if="!loading">
+    <v-row dense v-if="!loading && workInfos.length > 0">
       <v-col
         v-for="workInfo in workInfos"
         :key="workInfo.id"
@@ -38,7 +38,11 @@
           <v-card-subtitle v-text="workInfo.season_name"></v-card-subtitle>
           <v-divider></v-divider>
           <v-card-actions>
-            <TrashButton :workId="workInfo.id"></TrashButton>
+            <TrashButton
+              :workInfo="workInfo"
+              :workInfos="workInfos"
+              @updated-watchlist="refreshWatchList"
+            ></TrashButton>
             <v-spacer></v-spacer>
             <WorkDetailDialog
               :workInfo="workInfo"
@@ -50,13 +54,20 @@
         </v-card>
       </v-col>
     </v-row>
+    <v-row dense v-if="!loading && workInfos.length === 0">
+      <v-col cols="12">
+        <div align="center">
+          <h1 class="text-h1">No Data</h1>
+        </div>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 <script>
 import WorkDetailDialog from "../components/WorkDetailDialog";
 import TrashButton from "../components/TrashButton";
-import { getWorkInfoUrl, getImage, getTitle } from "../api/Annict";
-//import { getUserInfo } from "../firestoreaccess/Users";
+import { getImage, getTitle } from "../api/Annict";
+import { getWatchList } from "../firestoreaccess/WatchList";
 export default {
   name: "WatchList",
   components: {
@@ -69,34 +80,27 @@ export default {
     workInfos: [],
     workInfo: {},
     reviewInfo: {},
+    uid: "",
   }),
   created: async function () {
-    await this.getAnimeInfo();
     this.uid = localStorage.getItem("userInfo");
     this.logined = this.uid !== null && typeof this.uid !== "undefined";
+    await this.getWatchList(this.uid);
   },
   methods: {
     trimTitle(title) {
       return getTitle(title);
     },
-    async getAnimeInfo() {
+    async getWatchList(uid) {
       this.loading = true;
-      const targetUrl = getWorkInfoUrl(false, "", "2021", "spring", 1);
-      await this.axios
-        .get(targetUrl)
-        .then((response) => {
-          //console.log("@@1");
-          //console.log(response.data.works);
-          this.workInfos = response.data.works;
-        })
-        .catch((error) => {
-          console.log("@@2");
-          console.log(error);
-        });
+      this.workInfos = await getWatchList(uid);
       this.loading = false;
     },
     getImageUrl(url) {
       return getImage(url);
+    },
+    refreshWatchList(newWatchList) {
+      this.workInfos = newWatchList;
     },
   },
 };

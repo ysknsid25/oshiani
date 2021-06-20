@@ -293,7 +293,6 @@ export const getRecentlyRank = async (limit) => {
         ];
         const rankSortedArr = originalArr.sort((n, m) => (n < m ? 1 : -1));
         docIdArr.push(roomInfo.docId);
-        //console.log(rankSortedArr.indexOf(userScore));
         return rankSortedArr.indexOf(userScore) + 1;
     });
     const retObj = {

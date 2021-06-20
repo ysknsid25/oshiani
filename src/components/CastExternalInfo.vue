@@ -40,8 +40,6 @@ export default {
     },
     getTwitterAccountUrl(url) {
       const retUrl = getTwitterUrl(url);
-      //console.log(retUrl);
-      //console.log("@@");
       return retUrl;
     },
   },
