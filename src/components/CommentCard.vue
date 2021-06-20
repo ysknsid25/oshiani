@@ -15,13 +15,7 @@
           </v-card-title>
           <v-card-text class="text-h5">
             <v-row dense>
-              <DispRating
-                :reviewInfo="{
-                  avgStar: review.rating,
-                  starColor: 'amber',
-                  starSize: 14,
-                }"
-              ></DispRating>
+              <DispRating :avgStar="review.rating"></DispRating>
             </v-row>
             <v-container>
               <v-row>

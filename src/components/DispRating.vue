@@ -1,17 +1,17 @@
 <template>
   <v-rating
-    :value="reviewInfo.avgStar"
-    :color="reviewInfo.starColor"
+    :value="avgStar"
+    color="amber"
     dense
     half-increments
     readonly
-    :size="reviewInfo.starSize"
+    size="14"
   ></v-rating>
 </template>
 
 <script>
 export default {
   name: "DispRating",
-  props: ["reviewInfo"],
+  props: ["avgStar"],
 };
 </script>

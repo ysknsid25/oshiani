@@ -24,7 +24,7 @@
           :mediaText="workInfo.media_text"
         ></MediaChip>
         <v-spacer></v-spacer>
-        <DispRating :reviewInfo="reviewInfo"></DispRating>
+        <DispRating :avgStar="reviewInfo.ratingavg"></DispRating>
       </v-row>
     </v-card-text>
     <v-divider class="mx-4 mb-2"></v-divider>
@@ -33,6 +33,7 @@
         v-if="isLogined"
         :isLogined="isLogined"
         :workInfo="workInfo"
+        :reviewInfo="reviewInfo"
       ></BookmarkButton>
       <v-spacer></v-spacer>
       <OfficialTwitterButton
@@ -70,15 +71,9 @@ export default {
     BookmarkButton,
     DispRating,
   },
-  props: ["workInfo", "isLogined"],
+  props: ["workInfo", "isLogined", "reviewInfo"],
 
-  data: () => ({
-    reviewInfo: {
-      avgStar: 4.5,
-      starColor: "amber",
-      starSize: 14,
-    },
-  }),
+  data: () => ({}),
 
   methods: {
     trimTitle(title) {

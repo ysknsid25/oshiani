@@ -51,6 +51,7 @@
             :key="logined"
             :workInfo="workInfo"
             :isLogined="logined"
+            :reviewInfo="getFireStoreWorkInfo(workInfo.id)"
           ></WorkInfoCard>
         </v-col>
       </v-row>
@@ -87,6 +88,7 @@
 </template>
 <script>
 import WorkInfoCard from "../components/WorkInfoCard";
+import { getWorkInfos } from "../firestoreaccess/WorkInfo";
 import {
   getNowYear,
   getNowSeason,
@@ -109,6 +111,7 @@ export default {
     timeout: 2000,
     user: "",
     workInfos: [],
+    fireStoreWorkInfos: [],
     totalPage: 0,
     nowPage: 1,
     yearList: [],
@@ -118,12 +121,12 @@ export default {
     isWorkName: false,
     workName: "",
   }),
-  mounted: function () {
+  beforeMount: async function () {
     this.yearList = getSelectYear();
     this.seasons = Object.values(season);
     this.targetYear = getNowYear();
     this.targetSeason = getNowSeason();
-    this.getAnimeInfo(this.nowPage);
+    await this.getAnimeInfo(this.nowPage);
     this.isLogined();
   },
   methods: {
@@ -166,7 +169,22 @@ export default {
         .catch((error) => {
           console.log(error);
         });
+      const workIdArr = this.workInfos.map((workInfo) => workInfo.id);
+      this.fireStoreWorkInfos = await getWorkInfos(workIdArr);
       this.loading = false;
+    },
+    getFireStoreWorkInfo(id) {
+      let reviewInfo = this.fireStoreWorkInfos.find(
+        (ireStoreWorkInfo) => ireStoreWorkInfo.id === id
+      );
+      if (typeof reviewInfo === "undefined") {
+        return {
+          id: id,
+          bookmarkcnt: 0,
+          ratingavg: 0,
+        };
+      }
+      return reviewInfo;
     },
     isExistPage(totalCount) {
       if (totalCount === 0) {

@@ -10,7 +10,11 @@
           color="yellow"
           @click="addWatchList()"
         >
-          <v-badge color="green" class="ma-0" content="6">
+          <v-badge
+            color="green"
+            class="ma-0"
+            :content="reviewInfo.bookmarkcnt.toString()"
+          >
             <v-icon> fas fa-bookmark </v-icon>
           </v-badge>
         </v-btn>
@@ -27,7 +31,7 @@ import { updateWorkInfo } from "../firestoreaccess/WorkInfo";
 import { addWatchList } from "../firestoreaccess/WatchList";
 export default {
   name: "BookmarkButton",
-  props: ["workInfo", "isLogined"],
+  props: ["workInfo", "isLogined", "reviewInfo"],
   data: () => ({
     timeout: 2000,
     isOpen: false,
@@ -37,7 +41,6 @@ export default {
     alertType: "success",
     message: "ウォッチリストに追加しました。",
   }),
-
   methods: {
     async addWatchList() {
       const uid = localStorage.getItem("userInfo");

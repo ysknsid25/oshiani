@@ -9,26 +9,36 @@ export const COLLECTION_WORKINFO = db.collection("WorkInfo");
  */
 export const getWorkInfos = (idArrays) => {
     let retArr = [];
-    COLLECTION_WORKINFO.where("id", "in", idArrays)
-        .get()
-        .then((workInfoSnapShot) => {
-            workInfoSnapShot.forEach((doc) => {
-                const data = doc.data();
-                const tmpObj = {
-                    id: doc.id,
-                    bookmarkcnt: data.bookmarkcnt,
-                    ratingavg: data.ratingavg,
-                };
-                retArr.push(tmpObj);
+    idArrays.map(async (id) => {
+        const emptyObj = {
+            id: id,
+            bookmarkcnt: 0,
+            ratingavg: 0,
+        };
+        const docRef = COLLECTION_WORKINFO.doc(id.toString());
+        await docRef
+            .get()
+            .then((doc) => {
+                if (doc.exists) {
+                    const data = doc.data();
+                    const tmpObj = {
+                        id: id,
+                        bookmarkcnt: data.bookmarkcnt,
+                        ratingavg: data.ratingavg,
+                    };
+                    retArr.push(tmpObj);
+                } else {
+                    retArr.push(emptyObj);
+                }
+            })
+            .catch((error) => {
+                anl.logEvent("errorInfo", {
+                    function: "getWorkInfos",
+                    msg: error,
+                });
+                retArr.push(emptyObj);
             });
-        })
-        .catch((error) => {
-            console.log(error);
-            anl.logEvent("errorInfo", {
-                function: "getWorkInfos",
-                msg: error,
-            });
-        });
+    });
     return retArr;
 };
 

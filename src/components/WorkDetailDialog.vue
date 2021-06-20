@@ -25,6 +25,7 @@
         <BookmarkButton
           :isLogined="isLogined"
           :workInfo="workInfo"
+          :reviewInfo="reviewInfo"
           class="mr-2"
         ></BookmarkButton>
       </v-card-title>
@@ -36,7 +37,7 @@
               :mediaText="workInfo.media_text"
             ></MediaChip>
             <v-spacer></v-spacer>
-            <DispRating :reviewInfo="reviewInfo"></DispRating>
+            <DispRating :avgStar="reviewInfo.ratingavg"></DispRating>
           </v-row>
           <v-row>
             <v-spacer></v-spacer>
