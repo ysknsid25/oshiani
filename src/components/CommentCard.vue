@@ -14,7 +14,20 @@
             <span class="caption">{{ review.commentdate }}</span>
           </v-card-title>
           <v-card-text class="text-h5">
-            {{ review.comment }}
+            <v-row dense>
+              <DispRating
+                :reviewInfo="{
+                  avgStar: review.rating,
+                  starColor: 'amber',
+                  starSize: 14,
+                }"
+              ></DispRating>
+            </v-row>
+            <v-container>
+              <v-row>
+                {{ review.comment }}
+              </v-row>
+            </v-container>
           </v-card-text>
         </v-card>
       </v-col>
@@ -27,8 +40,12 @@
   </v-container>
 </template>
 <script>
+import DispRating from "./DispRating";
 export default {
   name: "CommentCard",
+  components: {
+    DispRating,
+  },
   props: ["reviews"],
 };
 </script>

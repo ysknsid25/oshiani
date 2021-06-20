@@ -151,7 +151,7 @@
                     counter="1000"
                     name="comment"
                     label="コメントする"
-                    :value="comment"
+                    v-model="comment"
                     :rules="rules"
                   ></v-textarea>
                 </v-row>
@@ -201,6 +201,9 @@
         </div>
       </v-expand-transition>
     </v-card>
+    <v-snackbar v-model="isOpen" :color="alertType" top :timeout="timeout">
+      {{ message }}
+    </v-snackbar>
   </v-dialog>
 </template>
 <script>
@@ -213,7 +216,8 @@ import OfficialTwitterButton from "./OfficialTwitterButton";
 import DispRating from "./DispRating";
 import BookmarkButton from "./BookmarkButton";
 import CommentCard from "./CommentCard";
-import { getWorkReviews } from "../firestoreaccess/Review";
+import { getWorkReviews, setReview } from "../firestoreaccess/Review";
+import { updateWorkInfo } from "../firestoreaccess/WorkInfo";
 export default {
   name: "WorkDetailDialog",
   components: {
@@ -233,6 +237,10 @@ export default {
     castLoading: false,
     staffLoading: false,
     show: false,
+    isOpen: false,
+    alertType: "success",
+    message: "",
+    timeout: 2000,
     casts: [],
     staffs: [],
     isExistsCastInfo: false,
@@ -302,8 +310,34 @@ export default {
     },
     async hoge() {
       this.sending = true;
-      const revies = await getWorkReviews(this.workInfo.id.toString());
-      console.log(revies);
+      const uid = localStorage.getItem("userInfo");
+      const yourReview = this.reviews.find((review) => review.docId == uid);
+      const reviewInfo = {
+        comment: this.comment,
+        rating: this.rate,
+      };
+      const isSuccess = await setReview(
+        uid,
+        this.workInfo.id,
+        this.workInfo.title,
+        reviewInfo
+      );
+      if (isSuccess) {
+        let updateRate = this.rate;
+        let updateReviewCnt = 1;
+        //既にレビューされてるとすると、今回の評価によって発生するrateの差分のみを更新する
+        if (typeof yourReview !== "undefined") {
+          updateRate = this.rate - yourReview.rating;
+          updateReviewCnt = 0;
+        }
+        updateWorkInfo(this.workInfo, 0, updateRate, updateReviewCnt);
+        this.alertType = "success";
+        this.message = "レビューを投稿しました。";
+      } else {
+        this.alertType = "error";
+        this.message = "レビューの投稿に失敗しました。";
+      }
+      this.reviews = await getWorkReviews(this.workInfo.id.toString());
       this.sending = false;
     },
   },

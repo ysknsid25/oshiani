@@ -3,6 +3,36 @@ import { db, anl } from "../plugins/firebase";
 export const COLLECTION_WORKINFO = db.collection("WorkInfo");
 
 /**
+ * FireStoreに保存された作品情報を取得します。
+ * @param {Array} idArrays
+ * @returns
+ */
+export const getWorkInfos = (idArrays) => {
+    let retArr = [];
+    COLLECTION_WORKINFO.where("id", "in", idArrays)
+        .get()
+        .then((workInfoSnapShot) => {
+            workInfoSnapShot.forEach((doc) => {
+                const data = doc.data();
+                const tmpObj = {
+                    id: doc.id,
+                    bookmarkcnt: data.bookmarkcnt,
+                    ratingavg: data.ratingavg,
+                };
+                retArr.push(tmpObj);
+            });
+        })
+        .catch((error) => {
+            console.log(error);
+            anl.logEvent("errorInfo", {
+                function: "getWorkInfos",
+                msg: error,
+            });
+        });
+    return retArr;
+};
+
+/**
  * トランザクションを使って作品情報を更新します
  * @param {Object} workInfo
  * @param {number} bookmarkCount

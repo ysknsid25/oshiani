@@ -1,5 +1,7 @@
 import { db, anl } from "../plugins/firebase";
-//import { createActionHistory } from "./ActionHistory";
+import { createActionHistory } from "./ActionHistory";
+import { getUserInfo } from "./Users";
+import { getTimeStamp } from "../constants/cmnfunc";
 
 export const COLLECTION_REVIEWS = db.collection("Reviews");
 
@@ -37,4 +39,41 @@ export const getWorkReviews = async (workId) => {
             });
         });
     return retArr;
+};
+
+/**
+ * レビューを投稿します
+ * @param {string} uid
+ * @param {number} workId
+ * @param {Object} reviewInfo
+ */
+export const setReview = async (uid, workId, title, reviewInfo) => {
+    let success = false;
+    const userInfo = await getUserInfo(uid);
+    const nowDateTime = getTimeStamp();
+    const reviewObj = {
+        comment: reviewInfo.comment,
+        commentdate: nowDateTime,
+        photoUrl: userInfo.photoUrl,
+        rating: reviewInfo.rating,
+        uname: userInfo.displayName,
+    };
+    await COLLECTION_REVIEWS.doc(workId.toString())
+        .collection("Review")
+        .doc(uid)
+        .set(reviewObj)
+        .then(() => {
+            anl.logEvent("setReview", {
+                function: "setReview",
+            });
+            success = true;
+        })
+        .catch((error) => {
+            anl.logEvent("errorInfo", {
+                function: "setReview",
+                msg: error,
+            });
+        });
+    createActionHistory("post review", title);
+    return success;
 };

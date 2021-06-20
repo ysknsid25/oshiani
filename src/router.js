@@ -24,7 +24,7 @@ const greenRoutes = [
     {
         path: "/",
         name: "WorkInfoList",
-        component: () => import("./components/WorkInfoList.vue"),
+        component: () => import("./pages/WorkInfoList.vue"),
         meta: { isPublic: true },
     },
     {
