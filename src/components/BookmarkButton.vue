@@ -41,10 +41,10 @@ export default {
   methods: {
     async addWatchList() {
       const uid = localStorage.getItem("userInfo");
-      const result = await addWatchList(uid, this.workInfo);
-      if (!result) {
+      const resultMessage = await addWatchList(uid, this.workInfo);
+      if (resultMessage !== "") {
         this.alertType = "error";
-        this.message = "ウォッチリストに追加できませんでした。";
+        this.message = resultMessage;
       } else {
         updateWorkInfo(this.workInfo, 1, 0, 0);
         this.alertType = "success";

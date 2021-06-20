@@ -158,6 +158,7 @@
                 <v-row>
                   <v-spacer></v-spacer>
                   <v-btn
+                    v-if="!sending"
                     outlined
                     tile
                     color="secondary"
@@ -166,6 +167,11 @@
                     @click="hoge"
                     >投稿する</v-btn
                   >
+                  <v-progress-circular
+                    v-if="sending"
+                    indeterminate
+                    color="indigo"
+                  ></v-progress-circular>
                 </v-row>
               </div>
               <div align="center" v-if="!isLogined">
@@ -191,7 +197,7 @@
       </v-card-actions>
       <v-expand-transition>
         <div v-show="show">
-          <CommentCard></CommentCard>
+          <CommentCard :reviews="reviews"></CommentCard>
         </div>
       </v-expand-transition>
     </v-card>
@@ -207,6 +213,7 @@ import OfficialTwitterButton from "./OfficialTwitterButton";
 import DispRating from "./DispRating";
 import BookmarkButton from "./BookmarkButton";
 import CommentCard from "./CommentCard";
+import { getWorkReviews } from "../firestoreaccess/Review";
 export default {
   name: "WorkDetailDialog",
   components: {
@@ -233,8 +240,24 @@ export default {
     rules: [(v) => v.length <= 1000 || "Max 1000 characters"],
     comment: "",
     rate: 3,
+    sending: false,
+    reviews: [],
+    yourReview: {},
   }),
-
+  mounted: async function () {
+    this.reviews = await getWorkReviews(this.workInfo.id.toString());
+    const uid = localStorage.getItem("userInfo");
+    if (this.reviews.length > 0) {
+      const yourReview = this.reviews.find((review) => review.docId == uid);
+      if (typeof yourReview === "undefined") {
+        this.comment = "";
+        this.rate = 3;
+      } else {
+        this.comment = yourReview.comment;
+        this.rate = yourReview.rating;
+      }
+    }
+  },
   methods: {
     getImageUrl(url) {
       return getImage(url);
@@ -277,8 +300,11 @@ export default {
     isExistStaffInfo(count) {
       this.isExistsStaffInfo = count !== 0;
     },
-    hoge() {
-      alert(this.rate);
+    async hoge() {
+      this.sending = true;
+      const revies = await getWorkReviews(this.workInfo.id.toString());
+      console.log(revies);
+      this.sending = false;
     },
   },
 };

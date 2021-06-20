@@ -47,7 +47,7 @@
             <WorkDetailDialog
               :workInfo="workInfo"
               :reviewInfo="reviewInfo"
-              :isLogined="false"
+              :isLogined="logined"
             >
             </WorkDetailDialog>
           </v-card-actions>

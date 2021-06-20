@@ -40,14 +40,15 @@ export const getWatchList = async (uid) => {
  * @returns ウォッチリストの追加に成功したか
  */
 export const addWatchList = async (uid, workInfo) => {
-    let canAddWatchList = false;
+    let retMessage = "";
     let watchList = await getWatchList(uid);
     const isExistInWatchList =
         watchList.findIndex(
             (watchWorkInfo) => watchWorkInfo.id == workInfo.id
         ) > -1;
     if (isExistInWatchList) {
-        return canAddWatchList;
+        retMessage = "ウォッチリストに既に追加されています。";
+        return retMessage;
     }
     const addWorkInfo = {
         id: workInfo.id,
@@ -68,7 +69,6 @@ export const addWatchList = async (uid, workInfo) => {
             watchlist: watchList,
         })
         .then(() => {
-            canAddWatchList = true;
             anl.logEvent("add WatchList", {
                 function: "addWatchList",
             });
@@ -78,9 +78,10 @@ export const addWatchList = async (uid, workInfo) => {
                 function: "addWatchList",
                 msg: error,
             });
+            retMessage = "ウォッチリストに追加できませんでした。";
         });
     createActionHistory("add WatchList", workInfo.title);
-    return canAddWatchList;
+    return retMessage;
 };
 
 /**
