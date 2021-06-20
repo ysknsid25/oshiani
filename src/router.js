@@ -28,6 +28,12 @@ const greenRoutes = [
         meta: { isPublic: true },
     },
     {
+        path: "/Logout",
+        name: "Logout",
+        component: () => import("./pages/WorkInfoList.vue"),
+        meta: { isPublic: true },
+    },
+    {
         path: "/Profile",
         name: "Profile",
         component: () => import("./pages/Profile.vue"),

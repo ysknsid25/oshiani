@@ -33,3 +33,23 @@ export const getKbnInfo = (kbnValArr, compareVal, isWantVal = false) => {
     );
     return foundKbnObj[retKey];
 };
+
+/**
+ * レビュー情報を返す
+ * @param {Array} fireStoreWorkInfos
+ * @param {number} workId
+ * @returns
+ */
+export const reviewInfo = (fireStoreWorkInfos, workId) => {
+    let reviewInfo = fireStoreWorkInfos.find(
+        (ireStoreWorkInfo) => ireStoreWorkInfo.id === workId
+    );
+    if (typeof reviewInfo === "undefined") {
+        return {
+            id: workId,
+            bookmarkcnt: 0,
+            ratingavg: 0,
+        };
+    }
+    return reviewInfo;
+};

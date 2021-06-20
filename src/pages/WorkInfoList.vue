@@ -89,6 +89,7 @@
 <script>
 import WorkInfoCard from "../components/WorkInfoCard";
 import { getWorkInfos } from "../firestoreaccess/WorkInfo";
+import { reviewInfo } from "../constants/cmnfunc";
 import {
   getNowYear,
   getNowSeason,
@@ -121,7 +122,7 @@ export default {
     isWorkName: false,
     workName: "",
   }),
-  beforeMount: async function () {
+  mounted: async function () {
     this.yearList = getSelectYear();
     this.seasons = Object.values(season);
     this.targetYear = getNowYear();
@@ -174,17 +175,7 @@ export default {
       this.loading = false;
     },
     getFireStoreWorkInfo(id) {
-      let reviewInfo = this.fireStoreWorkInfos.find(
-        (ireStoreWorkInfo) => ireStoreWorkInfo.id === id
-      );
-      if (typeof reviewInfo === "undefined") {
-        return {
-          id: id,
-          bookmarkcnt: 0,
-          ratingavg: 0,
-        };
-      }
-      return reviewInfo;
+      return reviewInfo(this.fireStoreWorkInfos, id);
     },
     isExistPage(totalCount) {
       if (totalCount === 0) {

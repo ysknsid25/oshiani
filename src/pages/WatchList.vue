@@ -46,7 +46,7 @@
             <v-spacer></v-spacer>
             <WorkDetailDialog
               :workInfo="workInfo"
-              :reviewInfo="reviewInfo"
+              :reviewInfo="getFireStoreWorkInfo(workInfo.id)"
               :isLogined="logined"
             >
             </WorkDetailDialog>
@@ -68,6 +68,8 @@ import WorkDetailDialog from "../components/WorkDetailDialog";
 import TrashButton from "../components/TrashButton";
 import { getImage, getTitle } from "../api/Annict";
 import { getWatchList } from "../firestoreaccess/WatchList";
+import { getWorkInfos } from "../firestoreaccess/WorkInfo";
+import { reviewInfo } from "../constants/cmnfunc";
 export default {
   name: "WatchList",
   components: {
@@ -81,6 +83,7 @@ export default {
     workInfo: {},
     reviewInfo: {},
     uid: "",
+    fireStoreWorkInfos: [],
   }),
   created: async function () {
     this.uid = localStorage.getItem("userInfo");
@@ -94,6 +97,8 @@ export default {
     async getWatchList(uid) {
       this.loading = true;
       this.workInfos = await getWatchList(uid);
+      const workIdArr = this.workInfos.map((workInfo) => workInfo.id);
+      this.fireStoreWorkInfos = await getWorkInfos(workIdArr);
       this.loading = false;
     },
     getImageUrl(url) {
@@ -101,6 +106,9 @@ export default {
     },
     refreshWatchList(newWatchList) {
       this.workInfos = newWatchList;
+    },
+    getFireStoreWorkInfo(id) {
+      return reviewInfo(this.fireStoreWorkInfos, id);
     },
   },
 };

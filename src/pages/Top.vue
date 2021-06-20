@@ -163,6 +163,7 @@ export default {
       this.isLogined();
       await logout();
       this.sending = false;
+      this.$router.push("/Logout");
     },
   },
 };
