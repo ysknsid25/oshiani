@@ -106,10 +106,6 @@ export default {
   data: () => ({
     loading: false,
     logined: false,
-    isOpenSnackbar: false,
-    snackbarColor: "success",
-    snackbarMessage: "",
-    timeout: 2000,
     user: "",
     workInfos: [],
     fireStoreWorkInfos: [],

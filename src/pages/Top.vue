@@ -24,9 +24,20 @@
         <v-list-item
           v-for="nav_list in nav_lists"
           :key="nav_list.name"
-          @click="title = nav_list.name"
           link
           :to="nav_list.url"
+        >
+          <v-list-item-icon>
+            <v-icon :color="nav_list.iconColor">{{ nav_list.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          v-for="nav_list in constLists"
+          :key="nav_list.name"
+          :href="nav_list.url"
         >
           <v-list-item-icon>
             <v-icon :color="nav_list.iconColor">{{ nav_list.icon }}</v-icon>
@@ -102,11 +113,10 @@
 <script>
 import { login, logout, anl } from "../plugins/firebase";
 import { authorizeUser } from "../firestoreaccess/Users";
-import { menulist } from "../constants/menulist";
+import { menulist, constMenuLists } from "../constants/menulist";
 export default {
   name: "Top",
   data: () => ({
-    title: menulist[0].name,
     loading: false,
     sending: false,
     logined: false,
@@ -117,6 +127,7 @@ export default {
     user: "",
     drawer: true,
     nav_lists: menulist,
+    constLists: constMenuLists,
   }),
   mounted: function () {
     this.isLogined();
@@ -153,7 +164,7 @@ export default {
         this.logined = true;
       }
       this.nav_lists = menulist.filter(
-        (item) => item.needLogin || this.logined
+        (item) => !item.needLogin || this.logined
       );
     },
     async logout() {

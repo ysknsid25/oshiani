@@ -1,5 +1,5 @@
-export const noteUrl = "https://note.com/mahjanager";
-export const googleFormUrl = "https://forms.gle/516aKVUFosamNFFb6";
+export const noteUrl = "https://note.com/oshiani/";
+export const googleFormUrl = "https://forms.gle/PD5UiCAkRi41UTbL7";
 const twitterUtl = "https://twitter.com/intent/tweet?";
 const url = encodeURIComponent(location.href);
 export const getTweetUrl = (title, hashTag, officialSite) => {

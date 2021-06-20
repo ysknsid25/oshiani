@@ -7,7 +7,7 @@ const twitterBaseUrl = "https://twitter.com/";
 const YEAR_DURING = 5;
 export const getCount = 12;
 
-const date = new Date();
+export const date = new Date();
 
 export const getSelectYear = () => {
     let baseYear = date.getFullYear();
@@ -38,8 +38,7 @@ export const mediaType = {
     movie: "red",
 };
 
-export const getNowSeason = () => {
-    const nowMonth = date.getMonth();
+export const getNowSeason = (nowMonth = date.getMonth()) => {
     if (-1 < nowMonth && nowMonth < 4) {
         return season.winter;
     }

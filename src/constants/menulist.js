@@ -7,6 +7,20 @@ export const menulist = [
         icon: "fas fa-home",
         iconColor: "#191970",
         url: "/",
+        needLogin: false,
+    },
+    {
+        name: "みんなの推しアニメ",
+        icon: "fas fa-trophy",
+        iconColor: "#191970",
+        url: "OshiAni",
+        needLogin: false,
+    },
+    {
+        name: "ウォッチリスト",
+        icon: "far fa-eye",
+        iconColor: "#191970",
+        url: "WatchList",
         needLogin: true,
     },
     {
@@ -14,34 +28,27 @@ export const menulist = [
         icon: "fas fa-tasks",
         iconColor: "#191970",
         url: "Profile",
-        needLogin: false,
+        needLogin: true,
     },
-    {
-        name: "ウォッチリスト",
-        icon: "fas fa-bookmark",
-        iconColor: "#191970",
-        url: "WatchList",
-        needLogin: false,
-    },
+];
+
+export const constMenuLists = [
     {
         name: "フィードバックする",
         icon: "far fa-clipboard",
         iconColor: "#191970",
         url: googleFormUrl,
-        needLogin: true,
     },
     {
         name: "推しアニ！を教える",
         icon: "fab fa-twitter",
         iconColor: "#1DA1F2",
         url: tweetUrl,
-        needLogin: true,
     },
     {
         name: "リリースノート",
         icon: "fas fa-sticky-note",
         iconColor: "#191970",
         url: noteUrl,
-        needLogin: true,
     },
 ];

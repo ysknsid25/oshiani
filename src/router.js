@@ -28,6 +28,12 @@ const greenRoutes = [
         meta: { isPublic: true },
     },
     {
+        path: "/OshiAni",
+        name: "OshiAni",
+        component: () => import("./pages/OshiAni.vue"),
+        meta: { isPublic: true },
+    },
+    {
         path: "/Logout",
         name: "Logout",
         component: () => import("./pages/WorkInfoList.vue"),

@@ -1,4 +1,5 @@
 import { db, anl } from "../plugins/firebase";
+import { date, getNowSeason, getNowYear } from "../api/Annict";
 
 export const COLLECTION_WORKINFO = db.collection("WorkInfo");
 
@@ -39,6 +40,54 @@ export const getWorkInfos = (idArrays) => {
                 retArr.push(emptyObj);
             });
     });
+    return retArr;
+};
+
+/**
+ * 指定された条件で人気のある作品を取得します。
+ * @param {boolean} isNextSeason
+ * @param {boolean} isBookMark
+ */
+export const getPopularWorks = async (isNextSeason, isBookMark) => {
+    let retArr = [];
+
+    let targetSeason = getNowSeason();
+    let targetYear = getNowYear();
+    if (isNextSeason) {
+        let tmpMonth = date.getMonth() + 3;
+        if (tmpMonth > 12) {
+            tmpMonth = tmpMonth - 12;
+            targetYear += 1;
+        }
+        targetSeason = getNowSeason(tmpMonth);
+    }
+
+    let sortField = "ratingavg";
+    let sortField2 = "bookmarkcnt";
+    if (isBookMark) {
+        sortField = "bookmarkcnt";
+        sortField2 = "ratingavg";
+    }
+    await COLLECTION_WORKINFO.where("year", "==", targetYear.toString())
+        .where("season", "==", targetSeason.toString())
+        .orderBy(sortField, "desc")
+        .orderBy(sortField2, "desc")
+        .orderBy("id", "asc")
+        .limit(5)
+        .get()
+        .then((workInfoSnapShot) => {
+            workInfoSnapShot.forEach((doc) => {
+                const data = doc.data();
+                retArr.push(data);
+            });
+        })
+        .catch((error) => {
+            console.log(error);
+            anl.logEvent("errorInfo", {
+                function: "getPopularWorks",
+                msg: error,
+            });
+        });
     return retArr;
 };
 
