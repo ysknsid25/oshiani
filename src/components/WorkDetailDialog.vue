@@ -246,7 +246,7 @@ export default {
     staffs: [],
     isExistsCastInfo: false,
     isExistsStaffInfo: false,
-    rules: [(v) => v.length <= 1000 || "Max 1000 characters"],
+    rules: [(v) => v.length <= 500 || "Max 500 characters"],
     comment: "",
     rate: 3,
     sending: false,
