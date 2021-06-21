@@ -18,9 +18,7 @@
               <DispRating :avgStar="review.rating"></DispRating>
             </v-row>
             <v-container>
-              <v-row>
-                {{ review.comment }}
-              </v-row>
+              <v-row v-html="review.comment"> </v-row>
             </v-container>
           </v-card-text>
         </v-card>
