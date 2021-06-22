@@ -88,16 +88,66 @@
       >
         Sign out
       </v-btn>
-      <v-btn
-        color="secondary"
+      <v-dialog
         v-if="!logined && !sending"
-        dark
-        outlined
-        tile
-        @click="login"
+        v-model="isOpenLoginDialog"
+        max-width="300"
       >
-        Sign in
-      </v-btn>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            color="secondary"
+            v-if="!logined && !sending"
+            dark
+            outlined
+            tile
+            v-bind="attrs"
+            v-on="on"
+            @click="isOpenLoginDialog = true"
+          >
+            Sign in
+          </v-btn>
+        </template>
+        <v-card class="mx-auto">
+          <v-card-text>
+            <v-container>
+              <v-row justify="center" class="mt-2">
+                <v-btn
+                  color="#1DA1F2"
+                  v-if="!logined && !sending"
+                  outlined
+                  tile
+                  width="250"
+                  @click="login(1)"
+                >
+                  <v-icon color="#1DA1F2" class="mr-2">fab fa-twitter</v-icon>
+                  Sign in with twitter
+                </v-btn>
+              </v-row>
+              <v-row justify="center" class="mt-2">
+                <v-btn
+                  color="#C62828"
+                  v-if="!logined && !sending"
+                  dark
+                  outlined
+                  tile
+                  width="250"
+                  @click="login(2)"
+                >
+                  <v-icon color="#C62828" class="mr-2">fab fa-google</v-icon>
+                  Sign in with google
+                </v-btn>
+              </v-row>
+            </v-container>
+          </v-card-text>
+          <v-divider></v-divider>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="secondary" text @click="isOpenLoginDialog = false">
+              close
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
       <v-progress-circular
         v-if="sending"
         indeterminate
@@ -118,7 +168,13 @@
   </v-app>
 </template>
 <script>
-import { login, logout, anl, RAMEN } from "../plugins/firebase";
+import {
+  login,
+  loginWithGoogle,
+  logout,
+  anl,
+  RAMEN,
+} from "../plugins/firebase";
 import { authorizeUser } from "../firestoreaccess/Users";
 import { menulist, constMenuLists } from "../constants/menulist";
 export default {
@@ -127,6 +183,7 @@ export default {
     loading: false,
     sending: false,
     logined: false,
+    isOpenLoginDialog: false,
     isOpenSnackbar: false,
     snackbarColor: "success",
     snackbarMessage: "",
@@ -141,10 +198,15 @@ export default {
     this.isLogined();
   },
   methods: {
-    async login() {
+    async login(loginType) {
+      this.isOpenLoginDialog = false;
       this.sending = true;
       anl.logEvent("logout detected");
-      this.user = await login();
+      if (loginType === 1) {
+        this.user = await login();
+      } else if (loginType === 2) {
+        this.user = await loginWithGoogle();
+      }
       const userInfo = this.user.uid;
       localStorage.setItem("userInfo", userInfo);
       if (this.user.isLoginSuccess) {
