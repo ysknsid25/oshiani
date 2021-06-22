@@ -46,6 +46,11 @@
             <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item link to="PostArticle" v-if="user === admin">
+          <v-list-item-content>
+            <v-list-item-title>ブログ投稿</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
       <template v-slot:append>
         <div class="pa-2 caption text-center">
@@ -77,19 +82,21 @@
         color="secondary"
         v-if="logined && !sending"
         dark
-        icon
+        outlined
+        tile
         @click="logout"
       >
-        <v-icon>fas fa-door-open</v-icon>
+        Sign out
       </v-btn>
       <v-btn
         color="secondary"
         v-if="!logined && !sending"
         dark
-        icon
+        outlined
+        tile
         @click="login"
       >
-        <v-icon>fas fa-door-closed</v-icon>
+        Sign in
       </v-btn>
       <v-progress-circular
         v-if="sending"
@@ -111,7 +118,7 @@
   </v-app>
 </template>
 <script>
-import { login, logout, anl } from "../plugins/firebase";
+import { login, logout, anl, RAMEN } from "../plugins/firebase";
 import { authorizeUser } from "../firestoreaccess/Users";
 import { menulist, constMenuLists } from "../constants/menulist";
 export default {
@@ -125,6 +132,7 @@ export default {
     snackbarMessage: "",
     timeout: 2000,
     user: "",
+    admin: RAMEN,
     drawer: true,
     nav_lists: menulist,
     constLists: constMenuLists,
