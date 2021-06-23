@@ -162,7 +162,7 @@
         {{ snackbarMessage }}
       </v-snackbar>
     </v-app-bar>
-    <v-content>
+    <v-content class="pt-0">
       <router-view :key="logined"></router-view>
     </v-content>
   </v-app>
