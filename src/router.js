@@ -52,6 +52,12 @@ const greenRoutes = [
         meta: { isPublic: true },
     },
     {
+        path: "/PostArticle",
+        name: "PostArticle",
+        component: () => import("./pages/PostArticle.vue"),
+        meta: { isPublic: true },
+    },
+    {
         path: "*",
         name: "NotFound",
         component: () => import("./pages/NotFound.vue"),

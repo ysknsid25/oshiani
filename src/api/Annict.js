@@ -24,6 +24,15 @@ export const getSelectYear = () => {
     return retArr;
 };
 
+export const blogCategory = [
+    { key: 0, value: "次にアニメ化しそうな作品", color: "#F8BBD0" },
+    { key: 1, value: "アニメの神回", color: "#FFCDD2" },
+    { key: 2, value: "名作", color: "#D1C4E9" },
+    { key: 3, value: "名言", color: "#C5CAE9" },
+    { key: 4, value: "声優キャラ", color: "#B2DFDB" },
+    { key: 5, value: "管理人の推しアニ", color: "#FFF9C4" },
+];
+
 export const season = {
     spring: "spring",
     summer: "summer",

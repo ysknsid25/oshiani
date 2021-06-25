@@ -47,6 +47,9 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item link to="PostArticle" v-if="user === admin">
+          <v-list-item-icon>
+            <v-icon>fas fa-pen-nib</v-icon>
+          </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title>ブログ投稿</v-list-item-title>
           </v-list-item-content>
