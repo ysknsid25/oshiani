@@ -28,6 +28,13 @@
           </v-row>
           <v-row>
             <v-text-field
+              v-model="postdate"
+              label="Post Date"
+              required
+            ></v-text-field>
+          </v-row>
+          <v-row>
+            <v-text-field
               v-model="headImgUrl"
               label="image URL"
               @change="getImageUrl"
