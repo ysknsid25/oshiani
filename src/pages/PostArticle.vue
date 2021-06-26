@@ -184,6 +184,7 @@ export default {
         title: this.title,
         imageUrl: this.headImgUrl,
         categoryObj: this.categryObj,
+        category: this.category,
         article1: this.article1,
         article2: this.article2,
         article3: this.article3,

@@ -25,3 +25,19 @@ export const getOshiAniRecomendTweetUrl = () => {
         campainUrl;
     return twitterUtl + "text=" + tweet + "&hashtags=" + hashTags;
 };
+
+export const getBlogCommentTweetUrl = () => {
+    const hashTags = "oshiani,推しアニ";
+    const via = "samurai_se";
+    const tweet = campainUrl;
+    return (
+        twitterUtl +
+        "text=" +
+        tweet +
+        "&hashtags=" +
+        hashTags +
+        "&via=" +
+        via +
+        ""
+    );
+};

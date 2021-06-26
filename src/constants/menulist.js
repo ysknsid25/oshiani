@@ -4,9 +4,16 @@ const tweetUrl = getOshiAniRecomendTweetUrl();
 export const menulist = [
     {
         name: "アニメ検索",
-        icon: "fas fa-home",
+        icon: "mdi-magnify",
         iconColor: "#191970",
         url: "/",
+        needLogin: false,
+    },
+    {
+        name: "Blog",
+        icon: "far fa-newspaper",
+        iconColor: "#191970",
+        url: "Blog",
         needLogin: false,
     },
     {

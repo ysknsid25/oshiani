@@ -28,6 +28,19 @@ const greenRoutes = [
         meta: { isPublic: true },
     },
     {
+        path: "/Blog",
+        name: "Blog",
+        component: () => import("./pages/Blog.vue"),
+        meta: { isPublic: true },
+    },
+    {
+        path: "/Article",
+        name: "Article",
+        component: () => import("./pages/Article.vue"),
+        props: true,
+        meta: { isPublic: true },
+    },
+    {
         path: "/OshiAni",
         name: "OshiAni",
         component: () => import("./pages/OshiAni.vue"),
