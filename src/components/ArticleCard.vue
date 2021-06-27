@@ -2,7 +2,7 @@
   <div>
     <div v-if="isDataFound && !loading">
       <v-card class="mx-auto">
-        <v-img :src="headImgUrl" max-height="300px"> </v-img>
+        <v-img :src="headImgUrl" max-height="400px"> </v-img>
         <v-card-title>
           <span class="text-h3 black--text font-weight-light mr-2">{{
             title
