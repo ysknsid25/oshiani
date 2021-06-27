@@ -63,7 +63,7 @@ export const getCategoryArticles = async (limit, category) => {
  */
 export const getArticle = async (articleId) => {
     let article = {
-        articleId: "hoge",
+        articleId: "",
         title: "",
         imageUrl: "",
         categoryObj: {

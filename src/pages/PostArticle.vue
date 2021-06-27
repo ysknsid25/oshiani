@@ -121,13 +121,34 @@
       </v-col>
       <v-col cols="8">
         <v-container>
-          <ArticleCard
-            :imageUrl="getImageUrl()"
-            :title="title"
-            :postdate="postdate"
-            :categryObj="categryObj"
-            :text="text"
-          ></ArticleCard>
+          <v-card class="mx-auto">
+            <v-img :src="getImageUrl()" max-height="300px"> </v-img>
+            <v-card-title>
+              <span class="text-h3 black--text font-weight-light mr-2">{{
+                title
+              }}</span>
+            </v-card-title>
+            <v-card-subtitle>
+              <v-row justify="end">
+                <span class="caption">{{ postdate }}</span>
+              </v-row>
+              <v-row justify="end">
+                <ArticleCategoryChip
+                  :categoryObj="categryObj"
+                ></ArticleCategoryChip>
+              </v-row>
+            </v-card-subtitle>
+            <v-divider></v-divider>
+            <v-card-text v-html="text" class="black--text"></v-card-text>
+            <v-divider></v-divider>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="#1DA1F2" outlined tile target="_blank">
+                <v-icon color="#1DA1F2" class="mr-2">fab fa-twitter</v-icon>
+                コメントする
+              </v-btn>
+            </v-card-actions>
+          </v-card>
         </v-container>
       </v-col>
     </v-row>
@@ -136,13 +157,10 @@
 <script>
 import { blogCategory, getImage } from "../api/Annict";
 import { getTimeStamp } from "../constants/cmnfunc";
-import ArticleCard from "../components/ArticleCard";
 import { postArticle, getArticle } from "../firestoreaccess/Article";
+import ArticleCategoryChip from "../components/ArticleCategoryChip";
 export default {
   name: "PostArticle",
-  components: {
-    ArticleCard,
-  },
   data: () => ({
     articleId: "",
     title: "",
@@ -163,6 +181,9 @@ export default {
     },
     postdate: "",
   }),
+  components: {
+    ArticleCategoryChip,
+  },
   mounted: function () {
     this.postdate = getTimeStamp();
   },

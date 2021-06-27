@@ -35,7 +35,7 @@
         xs="12"
         sm="6"
       >
-        <v-card hover tile @click="doDispArticle(articleInfo)">
+        <v-card hover tile @click="doDispArticle(articleInfo.articleId)">
           <v-img
             :src="getImageUrl(articleInfo.imageUrl)"
             :max-height="$vuetify.breakpoint.xs ? '600px' : '300px'"
@@ -107,26 +107,12 @@ export default {
       this.articles = await getCategoryArticles(30, this.category);
       this.loading = false;
     },
-    doDispArticle(articleInfo) {
-      this.imageUrl = articleInfo.imageUrl;
-      this.title = articleInfo.title;
-      this.postDate = articleInfo.postDate;
-      this.categryObj = articleInfo.categoryObj;
-      this.text =
-        articleInfo.article1 +
-        articleInfo.article2 +
-        articleInfo.article3 +
-        articleInfo.article4 +
-        articleInfo.article5 +
-        articleInfo.article6;
+    doDispArticle(articleId) {
       this.$router.push({
         name: "Article",
+        path: "/Article",
         params: {
-          imageUrl: this.imageUrl,
-          title: this.title,
-          postDate: this.postDate,
-          categryObj: this.categoryObj,
-          text: this.text,
+          articleId: articleId,
         },
       });
     },

@@ -46,7 +46,7 @@
             <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link to="PostArticle" v-if="user === admin">
+        <v-list-item link to="/PostArticle" v-if="user === admin">
           <v-list-item-icon>
             <v-icon>fas fa-pen-nib</v-icon>
           </v-list-item-icon>

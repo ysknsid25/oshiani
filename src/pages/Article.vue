@@ -2,13 +2,7 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="9">
-        <ArticleCard
-          :imageUrl="imageUrl"
-          :title="title"
-          :postdate="postDate"
-          :categryObj="categryObj"
-          :text="text"
-        ></ArticleCard>
+        <ArticleCard :articleId="articleId"></ArticleCard>
       </v-col>
     </v-row>
   </v-container>
@@ -20,9 +14,9 @@ export default {
   components: {
     ArticleCard,
   },
-  props: ["imageUrl", "title", "postDate", "categryObj", "text"],
+  props: ["articleId"],
   mounted: function () {
-    if (this.title === "" || typeof this.title === "undefined") {
+    if (this.articleId === "" || typeof this.articleId === "undefined") {
       this.$router.push("/Blog");
     }
   },

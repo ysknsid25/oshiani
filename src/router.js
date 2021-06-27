@@ -34,7 +34,7 @@ const greenRoutes = [
         meta: { isPublic: true },
     },
     {
-        path: "/Article",
+        path: "/Article/:articleId",
         name: "Article",
         component: () => import("./pages/Article.vue"),
         props: true,
