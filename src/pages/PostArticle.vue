@@ -53,6 +53,21 @@
             </v-select>
           </v-row>
           <v-row>
+            <v-text-field v-model="rateStory" label="ストーリー"></v-text-field>
+          </v-row>
+          <v-row>
+            <v-text-field
+              v-model="rateActor"
+              label="声優さんの演技"
+            ></v-text-field>
+          </v-row>
+          <v-row>
+            <v-text-field v-model="ratePicture" label="作画"></v-text-field>
+          </v-row>
+          <v-row>
+            <v-text-field v-model="rateMusic" label="音楽"></v-text-field>
+          </v-row>
+          <v-row>
             <v-textarea
               outlined
               v-model="article1"
@@ -137,6 +152,32 @@
                   :categoryObj="categryObj"
                 ></ArticleCategoryChip>
               </v-row>
+              <div v-if="category === 2">
+                <v-row dense class="mt-2">
+                  <v-col class="my-0">ストーリー</v-col>
+                  <v-col class="my-0">
+                    <DispRating :avgStar="rateStory"></DispRating>
+                  </v-col>
+                </v-row>
+                <v-row dense class="my-0">
+                  <v-col class="my-0">声優さんの演技</v-col>
+                  <v-col class="my-0">
+                    <DispRating :avgStar="rateActor"></DispRating>
+                  </v-col>
+                </v-row>
+                <v-row dense class="my-0">
+                  <v-col class="my-0">作画 </v-col>
+                  <v-col class="my-0">
+                    <DispRating :avgStar="ratePicture"></DispRating>
+                  </v-col>
+                </v-row>
+                <v-row dense class="my-0">
+                  <v-col class="my-0">音楽</v-col>
+                  <v-col class="my-0">
+                    <DispRating :avgStar="rateMusic"></DispRating>
+                  </v-col>
+                </v-row>
+              </div>
             </v-card-subtitle>
             <v-divider></v-divider>
             <v-card-text v-html="text" class="black--text"></v-card-text>
@@ -159,6 +200,7 @@ import { blogCategory, getImage } from "../api/Annict";
 import { getTimeStamp } from "../constants/cmnfunc";
 import { postArticle, getArticle } from "../firestoreaccess/Article";
 import ArticleCategoryChip from "../components/ArticleCategoryChip";
+import DispRating from "../components/DispRating";
 export default {
   name: "PostArticle",
   data: () => ({
@@ -174,6 +216,10 @@ export default {
     article4: "",
     article5: "",
     article6: "",
+    rateStory: 0,
+    rateActor: 0,
+    ratePicture: 0,
+    rateMusic: 0,
     categryObj: {
       key: 0,
       value: "次にアニメ化しそうな作品",
@@ -183,6 +229,7 @@ export default {
   }),
   components: {
     ArticleCategoryChip,
+    DispRating,
   },
   mounted: function () {
     this.postdate = getTimeStamp();
@@ -220,6 +267,10 @@ export default {
         article5: this.article5,
         article6: this.article6,
         postDate: this.postdate,
+        rateStory: this.rateStory,
+        rateActor: this.rateActor,
+        ratePicture: this.ratePicture,
+        rateMusic: this.rateMusic,
       };
       const result = await postArticle(articleInfo);
       alert(result);
@@ -239,6 +290,10 @@ export default {
       this.article5 = articleInfo.article5;
       this.article6 = articleInfo.article6;
       this.postdate = articleInfo.postDate;
+      this.rateStory = articleInfo.rateStory;
+      this.rateActor = articleInfo.rateActor;
+      this.ratePicture = articleInfo.ratePicture;
+      this.rateMusic = articleInfo.rateMusic;
     },
   },
 };

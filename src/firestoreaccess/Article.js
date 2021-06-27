@@ -79,6 +79,10 @@ export const getArticle = async (articleId) => {
         article5: "",
         article6: "",
         postDate: getTimeStamp(),
+        rateStory: 0,
+        rateActor: 0,
+        ratePicture: 0,
+        rateMusic: 0,
     };
     await COLLECTION_ARTICLES.doc(articleId)
         .get()
