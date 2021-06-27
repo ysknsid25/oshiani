@@ -26,10 +26,10 @@ export const getOshiAniRecomendTweetUrl = () => {
     return twitterUtl + "text=" + tweet + "&hashtags=" + hashTags;
 };
 
-export const getBlogCommentTweetUrl = () => {
+export const getBlogCommentTweetUrl = (articleId) => {
     const hashTags = "oshiani,推しアニ";
     const via = "samurai_se";
-    const tweet = campainUrl;
+    const tweet = "https://oshiani.net/Article/" + articleId;
     return (
         twitterUtl +
         "text=" +
