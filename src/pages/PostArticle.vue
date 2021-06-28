@@ -72,7 +72,7 @@
               outlined
               v-model="article1"
               label="article1"
-              counter="700"
+              counter="1000"
               @keydown="concatText"
               @blur="concatText"
             ></v-textarea>
@@ -82,7 +82,7 @@
               outlined
               v-model="article2"
               label="article2"
-              counter="700"
+              counter="1000"
               @keydown="concatText"
               @blur="concatText"
             ></v-textarea>
@@ -92,7 +92,7 @@
               outlined
               v-model="article3"
               label="article3"
-              counter="700"
+              counter="1000"
               @keydown="concatText"
               @blur="concatText"
             ></v-textarea>
@@ -102,7 +102,7 @@
               outlined
               v-model="article4"
               label="article4"
-              counter="700"
+              counter="1000"
               @keydown="concatText"
               @blur="concatText"
             ></v-textarea>
@@ -112,7 +112,7 @@
               outlined
               v-model="article5"
               label="article5"
-              counter="700"
+              counter="1000"
               @keydown="concatText"
               @blur="concatText"
             ></v-textarea>
@@ -122,7 +122,7 @@
               outlined
               v-model="article6"
               label="article6"
-              counter="700"
+              counter="1000"
               @keydown="concatText"
               @blur="concatText"
             ></v-textarea>
