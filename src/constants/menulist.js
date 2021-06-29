@@ -37,6 +37,13 @@ export const menulist = [
         url: "/Profile",
         needLogin: true,
     },
+    {
+        name: "免責事項",
+        icon: "fas fa-info-circle",
+        iconColor: "#191970",
+        url: "/Information",
+        needLogin: false,
+    },
 ];
 
 export const constMenuLists = [

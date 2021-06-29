@@ -22,11 +22,7 @@
   </v-app>
 </template>
 <script>
-import { noteUrl } from "../constants/links";
 export default {
   name: "Error",
-  data: () => ({
-    noteUrl: noteUrl,
-  }),
 };
 </script>
