@@ -39,6 +39,7 @@
           </v-toolbar>
         </v-col>
       </v-row>
+      <AmazonAssociateRow></AmazonAssociateRow>
       <v-row dense v-if="workInfos.length > 0">
         <v-col
           v-for="workInfo in workInfos"
@@ -90,6 +91,7 @@
 import WorkInfoCard from "../components/WorkInfoCard";
 import { getWorkInfos } from "../firestoreaccess/WorkInfo";
 import { reviewInfo } from "../constants/cmnfunc";
+import AmazonAssociateRow from "../components/AmazonAssociateRow.vue";
 import {
   getNowYear,
   getNowSeason,
@@ -102,6 +104,7 @@ export default {
   name: "WorkInfoList",
   components: {
     WorkInfoCard,
+    AmazonAssociateRow,
   },
   data: () => ({
     loading: false,
