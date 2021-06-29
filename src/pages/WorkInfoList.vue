@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-container v-if="!loading">
+      <AmazonAssociateBanar></AmazonAssociateBanar>
       <v-row dense class="mb-2">
         <v-col xs="12" md="12">
           <v-toolbar>
@@ -91,7 +92,8 @@
 import WorkInfoCard from "../components/WorkInfoCard";
 import { getWorkInfos } from "../firestoreaccess/WorkInfo";
 import { reviewInfo } from "../constants/cmnfunc";
-import AmazonAssociateRow from "../components/AmazonAssociateRow.vue";
+import AmazonAssociateRow from "../components/AmazonAssociateRow";
+import AmazonAssociateBanar from "../components/AmazonAssociateBanar";
 import {
   getNowYear,
   getNowSeason,
@@ -105,6 +107,7 @@ export default {
   components: {
     WorkInfoCard,
     AmazonAssociateRow,
+    AmazonAssociateBanar,
   },
   data: () => ({
     loading: false,
