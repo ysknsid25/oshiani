@@ -39,7 +39,6 @@
           </v-toolbar>
         </v-col>
       </v-row>
-      <AmazonAssociateRow></AmazonAssociateRow>
       <v-row dense v-if="workInfos.length > 0">
         <v-col
           v-for="workInfo in workInfos"
@@ -72,6 +71,7 @@
           </div>
         </v-col>
       </v-row>
+      <AmazonAssociateRow></AmazonAssociateRow>
     </v-container>
     <v-container v-if="loading">
       <v-row justify="center">
