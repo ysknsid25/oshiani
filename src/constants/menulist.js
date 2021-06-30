@@ -1,4 +1,4 @@
-import { noteUrl, getOshiAniRecomendTweetUrl, googleFormUrl } from "./links";
+import { getOshiAniRecomendTweetUrl, googleFormUrl } from "./links";
 const tweetUrl = getOshiAniRecomendTweetUrl();
 
 export const menulist = [
@@ -59,10 +59,12 @@ export const constMenuLists = [
         iconColor: "#1DA1F2",
         url: tweetUrl,
     },
+    /*
     {
         name: "リリースノート",
         icon: "fas fa-sticky-note",
         iconColor: "#191970",
         url: noteUrl,
     },
+    */
 ];
