@@ -3,6 +3,7 @@
     "description": "Cloud Functions for Firebase",
     "scripts": {
         "serve": "firebase use oshiani-test && firebase emulators:start --only functions",
+        "emulate": "firebase use oshiani-test && firebase emulators:start",
         "shell": "firebase use oshiani-test && firebase functions:shell",
         "start": "firebase use oshiani-test && npm run shell",
         "deploy": "firebase use oshiani-test && firebase deploy --only functions",
