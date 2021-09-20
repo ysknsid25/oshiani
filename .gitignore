@@ -7,6 +7,9 @@ dist
 firebase.json
 
 doc
+functions/firebase-debug.log
+functions/firestore-debug.log
+functions/ui-debug.log
 
 plugins
 firestore.*
