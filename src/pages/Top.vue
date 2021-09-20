@@ -164,10 +164,11 @@
       >
         {{ snackbarMessage }}
       </v-snackbar>
+      <AandGBroadCastInfo></AandGBroadCastInfo>
     </v-app-bar>
-    <v-content class="pt-0">
+    <v-main class="pt-0">
       <router-view :key="logined"></router-view>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 <script>
@@ -180,8 +181,12 @@ import {
 } from "../plugins/firebase";
 import { authorizeUser } from "../firestoreaccess/Users";
 import { menulist, constMenuLists } from "../constants/menulist";
+import AandGBroadCastInfo from "../components/AandGBroadCastInfo";
 export default {
   name: "Top",
+  components: {
+    AandGBroadCastInfo,
+  },
   data: () => ({
     loading: false,
     sending: false,
