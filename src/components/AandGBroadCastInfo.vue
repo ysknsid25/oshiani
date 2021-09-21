@@ -60,9 +60,10 @@ export default {
     async getNowPlayingAandG() {
       const tmpProgramList = await getProgramList();
       this.programList = tmpProgramList.agprogramList;
-      //console.log(this.programList.agprogramList);
+      console.log(this.programList);
       //console.log(this.programList.agprogramList[0]);
       this.findNowPlayingProgram();
+      //console.log(this.nowPlayingProgramIndex);
       this.setNowPlayingProgramInfo(this.nowPlayingProgramIndex);
       this.loading = false;
     },
@@ -76,13 +77,14 @@ export default {
           endMinute = 60;
         }
         return (
-          programInfo.beginHour <= hours &&
+          programInfo.beginHour >= hours &&
           hours < programInfo.endHour &&
-          programInfo.beginMinute <= minutes &&
+          programInfo.beginMinute >= minutes &&
           minutes < endMinute
         );
       };
       const nowPlayingIndex = this.programList.findIndex(isNowPlaying);
+      //console.log(nowPlayingIndex);
       if (nowPlayingIndex !== -1) {
         this.nowPlayingProgramIndex = nowPlayingIndex;
       }
