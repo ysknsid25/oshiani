@@ -81,76 +81,10 @@
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title></v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        color="secondary"
-        v-if="logined && !sending"
-        dark
-        outlined
-        tile
-        @click="logout"
-      >
-        Sign out
-      </v-btn>
-      <v-dialog
-        v-if="!logined && !sending"
-        v-model="isOpenLoginDialog"
-        max-width="300"
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            color="secondary"
-            v-if="!logined && !sending"
-            dark
-            outlined
-            tile
-            v-bind="attrs"
-            v-on="on"
-            @click="isOpenLoginDialog = true"
-          >
-            Sign in
-          </v-btn>
-        </template>
-        <v-card class="mx-auto">
-          <v-card-text>
-            <v-container>
-              <v-row justify="center" class="mt-2">
-                <v-btn
-                  color="#1DA1F2"
-                  v-if="!logined && !sending"
-                  outlined
-                  tile
-                  width="250"
-                  @click="login(1)"
-                >
-                  <v-icon color="#1DA1F2" class="mr-2">fab fa-twitter</v-icon>
-                  Sign in with twitter
-                </v-btn>
-              </v-row>
-              <v-row justify="center" class="mt-2">
-                <v-btn
-                  color="#C62828"
-                  v-if="!logined && !sending"
-                  dark
-                  outlined
-                  tile
-                  width="250"
-                  @click="login(2)"
-                >
-                  <v-icon color="#C62828" class="mr-2">fab fa-google</v-icon>
-                  Sign in with google
-                </v-btn>
-              </v-row>
-            </v-container>
-          </v-card-text>
-          <v-divider></v-divider>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn color="secondary" text @click="isOpenLoginDialog = false">
-              close
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog>
+      <app-var-user-menu
+        :isLogined="logined"
+        :userInfo="user"
+      ></app-var-user-menu>
       <v-progress-circular
         v-if="sending"
         indeterminate
@@ -182,10 +116,12 @@ import {
 import { authorizeUser } from "../firestoreaccess/Users";
 import { menulist, constMenuLists } from "../constants/menulist";
 import AandGBroadCastInfo from "../components/AandGBroadCastInfo";
+import AppVarUserMenu from "../components/user-avator-menu/AppVarUserMenu.vue";
 export default {
   name: "Top",
   components: {
     AandGBroadCastInfo,
+    AppVarUserMenu,
   },
   data: () => ({
     loading: false,
