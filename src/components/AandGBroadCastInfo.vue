@@ -2,7 +2,7 @@
   <v-dialog v-model="nowPlayingDialog" max-width="400">
     <template v-slot:activator="{ on, attrs }">
       <v-btn
-        class="ml-2"
+        class="mr-2"
         icon
         v-bind="attrs"
         v-on="on"

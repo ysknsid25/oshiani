@@ -31,7 +31,9 @@ export const authorizeUser = async (user) => {
 const updateUserInfo = async (oldUserInfo, newUserInfo) => {
     let isChanged =
         oldUserInfo.photoUrl !== newUserInfo.photoUrl ||
-        oldUserInfo.displayName !== newUserInfo.displayName;
+        oldUserInfo.displayName !== newUserInfo.displayName ||
+        oldUserInfo.email !== newUserInfo.email ||
+        oldUserInfo.emailVerified !== newUserInfo.emailVerified;
     if (isChanged) {
         await setUserInfo(newUserInfo, "user update");
     }

@@ -56,19 +56,19 @@ const greenRoutes = [
         path: "/Profile",
         name: "Profile",
         component: () => import("./pages/Profile.vue"),
-        meta: { isPublic: true },
+        meta: { isPublic: false },
     },
     {
         path: "/WatchList",
         name: "WatchList",
         component: () => import("./pages/WatchList.vue"),
-        meta: { isPublic: true },
+        meta: { isPublic: false },
     },
     {
         path: "/PostArticle",
         name: "PostArticle",
         component: () => import("./pages/PostArticle.vue"),
-        meta: { isPublic: true },
+        meta: { isPublic: false },
     },
     {
         path: "/Information",
