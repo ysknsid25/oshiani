@@ -99,6 +99,8 @@ const router = new VueRouter({
     },
 });
 
+//かなりハマった。↓の記事が参考になった。
+//https://zenn.dev/phi/articles/firebase-auth-wait-for-initialization
 router.beforeEach((to, from, next) => {
     const requiresOnlyAdmin = to.matched.some(
         (record) => record.meta.onlyAdmin
