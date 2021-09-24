@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import { auth, RAMEN } from "./plugins/firebase";
 
 Vue.use(VueRouter);
-
 const getRoutes = () => {
     const isError = false;
     if (isError) {
@@ -56,19 +56,19 @@ const greenRoutes = [
         path: "/Profile",
         name: "Profile",
         component: () => import("./pages/Profile.vue"),
-        meta: { isPublic: false },
+        meta: { isPublic: true, requireAuth: true },
     },
     {
         path: "/WatchList",
         name: "WatchList",
         component: () => import("./pages/WatchList.vue"),
-        meta: { isPublic: false },
+        meta: { isPublic: true, requireAuth: true },
     },
     {
         path: "/PostArticle",
         name: "PostArticle",
         component: () => import("./pages/PostArticle.vue"),
-        meta: { isPublic: false },
+        meta: { isPublic: true, requireAuth: true, onlyAdmin: true },
     },
     {
         path: "/Information",
@@ -97,6 +97,37 @@ const router = new VueRouter({
             return { x: 0, y: 0 };
         }
     },
+});
+
+router.beforeEach((to, from, next) => {
+    const requiresOnlyAdmin = to.matched.some(
+        (record) => record.meta.onlyAdmin
+    );
+    const requiresAuth = to.matched.some((record) => record.meta.requireAuth);
+    auth.onAuthStateChanged((user) => {
+        const currentUser = user;
+        if (requiresOnlyAdmin) {
+            if (currentUser === null || currentUser.uid !== RAMEN) {
+                next({
+                    path: "/",
+                    query: { redirect: to.fullPath },
+                });
+            } else {
+                next();
+            }
+        } else if (requiresAuth) {
+            if (!currentUser) {
+                next({
+                    path: "/",
+                    query: { redirect: to.fullPath },
+                });
+            } else {
+                next();
+            }
+        } else {
+            next();
+        }
+    });
 });
 
 export default router;
