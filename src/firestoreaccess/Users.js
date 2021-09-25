@@ -8,35 +8,17 @@ export const COLLECTION_USERS = db.collection("Users");
  * @param {Object} user
  */
 export const authorizeUser = async (user) => {
-    let userInfo = getUserInfo(user.uid);
-    if (!Object.keys(userInfo).length) {
-        userInfo = {
-            uid: user.uid,
-            photoUrl: user.photoUrl,
-            displayName: user.displayName,
-            providerId: user.providerId,
-        };
-        await setUserInfo(userInfo, "user create");
-    } else {
-        await updateUserInfo(userInfo, user);
-    }
+    const userInfo = {
+        uid: user.uid,
+        photoUrl: user.photoUrl,
+        displayName: user.displayName,
+        providerId: user.providerId,
+        email: user.email,
+        emailVerified: user.emailVerified,
+        credential: user.credential,
+    };
+    await setUserInfo(userInfo, "user create");
     await createActionHistory("login", "");
-};
-
-/**
- * ユーザー情報を更新するか判別して、更新を行う
- * @param {Object} oldUserInfo
- * @param {Objcet} newUserInfo
- */
-const updateUserInfo = async (oldUserInfo, newUserInfo) => {
-    let isChanged =
-        oldUserInfo.photoUrl !== newUserInfo.photoUrl ||
-        oldUserInfo.displayName !== newUserInfo.displayName ||
-        oldUserInfo.email !== newUserInfo.email ||
-        oldUserInfo.emailVerified !== newUserInfo.emailVerified;
-    if (isChanged) {
-        await setUserInfo(newUserInfo, "user update");
-    }
 };
 
 /**
