@@ -108,6 +108,7 @@ router.beforeEach((to, from, next) => {
     const requiresAuth = to.matched.some((record) => record.meta.requireAuth);
     auth.onAuthStateChanged((user) => {
         const currentUser = user;
+        //reAuth(currentUser.uid);
         if (requiresOnlyAdmin) {
             if (currentUser === null || currentUser.uid !== RAMEN) {
                 next({

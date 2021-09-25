@@ -37,7 +37,7 @@ export const getActionHistoryArr = async (userId) => {
     let retArr = [];
     await COLLECTION_ACTION.where("userId", "==", userId)
         .orderBy("datetime", "desc")
-        .limit(5)
+        .limit(7)
         .get()
         .then((actionHistorySnapShot) => {
             actionHistorySnapShot.forEach((doc) => {

@@ -1,107 +1,58 @@
 <template>
-  <div>
-    <v-container v-if="logined">
-      <v-row justify="space-around">
-        <v-card width="400">
-          <div height="300px">
-            <v-card-title class="secondary white--text">
-              <v-avatar size="56">
-                <img alt="user" v-bind:src="userInfo.photoUrl" />
-              </v-avatar>
-              <p class="ml-3 mt-3">{{ userInfo.displayName }}</p>
-              <v-spacer></v-spacer>
-              <!--
-            <NameRegistCard :initUserName="userInfo.name"></NameRegistCard>
-            -->
-            </v-card-title>
-          </div>
-
-          <v-card-text>
-            <div align="center" v-if="loading">
-              <v-progress-circular
-                v-if="loading"
-                :size="50"
-                color="secondary"
-                dark
-                indeterminate
-              ></v-progress-circular>
-            </div>
-            <div v-if="!loading">
-              <div v-if="histories.length">
-                <div class="font-weight-bold ml-8 mb-2">History</div>
-                <v-timeline align-top dense>
-                  <v-timeline-item
-                    v-for="history in histories"
-                    :key="history.id"
-                    :color="history.color"
-                    small
-                  >
-                    <div>
-                      <div class="font-weight-normal">
-                        <strong>{{ history.title }}</strong> @{{ history.time }}
-                      </div>
-                      <div>{{ history.message }}</div>
-                    </div>
-                  </v-timeline-item>
-                </v-timeline>
-              </div>
-              <div align="center" class="mt-4" v-if="!histories.length">
-                履歴はありません。
-              </div>
-            </div>
-          </v-card-text>
-        </v-card>
-      </v-row>
-    </v-container>
-    <v-container v-if="!logined">
-      <v-row justify="center">
-        <v-col cols="12">
-          <div align="center">
-            <h1 class="text-h1">You need login to watch Action History</h1>
-          </div>
-        </v-col>
-      </v-row>
-    </v-container>
-  </div>
+  <v-container>
+    <v-card id="account-setting-card">
+      <!-- tabs -->
+      <v-tabs v-model="tab" show-arrows>
+        <v-tab v-for="tab in tabs" :key="tab.icon">
+          <v-icon size="20" class="me-3">
+            {{ tab.icon }}
+          </v-icon>
+          <span>{{ tab.title }}</span>
+        </v-tab>
+      </v-tabs>
+      <v-tabs-items v-model="tab">
+        <v-tab-item>
+          <account-info :userInfo="userInfo"></account-info>
+        </v-tab-item>
+        <v-tab-item>
+          <action-history
+            :loading="loading"
+            :histories="histories"
+          ></action-history>
+        </v-tab-item>
+      </v-tabs-items>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
-//import NameRegistCard from "../components/NameRegistCard";
+import ActionHistory from "../components/profile/ActionHistory";
+import AccountInfo from "../components/profile/AccountInfo.vue";
 import { getUserInfo } from "../firestoreaccess/Users";
 import { getActionHistoryArr } from "../firestoreaccess/ActionHistory";
 export default {
   name: "Profile",
-  /*
   components: {
-    NameRegistCard,
+    ActionHistory,
+    AccountInfo,
   },
-  */
   data: () => ({
     loading: false,
     uid: "",
     userInfo: {},
     histories: [],
-    logined: false,
+    tab: "",
+    tabs: [
+      { title: "Account", icon: "fas fa-user-circle" },
+      { title: "History", icon: "fas fa-clock" },
+    ],
   }),
   created: async function () {
     this.loading = true;
     this.uid = localStorage.getItem("userInfo");
-    this.logined = this.uid !== null && typeof this.uid !== "undefined";
-    if (this.logined) {
-      this.userInfo = await getUserInfo(this.uid);
-      this.histories = await getActionHistoryArr(this.uid);
-    }
+    this.userInfo = await getUserInfo(this.uid);
+    this.histories = await getActionHistoryArr(this.uid);
     this.loading = false;
   },
-  /*
-  methods: {
-    //@@ リアルタイムリスナー。引数をユーザーIDに直す
-    async getUserActionHistory(uid) {
-      this.loading = true;
-      this.histories = await getActionHistoryArr(uid);
-      this.loading = false;
-    },
-  },
-  */
 };
 </script>

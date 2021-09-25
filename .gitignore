@@ -11,7 +11,7 @@ functions/firebase-debug.log
 functions/firestore-debug.log
 functions/ui-debug.log
 
-plugins
+env.*
 firestore.*
 hosting.*
 storage.*
