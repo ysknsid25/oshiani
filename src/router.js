@@ -55,7 +55,7 @@ const greenRoutes = [
     {
         path: "/Logout",
         name: "Logout",
-        component: () => import("./pages/WorkInfoList.vue"),
+        component: () => import("./pages/OshiAniTop.vue"),
         meta: { isPublic: true },
     },
     {
