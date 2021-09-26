@@ -27,6 +27,8 @@
         <v-icon> fas fa-chevron-left </v-icon>
       </v-btn>
       <v-spacer></v-spacer>
+      <v-btn text color="secondary" @click="getNowPlayingAandG()"> now </v-btn>
+      <v-spacer></v-spacer>
       <v-btn icon color="secondary" @click="getNextProgram(1)">
         <v-icon> fas fa-chevron-right </v-icon>
       </v-btn>
@@ -54,6 +56,7 @@ export default {
   },
   methods: {
     async getNowPlayingAandG() {
+      this.loading = true;
       const tmpProgramList = await getProgramList();
       this.programList = tmpProgramList.agprogramList;
       //console.log(this.programList);

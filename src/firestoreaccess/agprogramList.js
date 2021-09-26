@@ -7,11 +7,17 @@ export const COLLECTION_AGPROGRAMLIST = db.collection("agprogramList");
  * @returns Array
  */
 export const getProgramList = async () => {
-    const today = new Date().getDay();
+    const date = new Date();
+    const today = date.getDay();
+    const hour = date.getHours();
     let documentId = today - 1;
     //FireStoreには月曜日始まりで保存されているから
     if (documentId === -1) {
         documentId = 6;
+    }
+    //A&Gの放送は毎朝6時に開始するので、0時~5時の間は、前日の番組表を参照させないといけないから
+    if (hour < 6) {
+        documentId -= 1;
     }
     documentId = documentId.toString();
     let programList = [];
