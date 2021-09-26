@@ -23,6 +23,12 @@ const menteRoutes = [
 const greenRoutes = [
     {
         path: "/",
+        name: "OshiAniTop",
+        component: () => import("./pages/OshiAniTop.vue"),
+        meta: { isPublic: true },
+    },
+    {
+        path: "/WorkInfoList/year/:year/season/:season",
         name: "WorkInfoList",
         component: () => import("./pages/WorkInfoList.vue"),
         meta: { isPublic: true },

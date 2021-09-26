@@ -85,6 +85,7 @@
         </v-col>
       </v-row>
     </v-container>
+    <div>{{ year }}{{ season }}</div>
   </div>
 </template>
 <script>
@@ -92,20 +93,14 @@ import WorkInfoCard from "../components/WorkInfoCard";
 import { getWorkInfos } from "../firestoreaccess/WorkInfo";
 import { reviewInfo } from "../constants/cmnfunc";
 import AmazonAssociateRow from "../components/AmazonAssociateRow";
-import {
-  getNowYear,
-  getNowSeason,
-  getWorkInfoUrl,
-  getCount,
-  getSelectYear,
-  season,
-} from "../api/Annict";
+import { getWorkInfoUrl, getCount, getSelectYear, season } from "../api/Annict";
 export default {
   name: "WorkInfoList",
   components: {
     WorkInfoCard,
     AmazonAssociateRow,
   },
+  props: ["year", "season"],
   data: () => ({
     loading: false,
     logined: false,
@@ -124,8 +119,8 @@ export default {
   mounted: async function () {
     this.yearList = getSelectYear();
     this.seasons = Object.values(season);
-    this.targetYear = getNowYear();
-    this.targetSeason = getNowSeason();
+    this.targetYear = this.$route.params.year;
+    this.targetSeason = this.$route.params.season;
     await this.getAnimeInfo(this.nowPage);
     this.isLogined();
   },

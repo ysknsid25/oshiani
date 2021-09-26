@@ -61,7 +61,6 @@
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title></v-toolbar-title>
       <v-spacer></v-spacer>
-      <AandGBroadCastInfo></AandGBroadCastInfo>
       <app-var-user-menu></app-var-user-menu>
     </v-app-bar>
     <v-main class="pt-0 grey lighten-5">
@@ -71,12 +70,10 @@
 </template>
 <script>
 import { menulist } from "../constants/menulist";
-import AandGBroadCastInfo from "../components/AandGBroadCastInfo";
 import AppVarUserMenu from "../components/user-avator-menu/AppVarUserMenu.vue";
 export default {
   name: "Top",
   components: {
-    AandGBroadCastInfo,
     AppVarUserMenu,
   },
   data: () => ({

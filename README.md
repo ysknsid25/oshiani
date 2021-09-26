@@ -34,6 +34,28 @@ router.js 側は、
 post と同じことをしようと思ったら、path のところに「:articleId」って書かなければ、
 vue-router は特に URL バーの中にパラメーターを表示しないので、これが Post と同じ役割ってことになる。
 
+もう 1 パターンある。
+
+push する側。
+
+```
+      this.$router.push({
+        path: "/WorkInfoList/year/:year/season/:season",
+        name: "WorkInfoList",
+        params: {
+          year: targetYear,
+          season: targetSeason,
+        },
+      });
+```
+
+使う側。
+
+```
+    this.targetYear = this.$route.params.year;
+    this.targetSeason = this.$route.params.season;
+```
+
 ## cloud functions
 
 ローカルのエミュレーターは、テスト環境のキーを使ってエミュレートする。

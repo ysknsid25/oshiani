@@ -58,6 +58,43 @@ export const getNowSeason = (nowMonth = date.getMonth()) => {
     return season.autumn;
 };
 
+export const getSeasonInfoArr = () => {
+    const nowSeason = getNowSeason();
+    const nowYear = date.getFullYear();
+    let nextYear = nowYear;
+    //秋アニメの時期には、来期の冬アニメは来年になるため
+    if (nowSeason === season.autumn) {
+        nextYear += 1;
+    }
+    const seasonInfoArr = [
+        {
+            imageUrl: "../../../images/winter-image.jpg",
+            subtitle: nextYear + "-" + season.winter,
+            targetSeason: season.winter,
+            targetYear: nextYear,
+        },
+        {
+            imageUrl: "../../../images/spring-image.jpg",
+            subtitle: nowYear + "-" + season.spring,
+            targetSeason: season.spring,
+            targetYear: nowYear,
+        },
+        {
+            imageUrl: "../../../images/summer-image.jpg",
+            subtitle: nowYear + "-" + season.summer,
+            targetSeason: season.summer,
+            targetYear: nowYear,
+        },
+        {
+            imageUrl: "../../../images/autumn-image.jpg",
+            subtitle: nowYear + "-" + season.autumn,
+            targetSeason: season.autumn,
+            targetYear: nowYear,
+        },
+    ];
+    return seasonInfoArr;
+};
+
 export const getTwitterUrl = (twitterIconUrl) =>
     twitterBaseUrl + twitterIconUrl;
 

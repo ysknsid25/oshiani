@@ -1,12 +1,22 @@
 import { getOshiAniRecomendTweetUrl, googleFormUrl } from "./links";
+import { getNowYear, getNowSeason } from "../api/Annict";
 const tweetUrl = getOshiAniRecomendTweetUrl();
 
+const nowYear = getNowYear();
+const nowSeason = getNowSeason();
+
 export const menulist = [
+    {
+        name: "TOP",
+        icon: "fas fa-home",
+        iconColor: "#191970",
+        url: "/",
+    },
     {
         name: "アニメ検索",
         icon: "mdi-magnify",
         iconColor: "#191970",
-        url: "/",
+        url: "/WorkInfoList/year/" + nowYear + "/season/" + nowSeason,
     },
     {
         name: "Blog",

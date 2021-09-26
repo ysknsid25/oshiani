@@ -1,47 +1,40 @@
 <template>
-  <v-dialog v-model="nowPlayingDialog" max-width="400">
-    <template v-slot:activator="{ on, attrs }">
-      <v-btn
-        class="mr-2"
-        icon
-        v-bind="attrs"
-        v-on="on"
-        @click="getNowPlayingAandG"
-      >
-        <v-icon>fas fa-broadcast-tower</v-icon>
+  <v-card class="mx-auto">
+    <v-card-title>
+      <v-icon class="mr-4">fas fa-broadcast-tower</v-icon>超!A&G Now ON Air
+    </v-card-title>
+    <v-card-text>
+      <div v-if="loading" class="pt-4" align="center">
+        <v-progress-circular indeterminate color="indigo"></v-progress-circular>
+      </div>
+      <div v-if="!loading">
+        <p class="pt-2 text-subtitle-1 text--primary">
+          {{ nowPlayingProgram.title }}
+        </p>
+        <p>
+          <v-icon class="mr-2" size="15"> far fa-clock</v-icon
+          >{{ nowPlayingProgram.time }}
+        </p>
+        <div class="text--primary">
+          <v-icon class="mr-2" size="15"> fas fa-user-friends</v-icon>
+          {{ nowPlayingProgram.personality }}
+        </div>
+      </div>
+    </v-card-text>
+    <v-divider></v-divider>
+    <v-card-actions>
+      <v-btn icon color="secondary" @click="getNextProgram(-1)">
+        <v-icon> fas fa-chevron-left </v-icon>
       </v-btn>
-    </template>
-    <v-card class="mx-auto" max-width="400">
-      <v-card-text>
-        <div v-if="loading" class="pt-4" align="center">
-          <v-progress-circular
-            indeterminate
-            color="indigo"
-          ></v-progress-circular>
-        </div>
-        <div v-if="!loading">
-          <div class="pt-4" align="right">超!A&G Now ON Air</div>
-          <p class="pt-2 text-h5 text--primary">
-            {{ nowPlayingProgram.title }}
-          </p>
-          <p>{{ nowPlayingProgram.time }}</p>
-          <div class="text--primary">
-            {{ nowPlayingProgram.personality }}
-          </div>
-        </div>
-      </v-card-text>
-      <v-card-actions>
-        <v-btn text color="secondary" @click="getNextProgram(-1)">
-          previous
-        </v-btn>
-        <v-spacer></v-spacer>
-        <v-btn text color="secondary" @click="getNextProgram(1)"> next </v-btn>
-      </v-card-actions>
-    </v-card>
-  </v-dialog>
+      <v-spacer></v-spacer>
+      <v-btn icon color="secondary" @click="getNextProgram(1)">
+        <v-icon> fas fa-chevron-right </v-icon>
+      </v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 <script>
-import { getProgramList } from "../firestoreaccess/agprogramList";
+import { getProgramList } from "../../firestoreaccess/agprogramList";
 export default {
   name: "AandGBroadCastInfo",
 
@@ -56,6 +49,9 @@ export default {
     },
     nowPlayingProgramIndex: -1,
   }),
+  mounted: function () {
+    this.getNowPlayingAandG();
+  },
   methods: {
     async getNowPlayingAandG() {
       const tmpProgramList = await getProgramList();
