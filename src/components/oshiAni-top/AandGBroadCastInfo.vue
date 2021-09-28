@@ -1,7 +1,8 @@
 <template>
   <v-card class="mx-auto">
     <v-card-title>
-      <v-icon class="mr-4">fas fa-broadcast-tower</v-icon>超!A&G Now ON Air
+      <v-icon class="mr-4">fas fa-broadcast-tower</v-icon>
+      <span class="kagerou">超!A&G Now ON Air</span>
     </v-card-title>
     <v-card-text>
       <div v-if="loading" class="pt-4" align="center">
@@ -37,6 +38,7 @@
 </template>
 <script>
 import { getProgramList } from "../../firestoreaccess/agprogramList";
+import "../../assets/scss/style.scss";
 export default {
   name: "AandGBroadCastInfo",
 

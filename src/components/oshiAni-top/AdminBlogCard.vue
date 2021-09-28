@@ -1,7 +1,8 @@
 <template>
   <v-card class="auth-card">
     <v-card-title class="text-no-wrap">
-      <v-icon class="mr-4">far fa-newspaper</v-icon>管理人ブログ
+      <v-icon class="mr-4">far fa-newspaper</v-icon>
+      <span class="kagerou">管理人ブログ</span>
     </v-card-title>
     <v-card-text class="d-flex align-center mt-2 pb-2 ps-2">
       <v-container>
@@ -45,6 +46,7 @@
 <script>
 import ArticleCategoryChip from "../../components/ArticleCategoryChip";
 import { getArticles } from "../../firestoreaccess/Article";
+import "../../assets/scss/style.scss";
 export default {
   name: "AdminBlogCard",
   components: {

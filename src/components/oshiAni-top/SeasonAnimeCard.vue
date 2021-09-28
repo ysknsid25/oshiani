@@ -1,7 +1,8 @@
 <template>
   <v-card class="auth-card">
     <v-card-title class="text-no-wrap">
-      <v-icon class="mr-4">fas fa-tv</v-icon>放送時期別アニメ
+      <v-icon class="mr-4">fas fa-tv</v-icon>
+      <span class="kagerou">放送時期別アニメ</span>
     </v-card-title>
     <v-card-text class="d-flex align-center mt-2 pb-2 ps-2">
       <v-container>
@@ -23,7 +24,7 @@
               "
             >
               <v-img height="150px" :src="animeCardInfo.imageUrl">
-                <v-card-title class="white--text mt-16">
+                <v-card-title class="white--text mt-16 kagerou">
                   <span class="mt-8">
                     {{ animeCardInfo.subtitle }}
                   </span>
@@ -38,6 +39,7 @@
 </template>
 <script>
 import { getSeasonInfoArr } from "../../api/Annict";
+import "../../assets/scss/style.scss";
 export default {
   name: "SeasonAnimeCard",
   data: () => ({
