@@ -36,6 +36,9 @@ export const menulist = [
         iconColor: "#191970",
         url: "/Information",
     },
+];
+
+export const constMenuLists = [
     {
         name: "フィードバックする",
         icon: "far fa-clipboard",
@@ -48,4 +51,12 @@ export const menulist = [
         iconColor: "#1DA1F2",
         url: tweetUrl,
     },
+    /*
+    {
+        name: "リリースノート",
+        icon: "fas fa-sticky-note",
+        iconColor: "#191970",
+        url: noteUrl,
+    },
+    */
 ];
