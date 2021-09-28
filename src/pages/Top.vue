@@ -13,10 +13,10 @@
                 />
               </v-avatar>
             </div>
+            <div class="mt-2" align="center">
+              <span class="kagerou"> 推しアニ！ </span>
+            </div>
           </v-list-item-title>
-          <v-list-item-subtitle>
-            <div align="center">推しアニ！</div>
-          </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
@@ -26,6 +26,18 @@
           :key="nav_list.name"
           link
           :to="nav_list.url"
+        >
+          <v-list-item-icon>
+            <v-icon :color="nav_list.iconColor">{{ nav_list.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          v-for="nav_list in constLists"
+          :key="nav_list.name"
+          :href="nav_list.url"
         >
           <v-list-item-icon>
             <v-icon :color="nav_list.iconColor">{{ nav_list.icon }}</v-icon>
@@ -49,7 +61,7 @@
               >
                 <v-icon x-small class="mx-1">far fa-copyright</v-icon>
                 {{ new Date().getFullYear() }} —
-                <strong class="ml-1">Ramen Tabetaro</strong>
+                <span class="kagerou ml-1">ラーメン 食太郎</span>
               </v-btn>
             </template>
             <span>開発者のTwitterへ</span>
@@ -69,8 +81,9 @@
   </v-app>
 </template>
 <script>
-import { menulist } from "../constants/menulist";
+import { menulist, constMenuLists } from "../constants/menulist";
 import AppVarUserMenu from "../components/user-avator-menu/AppVarUserMenu.vue";
+import "../assets/scss/style.scss";
 export default {
   name: "Top",
   components: {
@@ -80,6 +93,7 @@ export default {
     loading: false,
     drawer: true,
     nav_lists: menulist,
+    constLists: constMenuLists,
   }),
 };
 </script>
