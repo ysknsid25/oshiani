@@ -139,3 +139,7 @@ docker commit --message "Add firebase login" da6abc02d8d3 oshiani_vue
 ちなみに、firebase login の認証情報は
 ~/.config/configstore/firebase-tools.json
 に保存されるらしい。cat で中見るといろいと書かれてる。
+
+## cloud functions をキックするためのトークンを取得する
+
+gcloud auth print-identity-token
