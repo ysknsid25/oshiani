@@ -12,13 +12,7 @@
               ></v-text-field>
             </v-col>
             <v-col cols="6">
-              <v-btn
-                color="secondary"
-                dark
-                outlined
-                tile
-                @click="searchArticle"
-              >
+              <v-btn color="primary" dark outlined tile @click="searchArticle">
                 検索
               </v-btn>
             </v-col>
@@ -128,7 +122,7 @@
             ></v-textarea>
           </v-row>
           <v-row>
-            <v-btn color="secondary" dark outlined tile @click="postArticle">
+            <v-btn color="primary" dark outlined tile @click="postArticle">
               投稿
             </v-btn>
           </v-row>

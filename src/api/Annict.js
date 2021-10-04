@@ -40,7 +40,7 @@ export const season = {
 
 export const mediaType = {
     tv: "primary",
-    ova: "secondary",
+    ova: "primary",
     web: "green",
     movie: "red",
 };

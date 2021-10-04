@@ -1,22 +1,25 @@
 <template>
-  <v-card class="mx-auto">
+  <v-card class="mx-auto secondary">
     <v-card-title>
       <v-icon class="mr-4">fas fa-broadcast-tower</v-icon>
       <span class="kagerou">超!A&G Now ON Air</span>
     </v-card-title>
     <v-card-text>
       <div v-if="loading" class="pt-4" align="center">
-        <v-progress-circular indeterminate color="indigo"></v-progress-circular>
+        <v-progress-circular
+          indeterminate
+          color="primary"
+        ></v-progress-circular>
       </div>
       <div v-if="!loading">
-        <p class="pt-2 text-subtitle-1 text--primary">
+        <p class="pt-2 text-subtitle-1">
           {{ nowPlayingProgram.title }}
         </p>
         <p>
           <v-icon class="mr-2" size="15"> far fa-clock</v-icon
-          >{{ nowPlayingProgram.time }}
+          ><span>{{ nowPlayingProgram.time }}</span>
         </p>
-        <div class="text--primary">
+        <div>
           <v-icon class="mr-2" size="15"> fas fa-user-friends</v-icon>
           {{ nowPlayingProgram.personality }}
         </div>
@@ -24,13 +27,13 @@
     </v-card-text>
     <v-divider></v-divider>
     <v-card-actions>
-      <v-btn icon color="secondary" @click="getNextProgram(-1)">
+      <v-btn icon color="primary" @click="getNextProgram(-1)">
         <v-icon> fas fa-chevron-left </v-icon>
       </v-btn>
       <v-spacer></v-spacer>
-      <v-btn text color="secondary" @click="getNowPlayingAandG()"> now </v-btn>
+      <v-btn text color="primary" @click="getNowPlayingAandG()"> now </v-btn>
       <v-spacer></v-spacer>
-      <v-btn icon color="secondary" @click="getNextProgram(1)">
+      <v-btn icon color="primary" @click="getNextProgram(1)">
         <v-icon> fas fa-chevron-right </v-icon>
       </v-btn>
     </v-card-actions>

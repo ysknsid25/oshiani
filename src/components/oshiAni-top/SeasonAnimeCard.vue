@@ -1,5 +1,5 @@
 <template>
-  <v-card class="auth-card">
+  <v-card class="auth-card secondary">
     <v-card-title class="text-no-wrap">
       <v-icon class="mr-4">fas fa-tv</v-icon>
       <span class="kagerou">放送時期別アニメ</span>

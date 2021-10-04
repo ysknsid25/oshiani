@@ -162,7 +162,7 @@
                     v-if="!sending"
                     outlined
                     tile
-                    color="secondary"
+                    color="primary"
                     dark
                     width="100"
                     @click="hoge"

@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-navigation-drawer app v-model="drawer" class="grey lighten-5">
+  <v-app class="primary">
+    <v-navigation-drawer app v-model="drawer" class="primary">
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -69,13 +69,13 @@
         </div>
       </template>
     </v-navigation-drawer>
-    <v-app-bar color="white" app v-if="!loading" class="grey lighten-5">
+    <v-app-bar color="white" app v-if="!loading" class="primary" height="70px">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title></v-toolbar-title>
       <v-spacer></v-spacer>
       <app-var-user-menu></app-var-user-menu>
     </v-app-bar>
-    <v-main class="pt-0 grey lighten-5">
+    <v-main class="pt-0 primary">
       <router-view></router-view>
     </v-main>
   </v-app>
@@ -84,6 +84,9 @@
 import { menulist, constMenuLists } from "../constants/menulist";
 import AppVarUserMenu from "../components/user-avator-menu/AppVarUserMenu.vue";
 import "../assets/scss/style.scss";
+import { auth } from "../plugins/firebase";
+//import { getUserInfo } from "../firestoreaccess/Users";
+import { colorTheme } from "../plugins/vuetify";
 export default {
   name: "Top",
   components: {
@@ -95,5 +98,22 @@ export default {
     nav_lists: menulist,
     constLists: constMenuLists,
   }),
+  mounted: function () {
+    auth.onAuthStateChanged((user) => {
+      const currentUser = user;
+      //console.log(currentUser);
+      if (currentUser) {
+        this.changeColor(colorTheme.base);
+      } else {
+        this.changeColor(colorTheme.dark);
+      }
+    });
+  },
+  methods: {
+    changeColor(colorThemeObj) {
+      this.$vuetify.theme.themes.light.primary = colorThemeObj.primary;
+      this.$vuetify.theme.themes.light.likelyRed = colorThemeObj.likelyRed;
+    },
+  },
 };
 </script>
