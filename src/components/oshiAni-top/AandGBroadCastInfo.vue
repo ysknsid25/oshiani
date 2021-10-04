@@ -1,8 +1,8 @@
 <template>
   <v-card class="mx-auto secondary">
     <v-card-title>
-      <v-icon class="mr-4">fas fa-broadcast-tower</v-icon>
-      <span class="kagerou">超!A&G Now ON Air</span>
+      <v-icon class="mr-4 primary--text">fas fa-broadcast-tower</v-icon>
+      <span class="kagerou thirdColor--text">超!A&G Now ON Air</span>
     </v-card-title>
     <v-card-text>
       <div v-if="loading" class="pt-4" align="center">

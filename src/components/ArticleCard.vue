@@ -66,7 +66,7 @@
       <h1 class="text-h1">404 Not Found</h1>
     </div>
     <div align="center" v-if="loading">
-      <v-progress-circular indeterminate color="indigo"></v-progress-circular>
+      <v-progress-circular indeterminate color="primary"></v-progress-circular>
     </div>
   </div>
 </template>

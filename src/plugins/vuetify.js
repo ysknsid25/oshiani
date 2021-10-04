@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
-import colors from "vuetify/lib/util/colors";
+//import colors from "vuetify/lib/util/colors";
 
 Vue.use(Vuetify);
 
@@ -8,9 +8,9 @@ export default new Vuetify({
     theme: {
         themes: {
             light: {
-                primary: "#558866",
-                secondary: "#B0AA5D",
-                textBaseColor: "#558860",
+                primary: "#558860",
+                secondary: "#E1EDD5",
+                thirdColor: "#B0AA5D",
             },
         },
     },
@@ -18,18 +18,18 @@ export default new Vuetify({
 
 export const colorTheme = {
     base: {
-        primary: colors.indigo.darken4,
-        secondary: colors.indigo.darken4,
-        likelyRed: colors.red.darken1,
+        primary: "#558860",
+        secondary: "#E1EDD5",
+        thirdColor: "#B0AA5D",
     },
     ushui: {
-        primary: colors.indigo.darken4,
-        secondary: colors.indigo.darken4,
-        likelyRed: colors.red.darken1,
+        primary: "#558860",
+        secondary: "#E1EDD5",
+        thirdColor: "#B0AA5D",
     },
     dark: {
-        primary: "#558866",
-        secondary: "#B0AA5D",
-        textBaseColor: "#558860",
+        primary: "#558860",
+        secondary: "#E1EDD5",
+        thirdColor: "#B0AA5D",
     },
 };
