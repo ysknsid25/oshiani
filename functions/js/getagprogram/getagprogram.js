@@ -23,6 +23,7 @@ exports.getAandGProgramListHttp = functions
     .https.onRequest(async (req, res) => {
         const programArr = await sendRequest();
         setFireStore(programArr);
+        getProgramList(programArr);
         //functions.logger.info(programArr.length, { structuredData: true });
         res.send(programArr);
     });
@@ -30,6 +31,9 @@ exports.getAandGProgramListHttp = functions
 exports.testFunc = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
+        const programArr = await sendRequest();
+        getProgramList(programArr);
+        functions.logger.info(programArr, { structuredData: true });
         res.send("testFunc");
     });
 
@@ -56,6 +60,44 @@ const setFireStore = (programArr) => {
             .doc(documentId)
             .set({ agprogramList: programArr[i] });
     }
+};
+
+const getProgramList = (programArr) => {
+    let titleArr = [];
+    let personalityArr = [];
+    programArr.map((todaysProgramArr) => {
+        todaysProgramArr.map((programInfo) => {
+            const personality = programInfo.personality;
+            const isUndefinedPersonality = typeof personality == "undefined";
+            console.log(personality);
+            if (!isUndefinedPersonality) {
+                if (personality.indexOf(",") > -1) {
+                    const personalities = personality.split(",");
+                    personalities.map((ps) => {
+                        personalityArr.push(ps);
+                    });
+                } else {
+                    personalityArr.push(personality);
+                }
+            }
+            titleArr.push(programInfo.title);
+        });
+    });
+    const titleSetArr = [...new Set(titleArr)];
+    const personalitySetArr = [...new Set(personalityArr)];
+    db.collection("agCastList")
+        .doc("personality")
+        .delete();
+    db.collection("agCastList")
+        .doc("personality")
+        .set({ personalityList: personalitySetArr });
+
+    db.collection("agCastList")
+        .doc("title")
+        .delete();
+    db.collection("agCastList")
+        .doc("title")
+        .set({ titleList: titleSetArr });
 };
 
 //データ取得のための目印
