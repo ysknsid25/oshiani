@@ -27,6 +27,12 @@ exports.getAandGProgramListHttp = functions
         res.send(programArr);
     });
 
+exports.testFunc = functions
+    .region("asia-northeast1")
+    .https.onRequest(async (req, res) => {
+        res.send("testFunc");
+    });
+
 const sendRequest = async () => {
     const url = "https://www.joqr.co.jp/qr/agregularprogram/";
     const fetch = require("node-fetch");

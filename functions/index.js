@@ -18,3 +18,4 @@ const functions = require("firebase-functions");
 const aAndg = require("./js/getagprogram/getagprogram");
 exports.getAandGProgramList = aAndg.getAandGProgramList;
 exports.getAandGProgramListHttp = aAndg.getAandGProgramListHttp;
+exports.testFunc = aAndg.testFunc;
