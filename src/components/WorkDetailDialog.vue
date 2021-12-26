@@ -80,7 +80,7 @@
               <div align="center" v-if="castLoading">
                 <v-progress-circular
                   indeterminate
-                  color="indigo"
+                  color="primary"
                 ></v-progress-circular>
               </div>
             </v-expansion-panel-content>
@@ -125,7 +125,7 @@
               <div align="center" v-if="staffLoading">
                 <v-progress-circular
                   indeterminate
-                  color="indigo"
+                  color="primary"
                 ></v-progress-circular>
               </div>
             </v-expansion-panel-content>
@@ -162,7 +162,7 @@
                     v-if="!sending"
                     outlined
                     tile
-                    color="secondary"
+                    color="primary"
                     dark
                     width="100"
                     @click="hoge"
@@ -171,7 +171,7 @@
                   <v-progress-circular
                     v-if="sending"
                     indeterminate
-                    color="indigo"
+                    color="primary"
                   ></v-progress-circular>
                 </v-row>
               </div>

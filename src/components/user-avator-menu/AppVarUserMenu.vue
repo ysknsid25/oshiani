@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="sending">
-      <v-progress-circular indeterminate color="indigo"></v-progress-circular>
+      <v-progress-circular indeterminate color="primary"></v-progress-circular>
     </div>
     <div v-if="!sending">
       <v-menu
@@ -14,7 +14,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-avatar
             v-if="!logined"
-            color="indigo lighten-4"
+            color="thirdColor"
             size="40px"
             v-bind="attrs"
             v-on="on"
@@ -41,11 +41,11 @@
             }}</span>
           </v-avatar>
         </template>
-        <v-list v-if="logined">
+        <v-list v-if="logined" class="secondary">
           <div class="pb-3 pt-2">
             <v-avatar
               v-if="!logined"
-              color="indigo lighten-4"
+              color="thirdColor"
               size="40px"
               class="ml-2"
             >
@@ -83,6 +83,7 @@
           <!-- Profile -->
           <v-list-item
             link
+            class="secondary"
             v-for="constantMenuInfo in constantMenuInfoArr"
             :key="constantMenuInfo.icon"
             :to="constantMenuInfo.url"
@@ -117,7 +118,7 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
-        <v-list v-if="!logined">
+        <v-list v-if="!logined" class="secondary">
           <v-list-item
             link
             v-for="signInIconInfo in signInIconInfoArr"

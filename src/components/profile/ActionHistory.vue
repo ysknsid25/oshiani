@@ -7,7 +7,7 @@
             <v-progress-circular
               v-if="loading"
               :size="50"
-              color="secondary"
+              color="primary"
               dark
               indeterminate
             ></v-progress-circular>

@@ -1,4 +1,8 @@
-import { getOshiAniRecomendTweetUrl, googleFormUrl } from "./links";
+import {
+    getOshiAniRecomendTweetUrl,
+    googleFormUrl,
+    releaseNoteUrl,
+} from "./links";
 import { getNowYear, getNowSeason } from "../api/Annict";
 const tweetUrl = getOshiAniRecomendTweetUrl();
 
@@ -9,40 +13,46 @@ export const menulist = [
     {
         name: "TOP",
         icon: "fas fa-home",
-        iconColor: "#191970",
+        iconColor: "primary",
         url: "/",
     },
     {
         name: "アニメ検索",
         icon: "mdi-magnify",
-        iconColor: "#191970",
+        iconColor: "primary",
         url: "/WorkInfoList/year/" + nowYear + "/season/" + nowSeason,
     },
     {
         name: "Blog",
         icon: "far fa-newspaper",
-        iconColor: "#191970",
+        iconColor: "primary",
         url: "/Blog",
     },
     {
         name: "みんなの推しアニメ",
         icon: "fas fa-trophy",
-        iconColor: "#191970",
+        iconColor: "primary",
         url: "/OshiAni",
     },
     {
         name: "免責事項",
         icon: "fas fa-info-circle",
-        iconColor: "#191970",
+        iconColor: "primary",
         url: "/Information",
     },
 ];
 
 export const constMenuLists = [
     {
+        name: "リリースノート",
+        icon: "far fa-sticky-note",
+        iconColor: "#191970",
+        url: releaseNoteUrl,
+    },
+    {
         name: "フィードバックする",
         icon: "far fa-clipboard",
-        iconColor: "#191970",
+        iconColor: "primary",
         url: googleFormUrl,
     },
     {
@@ -55,7 +65,7 @@ export const constMenuLists = [
     {
         name: "リリースノート",
         icon: "fas fa-sticky-note",
-        iconColor: "#191970",
+        iconColor: "primary",
         url: noteUrl,
     },
     */

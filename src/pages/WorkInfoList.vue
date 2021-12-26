@@ -6,7 +6,7 @@
           <v-toolbar>
             <v-switch
               v-model="isWorkName"
-              color="secondary"
+              color="primary"
               hide-details
               class="mr-2"
             ></v-switch>
@@ -79,7 +79,7 @@
           <div align="center">
             <v-progress-circular
               indeterminate
-              color="indigo"
+              color="primary"
             ></v-progress-circular>
           </div>
         </v-col>

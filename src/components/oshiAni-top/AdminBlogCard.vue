@@ -1,8 +1,8 @@
 <template>
-  <v-card class="auth-card">
+  <v-card class="auth-card secondary">
     <v-card-title class="text-no-wrap">
-      <v-icon class="mr-4">far fa-newspaper</v-icon>
-      <span class="kagerou">管理人ブログ</span>
+      <v-icon class="mr-4 primary--text">far fa-newspaper</v-icon>
+      <span class="kagerou thirdColor--text">管理人ブログ</span>
     </v-card-title>
     <v-card-text class="d-flex align-center mt-2 pb-2 ps-2">
       <v-container>
@@ -11,7 +11,7 @@
             <div align="center">
               <v-progress-circular
                 indeterminate
-                color="indigo"
+                color="primary"
               ></v-progress-circular>
             </div>
           </v-col>
@@ -25,7 +25,12 @@
             v-for="articleInfo in adminBlogArticles"
             :key="articleInfo.articleId"
           >
-            <v-card hover tile @click="doDispArticle(articleInfo.articleId)">
+            <v-card
+              hover
+              tile
+              class="secondary"
+              @click="doDispArticle(articleInfo.articleId)"
+            >
               <v-img :src="getImageUrl(articleInfo.imageUrl)" height="150px">
                 <ArticleCategoryChip
                   :categoryObj="articleInfo.categoryObj"

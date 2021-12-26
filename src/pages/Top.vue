@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-navigation-drawer app v-model="drawer" class="grey lighten-5">
+  <v-app class="secondary">
+    <v-navigation-drawer app v-model="drawer" class="secondary">
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -14,7 +14,7 @@
               </v-avatar>
             </div>
             <div class="mt-2" align="center">
-              <span class="kagerou"> 推しアニ！ </span>
+              <span class="kagerou thirdColor--text"> 推しアニ！ </span>
             </div>
           </v-list-item-title>
         </v-list-item-content>
@@ -59,9 +59,15 @@
                 link
                 href="https://twitter.com/samurai_se"
               >
-                <v-icon x-small class="mx-1">far fa-copyright</v-icon>
-                {{ new Date().getFullYear() }} —
-                <span class="kagerou ml-1">ラーメン 食太郎</span>
+                <v-icon x-small class="mx-1 thirdColor--text"
+                  >far fa-copyright</v-icon
+                >
+                <span class="thirdColor--text">
+                  {{ new Date().getFullYear() }} —
+                </span>
+                <span class="kagerou ml-1 thirdColor--text"
+                  >ラーメン 食太郎</span
+                >
               </v-btn>
             </template>
             <span>開発者のTwitterへ</span>
@@ -69,13 +75,22 @@
         </div>
       </template>
     </v-navigation-drawer>
-    <v-app-bar color="white" app v-if="!loading" class="grey lighten-5">
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar
+      color="white"
+      app
+      v-if="!loading"
+      class="secondary"
+      height="70px"
+    >
+      <v-app-bar-nav-icon
+        class="primary--text"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
       <v-toolbar-title></v-toolbar-title>
       <v-spacer></v-spacer>
       <app-var-user-menu></app-var-user-menu>
     </v-app-bar>
-    <v-main class="pt-0 grey lighten-5">
+    <v-main class="pt-0 secondary">
       <router-view></router-view>
     </v-main>
   </v-app>
@@ -84,6 +99,9 @@
 import { menulist, constMenuLists } from "../constants/menulist";
 import AppVarUserMenu from "../components/user-avator-menu/AppVarUserMenu.vue";
 import "../assets/scss/style.scss";
+import { auth } from "../plugins/firebase";
+//import { getUserInfo } from "../firestoreaccess/Users";
+import { colorTheme } from "../plugins/vuetify";
 export default {
   name: "Top",
   components: {
@@ -95,5 +113,22 @@ export default {
     nav_lists: menulist,
     constLists: constMenuLists,
   }),
+  mounted: function () {
+    auth.onAuthStateChanged((user) => {
+      const currentUser = user;
+      //console.log(currentUser);
+      if (currentUser) {
+        this.changeColor(colorTheme.base);
+      } else {
+        this.changeColor(colorTheme.dark);
+      }
+    });
+  },
+  methods: {
+    changeColor(colorThemeObj) {
+      this.$vuetify.theme.themes.light.secondary = colorThemeObj.secondary;
+      this.$vuetify.theme.themes.light.likelyRed = colorThemeObj.likelyRed;
+    },
+  },
 };
 </script>
