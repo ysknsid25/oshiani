@@ -1,4 +1,8 @@
-import { getOshiAniRecomendTweetUrl, googleFormUrl } from "./links";
+import {
+    getOshiAniRecomendTweetUrl,
+    googleFormUrl,
+    releaseNoteUrl,
+} from "./links";
 import { getNowYear, getNowSeason } from "../api/Annict";
 const tweetUrl = getOshiAniRecomendTweetUrl();
 
@@ -39,6 +43,12 @@ export const menulist = [
 ];
 
 export const constMenuLists = [
+    {
+        name: "リリースノート",
+        icon: "far fa-sticky-note",
+        iconColor: "#191970",
+        url: releaseNoteUrl,
+    },
     {
         name: "フィードバックする",
         icon: "far fa-clipboard",
