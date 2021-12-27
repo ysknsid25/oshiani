@@ -1,5 +1,7 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
+const nodemailer = require("nodemailer");
+const cors = require("cors")({ origin: true });
 admin.initializeApp(functions.config().firebase);
 
 const db = admin.firestore();
@@ -25,6 +27,43 @@ exports.getAandGProgramListHttp = functions
         setFireStore(programArr);
         //functions.logger.info(programArr.length, { structuredData: true });
         res.send(programArr);
+    });
+
+exports.notifyRegistedProgramHttp = functions
+    .region("asia-northeast1")
+    .https.onRequest(async (req, res) => {
+        cors(req, res, () => {
+            const from = functions.config().gmail.email;
+            const to = "";
+            const msg = "test send";
+            const smtpConfig = {
+                host: "smtp.gmail.com",
+                port: 465,
+                secure: true,
+                auth: {
+                    user: from,
+                    pass: functions.config().gmail.password,
+                },
+            };
+            const transporter = nodemailer.createTransport(smtpConfig);
+
+            const mailOptions = {
+                from: from,
+                to: to,
+                subject: "This is a sample of email function",
+                html: `${msg}`,
+            };
+
+            // Getting results
+            const result = transporter.sendMail(mailOptions, (err, info) => {
+                if (err) {
+                    return "error: " + err.toString();
+                }
+                return "success: " + info.toString();
+            });
+
+            res.send(result);
+        });
     });
 
 const sendRequest = async () => {
