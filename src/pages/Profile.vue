@@ -20,6 +20,7 @@
             :histories="histories"
           ></action-history>
         </v-tab-item>
+        <v-tab-item> </v-tab-item>
       </v-tabs-items>
     </v-card>
   </v-container>
@@ -45,6 +46,7 @@ export default {
     tabs: [
       { title: "Account", icon: "fas fa-user-circle" },
       { title: "History", icon: "fas fa-clock" },
+      { title: "Notify", icon: "fas fa-bell" },
     ],
   }),
   created: async function () {
