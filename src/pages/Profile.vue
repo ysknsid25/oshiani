@@ -20,7 +20,13 @@
             :histories="histories"
           ></action-history>
         </v-tab-item>
-        <v-tab-item> </v-tab-item>
+        <v-tab-item>
+          <notify-setting
+            :loading="loading"
+            :castList="castList"
+            :pgTitleList="pgTitleList"
+          ></notify-setting>
+        </v-tab-item>
       </v-tabs-items>
     </v-card>
   </v-container>
@@ -28,20 +34,25 @@
 
 <script>
 import ActionHistory from "../components/profile/ActionHistory";
-import AccountInfo from "../components/profile/AccountInfo.vue";
+import AccountInfo from "../components/profile/AccountInfo";
+import NotifySetting from "../components/profile/NotifySetting";
 import { getUserInfo } from "../firestoreaccess/Users";
 import { getActionHistoryArr } from "../firestoreaccess/ActionHistory";
+import { getCastList, getPgTitleList } from "../firestoreaccess/agCastList";
 export default {
   name: "Profile",
   components: {
     ActionHistory,
     AccountInfo,
+    NotifySetting,
   },
   data: () => ({
     loading: false,
     uid: "",
     userInfo: {},
     histories: [],
+    castList: [],
+    pgTitleList: [],
     tab: "",
     tabs: [
       { title: "Account", icon: "fas fa-user-circle" },
@@ -54,6 +65,10 @@ export default {
     this.uid = localStorage.getItem("userInfo");
     this.userInfo = await getUserInfo(this.uid);
     this.histories = await getActionHistoryArr(this.uid);
+    this.castList = await getCastList();
+    this.pgTitleList = await getPgTitleList();
+    //console.log(this.castList);
+    //console.log(this.pgTitleList);
     this.loading = false;
   },
 };
