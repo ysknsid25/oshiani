@@ -149,6 +149,10 @@
 
 <script>
 import { getCastList } from "../../firestoreaccess/agCastList";
+import {
+  getUserNotifySetting,
+  setUserNotifyInfo,
+} from "../../firestoreaccess/UserNofitySetting";
 const pattern =
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const maxSize = 50;
@@ -192,7 +196,12 @@ export default {
     },
   },
   created: async function () {
-    //TODO: 設定初期情報の取得
+    const uid = localStorage.getItem("userInfo");
+    const userNotifyInfo = await getUserNotifySetting(uid);
+    this.isNotify = userNotifyInfo.doNotify;
+    this.howmanynotify = userNotifyInfo.frequency;
+    this.email = userNotifyInfo.targetEmail;
+    this.selectedCastList = userNotifyInfo.castList;
     const tmpCastList = await getCastList();
     this.castList = tmpCastList.map((value) => ({
       name: value,
@@ -201,7 +210,16 @@ export default {
   },
   methods: {
     saveNotifySetting() {
-      if (this.isValidEmail) {
+      const uid = localStorage.getItem("userInfo");
+      const castList = this.selectedCastList.map((obj) => obj.name);
+      const userNotifyInfo = {
+        doNotify: this.isNotify,
+        frequency: this.howmanynotify,
+        targetEmail: this.email,
+        castList: castList,
+      };
+      const isSuccess = setUserNotifyInfo(uid, userNotifyInfo);
+      if (this.isValidEmail && isSuccess) {
         //保存
         this.snackColor = "info";
         this.snackMessage = "保存しました";
