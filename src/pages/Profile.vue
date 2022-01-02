@@ -38,7 +38,6 @@ import AccountInfo from "../components/profile/AccountInfo";
 import NotifySetting from "../components/profile/NotifySetting";
 import { getUserInfo } from "../firestoreaccess/Users";
 import { getActionHistoryArr } from "../firestoreaccess/ActionHistory";
-import { getCastList, getPgTitleList } from "../firestoreaccess/agCastList";
 export default {
   name: "Profile",
   components: {
@@ -65,10 +64,6 @@ export default {
     this.uid = localStorage.getItem("userInfo");
     this.userInfo = await getUserInfo(this.uid);
     this.histories = await getActionHistoryArr(this.uid);
-    this.castList = await getCastList();
-    this.pgTitleList = await getPgTitleList();
-    //console.log(this.castList);
-    //console.log(this.pgTitleList);
     this.loading = false;
   },
 };
