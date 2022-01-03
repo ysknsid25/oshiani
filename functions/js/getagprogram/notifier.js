@@ -251,7 +251,7 @@ const mekaMessage = (programInfoArr, castList) => {
             }
         }
     }
-    console.log(message);
+    //console.log(message);
     return message;
 };
 
