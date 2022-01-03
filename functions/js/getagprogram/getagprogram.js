@@ -1,11 +1,12 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
-const nodemailer = require("nodemailer");
-const cors = require("cors")({ origin: true });
 admin.initializeApp(functions.config().firebase);
 
 const db = admin.firestore();
 
+/**
+ * A&Gのホームページをスクレイピングし、番組情報を取得する
+ */
 exports.getAandGProgramList = functions
     .region("asia-northeast1")
     .runWith({
@@ -21,6 +22,9 @@ exports.getAandGProgramList = functions
         //functions.logger.info(programArr.length, { structuredData: true });
     });
 
+/**
+ * getAandGProgramListのテスト用関数
+ */
 exports.getAandGProgramListHttp = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
@@ -31,41 +35,47 @@ exports.getAandGProgramListHttp = functions
         res.send(programArr);
     });
 
+/**
+ * 通知用テスト関数
+ */
 exports.notifyRegistedProgramHttp = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
-        cors(req, res, () => {
-            const from = functions.config().gmail.email;
-            const to = "";
-            const msg = "test send";
-            const smtpConfig = {
-                host: "smtp.gmail.com",
-                port: 465,
-                secure: true,
-                auth: {
-                    user: from,
-                    pass: functions.config().gmail.password,
-                },
-            };
-            const transporter = nodemailer.createTransport(smtpConfig);
+        const notifier = require("./notifier");
+        notifier.getNotifyTarget(req, res, db, "everymonday", functions);
+        res.send("fine");
+    });
 
-            const mailOptions = {
-                from: from,
-                to: to,
-                subject: "This is a sample of email function",
-                html: `${msg}`,
-            };
+/**
+ * A&G番組情報を毎日通知する
+ */
+exports.notifyRegistedProgramEveryDay = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 30,
+        memory: "128MB",
+    })
+    .pubsub.schedule("*/5 * * * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const notifier = require("./notifier");
+        notifier.getNotifyTarget("", "", db, "everyday", functions);
+    });
 
-            // Getting results
-            const result = transporter.sendMail(mailOptions, (err, info) => {
-                if (err) {
-                    return "error: " + err.toString();
-                }
-                return "success: " + info.toString();
-            });
-
-            res.send(result);
-        });
+/**
+ * A&G番組情報を毎週月曜日に通知する
+ */
+exports.notifyRegistedProgramEveryMonDay = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 30,
+        memory: "128MB",
+    })
+    .pubsub.schedule("30 5 * * 1")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const notifier = require("./notifier");
+        notifier.getNotifyTarget("", "", db, "everymonday", functions);
     });
 
 const sendRequest = async () => {
