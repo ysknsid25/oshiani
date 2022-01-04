@@ -198,10 +198,13 @@ export default {
   created: async function () {
     const uid = localStorage.getItem("userInfo");
     const userNotifyInfo = await getUserNotifySetting(uid);
+    console.log(userNotifyInfo);
     this.isNotify = userNotifyInfo.doNotify;
     this.howmanynotify = userNotifyInfo.frequency;
     this.email = userNotifyInfo.targetEmail;
-    this.selectedCastList = userNotifyInfo.castList;
+    this.selectedCastList = userNotifyInfo.castList.map((name) => ({
+      name: name,
+    }));
     const tmpCastList = await getCastList();
     this.castList = tmpCastList.map((value) => ({
       name: value,

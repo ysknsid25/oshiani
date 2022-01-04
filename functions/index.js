@@ -17,3 +17,6 @@ const aAndg = require("./js/getagprogram/getagprogram");
 exports.getAandGProgramList = aAndg.getAandGProgramList;
 exports.getAandGProgramListHttp = aAndg.getAandGProgramListHttp;
 exports.notifyRegistedProgramHttp = aAndg.notifyRegistedProgramHttp;
+exports.notifyRegistedProgramEveryDay = aAndg.notifyRegistedProgramEveryDay;
+exports.notifyRegistedProgramEveryMonDay =
+    aAndg.notifyRegistedProgramEveryMonDay;

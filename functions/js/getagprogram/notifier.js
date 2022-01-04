@@ -227,7 +227,7 @@ const mekaMessage = (programInfoArr, castList) => {
                         googleCalendarBegin +
                         "/" +
                         googleCalendarEnd +
-                        "&ctz=Atlantic/Canary";
+                        "&ctz=Asia/Tokyo";
                     tmpMessage +=
                         "<tr><td>" +
                         beginTime +

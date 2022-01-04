@@ -55,11 +55,11 @@ exports.notifyRegistedProgramEveryDay = functions
         timeoutSeconds: 30,
         memory: "128MB",
     })
-    .pubsub.schedule("*/5 * * * *")
+    .pubsub.schedule("0 18 * * *")
     .timeZone("Asia/Tokyo")
-    .onRun(async () => {
+    .onRun(async (req, res) => {
         const notifier = require("./notifier");
-        notifier.getNotifyTarget("", "", db, "everyday", functions);
+        notifier.getNotifyTarget(req, res, db, "everyday", functions);
     });
 
 /**
@@ -73,9 +73,9 @@ exports.notifyRegistedProgramEveryMonDay = functions
     })
     .pubsub.schedule("30 5 * * 1")
     .timeZone("Asia/Tokyo")
-    .onRun(async () => {
+    .onRun(async (req, res) => {
         const notifier = require("./notifier");
-        notifier.getNotifyTarget("", "", db, "everymonday", functions);
+        notifier.getNotifyTarget(req, res, db, "everymonday", functions);
     });
 
 const sendRequest = async () => {
