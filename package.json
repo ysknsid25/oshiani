@@ -7,7 +7,7 @@
         "serve": "cross-env NODE_ENV=\"production\" vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
-        "staging": "cross-env NODE_ENV=\"development\" vue-cli-service build && firebase use oshiani-test && firebase deploy --only hosting, firestore",
+        "staging": "cross-env NODE_ENV=\"development\" vue-cli-service build && firebase use oshiani-test && firebase deploy --only hosting",
         "hostdeploy": "cross-env NODE_ENV=\"production\" vue-cli-service build && firebase use oshiani && firebase deploy --only hosting",
         "firedeploy": "cross-env NODE_ENV=\"production\" vue-cli-service build && firebase use oshiani && firebase deploy --only firestore",
         "hostfiredeploy": "cross-env NODE_ENV=\"production\" vue-cli-service build && firebase use oshiani && firebase deploy --only hosting, firestore",

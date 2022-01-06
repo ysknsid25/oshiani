@@ -20,6 +20,13 @@
             :histories="histories"
           ></action-history>
         </v-tab-item>
+        <v-tab-item>
+          <notify-setting
+            :loading="loading"
+            :castList="castList"
+            :pgTitleList="pgTitleList"
+          ></notify-setting>
+        </v-tab-item>
       </v-tabs-items>
     </v-card>
   </v-container>
@@ -27,7 +34,8 @@
 
 <script>
 import ActionHistory from "../components/profile/ActionHistory";
-import AccountInfo from "../components/profile/AccountInfo.vue";
+import AccountInfo from "../components/profile/AccountInfo";
+import NotifySetting from "../components/profile/NotifySetting";
 import { getUserInfo } from "../firestoreaccess/Users";
 import { getActionHistoryArr } from "../firestoreaccess/ActionHistory";
 export default {
@@ -35,16 +43,20 @@ export default {
   components: {
     ActionHistory,
     AccountInfo,
+    NotifySetting,
   },
   data: () => ({
     loading: false,
     uid: "",
     userInfo: {},
     histories: [],
+    castList: [],
+    pgTitleList: [],
     tab: "",
     tabs: [
       { title: "Account", icon: "fas fa-user-circle" },
       { title: "History", icon: "fas fa-clock" },
+      { title: "Notify", icon: "fas fa-bell" },
     ],
   }),
   created: async function () {

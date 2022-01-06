@@ -4,6 +4,9 @@ admin.initializeApp(functions.config().firebase);
 
 const db = admin.firestore();
 
+/**
+ * A&Gのホームページをスクレイピングし、番組情報を取得する
+ */
 exports.getAandGProgramList = functions
     .region("asia-northeast1")
     .runWith({
@@ -14,27 +17,66 @@ exports.getAandGProgramList = functions
     .timeZone("Asia/Tokyo")
     .onRun(async () => {
         const programArr = await sendRequest();
+        getProgramList(programArr);
         setFireStore(programArr);
         //functions.logger.info(programArr.length, { structuredData: true });
     });
 
+/**
+ * getAandGProgramListのテスト用関数
+ */
 exports.getAandGProgramListHttp = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
         const programArr = await sendRequest();
+        getProgramList(programArr);
         setFireStore(programArr);
         getProgramList(programArr);
         //functions.logger.info(programArr.length, { structuredData: true });
         res.send(programArr);
     });
 
-exports.testFunc = functions
+/**
+ * 通知用テスト関数
+ */
+exports.notifyRegistedProgramHttp = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
-        const programArr = await sendRequest();
-        getProgramList(programArr);
-        functions.logger.info(programArr, { structuredData: true });
-        res.send("testFunc");
+        const notifier = require("./notifier");
+        notifier.getNotifyTarget(req, res, db, "everymonday", functions);
+        res.send("fine");
+    });
+
+/**
+ * A&G番組情報を毎日通知する
+ */
+exports.notifyRegistedProgramEveryDay = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 30,
+        memory: "128MB",
+    })
+    .pubsub.schedule("0 18 * * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async (req, res) => {
+        const notifier = require("./notifier");
+        notifier.getNotifyTarget(req, res, db, "everyday", functions);
+    });
+
+/**
+ * A&G番組情報を毎週月曜日に通知する
+ */
+exports.notifyRegistedProgramEveryMonDay = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 30,
+        memory: "128MB",
+    })
+    .pubsub.schedule("30 5 * * 1")
+    .timeZone("Asia/Tokyo")
+    .onRun(async (req, res) => {
+        const notifier = require("./notifier");
+        notifier.getNotifyTarget(req, res, db, "everymonday", functions);
     });
 
 const sendRequest = async () => {

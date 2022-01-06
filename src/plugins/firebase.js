@@ -4,7 +4,7 @@ import "firebase/analytics";
 import "firebase/auth";
 
 const environment = process.env.NODE_ENV || "development";
-const envSet = require(`./env.${environment}.js`);
+const envSet = require(`../env/env.${environment}.js`);
 
 export const RAMEN = envSet.RAMEN;
 const firebaseConfig = envSet.CONFIG;
