@@ -143,3 +143,7 @@ docker commit --message "Add firebase login" da6abc02d8d3 oshiani_vue
 ## cloud functions をキックするためのトークンを取得する
 
 gcloud auth print-identity-token
+
+## スクレイピングツールに node-fetch jsdom を入れた
+
+https://qiita.com/otchy/items/244c19c561ecb7211fa5
