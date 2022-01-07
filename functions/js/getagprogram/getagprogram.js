@@ -4,6 +4,14 @@ admin.initializeApp(functions.config().firebase);
 
 const db = admin.firestore();
 
+exports.testFunc = functions
+    .region("asia-northeast1")
+    .https.onRequest(async (req, res) => {
+        const scraiping = require("./scraiping");
+        await scraiping.test(functions);
+        res.send("fine");
+    });
+
 /**
  * A&Gのホームページをスクレイピングし、番組情報を取得する
  */
