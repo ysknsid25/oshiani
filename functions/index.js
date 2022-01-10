@@ -15,6 +15,7 @@
 
 const aAndg = require("./js/getagprogram/getagprogram");
 exports.testFunc = aAndg.testFunc;
+exports.gaScraiping = aAndg.gaScraiping;
 exports.getAandGProgramList = aAndg.getAandGProgramList;
 exports.getAandGProgramListHttp = aAndg.getAandGProgramListHttp;
 exports.notifyRegistedProgramHttp = aAndg.notifyRegistedProgramHttp;

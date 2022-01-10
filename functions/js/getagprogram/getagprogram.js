@@ -3,6 +3,14 @@ const admin = require("firebase-admin");
 admin.initializeApp(functions.config().firebase);
 
 const db = admin.firestore();
+const scraiping = require("./scraiping/ga");
+
+exports.gaScraiping = functions
+    .region("asia-northeast1")
+    .https.onRequest(async (req, res) => {
+        await scraiping.gaScraiping(db);
+        res.send("fine");
+    });
 
 exports.testFunc = functions
     .region("asia-northeast1")
