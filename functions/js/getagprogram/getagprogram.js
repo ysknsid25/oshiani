@@ -7,6 +7,8 @@ const db = admin.firestore();
 exports.gaScraiping = functions
     .region("asia-northeast1")
     .https.onRequest((req, res) => {
+        //なぜかここでrequireしないとデプロイ時にエラーになってしまう。
+        //エミュレーターでは普通に実行できるので謎
         const scraiping = require("./ga");
         scraiping.gaScraiping(db);
         res.send("fine");
