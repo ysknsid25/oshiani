@@ -147,3 +147,7 @@ gcloud auth print-identity-token
 ## スクレイピングツールに node-fetch jsdom を入れた
 
 https://qiita.com/otchy/items/244c19c561ecb7211fa5
+
+## 特定のファンクション飲みデプロイ
+
+firebase deploy --only functions: ファクション名
