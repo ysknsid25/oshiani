@@ -6,11 +6,15 @@ const db = admin.firestore();
 
 exports.gaScraiping = functions
     .region("asia-northeast1")
-    .https.onRequest((req, res) => {
+    .runWith({
+        timeoutSeconds: 30,
+        memory: "512MB",
+    })
+    .https.onRequest(async (req, res) => {
         //なぜかここでrequireしないとデプロイ時にエラーになってしまう。
         //エミュレーターでは普通に実行できるので謎
-        const scraiping = require("./ga");
-        scraiping.gaScraiping(db);
+        const scrai = require("./ga");
+        await scrai.gaScraiping(db);
         res.send("fine");
     });
 
