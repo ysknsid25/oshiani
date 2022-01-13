@@ -151,3 +151,15 @@ https://qiita.com/otchy/items/244c19c561ecb7211fa5
 ## 特定のファンクション飲みデプロイ
 
 firebase deploy --only functions: ファクション名
+
+## node_modules の利用可能なバージョンを調べる
+
+```
+npm info (パッケージ名) versions
+```
+
+## node_modules の現在のバージョンを調べる
+
+```
+npm outdated
+```
