@@ -18,7 +18,7 @@ exports.gaScraiping = async (db) => {
         novelInfoObjArr[novelInfoObjArr.length - 1],
         gaImgUrlArr
     );
-    console.log(writeObj);
+    //console.log(writeObj);
     db.collection("gaPublishInfo")
         .doc(writeObj.saleMonthYear)
         .set({ newRelease: writeObj.fullNovelInfoObjArr });

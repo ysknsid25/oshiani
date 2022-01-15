@@ -3,20 +3,20 @@ const admin = require("firebase-admin");
 admin.initializeApp(functions.config().firebase);
 
 const db = admin.firestore();
-const scraiping = require("./scraiping/ga");
 
 exports.gaScraiping = functions
     .region("asia-northeast1")
-    .https.onRequest(async (req, res) => {
-        await scraiping.gaScraiping(db);
+    .https.onRequest((req, res) => {
+        //なぜかここでrequireしないとデプロイ時にエラーになってしまう。
+        //エミュレーターでは普通に実行できるので謎
+        const scraiping = require("./ga");
+        scraiping.gaScraiping(db);
         res.send("fine");
     });
 
 exports.testFunc = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
-        const scraiping = require("./scraiping");
-        await scraiping.test(functions);
         res.send("fine");
     });
 

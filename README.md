@@ -154,3 +154,7 @@ https://qiita.com/otchy/items/244c19c561ecb7211fa5
 [電撃](https://dengekibunko.jp/product/newrelease-bunko.html)
 [ファンタジア](https://fantasiabunko.jp/product/new-release.html)
 [ガガガ](https://gagagabunko.jp/newrelease/)
+
+## 特定のファンクション飲みデプロイ
+
+firebase deploy --only functions: ファクション名
