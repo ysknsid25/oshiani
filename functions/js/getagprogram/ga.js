@@ -1,10 +1,9 @@
-const fetch = require("node-fetch");
-const { JSDOM } = require("jsdom");
-const { setAuthor, setIllustrator } = require("./common");
-
 exports.gaScraiping = async (db) => {
+    const { setAuthor, setIllustrator } = require("./common");
+    const fetch = require("node-fetch");
     const res = await fetch("https://ga.sbcr.jp/release/month_current/");
     const html = await res.text();
+    const { JSDOM } = require("jsdom");
     const dom = new JSDOM(html);
     const document = dom.window.document;
     const novelInfoAllArr = getGANovelInfo(document);
