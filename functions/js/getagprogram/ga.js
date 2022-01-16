@@ -1,14 +1,11 @@
-exports.gaScraiping = async (db) => {
+exports.gaScraiping = async (db, html) => {
     const { setAuthor, setIllustrator } = require("./common");
-    const fetch = require("node-fetch");
-    const res = await fetch("https://ga.sbcr.jp/release/month_current/");
-    const html = await res.text();
+    /*
     const { JSDOM } = require("jsdom");
     const dom = new JSDOM(html);
     const document = dom.window.document;
     const novelInfoAllArr = getGANovelInfo(document);
     const novelInfoArr = shurinkWorkInfo(novelInfoAllArr);
-
     //配列ごとの情報をオブジェクトにまとめる
     const gaImgUrlArr = getGAImageUrlArr(document);
     const novelInfoObjArr = getGANovelInfoObj(novelInfoArr);
@@ -23,6 +20,8 @@ exports.gaScraiping = async (db) => {
         .set({ newRelease: writeObj.fullNovelInfoObjArr });
     setAuthor(db, writeObj.authorArr);
     setIllustrator(db, writeObj.illustratorArr);
+    */
+    console.log("hogehoge");
 };
 
 /**
