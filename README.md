@@ -148,6 +148,13 @@ gcloud auth print-identity-token
 
 https://qiita.com/otchy/items/244c19c561ecb7211fa5
 
+## スクレイピング先
+
+[GA](https://ga.sbcr.jp/release/month_current/)
+[電撃](https://dengekibunko.jp/product/newrelease-bunko.html)
+[ファンタジア](https://fantasiabunko.jp/product/new-release.html)
+[ガガガ](https://gagagabunko.jp/newrelease/)
+
 ## 特定のファンクション飲みデプロイ
 
 firebase deploy --only functions: ファクション名

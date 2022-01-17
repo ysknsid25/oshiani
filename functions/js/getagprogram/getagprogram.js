@@ -14,7 +14,11 @@ exports.gaScraiping = functions
         //なぜかここでrequireしないとデプロイ時にエラーになってしまう。
         //エミュレーターでは普通に実行できるので謎
         const scrai = require("./ga");
-        await scrai.gaScraiping(db);
+        const fetch = require("node-fetch");
+        const externalRes = await fetch(
+            "https://ga.sbcr.jp/release/month_current/"
+        ).then((res) => res.text());
+        await scrai.gaScraiping(db, externalRes);
         res.send("fine");
     });
 
