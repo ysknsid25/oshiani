@@ -170,3 +170,8 @@ npm info (パッケージ名) versions
 ```
 npm outdated
 ```
+
+## jsdom は使えない
+
+jsdom を使って cloud functions を利用するとエラーが発生する。
+よって、puppeteer を使うように修正。
