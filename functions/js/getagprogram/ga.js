@@ -1,6 +1,12 @@
-exports.gaScraiping = async (db, html) => {
-    const { setAuthor, setIllustrator } = require("./common");
+exports.gaScraiping = async (db, page) => {
+    const url = "https://ga.sbcr.jp/release/month_current/";
+    const fetch = require("node-fetch");
+    const externalRes = await fetch(url)
+        .then((res) => res.text())
+        .then((body) => body);
+    console.log(externalRes);
     /*
+    const { setAuthor, setIllustrator } = require("./common");
     const { JSDOM } = require("jsdom");
     const dom = new JSDOM(html);
     const document = dom.window.document;
@@ -21,7 +27,6 @@ exports.gaScraiping = async (db, html) => {
     setAuthor(db, writeObj.authorArr);
     setIllustrator(db, writeObj.illustratorArr);
     */
-    console.log("hogehoge");
 };
 
 /**

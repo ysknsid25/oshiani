@@ -7,18 +7,12 @@ const db = admin.firestore();
 exports.gaScraiping = functions
     .region("asia-northeast1")
     .runWith({
-        timeoutSeconds: 30,
-        memory: "512MB",
+        timeoutSeconds: 300,
+        memory: "2GB",
     })
     .https.onRequest(async (req, res) => {
-        //なぜかここでrequireしないとデプロイ時にエラーになってしまう。
-        //エミュレーターでは普通に実行できるので謎
         const scrai = require("./ga");
-        const fetch = require("node-fetch");
-        const externalRes = await fetch(
-            "https://ga.sbcr.jp/release/month_current/"
-        ).then((res) => res.text());
-        await scrai.gaScraiping(db, externalRes);
+        await scrai.gaScraiping(db);
         res.send("fine");
     });
 
