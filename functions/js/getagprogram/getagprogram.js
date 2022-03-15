@@ -12,7 +12,8 @@ exports.gaScraiping = functions
     })
     .https.onRequest(async (req, res) => {
         const scrai = require("./ga");
-        await scrai.gaScraiping(db);
+        const retArr = await scrai.gaScraiping(db);
+        functions.logger.info(retArr, { structuredData: true });
         res.send("fine");
     });
 

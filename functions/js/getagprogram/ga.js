@@ -1,187 +1,171 @@
-exports.gaScraiping = async (db, page) => {
+exports.gaScraiping = async (db) => {
+    const { setAuthor, setIllustrator } = require("./common");
+    const date = new Date();
+    const key = date.getFullYear() + "" + (date.getMonth() + 1);
     const url = "https://ga.sbcr.jp/release/month_current/";
     const fetch = require("node-fetch");
     const externalRes = await fetch(url)
         .then((res) => res.text())
         .then((body) => body);
-    console.log(externalRes);
-    /*
-    const { setAuthor, setIllustrator } = require("./common");
-    const { JSDOM } = require("jsdom");
-    const dom = new JSDOM(html);
-    const document = dom.window.document;
-    const novelInfoAllArr = getGANovelInfo(document);
-    const novelInfoArr = shurinkWorkInfo(novelInfoAllArr);
-    //配列ごとの情報をオブジェクトにまとめる
-    const gaImgUrlArr = getGAImageUrlArr(document);
-    const novelInfoObjArr = getGANovelInfoObj(novelInfoArr);
-    //console.log(novelInfoObjArr[novelInfoObjArr.length - 1]);
-    const writeObj = await writeGAInfoToFireStore(
-        novelInfoObjArr[novelInfoObjArr.length - 1],
-        gaImgUrlArr
-    );
-    //console.log(writeObj);
+    const bookInfoArr = readBody(externalRes);
     db.collection("gaPublishInfo")
-        .doc(writeObj.saleMonthYear)
-        .set({ newRelease: writeObj.fullNovelInfoObjArr });
-    setAuthor(db, writeObj.authorArr);
-    setIllustrator(db, writeObj.illustratorArr);
-    */
+        .doc(key)
+        .set({ newRelease: bookInfoArr });
+    const authorArr = bookInfoArr.map((bookInfo) => bookInfo.author);
+    const illustArr = bookInfoArr.map((bookInfo) => bookInfo.illust);
+    setAuthor(db, authorArr);
+    setIllustrator(db, illustArr);
+    return bookInfoArr;
 };
 
-/**
- * GA文庫の情報を配列に格納した状態で返します。
- * @param NodeList document
- * @returns array
- */
-const getGANovelInfo = (document) => {
-    const nodes = document.querySelectorAll(".newBook_item_inner");
-    const htmlTree = Array.from(nodes, (html) => html.textContent.trim());
-    //const tokyoWeathers = Array.from(nodes, (td) => td.textContent.trim());
-    const novelInfoArr = htmlTree.map((html) =>
-        html
-            .split("\n")
-            .map((text) => text.replace("\n", ""))
-            .filter((replacedText) => replacedText !== "")
-    );
-    const novelDistinctInfoArr = novelInfoArr.map((novelInfo) => [
-        ...new Set(novelInfo),
-    ]);
-    return novelDistinctInfoArr;
-};
+const _BEGIN_OF_SCRAIPING = '<div class="newBook_infoWrap spOnly">';
+const _BEGIN_OF_IMG_URL =
+    '<div class="image"><img src="" class=" tcd-lazy" data-src="';
+const _END_OF_IMG_URL = '"></div></div></a>';
+const _BEGIN_OF_SALE_DATE = '<p class="post_meta pcOnly">発売日：';
+const _END_OF_SALE_DATE = "</p>";
+const _KEY_OF_TITLE = '<h3 class="title">';
+const _BEGIN_OF_TITLE = "<span>";
+const _END_OF_TITLE = "</span>";
+const _KEY_OF_ILLUST = '<p class="lineup_illust_area">';
+const _KEY_OF_AUTHOR = '<p class="lineup_author_area">著：';
+const _BEGIN_OF_AUTHOR = _KEY_OF_AUTHOR;
+const _END_OF_AUTHOR = "</p>";
+const _BEGIN_OF_ILLUSTLATOR = "イラスト：";
+const _END_OF_ILLUSTLATOR = "</p>";
+const _KEY_OF_PRICE = '<p class="price">';
+const _KEY_OF_CATCHTEXT = '<p class="catchText">';
+const _BEGIN_OF_OUTLINETEXT = '<p class="outlineText">';
+const _END_OF_OUTLINETEXT = "</p>";
+const _END_OF_BOOK_INFO = "</div><!-- /newBook_item_inner -->";
+const _END_OF_SCRAIPING = '<div class="newBook_month_select_wrap">';
 
 /**
- * スクレイピングで取得したすべてのテキスト情報の配列をテキスト単位にまとめて、
- * 二次元配列として返す
- * @param array novelInfoAllArr スクレイピングで取得したすべてのテキスト情報の配列
+ * bodyテキストの中身を解析していく
+ * @param {string} bodyText
  * @returns array
  */
-const shurinkWorkInfo = (novelInfoAllArr) => {
-    //作品情報ごとに配列に放り込む
-    let count = 0;
-    let novelInfoArr = [];
-    let novelInfo = [];
-    for (let i = 0; i < novelInfoAllArr.length; i++) {
-        let line = novelInfoAllArr[i];
-        if (line.indexOf("発売日:") > -1) {
-            novelInfoArr[i] = novelInfo;
-            novelInfo = [];
-            count = 0;
+const readBody = (bodyText) => {
+    const bodyTextArr = bodyText.split(/\n/);
+    let isBeginScraiping = false;
+    let isOutLineText = false;
+    let outLineText = "";
+    let resultArr = [];
+    let tmpObj = {};
+    for (let i = 0; i < bodyTextArr.length; i++) {
+        const lineText = bodyTextArr[i];
+        //スクレイピングの開始判定
+        if (isContainKeyWord(lineText, _BEGIN_OF_SCRAIPING)) {
+            isBeginScraiping = true;
         }
-        novelInfo[count] = line;
-        count++;
-    }
-    //最後の1回
-    novelInfoArr[novelInfoAllArr.length - 1] = novelInfo;
-    return novelInfoArr;
-};
-
-/**
- * GA文庫のイメージURLを取得します
- * @param NodeList document
- * @returns array
- */
-const getGAImageUrlArr = (document) => {
-    const imageHtmls = document.querySelectorAll(".image_wrap > .image > img");
-    const imgUrls = Array.from(imageHtmls, (html) =>
-        html.getAttribute("data-src")
-    );
-    return imgUrls;
-};
-
-/**
- * GA文庫の情報をオブジェクトの形で返します
- * @param array novelInfoArr
- * @returns object
- */
-const getGANovelInfoObj = (novelInfoAllArr) => {
-    const retObjArr = novelInfoAllArr.map((novelInfoArr) => {
-        const novelInfoObjArr = novelInfoArr.map((novelInfo) => {
-            const saleDate = 0;
-            const title = 1;
-            const authorIllustrator = 2;
-            const ISBN = 3;
-            const price = 4;
-            const outLineBegin = 7;
-            const outLineEnd = novelInfo.length;
-            let outLine = "";
-            for (let i = outLineBegin; i < outLineEnd; i++) {
-                outLine += novelInfo[i].trim() + "\n";
-            }
-            const replacedAuthorIllustrator = novelInfo[authorIllustrator]
-                .replace(" ", "")
-                .replace("　", "");
-            const authorIllustratorObj = getGAAuthorIllustrator(
-                replacedAuthorIllustrator
+        if (!isBeginScraiping) {
+            continue;
+        }
+        //画像URL
+        if (isContainKeyWord(lineText, _BEGIN_OF_IMG_URL)) {
+            tmpObj.imgurl = getTargetText(
+                lineText,
+                _BEGIN_OF_IMG_URL,
+                _END_OF_IMG_URL
             );
-            const novelInfoObj = {
-                saleDate: novelInfo[saleDate].replace("発売日：", "").trim(),
-                title: novelInfo[title].trim(),
-                author: authorIllustratorObj.author.trim(),
-                illustrator: authorIllustratorObj.illustrator.trim(),
-                ISBN: novelInfo[ISBN].replace("ISBN：", "").trim(),
-                price: novelInfo[price].trim(),
-                outLine: outLine,
-            };
-            return novelInfoObj;
-        });
-        return novelInfoObjArr;
-    });
-    return retObjArr;
+        }
+        //発売日
+        if (isContainKeyWord(lineText, _BEGIN_OF_SALE_DATE)) {
+            tmpObj.sabledate = getTargetText(
+                lineText,
+                _BEGIN_OF_SALE_DATE,
+                _END_OF_SALE_DATE
+            );
+        }
+        //タイトル
+        if (isContainKeyWord(lineText, _KEY_OF_TITLE)) {
+            tmpObj.title = getTargetText(
+                lineText,
+                _BEGIN_OF_TITLE,
+                _END_OF_TITLE
+            );
+        }
+        //著者
+        if (isContainKeyWord(lineText, _KEY_OF_AUTHOR)) {
+            tmpObj.author = getTargetText(
+                lineText,
+                _BEGIN_OF_AUTHOR,
+                _END_OF_AUTHOR
+            );
+        }
+        //イラストレーター
+        if (isContainKeyWord(lineText, _KEY_OF_ILLUST)) {
+            const tmpLineArr = lineText.split(_KEY_OF_ILLUST);
+            tmpObj.illust = getTargetText(
+                tmpLineArr[1],
+                _BEGIN_OF_ILLUSTLATOR,
+                _END_OF_ILLUSTLATOR
+            );
+        }
+        //販売価格
+        if (isContainKeyWord(lineText, _KEY_OF_PRICE)) {
+            //次の行が販売価格
+            tmpObj.price = bodyTextArr[i + 1];
+        }
+        //キャッチテキスト
+        if (isContainKeyWord(lineText, _KEY_OF_CATCHTEXT)) {
+            //次の行がキャッチテキスト。ただし</p>が入ってくるので置換する
+            tmpObj.catchtext = bodyTextArr[i + 1].replace("</p>", "");
+        }
+        //アウトラインテキストの開始判定
+        if (isContainKeyWord(lineText, _BEGIN_OF_OUTLINETEXT)) {
+            //次の行からアウトラインテキストになるので、フラグをONにする
+            isOutLineText = true;
+            continue;
+        }
+        //アウトラインテキストの終了判定
+        if (isOutLineText && isContainKeyWord(lineText, _END_OF_OUTLINETEXT)) {
+            isOutLineText = false;
+            tmpObj.outlinetext = outLineText;
+            outLineText = "";
+        }
+        //アウトラインテキストフラグがONの間は蓄え続ける
+        if (isOutLineText) {
+            outLineText = outLineText + lineText;
+        }
+        //ひとつの書籍情報の終わり判定
+        if (isContainKeyWord(lineText, _END_OF_BOOK_INFO)) {
+            resultArr.push(tmpObj);
+            tmpObj = {};
+        }
+        if (isContainKeyWord(lineText, _END_OF_SCRAIPING)) {
+            break;
+        }
+    }
+    return resultArr;
 };
 
 /**
- * 著者とイラストレーター情報を返す
- * @param string replacedAuthorIllustrator
- * @returns object
+ * キーワードがその行に含まれているかを判定
+ * @param {string} lineText
+ * @param {string} keyword
+ * @returns boolean
  */
-const getGAAuthorIllustrator = (replacedAuthorIllustrator) => {
-    let author = "";
-    let illustrator = "";
-    if (
-        typeof replacedAuthorIllustrator !== "undefined" &&
-        replacedAuthorIllustrator !== ""
-    ) {
-        const illustratorIndex = replacedAuthorIllustrator.indexOf(
-            "イラスト："
-        );
-        const lastIndex = replacedAuthorIllustrator.length;
-        author = replacedAuthorIllustrator.substring(2, illustratorIndex);
-        illustrator = replacedAuthorIllustrator.substring(
-            illustratorIndex + 5,
-            lastIndex
-        );
-    }
-    return { author: author, illustrator: illustrator };
+const isContainKeyWord = (lineText, keyword) => {
+    return lineText.indexOf(keyword) > -1;
 };
 
 /**
- * GA文庫のスクレイピング情報をFireStoreにセットする
- * @param {object} db
- * @param {array} novelInfoObjArr
- * @param {array} gaImgUrlArr
+ * 一行の中からキーワードを抽出した結果を返す
+ * @param {string} lineText
+ * @param {string} beginKeyword
+ * @param {string} endKeyword
+ * @returns string
  */
-const writeGAInfoToFireStore = async (novelInfoObjArr, gaImgUrlArr) => {
-    let fullNovelInfoObjArr = [];
-    const date = new Date();
-    const fullYear = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const saleMonthYear = fullYear + "" + month;
-    let authorArr = [];
-    let illustratorArr = [];
-    for (let i = 0; i < novelInfoObjArr.length; i++) {
-        let novelInfoObj = novelInfoObjArr[i];
-        const imageUrl = gaImgUrlArr[i];
-        novelInfoObj.imageUrl = imageUrl;
-        fullNovelInfoObjArr[i] = novelInfoObj;
-        authorArr[i] = novelInfoObj.author;
-        illustratorArr[i] = novelInfoObj.illustrator;
+const getTargetText = (lineText, beginKeyword, endKeyword) => {
+    const keywordBeginPosi = lineText.indexOf(beginKeyword);
+    const endIndex = lineText.indexOf(endKeyword);
+    if (keywordBeginPosi === -1 || endIndex === -1) {
+        return "";
     }
-    const retObj = {
-        saleMonthYear: saleMonthYear,
-        fullNovelInfoObjArr: fullNovelInfoObjArr,
-        authorArr: authorArr,
-        illustratorArr: illustratorArr,
-    };
-    return retObj;
+    const beginIndex = keywordBeginPosi + beginKeyword.length;
+    if (beginIndex > endIndex) {
+        return "";
+    }
+    return lineText.substring(beginIndex, endIndex).trim();
 };
