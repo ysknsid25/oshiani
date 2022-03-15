@@ -4,6 +4,7 @@ admin.initializeApp(functions.config().firebase);
 
 const db = admin.firestore();
 
+/*
 exports.gaScraiping = functions
     .region("asia-northeast1")
     .runWith({
@@ -13,13 +14,31 @@ exports.gaScraiping = functions
     .https.onRequest(async (req, res) => {
         const scrai = require("./ga");
         const retArr = await scrai.gaScraiping(db);
-        functions.logger.info(retArr, { structuredData: true });
+        //functions.logger.info(retArr, { structuredData: true });
         res.send("fine");
+    });
+*/
+
+exports.gaScraiping = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 300,
+        memory: "1GB",
+    })
+    .pubsub.schedule("0 0 16 * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const scrai = require("./ga");
+        const retArr = await scrai.gaScraiping(db);
     });
 
 exports.testFunc = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
+        const scrai = require("./lightning");
+        const retArr = await scrai.lightningScraiping(db);
+        console.log(retArr);
+        //functions.logger.info(retArr, { structuredData: true });
         res.send("fine");
     });
 
