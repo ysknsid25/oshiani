@@ -44,17 +44,33 @@ exports.lightningScraiping = functions
         const scrai = require("./lightning");
         await scrai.lightningScraiping(db);
     });
-/*
-exports.testFunc = functions
+
+exports.gagagaScraiping = functions
     .region("asia-northeast1")
-    .https.onRequest(async (req, res) => {
-        const scrai = require("./lightning");
-        const retArr = await scrai.lightningScraiping(db);
-        //console.log(retArr);
-        functions.logger.info(retArr, { structuredData: true });
-        res.send("fine");
+    .runWith({
+        timeoutSeconds: 300,
+        memory: "1GB",
+    })
+    .pubsub.schedule("0 0 17 * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const scrai = require("./gagaga");
+        const retArr = await scrai.gagagaScraiping(db);
     });
-*/
+
+exports.sneakerScraiping = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 300,
+        memory: "1GB",
+    })
+    .pubsub.schedule("0 0 17 * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const scrai = require("./sneaker");
+        const retArr = await scrai.sneakerScraiping(db);
+    });
+
 /**
  * A&Gのホームページをスクレイピングし、番組情報を取得する
  */

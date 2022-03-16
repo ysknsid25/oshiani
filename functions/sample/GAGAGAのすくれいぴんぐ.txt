@@ -1,0 +1,339 @@
+<!-- ↓ CONTENTS START!! ↓-->
+>      <div id="bgImg">
+>       <div id="contentwapper">
+> 
+>          <!--headerメニュー インクルード-->
+>               <script type="text/javascript">writeHeader();</script>
+>          <!--headerメニュー インクルードEND-->
+> 
+> 
+>                       <!--刊行予定 ---------------------------------------->
+>                       <article id="contBg">
+>                               <div class="heading">
+>                              <span class="headingTaitle">3月刊行予定</span>
+>                              <span class="headingReleasedate">3月刊は3月18日発売予定</span>
+>                          </div>
+> 
+>                                                <a name="01"></a>
+>                          <section class="content">
+>                               <div id="title">
+>                               <h3 class="blueBold">現実でラブコメできないとだれが決めた？５</h3>
+>                                                               <span class="textsize14">著：初鹿野 創　イラスト：椎名くろ</span><br />
+>                                  <span class="textsize14">ISBN: 978-4-09-453055-1　定価704円（税込）</span>
+>                              </div>
+>                              <div id="syoeiB">
+>                               <img src="../lineup/202203/01/syoei.gif" width="100%" height="100%" style="border:#dddddd 1px solid" class="cover">
+>                                  <!--a href="http://www.shogakukan.co.jp/books/detail/_isbn_9784094530551" target="_blank"><img src="../img/common/sokuBtn.jpg" alt="試読・購入・ソク読み" class="sokuyomi" border="0" height="56" width="280"></a-->
+>                              </div>
+>                              <div id="Synopsis">
+>                               <span class="bold">“共犯者”に必要な、たった一つのもの。</span>
+>                                  <p class="textsize14">“メインヒロイン”の衝撃の告白からしばらく経ち、夏休みに突入。彩乃は計画中止の宣言を受け、『DRAGON CAFE』にて呆然自失としていた。耕平とは、あれからまともに連絡
+が取れていない。どうしたら良かったのか、これからどうすれば良いのか、全然わからない。するとカフェのマスターから「友達と腹を割って話したら、光明が見えるかもしれない」とアドバイスを受ける。真っ先に思い浮かんだのは、二
+人の“ヒロイン”だった――。大人気の『実現するラブコメ』第５弾！　ラブコメのない、静かな夏がやってくる。</p>
+>                              </div>
+>                              <div id="character">
+>                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202007/02/c1.gif"></span>
+>                                      <span class="charaText"><span class="bold">長坂耕平</span><br>
+>                                               ラブコメに全てを捧げた主人公。<br>現実でラブコメを実現しようとしている。</span>
+>                                  </div>
+>                                  <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202007/02/c2.gif"></span>
+>                                      <span class="charaText"><span class="bold">上野原彩乃</span><br>
+>                                               耕平のラブコメに巻き込まれた"共犯者"。<br>無表情で理屈屋なイマドキＪＫ。</span>
+>                                  </div>
+>                                  <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202007/02/c3.gif"></span>
+>                                      <span class="charaText"><span class="bold">清里芽衣</span><br>
+>                                               耕平の"メインヒロイン"。<br>二次元キャラのようなスペックの美少女。</span>
+>                                  </div>
+>                                                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202105/01/c4.gif"></span>
+>                                      <span class="charaText"><span class="bold">日野春幸</span><br>
+>                                               元生徒会役員で２年生。<br>耕平が目を付けている”先輩キャラ”。</span>
+>                                  </div>
+>                               </div>
+> 
+>                                                       <div id="archive">
+>                               <div class="title"><img src="../img/common/point.jpg"><span>シリーズラインアップ</span></div>
+>                               <ul>
+>                                                                       <li class="backnumber"><a href="../lineup/202007.html#02"><img src="../lineup/202007/02/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202012.html#03"><img src="../lineup/202012/03/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202105.html#01"><img src="../lineup/202105/01/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202109.html#02"><img src="../lineup/202109/02/syoei.gif"></a></li>
+>                                  </ul>
+>                              </div>
+> 
+>                          </section>
+> 
+>                                                <span class="border"></span>
+> 
+>                                                <a name="02"></a>
+>                          <section class="content">
+>                               <div id="title">
+>                               <h3 class="blueBold">塩対応の佐藤さんが俺にだけ甘い６</h3>
+>                                                               <span class="textsize14">著：猿渡かざみ　イラスト：Aちき</span><br />
+>                                  <span class="textsize14">ISBN: 978-4-09-453057-5　定価660円（税込）</span>
+>                              </div>
+>                              <div id="syoeiB">
+>                               <img src="../lineup/202203/02/syoei.gif" width="100%" height="100%" style="border:#dddddd 1px solid" class="cover">
+>                                  <!--a href="http://www.shogakukan.co.jp/books/detail/_isbn_9784094530575" target="_blank"><img src="../img/common/sokuBtn.jpg" alt="試読・購入・ソク読み" class="sokuyomi" border="0" height="56" width="280"></a-->
+>                              </div>
+>                              <div id="Synopsis">
+>                               <span class="bold">今度の恋のライバルは甘くない！？</span>
+>                                  <p class="textsize14">動物園でのひと騒動を経て、押尾君に惚れ直してしまった佐藤さん。そんな彼女は押尾君と話すのが恥ずかしすぎて"塩対応"が再発！？　そんななか、「ミンスタをがんばる 
+」という当初の目的を見失った昨今の行動をみかねた父親から、フォロワー数を100倍に増やさなくてはならない試練が与えられる（※現在6人）。一方、押尾君に言い寄るミンスタグラマー姫茴薫も現れ、互いを好きすぎるがゆえにチグハ 
+グした二人の関係はどうなってしまうのか！？　等身大の恋路を歩む押尾君と佐藤さんの物語は波乱のひと幕を開ける！！</p>
+>                                                               </div>
+>                              <div id="character">
+>                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/201912/02/c1.gif"></span>
+>                                      <span class="charaText"><span class="bold">押尾 颯太</span><br>
+>                                               高校二年生。実家である「cafe tutuji」の店員。</span>
+>                                  </div>
+>                                  <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202004/05/c2.gif"></span>
+>                                      <span class="charaText"><span class="bold">佐藤 こはる</span><br>
+>                                               高校二年生。通称"塩対応の佐藤さん"</span>
+>                                  </div>
+>                                  <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202203/02/c3.gif"></span>
+>                                      <span class="charaText"><span class="bold">姫茴薫</span><br>
+>                                               高校二年生。超有名女子高生ミンスタグラマー</span>
+>                                  </div>
+> 
+>                               </div>
+> 
+>                                                       <div id="archive">
+>                               <div class="title"><img src="../img/common/point.jpg"><span>シリーズラインアップ</span></div>
+>                               <ul>
+>                                                                       <li class="backnumber"><a href="../lineup/201912.html#02"><img src="../lineup/201912/02/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202004.html#05"><img src="../lineup/202004/05/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202009.html#01"><img src="../lineup/202009/01/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202102.html#01"><img src="../lineup/202102/01/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202108.html#01"><img src="../lineup/202108/01/syoei.gif"></a></li>
+>                                  </ul>
+>                              </div>
+> 
+>                          </section>
+> 
+>                                                <span class="border"></span>
+> 
+> 
+>                                                <a name="03"></a>
+>                          <section class="content">
+>                               <div id="title">
+>                               <h3 class="blueBold">双神のエルヴィナ３</h3>
+>                                                               <span class="textsize14">著：水沢 夢　イラスト：春日 歩</span><br />
+>                                  <span class="textsize14">ISBN: 978-4-09-453059-9　定価704円（税込）</span>
+>                              </div>
+>                              <div id="syoeiB">
+>                               <img src="../lineup/202203/03/syoei.gif" width="100%" height="100%" style="border:#dddddd 1px solid" class="cover">
+>                                  <!--a href="http://www.shogakukan.co.jp/books/detail/_isbn_9784094530599" target="_blank"><img src="../img/common/sokuBtn.jpg" alt="試読・購入・ソク読み" class="sokuyomi" border="0" height="56" width="280"></a-->
+>                              </div>
+>                              <div id="Synopsis">
+>                               <span class="bold">登録者２８０万！　天界最かわ女神のＶＲ侵略</span>
+>                                  <p class="textsize14">世界中のカップルを破局に導こうとした女神・シェアメルトとの激闘を制した照魔たち。デュアルライブスの活動も軌道に乗り、様々な施策を打ち出すなどして世界への影響 
+力を高めていく。だが、その一方で、シェアメルトの持ち帰った情報をもとに、次なる六枚翼も行動を開始していた。天界“最かわ”を自称するアイドル系女神・リィライザは、バーチャルアイドルとして人間界に降臨。投げ銭代わりに心を
+吸い取られようとしていることも知らず、人々は彼女に魅了されていく……。人間界の守護者と天界のアイドルの、次元を超越した大決戦！</p>
+>                              </div>
+>                               <div id="character">
+>                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202203/03/c1.gif"></span>
+>                                      <span class="charaText"><span class="bold">創条照魔</span><br>
+>                                               創条コンツェルンの御曹司。女神に初恋をした少年。</span>
+>                                  </div>
+>                                  <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202203/03/c2.gif"></span>
+>                                      <span class="charaText"><span class="bold">エルヴィナ</span><br>
+>                                               天界に君臨する最強の女神。照魔と契約を結ぶ。</span>
+>                                  </div>
+>                                  <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202203/03/c3.gif"></span>
+>                                      <span class="charaText"><span class="bold">斑鳩 燐</span><br>
+>                                               照魔の専属執事。特技が非常に多い頼れる青年。</span>
+>                                  </div>
+>                                                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202203/03/c4.gif"></span>
+>                                      <span class="charaText"><span class="bold">恵雲詩亜</span><br>
+>                                               照魔の専属メイド。ノリは軽いが仕事は確か。</span>
+>                                  </div>
+>                               </div>
+> 
+>                                                       <div id="archive">
+>                               <div class="title"><img src="../img/common/point.jpg"><span>シリーズラインアップ</span></div>
+>                               <ul>
+>                                       <li class="backnumber"><a href="../lineup/202102.html#03"><img src="../lineup/202102/03/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202108.html#03"><img src="../lineup/202108/03/syoei.gif"></a></li>
+>                                  </ul>
+>                              </div>
+> 
+>                          </section>
+> 
+>                                                 <span class="border"></span>
+> 
+>                                               <a name="04"></a>
+>                          <section class="content">
+>                               <div id="title">
+>                               <h3 class="blueBold">千歳くんはラムネ瓶のなか６．５</h3>
+>                                                               <span class="textsize14">著：裕夢　イラスト：raemz</span><br />
+>                                  <span class="textsize14">ISBN: 978-4-09-453060-5　定価847円（税込）</span>
+>                              </div>
+>                              <div id="syoeiB">
+>                               <img src="../lineup/202203/04/syoei.gif" width="100%" height="100%" style="border:#dddddd 1px solid" class="cover">
+>                                  <!--a href="http://www.shogakukan.co.jp/books/detail/_isbn_9784094530605" target="_blank"><img src="../img/common/sokuBtn.jpg" alt="試読・購入・ソク読み" class="sokuyomi" border="0" height="56" width="280"></a-->
+>                              </div>
+>                              <div id="Synopsis">
+>                               <span class="bold">ばいばい、恋した一度きりの夏。</span>
+>                                  <p class="textsize14">「ばいばいみんな、また二学期にな」　それぞれの思いが花火のように夜空を染めた夏。少女たちは、再び手を伸ばす。心の奥に沈む、大切な月を掬えるようにと。熱く駆け
+ぬけた季節を終わらせ、もう一度歩き出せるようにと。終わりはきっと、なにかの始まりだから。<br>短夜を彩る珠玉の「長篇」集。――だから、ばいばい、人生で一度きりの夏。</p>
+>                              </div>
+>                             <div id="character">
+>                               <div class="charaBox">
+>                                       <span class="charaImg"><img src="../lineup/201906/01/c2.gif"></span>
+>                                       <span class="charaText"><span class="bold">柊 夕湖</span><br>
+>                                        天然最強の姫オーラ美少女。 </span>
+>                                  </div>
+>                                                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/201906/01/c3.gif"></span>
+>                                       <span class="charaText"><span class="bold">内田優空</span><br>
+>                                         努力型の後天的リア充。地味かわいい。</span>
+>                                  </div>
+>                                                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/201910/04/c2.gif"></span>
+>                                      <span class="charaText"><span class="bold">七瀬悠月</span><br>
+>                                               夕湖と男子人気を二分する美少女。</span>
+>                                  </div>
+> 
+>                                                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202203/04/c4.gif"></span>
+>                                      <span class="charaText"><span class="bold">綾瀬なずな</span><br>
+>                                               あけすけな物言いのギャル。</span>
+>                                  </div>
+>                               </div>
+> 
+>                                                       <div id="archive">
+>                               <div class="title"><img src="../img/common/point.jpg"><span>シリーズラインアップ</span></div>
+>                               <ul>
+>                                                                       <li class="backnumber"><a href="../lineup/201906.html#01"><img src="../lineup/201906/01/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/201910.html#04"><img src="../lineup/201910/04/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202004.html#09"><img src="../lineup/202004/09/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202009.html#03"><img src="../lineup/202009/03/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202104.html#03"><img src="../lineup/202104/03/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202104.html#04"><img src="../lineup/202104/04/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202108.html#04"><img src="../lineup/202108/04/syoei.gif"></a></li>
+>                                  </ul>
+>                              </div>
+> 
+>                          </section>
+> 
+> 
+>                                                <span class="border2"></span>
+> 
+>                                                <a name="05"></a>
+>                                               <section class="content2">
+>                               <div id="title">
+>                               <h3 style="font-weight:bold; color:#FFF;"><span style="color:#FEFE00; font-size:80%;">＜ガガガブックス＞</span><br />元英雄で、今はヒモ３　<span style="font-size:80%;">～最強の勇者が
+ブラック人類から離脱してホワイト魔王軍で幸せになる話～</span></h3>
+>                                                               <span class="textsize14">著：御鷹穂積　イラスト：高峰ナダレ</span><br />
+>                                  <span class="textsize14">ISBN: 978-4-09-461159-5　定価1,540円（税込）</span>
+>                              </div>
+>                              <div id="syoeiB">
+>                               <img src="../lineup/202203/05/syoei.gif" width="100%" height="100%" style="border:#dddddd 1px solid" class="cover">
+>                                  <!--a href="http://www.shogakukan.co.jp/books/detail/_isbn_9784094611595" target="_blank"><img src="../img/common/sokuBtn.jpg" alt="試読・購入・ソク読み" class="sokuyomi" border="0" height="56" width="280"></a-->
+>                              </div>
+>                              <div id="Synopsis">
+>                               <span class="bold" style="color:#FFFF00;">魔王軍のヒモは、永遠に不滅です！</span>
+>                                  <p class="textsize14">魔族たちが企む“神”の召喚に対抗するため、レインたちは戦闘の準備を整える。さすがに今回ばかりは、エレノアたちと遊ぶ暇はないだろう……。と思われたが、さすがは万全 
+なホワイト体制の魔王軍。リフレッシュのため、レインたちには十分な休養の時間を与えられた。七人組の計らいもあり、雪遊びに温泉、パーティー、カジノなどを楽しむレイン。さらに、人類の危機のため英雄たちとも協力関係を結ぶこ
+とに。すると、賢者、魔弾、聖女が突然押し掛けてきて――!?
+>                                  </p>
+>                              </div>
+>                              <div id="character2">
+> 
+>                                  <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202103/05/c1.gif"></span>
+>                                      <span class="charaText"><span class="bold">レイン</span><br>
+>                                               六英雄にして、歴代最強の勇者。現在は魔王軍のヒモ。</span>
+>                                  </div>
+>                                                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202103/05/c2.gif"></span>
+>                                      <span class="charaText"><span class="bold">ミカ</span><br>
+>                                               レインの聖剣。ツッコミ担当。</span>
+>                                  </div>
+>                                                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202103/05/c3.gif"></span>
+>                                      <span class="charaText"><span class="bold">エレノア</span><br>
+>                                               ジャースティ国魔王軍四天王。レインに心酔している。</span>
+>                                  </div>
+>                                                               <div class="charaBox">
+>                                      <span class="charaImg"><img src="../lineup/202103/05/c4.gif"></span>
+>                                      <span class="charaText"><span class="bold">ルート</span><br>
+>                                               ジャースティ国魔法学院の教師。レインに心酔している。</span>
+>                                  </div>
+> 
+>                               </div>
+> 
+>                                                       <div id="archive2">
+>                               <div class="title"><img src="../img/common/point2.jpg"><span>シリーズラインアップ</span></div>
+>                               <ul>
+>                                      <li class="backnumber"><a href="../lineup/202103.html#05"><img src="../lineup/202103/05/syoei.gif"></a></li>
+>                                                                       <li class="backnumber"><a href="../lineup/202109.html#09"><img src="../lineup/202109/09/syoei.gif"></a></li>
+>                                  </ul>
+>                              </div>
+> 
+>                                                  </section>
+> 
+>                                                 <span class="border"></span>
+> 
+>                                                </article>
+> 
+>                          <!--次月刊行予定 ---------------------------------------->
+>                           <section id="contBg2">
+>                              <div class="heading">
+>                                  <span class="headingTaitle">4月刊行予定</span>
+> 
+>                                  <span class="headingReleasedate">4月刊は4月19日発売予定</span>
+>                              </div><!--
+>                                                       --><div class="contBox4 height72">
+>                                  <h3>結婚が前提のラブコメ６</h3>
+>                                  <p>著：栗ノ原草介　イラスト：吉田ばな</p>
+>                              </div><!--
+>                                                       --><div class="contBox4 height72">
+>                                  <h3>公務員、中田忍の悪徳３</h3>
+>                                  <p>著：立川浦々　イラスト：楝蛙</p>
+>                              </div><!--
+>                                                       --><div class="contBox4 height72">
+>                                  <h3>ここでは猫の言葉で話せ２</h3>
+>                                  <p>著：昏式龍也　イラスト：塩かずのこ</p>
+>                              </div><!--
+>                                                       --><div class="contBox4 height72">
+>                                  <h3>ソレオレノ</h3>
+>                                  <p>著：喜多川 信　イラスト：ＫＥＮＴ</p>
+>                              </div><!--
+>                                                       --><div class="contBox4 height72">
+>                                  <h3>負けヒロインが多すぎる！３</h3>
+>                                  <p>著：雨森たきび　イラスト：いみぎむる</p>
+>                              </div><!--
+>                                                       --><div class="contBox4 height72">
+>                                  <h3>ロストマンの弾丸２</h3>
+>                                  <p>著：水田 陽　イラスト：LOWRISE</p>
+>                              </div><!--
+>                              --><div class="contBox4 height92" style="background-color:#55acee; color:#FFF; padding-left:7px;">
+>                                  <h3><span style="color:#F8FA03; font-size:80%;">＜ガガガブックス＞</span><br>ロメリア戦記<span style="font-size: 80%;"> ～魔王を倒した後も人類やばそうだから軍隊組織した～４</span></h3>
+>                                  <p>著：有山リョウ　イラスト：上戸 亮</p>
+>                              </div>
+>                             <p class="textsizeS paLeft4">※発売タイトル及び刊行予定は変更になることがあります。</p>
+> 
+>                          </section>
+> 
+>                          <!--次月刊行予定 END------------------------------------->
+> 
+> 
+>      </div>
+>       <div id="page-top" >
+>      <a href=".spLogo" class="pageTop rollover">ページのトップへ</a>
+> 
+>      </div>
+> 
+>  <!-- ↑ CONTENTS END!! ↑-->

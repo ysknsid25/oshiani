@@ -1,0 +1,519 @@
+>  <!DOCTYPE html>
+>  <html class="no-js" lang="ja">
+>  <head>
+>  <meta charset="UTF-8">
+>  <title>書籍情報 | スニーカー文庫（ザ・スニーカーWEB）</title>
+>  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+>  <meta name="theme-color" content="#ff009c">
+>  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>  <meta property="og:url" content="https://sneakerbunko.jp/product/">
+>  <meta property="og:site_name" content="スニーカー文庫（ザ・スニーカーWEB）">
+>  <meta property="og:title" content="書籍情報 | スニーカー文庫（ザ・スニーカーWEB）">
+>  <meta property="og:type" content="article">
+>  <meta property="og:description" content="">
+>  <meta property="og:image" content="https://sneakerbunko.jp/archives/001/201803/37ad3cb11e8b504cf0ecd9bae02ae3a8.png">
+>  <meta name="description" content="">
+>  <meta name="keywords" content="">
+>  <meta name="format-detection" content="telephone=no">
+>  <link rel="apple-touch-icon" sizes="144x144" href="/themes/kadokawa/images/apple-touch-icon.png">
+>  <meta name="theme-color" content="">
+>  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://sneakerbunko.jp/rss2.xml">
+>  <link rel="stylesheet" href="/themes/system/css/acms-admin.min.css?date=20180105020734">
+>  <link rel="stylesheet" href="/themes/kadokawa/dest/bootstrap.min.css?date=20180116181504">
+>  <link rel="stylesheet" href="/themes/kadokawa/dest/bundle.min.css?date=20180327093456">
+>  <link href="//fonts.googleapis.com/css?family=Titillium+Web:400,600i" rel="stylesheet">
+>  <link rel="shortcut icon" href="/themes/kadokawa/images/favicon.ico">
+>  <script type="application/ld+json">
+>  {
+>       "@context": "http://schema.org",
+>       "@type": "BreadcrumbList",
+>       "itemListElement":
+>       [
+>       {
+>               "@type": "ListItem",
+>               "position": 1,
+>               "item":
+>               {
+>               "@id": "https://sneakerbunko.jp/",
+>               "name": "ホーム"
+>               }
+>       },{
+>               "@type": "ListItem",
+>               "position": 2,
+>               "item":
+>               {
+>               "@id": "https://sneakerbunko.jp/product/",
+>               "name": "書籍情報"
+>               }
+>       }
+>       ]
+>  }
+>  </script>
+>  <style>
+>  .acms-admin-form select,
+>  .acms-admin-form .acms-form-select {
+>  -webkit-appearance: none;
+>  }
+>  </style>
+>  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+>  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+>  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+>  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+>  })(window,document,'script','dataLayer','GTM-5NW8G5Q');</script>
+>  <script src="/js/library/jquery/jquery-2.2.3.min.js" charset="UTF-8"></script>
+>  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.7.1/slick/slick.min.js"></script>
+>  <script src="/themes/kadokawa/lib/modernizr.js?date=20180116181504"></script>
+>  <script src="/themes/kadokawa/dest/bundle.js?date=20180313100907" charset="UTF-8"></script>
+>  <script src="/acms.js?domains=sneakerbunko.jp&amp;jsDir=js/&amp;themesDir=/themes/&amp;bid=3&amp;bcd=product&amp;googleApiKey=AIzaSyAkH79hCeXjqzzhcXHDSZf-xtkVfqxBHz0&amp;jQuery=2.2.3&amp;jQueryMigrate=off&amp;fulltimeSSL=1&amp;v=1a8883b32311324cb6232bc91469f6ed&amp;umfs=200M&amp;pms=200M&amp;mfu=50&amp;lgImg=width:1400&amp;jpegQuality=95&amp;scriptRoot=/" charset="UTF-8" id="acms-js"></script>
+>  <script src="/themes/kadokawa/dest/totop.js?date=20180320234819" charset="UTF-8"></script>
+>  <meta name="generator" content="a-blog cms" />
+>  </head>
+>  <body>
+>  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NW8G5Q"
+>  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+>  <div id="fb-root"></div>
+>  <script>(function(d, s, id) {
+>    var js, fjs = d.getElementsByTagName(s)[0];
+>    if (d.getElementById(id)) return;
+>    js = d.createElement(s); js.id = id;
+>    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
+>    fjs.parentNode.insertBefore(js, fjs);
+>  }(document, 'script', 'facebook-jssdk'));</script>
+>  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+>  <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+>    {lang: "ja"}
+>  </script>
+>  <div id="search" class="p-search-header js-search-box">
+>  <form action="https://sneakerbunko.jp/search.html" method="post" name="searchForm" class="c-search__form" role="search" aria-label="検索フォーム">
+>  <div class="c-search__action">
+>  <input type="search" id="searchForm" name="keyword" value="" size="15" class="c-search__input" placeholder="フリーワード検索">
+>  <input type="hidden" name="query" value="keyword">
+>  <span class="c-search__side-btn"><button type="submit" name="ACMS_POST_2GET" class="c-search__btn"><img src="/themes/kadokawa/images/global/icon_search.svg"><span class="sr-only">検索</span></button></span>     
+>  <input type="hidden" name="tpl" value="/search/">
+>  </div>
+>  <input type="hidden" name="formToken" value="adfee416cb1c16bf31c14df12c0d5003bfb03375">
+>  <input type="hidden" name="formToken" value="ffe138740f7364d15de05e954a7e88a4b72bb915">
+>  </form>
+>  </div>
+>  <div class="body-inner">
+>  <header class="g-header">
+>  <div class="g-header-mobile-nav__wrap">
+>  <div class="g-header-mobile-nav">
+>  <nav class="g-header-mobile-nav__menu">
+>  <a href="#offcanvas" class="g-header-mobile-nav__menu-btn js-offcanvas-btn js-offcanvas-btn-l" aria-label="メニュー">
+>  <span class="g-header-mobile-nav__menu-btn-bar"></span>
+>  </a>
+>  </nav>
+>  <div class="g-header-mobile-nav__title">
+>  <p class="g-header-mobile-nav__title-main"><a href="https://sneakerbunko.jp/">
+>  <img src="/themes/kadokawa/images/global/logo.png">
+>  </a></p >
+>  <p class="g-header-mobile-nav__title-side">毎月1日発売!!</p>
+>  </div>
+>  <nav class="g-header-mobile-nav__search">
+>  <a href="#search" class="g-header-mobile-nav__search-btn js-btn-search">
+>  <img src="/themes/kadokawa/images/global/icon_search_black.svg" width="29" height="29">
+>  </a>
+>  </nav>
+>  </div>
+>  </div>
+>  <div class="g-header-desktop-nav">
+>  <div class="container">
+>  <div class="g-header-desktop-nav__inner">
+>  <div class="g-header-desktop-nav__title">
+>  <p class="g-header-desktop-nav__title-main"><a href="https://sneakerbunko.jp/">
+>  <img src="/themes/kadokawa/images/global/logo.png">
+>  </a></p>
+>  <p class="g-header-desktop-nav__title-side">毎月1日発売!!</p>
+>  <p class="g-header-desktop-nav__title-special" style="margin: 0;"><img src="/themes/kadokawa/images/global/sneaker_logo.svg" style="width:50px; height:50px;"></p>
+>  </div>
+>  <div class="g-header-desktop-nav__menu">
+>  <nav class="g-header__navbar" aria-label="メインメニュー">
+>  <ul>
+>  <li  class="js-link_match_location-full g-header-navigation__home">
+>  <a href="https://sneakerbunko.jp/" target="_self"  class=" js-viewing-indelible" >
+>  ホーム
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__news">
+>  <a href="https://sneakerbunko.jp/news/" target="_self"  class=" js-viewing-indelible" >
+>  ニュース
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__series">
+>  <a href="https://sneakerbunko.jp/series/" target="_self"  class=" js-viewing-indelible" >
+>  シリーズ紹介
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__product">
+>  <a href="https://sneakerbunko.jp/product/" target="_self"  class=" js-viewing-indelible" >
+>  書籍情報
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__special">
+>  <a href="https://sneakerbunko.jp/special/33rd-fair/" target="_self"  class=" js-viewing-indelible" >
+>  33周年
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__award">
+>  <a href="https://sneakerbunko.jp/award/" target="_self"  class=" js-viewing-indelible" >
+>  スニーカー大賞
+>  </a>
+>  </li>
+>  </ul>
+>  </nav>
+>  <nav class="g-header__social-nav">
+>  <div>
+>  <ul class="g-header__social-list">
+>  </ul>
+>  </div>
+>  </nav>
+>  </div>
+>  </div>
+>  </div>
+>  </div>
+>  </header>
+>  <div class="c-page-title" style="background:#FF6B6B;">
+>  <div class="c-page-title__container" style="background-image:url(/archives/003/201803/fb10c4d00f0e633c981b7e8d206c6392.jpg);color:#fff;background-repeat:no-repeat;">
+>  <p class="c-page-title__heading">書籍情報</p>
+>  </div>
+>  </div>
+>  <nav aria-label="現在位置" class="c-topicpath">
+>  <div class="container">
+>  <ul class="c-topicpath__list">
+>  <li class="c-topicpath__item"><a href="https://sneakerbunko.jp/" class="c-topicpath__link">ホーム</a></li>
+>  <li class="c-topicpath__item"><a href="https://sneakerbunko.jp/product/" class="c-topicpath__link">書籍情報</a></li>
+>  </ul>
+>  </div>
+>  </nav>
+>  <main>
+>  <div class="content">
+>  <div class="container">
+>  <div class="row">
+>  <div class="col-lg-9">
+>  <div class="p-search-area">
+>  <form action="/product/" method="post" id="archive_search" class="acms-form" role="search" aria-label="既刊検索フォーム">
+>  <div class="p-search-area__row">
+>  <p class="p-search-area__title">既刊検索</p>
+>  <div class="p-search-area__col">
+>  <input type="search" name="keyword" value="" placeholder="フリーキーワード" id="search-free_word" class="c-form-input p-search-input">
+>  <input type="hidden" name="tpl" value="index2.html">
+>  <span class="c-search__side-btn -p-search-area__btn"><button type="submit" name="ACMS_POST_2GET" class="c-search__btn"><img src="/themes/kadokawa/images/global/icon_search.svg"><span class="sr-only">検索</span></button></span>
+>  </div>
+>  </div>
+>  <input type="hidden" name="formToken" value="adfee416cb1c16bf31c14df12c0d5003bfb03375">
+>  <input type="hidden" name="formToken" value="ffe138740f7364d15de05e954a7e88a4b72bb915">
+>  </form>
+>  </div>
+>  <select name="select" onChange="location.href=value;" class="c-pager-select -month">
+>  <option value="#">発売日新着順</option>
+>  <option value="https://sneakerbunko.jp/product/index2.html/order/title-asc/">書籍タイトル順(昇順)</option>
+>  <option value="https://sneakerbunko.jp/product/index2.html/order/title-desc/">書籍タイトル順(降順)</option>
+>  </select>
+>  <p class="c-pager-number">1 - 6 <span class="c-pager-number-separate">|</span> <span class="c-pager-number-small__text">全</span>2755<span class="c-pager-number-small__text">件</span></p>
+>  <div class="c-pager-month">
+>  <div class="c-pager-month__inner">
+>  <h2 class="c-pager-month__heading"><span>2022</span>年<span>03</span>月刊行</h2>
+>  <div class="c-pager-month__list-wrap">
+>  <ul class="c-pager-month__list -start">
+>  <li class="c-pager-month__list-item">
+>  <a href="https://sneakerbunko.jp/product/2021/12/" class="c-btn-sm">12月</a>
+>  </li>
+>  <li class="c-pager-month__list-item">
+>  <a href="https://sneakerbunko.jp/product/2022/01/" class="c-btn-sm">01月</a>
+>  </li>
+>  <li class="c-pager-month__list-item">
+>  <a href="https://sneakerbunko.jp/product/2022/02/" class="c-btn-sm">02月</a>
+>  </li>
+>  </ul>
+>  <ul class="c-pager-month__list -end">
+>  <li class="c-pager-month__list-item">
+>  <a href="https://sneakerbunko.jp/product/2022/04/" class="c-btn-sm">04月</a>
+>  </li>
+>  <li class="c-pager-month__list-item">
+>  <a href="https://sneakerbunko.jp/product/2022/05/" class="c-btn-sm">05月</a>
+>  </li>
+>  <li class="c-pager-month__list-item">
+>  <a href="https://sneakerbunko.jp/product/2022/06/" class="c-btn-sm">06月</a>
+>  </li>
+>  </ul>
+>  </div>
+>  <ul class="c-pager-month__arrow-list">
+>  <li class="c-pager-month__arrow-list-item -prev">
+>  <a href="https://sneakerbunko.jp/product/2022/02/" class="c-btn-sm c-pager-month__arrow-btn"><img src="/themes/kadokawa/images/global/arrow_sneaker_left.svg" width="8" height="8"></a>
+>  </li>
+>  <li class="c-pager-month__arrow-list-item -next">
+>  <a href="https://sneakerbunko.jp/product/2022/04/" class="c-btn-sm c-pager-month__arrow-btn"><img src="/themes/kadokawa/images/global/arrow_sneaker_right.svg" width="8" height="8"></a>
+>  </li>
+>  </ul>
+>  </div>
+>  </div>
+>  <div>
+>  <ul class="c-thumbnail-book row">
+>  <li class="js-dup-check c-thumbnail-book__item -to-media" data-title="この素晴らしい世界に祝福を！　ファンタスティックデイズ" data-isbn="9784041124369">
+>  <a href="https://sneakerbunko.jp/product/322112000409.html" class="c-thumbnail-book__img-link -thumbwrap">
+>  <img src="https://cdn.kdkw.jp/cover_500/322112/322112000409.jpg" width="206" alt="書影：この素晴らしい世界に祝福を！　ファンタスティックデイズ" class="js-img-fallback c-thumbnail-book__img img-fluid">
+>  </a>
+>  <div class="c-thumbnail-book__detail">
+>  <p class="c-thumbnail-book__title"><a href="https://sneakerbunko.jp/product/322112000409.html" class="c-thumbnail-book__title-link">この素晴らしい世界に祝福を！　ファンタスティックデイズ</a></p>
+>  <ul class="c-thumbnail-book__authors">
+>  <li class="c-thumbnail-book__author-item">著者 : <a href="https://sneakerbunko.jp/product/index2.html/keyword/昼熊" class="c-thumbnail-book__author-link">昼熊</a>
+>  <li class="c-thumbnail-book__author-item">イラスト : <a href="https://sneakerbunko.jp/product/index2.html/keyword/三嶋　くろね" class="c-thumbnail-book__author-link">三嶋　くろね</a>
+>  <li class="c-thumbnail-book__author-item">原作 : <a href="https://sneakerbunko.jp/product/index2.html/keyword/暁　なつめ" class="c-thumbnail-book__author-link">暁　なつめ</a>
+>  <li class="c-thumbnail-book__author-item">原作ゲーム : <a href="https://sneakerbunko.jp/product/index2.html/keyword/サムザップ" class="c-thumbnail-book__author-link">サムザップ</a>
+>  </ul>
+>  </div>
+>  <p class="c-thumbnail-book__trial-btn"><a href="https://bookwalker.jp/de7a4606e6-2321-4776-bb6e-52779c249d89/?adpcnt=GDPL5fFh&sample=1" target="_blank">試し読みをする</a></p>
+>  </li>
+>  <li class="js-dup-check c-thumbnail-book__item -to-media" data-title="見知らぬ女子高生に監禁された漫画家の話2" data-isbn="9784041121450">
+>  <a href="https://sneakerbunko.jp/product/322109000121.html" class="c-thumbnail-book__img-link -thumbwrap">
+>  <img src="https://cdn.kdkw.jp/cover_500/322109/322109000121.jpg" width="206" alt="書影：見知らぬ女子高生に監禁された漫画家の話2" class="js-img-fallback c-thumbnail-book__img img-fluid">
+>  </a>
+>  <div class="c-thumbnail-book__detail">
+>  <p class="c-thumbnail-book__title"><a href="https://sneakerbunko.jp/product/322109000121.html" class="c-thumbnail-book__title-link">見知らぬ女子高生に監禁された漫画家の話2</a></p>
+>  <ul class="c-thumbnail-book__authors">
+>  <li class="c-thumbnail-book__author-item">著者 : <a href="https://sneakerbunko.jp/product/index2.html/keyword/穂積　潜" class="c-thumbnail-book__author-link">穂積　潜</a>
+>  <li class="c-thumbnail-book__author-item">イラスト・企画 : <a href="https://sneakerbunko.jp/product/index2.html/keyword/きただ　りょうま" class="c-thumbnail-book__author-link">きただ　りょうま</a>
+>  </ul>
+>  </div>
+>  <p class="c-thumbnail-book__trial-btn"><a href="https://bookwalker.jp/de6d31d20e-a56e-48aa-9da9-d6b208dcc94e/?adpcnt=GDPL5fFh&sample=1" target="_blank">試し読みをする</a></p>
+>  </li>
+>  <li class="js-dup-check c-thumbnail-book__item -to-media" data-title="最弱呪術師、鬼神の力に覚醒する" data-isbn="9784041123065">
+>  <a href="https://sneakerbunko.jp/product/demongod/322110001171.html" class="c-thumbnail-book__img-link -thumbwrap">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001171.jpg" width="206" alt="書影：最弱呪術師、鬼神の力に覚醒する" class="js-img-fallback c-thumbnail-book__img img-fluid">
+>  </a>
+>  <div class="c-thumbnail-book__detail">
+>  <p class="c-thumbnail-book__title"><a href="https://sneakerbunko.jp/product/demongod/322110001171.html" class="c-thumbnail-book__title-link">最弱呪術師、鬼神の力に覚醒する</a></p>
+>  <ul class="c-thumbnail-book__authors">
+>  <li class="c-thumbnail-book__author-item">著者 : <a href="https://sneakerbunko.jp/product/index2.html/keyword/相野　仁" class="c-thumbnail-book__author-link">相野　仁</a>
+>  <li class="c-thumbnail-book__author-item">イラスト : <a href="https://sneakerbunko.jp/product/index2.html/keyword/クロがねや" class="c-thumbnail-book__author-link">クロがねや</a>
+>  </ul>
+>  </div>
+>  <p class="c-thumbnail-book__trial-btn"><a href="https://bookwalker.jp/defb52054a-a6df-4803-aaab-c05326f29c8c/?adpcnt=GDPL5fFh&sample=1" target="_blank">試し読みをする</a></p>
+>  </li>
+>  <li class="js-dup-check c-thumbnail-book__item -to-media" data-title="SNSで超人気のコスプレイヤー、教室で見せる内気な素顔もかわいい" data-isbn="9784041123041">
+>  <a href="https://sneakerbunko.jp/product/cosplayer/322110001169.html" class="c-thumbnail-book__img-link -thumbwrap">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001169.jpg" width="206" alt="書影：SNSで超人気のコスプレイヤー、教室で見せる内気な素顔もかわいい" class="js-img-fallback c-thumbnail-book__img img-fluid">    
+>  </a>
+>  <div class="c-thumbnail-book__detail">
+>  <p class="c-thumbnail-book__title"><a href="https://sneakerbunko.jp/product/cosplayer/322110001169.html" class="c-thumbnail-book__title-link">SNSで超人気のコスプレイヤー、教室で見せる内気な素顔もかわいい</a></p>>  <ul class="c-thumbnail-book__authors">
+>  <li class="c-thumbnail-book__author-item">著者 : <a href="https://sneakerbunko.jp/product/index2.html/keyword/雨宮　むぎ" class="c-thumbnail-book__author-link">雨宮　むぎ</a>
+>  <li class="c-thumbnail-book__author-item">イラスト : <a href="https://sneakerbunko.jp/product/index2.html/keyword/ｋｒ木" class="c-thumbnail-book__author-link">ｋｒ木</a>
+>  </ul>
+>  </div>
+>  <p class="c-thumbnail-book__trial-btn"><a href="https://bookwalker.jp/de715c5d7a-ae3d-47ed-8d44-55b3b33649f4/?adpcnt=GDPL5fFh&sample=1" target="_blank">試し読みをする</a></p>
+>  </li>
+>  <li class="js-dup-check c-thumbnail-book__item -to-media" data-title="落第賢者の学院無双8 ～二度転生した最強賢者、400年後の世界を魔剣で無双～" data-isbn="9784041120408">
+>  <a href="https://sneakerbunko.jp/product/rakudai/322108000092.html" class="c-thumbnail-book__img-link -thumbwrap">
+>  <img src="https://cdn.kdkw.jp/cover_500/322108/322108000092.jpg" width="206" alt="書影：落第賢者の学院無双8 ～二度転生した最強賢者、400年後の世界を魔剣で無双～" class="js-img-fallback c-thumbnail-book__img img-fluid">
+>  </a>
+>  <div class="c-thumbnail-book__detail">
+>  <p class="c-thumbnail-book__title"><a href="https://sneakerbunko.jp/product/rakudai/322108000092.html" class="c-thumbnail-book__title-link">落第賢者の学院無双8 ～二度転生した最強賢者、400年後の世界を魔剣で無双～
+</a></p>
+>  <ul class="c-thumbnail-book__authors">
+>  <li class="c-thumbnail-book__author-item">著者 : <a href="https://sneakerbunko.jp/product/index2.html/keyword/白石　新" class="c-thumbnail-book__author-link">白石　新</a>
+>  <li class="c-thumbnail-book__author-item">イラスト : <a href="https://sneakerbunko.jp/product/index2.html/keyword/魚デニム" class="c-thumbnail-book__author-link">魚デニム</a>
+>  </ul>
+>  </div>
+>  <p class="c-thumbnail-book__trial-btn"><a href="https://bookwalker.jp/de3afda108-b2f6-4eec-8cd6-6b4bdd462b07/?adpcnt=GDPL5fFh&sample=1" target="_blank">試し読みをする</a></p>
+>  </li>
+>  <li class="js-dup-check c-thumbnail-book__item -to-media" data-title="スクール下克上 超能力に目覚めたボッチが政府に呼び出されたらリア充になりました" data-isbn="9784041122334">
+>  <a href="https://sneakerbunko.jp/product/school_gekokujo/322110000095.html" class="c-thumbnail-book__img-link -thumbwrap">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110000095.jpg" width="206" alt="書影：スクール下克上 超能力に目覚めたボッチが政府に呼び出されたらリア充になりました" class="js-img-fallback c-thumbnail-book__img img-fluid">
+>  </a>
+>  <div class="c-thumbnail-book__detail">
+>  <p class="c-thumbnail-book__title"><a href="https://sneakerbunko.jp/product/school_gekokujo/322110000095.html" class="c-thumbnail-book__title-link">スクール下克上 超能力に目覚めたボッチが政府に呼び出されたらリア
+充になりました</a></p>
+>  <ul class="c-thumbnail-book__authors">
+>  <li class="c-thumbnail-book__author-item">著者 : <a href="https://sneakerbunko.jp/product/index2.html/keyword/鏡銀鉢" class="c-thumbnail-book__author-link">鏡銀鉢</a>
+>  <li class="c-thumbnail-book__author-item">イラスト : <a href="https://sneakerbunko.jp/product/index2.html/keyword/PAN:D" class="c-thumbnail-book__author-link">PAN:D</a>
+>  </ul>
+>  </div>
+>  <p class="c-thumbnail-book__trial-btn"><a href="https://bookwalker.jp/de2a94a311-0f2d-4c00-abdd-acb246353c42/?adpcnt=GDPL5fFh&sample=1" target="_blank">試し読みをする</a></p>
+>  </li>
+>  </ul>
+>  </div>
+>  </div>
+>  <div class="col-lg-3">
+>  <div class="p-side-section hidden-md-down">
+>  <form action="https://sneakerbunko.jp/search.html" method="post" name="searchForm" class="c-search__form" role="search" aria-label="検索フォーム">
+>  <div class="c-search__action">
+>  <input type="search" id="searchForm" name="keyword" value="" size="15" class="c-search__input -side" placeholder="フリーワード検索">
+>  <input type="hidden" name="query" value="keyword">
+>  <span class="c-search__side-btn"><button type="submit" name="ACMS_POST_2GET" class="c-search__btn"><img src="/themes/kadokawa/images/global/icon_search.svg"><span class="sr-only">検索</span></button></span>     
+>  <input type="hidden" name="tpl" value="/search/">
+>  </div>
+>  <input type="hidden" name="formToken" value="adfee416cb1c16bf31c14df12c0d5003bfb03375">
+>  <input type="hidden" name="formToken" value="ffe138740f7364d15de05e954a7e88a4b72bb915">
+>  </form>
+>  </div>
+>  <div class="p-side-section">
+>  <ul class="c-banner-col">
+>  <li class="c-banner-col__item">
+>  <a href="https://sneakerbunko.jp/fair/2022-newyear/?ref=banner" class="c-banner-col__link">
+>  <img src="/archives/001/202112/d32a3362891f78bf721763939fe25f8b.jpg" width="283" alt="">
+>  </a>
+>  </li>
+>  <li class="c-banner-col__item">
+>  <a href="https://sneakerbunko.jp/haruhi/?ref=banner" class="c-banner-col__link">
+>  <img src="/archives/001/202011/5f518bfdf285c9ca7a140a2a70a2b414.jpg" width="283" alt="">
+>  </a>
+>  </li>
+>  <li class="c-banner-col__item">
+>  <a href="https://sneakerbunko.jp/series/konosuba/?ref=banner" class="c-banner-col__link">
+>  <img src="/archives/001/202111/feece7777abf751dfcf0c874d088e70a.jpg" width="283" alt="">
+>  </a>
+>  </li>
+>  <li class="c-banner-col__item">
+>  <a href="https://sneakerbunko.jp/lodoss30th/?ref=banner" class="c-banner-col__link">
+>  <img src="/archives/001/201804/8bb633d222dd40770a91d8264f9a14f8.jpg" width="283" alt="">
+>  </a>
+>  </li>
+>  <li class="c-banner-col__item">
+>  <a href="https://kimirano.jp/?utm_source=web&amp;utm_medium=site&amp;utm_campaign=sneakerbunko?ref=banner" class="c-banner-col__link">
+>  <img src="/archives/001/201902/123e80d27c61e0e5f883eb5810099fce.jpg" width="283" alt="">
+>  </a>
+>  </li>
+>  </ul>
+>  </div>
+>  <div class="p-side-section">
+>  <h2 class="p-side-head__news">ニュース・編集部より<a href="https://sneakerbunko.jp/news/" class="p-side-head__news-morelink">一覧</a></h2>
+>  <div class="p-side-headline-wrapper">
+>  <ul class="p-side-headline -pickup">
+>  <li class="p-side-headline__item">
+>  <a href="https://sneakerbunko.jp/news/event/entry-10555.html" class="p-side-headline__link">
+>  <div class="p-side-headline__main">
+>  <div class="p-side-headline__main-header">
+>  <time class="p-side-headline__date" datetime="2022-02-10">2022/02/10</time>
+>  <span class="c-label" >イベント</span>
+>  </div>
+>  <span class="p-side-headline__title">「陰キャだった俺の青春リベンジ」感想ツイート投稿キャンペーンを開催！！</span>
+>  </div>
+>  </a>
+>  </li>
+>  <li class="p-side-headline__item">
+>  <a href="https://sneakerbunko.jp/news/editors/entry-10554.html" class="p-side-headline__link">
+>  <div class="p-side-headline__main">
+>  <div class="p-side-headline__main-header">
+>  <time class="p-side-headline__date" datetime="2022-02-01">2022/02/01</time>
+>  <span class="c-label" >編集部より</span>
+>  </div>
+>  <span class="p-side-headline__title">『ラブコメ漫画に入ってしまったので、推しの負けヒロインを全力で幸せにする』イラスト掲載の誤りについて</span>
+>  </div>
+>  </a>
+>  </li>
+>  <li class="p-side-headline__item">
+>  <a href="https://sneakerbunko.jp/news/editors/entry-10547.html" class="p-side-headline__link">
+>  <div class="p-side-headline__main">
+>  <div class="p-side-headline__main-header">
+>  <time class="p-side-headline__date" datetime="2022-01-17">2022/01/17</time>
+>  <span class="c-label" >編集部より</span>
+>  </div>
+>  <span class="p-side-headline__title">第27回スニーカー大賞・下剋上システム参加作品のお知らせ</span>
+>  </div>
+>  </a>
+>  </li>
+>  </ul>
+>  <a href="https://sneakerbunko.jp/news/" class="p-side-headline__news-morelink-bottom">ニュース一覧を見る</a>
+>  </div>
+>  </div>
+>  <aside class="p-side-section">
+>  <div class="c-suggest-twitter">
+>  <h2 class="c-suggest-twitter__heading"><img src="/themes/kadokawa/images/components/suggest/c-suggest-twitter-icon.png" class="c-suggest-twitter__heading-logo"><span class="c-suggest-twitter__heading-name">Twitter</span><a href="https://twitter.com/kadokawasneaker" target="_blank" class="c-suggest-twitter__heading-link">@kadokawasneaker</a></h2>
+>  <div class="c-suggest-twitter__container">
+>  <a class="twitter-timeline c-suggest-twitter__iframe" href="https://twitter.com/kadokawasneaker" data-height="520" data-chrome="noheader nofooter transparent" data-border-color="#fff" width="100%"></a>
+>  <div class="c-suggest-twitter__footer">
+>  <p class="c-suggest-twitter__follow-btn"><a href="https://twitter.com/kadokawasneaker" class="twitter-follow-button" data-show-count="false">Follow @kadokawasneaker</a></p>
+>  </div>
+>  </div>
+>  </div>
+>  </aside>
+>  <div class="p-side-section">
+>  <ul class="c-banner-col">
+>  <li class="c-banner-col__item">
+>  <a href="https://kakuyomu.jp/?ref=side_list" class="c-banner-col__link">
+>  <img src="/archives/001/201803/a9e16f0faddadd4302f0c2d50f73dfcb.jpg" width="283" alt="カクヨム">
+>  </a>
+>  </li>
+>  <li class="c-banner-col__item">
+>  <a href="http://bookwalker.jp/?ref=side_list" class="c-banner-col__link">
+>  <img src="/archives/001/201803/2b612cbdb27fdf61bfa8de1ad5d9e372.jpg" width="283" alt="BOOK WALKER">
+>  </a>
+>  </li>
+>  </ul>
+>  </div>
+>  </div>
+>  </div>
+>  </div>
+>  </div>
+>  </main>
+>  <footer class="g-footer">
+>  <a href="#" class="scrollTo g-footer-totop">
+>  <span class="g-footer-totop__inner"><img src="/themes/kadokawa/images/global/arrow_sneaker_up.svg"><br>上に戻る</span>
+>  </a>
+>  <nav class="g-footer-nav" aria-label="フッターメニュー">
+>  <div class="g-footer-navbar">
+>  <ul class="g-footer-navbar__list">
+>  <li class="js-link_match_location g-footer-navbar__item"><a href="https://sneakerbunko.jp/news/" class="g-footer-navbar__link js-viewing-indelible">ニュース</a></li>
+>  <li class="js-link_match_location g-footer-navbar__item"><a href="https://sneakerbunko.jp/series/" class="g-footer-navbar__link js-viewing-indelible">シリーズ紹介</a></li>
+>  <li class="js-link_match_location g-footer-navbar__item"><a href="https://sneakerbunko.jp/product/" class="g-footer-navbar__link js-viewing-indelible">今月の新刊</a></li>
+>  <li class="js-link_match_location g-footer-navbar__item"><a href="https://sneakerbunko.jp/special/33rd-fair/" class="g-footer-navbar__link js-viewing-indelible">33周年</a></li>
+>  <li class="js-link_match_location g-footer-navbar__item"><a href="https://sneakerbunko.jp/award/" class="g-footer-navbar__link js-viewing-indelible">スニーカー大賞</a></li>
+>  <li class="js-link_match_location g-footer-navbar__item"><a href="https://sneakerbunko.jp/about/" class="g-footer-navbar__link js-viewing-indelible">サイト内の情報について</a></li>
+>  <li class="js-link_match_location g-footer-navbar__item"><a href="https://group.kadokawa.co.jp/privacy_policy/main.html" class="g-footer-navbar__link js-viewing-indelible">プライバシーポリシー</a></li>
+>  </ul>
+>  </div>
+>  </nav>
+>  <div class="g-footer__inner">
+>  <div class="container">
+>  <div class="g-footer__corporate">
+>  <a href="http://www.kadokawa.co.jp">
+>  <img src="/themes/kadokawa/images/global/logo_corporate.svg" alt="KADOKAWA" width="240" height="35" role="img">
+>  </a>
+>  </div>
+>  <div class="g-footer__corporate">
+>  <p class="g-footer__copyright">©KADOKAWA CORPORATION 2022</p>
+>  </div>
+>  </div>
+>  </div>
+>  </footer>
+>  </div>
+>  <nav id="offcanvas" class="js-offcanvas g-offcanvas" aria-label="メインメニュー">
+>  <div class="g-offcanvas-nav">
+>  <ul>
+>  <li  class="js-link_match_location-full g-header-navigation__home">
+>  <a href="https://sneakerbunko.jp/" target="_self"  class=" js-viewing-indelible" >
+>  ホーム
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__news">
+>  <a href="https://sneakerbunko.jp/news/" target="_self"  class=" js-viewing-indelible" >
+>  ニュース
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__series">
+>  <a href="https://sneakerbunko.jp/series/" target="_self"  class=" js-viewing-indelible" >
+>  シリーズ紹介
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__product">
+>  <a href="https://sneakerbunko.jp/product/" target="_self"  class=" js-viewing-indelible" >
+>  書籍情報
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__special">
+>  <a href="https://sneakerbunko.jp/special/33rd-fair/" target="_self"  class=" js-viewing-indelible" >
+>  33周年
+>  </a>
+>  </li>
+>  <li  class="js-link_match_location-full g-header-navigation__award">
+>  <a href="https://sneakerbunko.jp/award/" target="_self"  class=" js-viewing-indelible" >
+>  スニーカー大賞
+>  </a>
+>  </li>
+>  </ul>
+>  </div>
+>  </nav>
+>  </body>
+>  </html>
+>  {"structuredData":true,"severity":"INFO","message":"[]"}
