@@ -46,6 +46,7 @@ const _END_OF_SCRAIPING = '<div class="newBook_month_select_wrap">';
  * @returns array
  */
 const readBody = (bodyText) => {
+    const { isContainKeyWord, getTargetText } = require("./common");
     const bodyTextArr = bodyText.split(/\n/);
     let isBeginScraiping = false;
     let isOutLineText = false;
@@ -54,6 +55,10 @@ const readBody = (bodyText) => {
     let tmpObj = {};
     for (let i = 0; i < bodyTextArr.length; i++) {
         const lineText = bodyTextArr[i];
+        //スクレイピングの終了判定
+        if (isBeginScraiping && isContainKeyWord(lineText, _END_OF_SCRAIPING)) {
+            break;
+        }
         //スクレイピングの開始判定
         if (isContainKeyWord(lineText, _BEGIN_OF_SCRAIPING)) {
             isBeginScraiping = true;
@@ -133,39 +138,6 @@ const readBody = (bodyText) => {
             resultArr.push(tmpObj);
             tmpObj = {};
         }
-        if (isContainKeyWord(lineText, _END_OF_SCRAIPING)) {
-            break;
-        }
     }
     return resultArr;
-};
-
-/**
- * キーワードがその行に含まれているかを判定
- * @param {string} lineText
- * @param {string} keyword
- * @returns boolean
- */
-const isContainKeyWord = (lineText, keyword) => {
-    return lineText.indexOf(keyword) > -1;
-};
-
-/**
- * 一行の中からキーワードを抽出した結果を返す
- * @param {string} lineText
- * @param {string} beginKeyword
- * @param {string} endKeyword
- * @returns string
- */
-const getTargetText = (lineText, beginKeyword, endKeyword) => {
-    const keywordBeginPosi = lineText.indexOf(beginKeyword);
-    const endIndex = lineText.indexOf(endKeyword);
-    if (keywordBeginPosi === -1 || endIndex === -1) {
-        return "";
-    }
-    const beginIndex = keywordBeginPosi + beginKeyword.length;
-    if (beginIndex > endIndex) {
-        return "";
-    }
-    return lineText.substring(beginIndex, endIndex).trim();
 };

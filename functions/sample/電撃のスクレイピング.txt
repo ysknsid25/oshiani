@@ -1,0 +1,595 @@
+<ul class="js-summary-product-list-with-image p-product-media list-unstyled">
+>        
+>        <li id="24609" class="p-books-media02__wrap -border js-summary-product-list-item">
+>          <div class="media p-books-media02">
+>            <div class="p-books-media02__img-wrap -label-true">
+> 
+> 
+>              <a href="https://dengekibunko.jp/product/sankaku_lovecomedy/322110000032.html#store-benefit" class="p-books-media02__label-shop c-label-circle">店舗特典<span>情報あり</span></a>
+> 
+>              <a href="https://dengekibunko.jp/product/sankaku_lovecomedy/322110000032.html"><img src="https://cdn.kdkw.jp/cover_500/322110/322110000032.jpg"
+>                                   data-fallback="https://cdn.kdkw.jp/cover_b/322110/322110000032.jpg,https://cdn.kdkw.jp/cover_1000/322110/322110000032.jpg,https://cdn.kdkw.jp/cover_150/322110/322110000032.jpg"  
+>                                   alt="書影：この△ラブコメは幸せになる義務がある。"
+>                                   width="240"
+>                                   class="js-img-fallback p-books-media02__img img-fluid m-0"></a>
+>            </div>
+>            <div class="media-body p-books-media02__contents">
+>              <div class="p-books-media02__header">
+>                <div class="p-books-media02__main-info -index">
+> 
+>                  <h2 class="p-books-media__title"><a href="https://dengekibunko.jp/product/sankaku_lovecomedy/322110000032.html">この△ラブコメは幸せになる義務がある。</a></h2>
+>                  <ul class="p-books-media__authors">
+>                    <li class="p-books-media__authors-item">著者：
+>                      <a href="https://dengekibunko.jp/product/keyword/榛名　千紘/"
+>                                                      class="p-books-media__authors-link">榛名　千紘</a>
+>                    </li>
+>                    <li class="p-books-media__authors-item">イラスト：
+>                      <a href="https://dengekibunko.jp/product/keyword/てつぶた/"
+>                                                      class="p-books-media__authors-link">てつぶた</a>
+>                    </li>
+>                  </ul>
+>                </div>
+>              </div>
+>              <div class="d-none d-md-block">
+> 
+>                <p class="p-books-media__lead">ラブコメ史上最も幸せな三角関係！　これが三角関係ラブコメの到達点！</p>
+> 
+>                <p class="p-books-media__summary">「なんであんたが麗良に好かれるのよ!?」<br>　平凡な高校生・矢代天馬は偶然にも、同じクラスのクール系美少女・皇凛華が彼女の幼馴染の清楚系美少女・椿木麗良を溺愛してい 
+ることを知ってしまう。<br>　そこから天馬は、凛華が麗良と仲良くなれるよう協力することになるのだが──。<br>「矢代君が凛華ちゃんと付き合ってないなら、私が彼女に立候補しちゃおうかな？」<br>「矢代、あんたなにしたの!?」<br>　その麗良は天馬のことが好きになり、学園の美少女二人との三角関係へ発展！<br>　複雑に絡まったこの恋の行方は……!?<br>　電撃小説大賞《金賞》受賞！　ラブコメ史上、最も幸せな三角関係が始まる！</p>
+>              </div>
+>              <table class="p-books-media02__info d-none d-md-table">
+> 
+>                <tr>
+>                  <th>ISBN</th>
+>                  <td colspan="3">9784049142129</td>
+>                </tr>
+>                <tr>
+>                  <th>発売日</th>
+>                  <td>2022年3月10日発売</td>
+> 
+>                  <th>定価</th>
+>                  <td>704円<span class="d-inline-block">（本体640円+税）</span></td>
+>                </tr>
+>              </table>
+>              <table class="p-books-media02__info d-table d-md-none">
+> 
+>                <tr>
+>                  <th>ISBN</th>
+>                  <td>9784049142129</td>
+>                </tr>
+>                <tr>
+>                  <th>発売日</th>
+>                  <td>2022年3月10日発売</td>
+>                </tr>
+>                <tr>
+>                  <th>定価</th>
+>                  <td>704円<span class="d-inline-block">（本体640円+税）</span></td>
+>                </tr>
+>              </table>
+> 
+>              <div class="p-books-media02__action d-none d-md-block">
+> 
+>                <div class="row">
+> 
+>                  <div>
+>                    <p class="p-books-media02__action-btn"><a href="https://bookwalker.jp/de64dd10a4-791c-4cc7-8acd-b7a1fe261414/?adpcnt=GDPL5fFl&sample=1" class="c-btn-trial">試し読み</a></p>
+>                  </div>
+> 
+> 
+> 
+>                  <div>
+> 
+>                    <p class="p-books-media02__action-btn text-center"><a href="https://dengekibunko.jp/special/sankaku_lovecomedy/" class="c-btn-special">特設サイト</a>
+>                    </p>
+>                  </div>
+>                </div>
+>              </div>
+> 
+>            </div>
+>          </div>
+>          <div class="d-block d-md-none">
+> 
+>            <div class="p-books-media02__action">
+> 
+>              <div class="row">
+> 
+>                <p class="p-books-media02__action-btn"><a href="https://bookwalker.jp/de64dd10a4-791c-4cc7-8acd-b7a1fe261414/?adpcnt=GDPL5fFl&sample=1" class="c-btn-trial">試し読み</a></p>
+> 
+> 
+> 
+> 
+>                <p class="p-books-media02__action-btn text-center"><a href="https://dengekibunko.jp/special/sankaku_lovecomedy/" class="c-btn-special">特設サイト</a>
+>                </p>
+> 
+>              </div>
+>            </div>
+> 
+>            <p class="p-books-media__lead">ラブコメ史上最も幸せな三角関係！　これが三角関係ラブコメの到達点！</p>
+> 
+>            <p class="p-books-media__summary">「なんであんたが麗良に好かれるのよ!?」<br>　平凡な高校生・矢代天馬は偶然にも、同じクラスのクール系美少女・皇凛華が彼女の幼馴染の清楚系美少女・椿木麗良を溺愛しているこ 
+とを知ってしまう。<br>　そこから天馬は、凛華が麗良と仲良くなれるよう協力することになるのだが──。<br>「矢代君が凛華ちゃんと付き合ってないなら、私が彼女に立候補しちゃおうかな？」<br>「矢代、あんたなにしたの!?」<br>　
+その麗良は天馬のことが好きになり、学園の美少女二人との三角関係へ発展！<br>　複雑に絡まったこの恋の行方は……!?<br>　電撃小説大賞《金賞》受賞！　ラブコメ史上、最も幸せな三角関係が始まる！</p>
+> 
+>          </div>
+>          <div class="p-books-store-section">
+> 
+>  <div class="p-store-banner">
+>    <h3 class="p-store-banner__heading">購入はこちらから</h3>
+>    <div class="c-banner-row list-unstyled js-toggle-target">
+> 
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://store.kadokawa.co.jp/shop/g/g322110000032/?ref=dengekibunko" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/kadokawa-store.svg" alt="カドカワストアへ" width="100" height="21.85" class="img-fluid kadokawa-store">
+>        </a>
+>      </div>
+>      
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://bookwalker.jp/de64dd10a4-791c-4cc7-8acd-b7a1fe261414/?adpcnt=GDPL5fFl" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/book-walker.svg" alt="BOOK WALKERへ" width="100" height="12.38" class="img-fluid book-walker">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://www.amazon.co.jp/dp/4049142120?tag=dengekibunkoweb-22" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/amazon.svg" alt="amazonへ" width="80" height="24.1" class="img-fluid amazon">
+>        </a>
+>      </div>
+> 
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.animate-onlineshop.jp/pn/【小説】この△ラブコメは幸せになる義務がある。/pd/2060479/" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/animate.svg" alt="animateへ" width="80" height="29.9" class="img-fluid animate">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784049142129" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/eHon.svg" alt="eHonへ" width="71.19" height="40" class="img-fluid ehon">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://honto.jp/netstore/pd-book_31476780.html" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/honto.svg" alt="hontoへ" width="68.24" height="32" class="img-fluid honto">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20572629&etcaff=AFI-LS" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/honyaClub.svg" alt="honyaClubへ" width="90" height="24.06" class="img-fluid honey-club">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.kinokuniya.co.jp/f/dsg-01-9784049142129" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/kinokuniya.svg" alt="紀伊国屋書店へ" width="100" height="16.72" class="img-fluid kinokuniya">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="http://books.rakuten.co.jp/rdt/item/?sid=213310&amp;sno=ISBN:9784049142129" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/rakuten.svg" alt="楽天BOOKSへ" width="60.5" height="30" class="img-fluid rakuten">
+>        </a>
+>      </div>
+>      <p class="c-banner-row__toggle js-toggle-button" style="cursor: pointer;">▼ もっと見る</p>
+>      <div class="c-banner-row__toggle-content js-toggle-content">
+> 
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.animate-onlineshop.jp/pn/【小説】この△ラブコメは幸せになる義務がある。/pd/2060479/" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/animate.svg" alt="animateへ" width="80" height="29.9" class="img-fluid animate">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784049142129" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/eHon.svg" alt="eHonへ" width="71.19" height="40" class="img-fluid ehon">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://honto.jp/netstore/pd-book_31476780.html" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/honto.svg" alt="hontoへ" width="68.24" height="32" class="img-fluid honto">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20572629&etcaff=AFI-LS" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/honyaClub.svg" alt="honyaClubへ" width="90" height="24.06" class="img-fluid honey-club">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.kinokuniya.co.jp/f/dsg-01-9784049142129" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/kinokuniya.svg" alt="紀伊国屋書店へ" width="100" height="16.72" class="img-fluid kinokuniya">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="http://books.rakuten.co.jp/rdt/item/?sid=213310&amp;sno=ISBN:9784049142129" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/rakuten.svg" alt="楽天BOOKSへ" width="60.5" height="30" class="img-fluid rakuten">
+>          </a>
+>        </div>
+>      </div>
+>    </div>
+>  </div>
+>          </div>
+>        </li>
+>        <li id="24612" class="p-books-media02__wrap -border js-summary-product-list-item">
+>          <div class="media p-books-media02">
+>            <div class="p-books-media02__img-wrap -label-true">
+> 
+> 
+>              <a href="https://dengekibunko.jp/product/arcadia/322110000040.html#store-benefit" class="p-books-media02__label-shop c-label-circle">店舗特典<span>情報あり</span></a>
+> 
+>              <a href="https://dengekibunko.jp/product/arcadia/322110000040.html"><img src="https://cdn.kdkw.jp/cover_500/322110/322110000040.jpg"
+>                                   data-fallback="https://cdn.kdkw.jp/cover_b/322110/322110000040.jpg,https://cdn.kdkw.jp/cover_1000/322110/322110000040.jpg,https://cdn.kdkw.jp/cover_150/322110/322110000040.jpg"  
+>                                   alt="書影：エンド・オブ・アルカディア"
+>                                   width="240"
+>                                   class="js-img-fallback p-books-media02__img img-fluid m-0"></a>
+>            </div>
+>            <div class="media-body p-books-media02__contents">
+>              <div class="p-books-media02__header">
+>                <div class="p-books-media02__main-info -index">
+> 
+>                  <h2 class="p-books-media__title"><a href="https://dengekibunko.jp/product/arcadia/322110000040.html">エンド・オブ・アルカディア</a></h2>
+>                  <ul class="p-books-media__authors">
+>                    <li class="p-books-media__authors-item">著者：
+>                      <a href="https://dengekibunko.jp/product/keyword/蒼井　祐人/"
+>                                                      class="p-books-media__authors-link">蒼井　祐人</a>
+>                    </li>
+>                    <li class="p-books-media__authors-item">イラスト：
+>                      <a href="https://dengekibunko.jp/product/keyword/GreeN/"
+>                                                      class="p-books-media__authors-link">GreeN</a>
+>                    </li>
+>                  </ul>
+>                </div>
+>              </div>
+>              <div class="d-none d-md-block">
+> 
+>                <p class="p-books-media__lead">彼と彼女は敵だった。二分された世界で、同じ孤独を抱えていたと知るまでは</p>
+> 
+>                <p class="p-books-media__summary">☆☆☆第28回電撃小説大賞《金賞》受賞作☆☆☆<br>バトル×リスポーンで、生還不可能なS級ミッションを攻略せよ！<br><br>　彼らは安く、強く、そして決して死なない――。<br>　究極 
+の生命再生システム《アルカディア》が生んだのは、複体再生〈リスポーン〉を駆使して戦う10代の兵士たち。戦場で死しては復活する、無敵の少年少女〈死を超越した子供たち〉だった。<br>　二大大国が覇権を争う大戦の最前線。合衆
+国軍のエースとして小隊を率いる少年・秋人は、戦績不振を理由に全滅必至な機密情報の回収任務〈サルベージ〉を命じられる。しかし予期せぬ戦闘と崩落で仲間を庇った秋人は、因縁の宿敵である連邦軍のエリート少女・フィリアととも
+に、複体再生〈リスポーン〉不能な地下深くで孤立。性格もスキルも正反対で相性最悪な二人が協力して、地上への帰還を目指すことになり――。<br>　死ぬことのない戦場で死に続けた彼と彼女の、邂逅と共鳴の物語が始まる！</p>      
+>              </div>
+>              <table class="p-books-media02__info d-none d-md-table">
+> 
+>                <tr>
+>                  <th>ISBN</th>
+>                  <td colspan="3">9784049142204</td>
+>                </tr>
+>                <tr>
+>                  <th>発売日</th>
+>                  <td>2022年3月10日発売</td>
+> 
+>                  <th>定価</th>
+>                  <td>726円<span class="d-inline-block">（本体660円+税）</span></td>
+>                </tr>
+>              </table>
+>              <table class="p-books-media02__info d-table d-md-none">
+> 
+>                <tr>
+>                  <th>ISBN</th>
+>                  <td>9784049142204</td>
+>                </tr>
+>                <tr>
+>                  <th>発売日</th>
+>                  <td>2022年3月10日発売</td>
+>                </tr>
+>                <tr>
+>                  <th>定価</th>
+>                  <td>726円<span class="d-inline-block">（本体660円+税）</span></td>
+>                </tr>
+>              </table>
+> 
+>              <div class="p-books-media02__action d-none d-md-block">
+> 
+>                <div class="row">
+> 
+>                  <div>
+>                    <p class="p-books-media02__action-btn"><a href="https://bookwalker.jp/de2801c16f-2fae-4a1b-8218-b1c9844141ac/?adpcnt=GDPL5fFl&sample=1" class="c-btn-trial">試し読み</a></p>
+>                  </div>
+> 
+> 
+> 
+>                  <div>
+> 
+>                    <p class="p-books-media02__action-btn text-center"><a href="https://dengekibunko.jp/special/arcadia/" class="c-btn-special">特設サイト</a>
+>                    </p>
+>                  </div>
+>                </div>
+>              </div>
+> 
+>            </div>
+>          </div>
+>          <div class="d-block d-md-none">
+> 
+>            <div class="p-books-media02__action">
+> 
+>              <div class="row">
+> 
+>                <p class="p-books-media02__action-btn"><a href="https://bookwalker.jp/de2801c16f-2fae-4a1b-8218-b1c9844141ac/?adpcnt=GDPL5fFl&sample=1" class="c-btn-trial">試し読み</a></p>
+> 
+> 
+> 
+> 
+>                <p class="p-books-media02__action-btn text-center"><a href="https://dengekibunko.jp/special/arcadia/" class="c-btn-special">特設サイト</a>
+>                </p>
+> 
+>              </div>
+>            </div>
+> 
+>            <p class="p-books-media__lead">彼と彼女は敵だった。二分された世界で、同じ孤独を抱えていたと知るまでは</p>
+> 
+>            <p class="p-books-media__summary">☆☆☆第28回電撃小説大賞《金賞》受賞作☆☆☆<br>バトル×リスポーンで、生還不可能なS級ミッションを攻略せよ！<br><br>　彼らは安く、強く、そして決して死なない――。<br>　究極の生
+命再生システム《アルカディア》が生んだのは、複体再生〈リスポーン〉を駆使して戦う10代の兵士たち。戦場で死しては復活する、無敵の少年少女〈死を超越した子供たち〉だった。<br>　二大大国が覇権を争う大戦の最前線。合衆国軍
+のエースとして小隊を率いる少年・秋人は、戦績不振を理由に全滅必至な機密情報の回収任務〈サルベージ〉を命じられる。しかし予期せぬ戦闘と崩落で仲間を庇った秋人は、因縁の宿敵である連邦軍のエリート少女・フィリアとともに、
+複体再生〈リスポーン〉不能な地下深くで孤立。性格もスキルも正反対で相性最悪な二人が協力して、地上への帰還を目指すことになり――。<br>　死ぬことのない戦場で死に続けた彼と彼女の、邂逅と共鳴の物語が始まる！</p>
+> 
+>          </div>
+>          <div class="p-books-store-section">
+> 
+>  <div class="p-store-banner">
+>    <h3 class="p-store-banner__heading">購入はこちらから</h3>
+>    <div class="c-banner-row list-unstyled js-toggle-target">
+> 
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://store.kadokawa.co.jp/shop/g/g322110000040/?ref=dengekibunko" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/kadokawa-store.svg" alt="カドカワストアへ" width="100" height="21.85" class="img-fluid kadokawa-store">
+>        </a>
+>      </div>
+> 
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://bookwalker.jp/de2801c16f-2fae-4a1b-8218-b1c9844141ac/?adpcnt=GDPL5fFl" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/book-walker.svg" alt="BOOK WALKERへ" width="100" height="12.38" class="img-fluid book-walker">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://www.amazon.co.jp/dp/4049142201?tag=dengekibunkoweb-22" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/amazon.svg" alt="amazonへ" width="80" height="24.1" class="img-fluid amazon">
+>        </a>
+>      </div>
+> 
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.animate-onlineshop.jp/pn/【小説】エンド・オブ・アルカディア/pd/2060481/" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/animate.svg" alt="animateへ" width="80" height="29.9" class="img-fluid animate">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784049142204" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/eHon.svg" alt="eHonへ" width="71.19" height="40" class="img-fluid ehon">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://honto.jp/netstore/pd-book_31476783.html" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/honto.svg" alt="hontoへ" width="68.24" height="32" class="img-fluid honto">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20572632&etcaff=AFI-LS" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/honyaClub.svg" alt="honyaClubへ" width="90" height="24.06" class="img-fluid honey-club">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.kinokuniya.co.jp/f/dsg-01-9784049142204" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/kinokuniya.svg" alt="紀伊国屋書店へ" width="100" height="16.72" class="img-fluid kinokuniya">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="http://books.rakuten.co.jp/rdt/item/?sid=213310&amp;sno=ISBN:9784049142204" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/rakuten.svg" alt="楽天BOOKSへ" width="60.5" height="30" class="img-fluid rakuten">
+>        </a>
+>      </div>
+>      <p class="c-banner-row__toggle js-toggle-button" style="cursor: pointer;">▼ もっと見る</p>
+>      <div class="c-banner-row__toggle-content js-toggle-content">
+> 
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.animate-onlineshop.jp/pn/【小説】エンド・オブ・アルカディア/pd/2060481/" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/animate.svg" alt="animateへ" width="80" height="29.9" class="img-fluid animate">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784049142204" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/eHon.svg" alt="eHonへ" width="71.19" height="40" class="img-fluid ehon">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://honto.jp/netstore/pd-book_31476783.html" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/honto.svg" alt="hontoへ" width="68.24" height="32" class="img-fluid honto">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20572632&etcaff=AFI-LS" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/honyaClub.svg" alt="honyaClubへ" width="90" height="24.06" class="img-fluid honey-club">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.kinokuniya.co.jp/f/dsg-01-9784049142204" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/kinokuniya.svg" alt="紀伊国屋書店へ" width="100" height="16.72" class="img-fluid kinokuniya">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="http://books.rakuten.co.jp/rdt/item/?sid=213310&amp;sno=ISBN:9784049142204" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/rakuten.svg" alt="楽天BOOKSへ" width="60.5" height="30" class="img-fluid rakuten">
+>          </a>
+>        </div>
+>      </div>
+>    </div>
+>  </div>
+>          </div>
+>        </li>
+>        <li id="24604" class="p-books-media02__wrap -border js-summary-product-list-item">
+>          <div class="media p-books-media02">
+>            <div class="p-books-media02__img-wrap -label-true">
+> 
+> 
+>              <a href="https://dengekibunko.jp/product/accele_world/322109000002.html#store-benefit" class="p-books-media02__label-shop c-label-circle">店舗特典<span>情報あり</span></a>
+> 
+>              <a href="https://dengekibunko.jp/product/accele_world/322109000002.html"><img src="https://cdn.kdkw.jp/cover_500/322109/322109000002.jpg"
+>                                   data-fallback="https://cdn.kdkw.jp/cover_b/322109/322109000002.jpg,https://cdn.kdkw.jp/cover_1000/322109/322109000002.jpg,https://cdn.kdkw.jp/cover_150/322109/322109000002.jpg"  
+>                                   alt="書影：アクセル・ワールド26 －裂天の征服者－"
+>                                   width="240"
+>                                   class="js-img-fallback p-books-media02__img img-fluid m-0"></a>
+>            </div>
+>            <div class="media-body p-books-media02__contents">
+>              <div class="p-books-media02__header">
+>                <div class="p-books-media02__main-info -index">
+> 
+>                  <h2 class="p-books-media__title"><a href="https://dengekibunko.jp/product/accele_world/322109000002.html">アクセル・ワールド26 －裂天の征服者－</a></h2>
+>                  <ul class="p-books-media__authors">
+>                    <li class="p-books-media__authors-item">著者：
+>                      <a href="https://dengekibunko.jp/product/keyword/川原　礫/"
+>                                                      class="p-books-media__authors-link">川原　礫</a>
+>                    </li>
+>                    <li class="p-books-media__authors-item">イラスト：
+>                      <a href="https://dengekibunko.jp/product/keyword/ＨＩＭＡ/"
+>                                                      class="p-books-media__authors-link">ＨＩＭＡ</a>
+>                    </li>
+>                  </ul>
+>                </div>
+>              </div>
+>              <div class="d-none d-md-block">
+> 
+>                <p class="p-books-media__lead">新章開幕！　《白のレギオン》に移籍したハルユキの運命は――？</p>
+> 
+>                <p class="p-books-media__summary">《終焉神テスカトリポカ》の顕現。<br>　それは加速世界に混沌を、ハルユキ＝シルバー・クロウに《ネガ・ネビュラス》脱退という激動をもたらした。<br>　黒雪姫のもとを離れ 
+、白の王の軍門に降ったハルユキは、《オシラトリ・ユニヴァース》の本拠地・私立エテルナ女子学院を訪れる。そこではかつて激闘を繰り広げた強敵《七連矮星》の面々、そしてとある《試練》が待ち受けていた。<br>　一方、《レギオ
+ン》という繋がりを失った、ハルユキと黒雪姫の関係にも重大な転機が訪れる。<br>「黒雪姫先輩。僕は、あなたが――」<br>　新章《第七の神器編》、ここに開幕！</p>
+>              </div>
+>              <table class="p-books-media02__info d-none d-md-table">
+> 
+>                <tr>
+>                  <th>ISBN</th>
+>                  <td colspan="3">9784049141337</td>
+>                </tr>
+>                <tr>
+>                  <th>発売日</th>
+>                  <td>2022年3月10日発売</td>
+> 
+>                  <th>定価</th>
+>                  <td>726円<span class="d-inline-block">（本体660円+税）</span></td>
+>                </tr>
+>              </table>
+>              <table class="p-books-media02__info d-table d-md-none">
+> 
+>                <tr>
+>                  <th>ISBN</th>
+>                  <td>9784049141337</td>
+>                </tr>
+>                <tr>
+>                  <th>発売日</th>
+>                  <td>2022年3月10日発売</td>
+>                </tr>
+>                <tr>
+>                  <th>定価</th>
+>                  <td>726円<span class="d-inline-block">（本体660円+税）</span></td>
+>                </tr>
+>              </table>
+> 
+>              <div class="p-books-media02__action d-none d-md-block">
+> 
+>                <div class="row">
+> 
+>                  <div>
+>                    <p class="p-books-media02__action-btn"><a href="https://bookwalker.jp/dea0961d33-6ef8-4673-a455-0ec0ecd5de47/?adpcnt=GDPL5fFl&sample=1" class="c-btn-trial">試し読み</a></p>
+>                  </div>
+> 
+> 
+> 
+>                  <div>
+> 
+>                    <p class="p-books-media02__action-btn text-center"><a href="https://dengekibunko.jp/title/accele_world/" class="c-btn-special">特設サイト</a>
+>                    </p>
+>                  </div>
+>                </div>
+>              </div>
+> 
+>            </div>
+>          </div>
+>          <div class="d-block d-md-none">
+> 
+>            <div class="p-books-media02__action">
+> 
+>              <div class="row">
+> 
+>                <p class="p-books-media02__action-btn"><a href="https://bookwalker.jp/dea0961d33-6ef8-4673-a455-0ec0ecd5de47/?adpcnt=GDPL5fFl&sample=1" class="c-btn-trial">試し読み</a></p>
+> 
+> 
+> 
+> 
+>                <p class="p-books-media02__action-btn text-center"><a href="https://dengekibunko.jp/title/accele_world/" class="c-btn-special">特設サイト</a>
+>                </p>
+> 
+>              </div>
+>            </div>
+> 
+>            <p class="p-books-media__lead">新章開幕！　《白のレギオン》に移籍したハルユキの運命は――？</p>
+> 
+>            <p class="p-books-media__summary">《終焉神テスカトリポカ》の顕現。<br>　それは加速世界に混沌を、ハルユキ＝シルバー・クロウに《ネガ・ネビュラス》脱退という激動をもたらした。<br>　黒雪姫のもとを離れ、白 
+の王の軍門に降ったハルユキは、《オシラトリ・ユニヴァース》の本拠地・私立エテルナ女子学院を訪れる。そこではかつて激闘を繰り広げた強敵《七連矮星》の面々、そしてとある《試練》が待ち受けていた。<br>　一方、《レギオン》
+という繋がりを失った、ハルユキと黒雪姫の関係にも重大な転機が訪れる。<br>「黒雪姫先輩。僕は、あなたが――」<br>　新章《第七の神器編》、ここに開幕！</p>
+> 
+>          </div>
+>          <div class="p-books-store-section">
+> 
+>  <div class="p-store-banner">
+>    <h3 class="p-store-banner__heading">購入はこちらから</h3>
+>    <div class="c-banner-row list-unstyled js-toggle-target">
+> 
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://store.kadokawa.co.jp/shop/g/g322109000002/?ref=dengekibunko" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/kadokawa-store.svg" alt="カドカワストアへ" width="100" height="21.85" class="img-fluid kadokawa-store">
+>        </a>
+>      </div>
+> 
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://bookwalker.jp/dea0961d33-6ef8-4673-a455-0ec0ecd5de47/?adpcnt=GDPL5fFl" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/book-walker.svg" alt="BOOK WALKERへ" width="100" height="12.38" class="img-fluid book-walker">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item p-store-banner__item">
+>        <a href="https://www.amazon.co.jp/dp/4049141337?tag=dengekibunkoweb-22" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/amazon.svg" alt="amazonへ" width="80" height="24.1" class="img-fluid amazon">
+>        </a>
+>      </div>
+> 
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.animate-onlineshop.jp/pn/【小説】アクセル・ワールド(26) -裂天の征服者-/pd/2060478/" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/animate.svg" alt="animateへ" width="80" height="29.9" class="img-fluid animate">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784049141337" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/eHon.svg" alt="eHonへ" width="71.19" height="40" class="img-fluid ehon">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://honto.jp/netstore/pd-book_31476774.html" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/honto.svg" alt="hontoへ" width="68.24" height="32" class="img-fluid honto">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20572625&etcaff=AFI-LS" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/honyaClub.svg" alt="honyaClubへ" width="90" height="24.06" class="img-fluid honey-club">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://www.kinokuniya.co.jp/f/dsg-01-9784049141337" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/kinokuniya.svg" alt="紀伊国屋書店へ" width="100" height="16.72" class="img-fluid kinokuniya">
+>        </a>
+>      </div>
+>      <div class="c-banner-row__item d-none d-md-block p-store-banner__item">
+>        <a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784049141337" class="c-banner-row__img-link -bordered">
+>          <img src="/themes/dengekibunko/images/components/shops/rakuten.svg" alt="楽天BOOKSへ" width="60.5" height="30" class="img-fluid rakuten">
+>        </a>
+>      </div>
+>      <p class="c-banner-row__toggle js-toggle-button" style="cursor: pointer;">▼ もっと見る</p>
+>      <div class="c-banner-row__toggle-content js-toggle-content">
+> 
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.animate-onlineshop.jp/pn/【小説】アクセル・ワールド(26) -裂天の征服者-/pd/2060478/" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/animate.svg" alt="animateへ" width="80" height="29.9" class="img-fluid animate">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784049141337" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/eHon.svg" alt="eHonへ" width="71.19" height="40" class="img-fluid ehon">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://honto.jp/netstore/pd-book_31476774.html" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/honto.svg" alt="hontoへ" width="68.24" height="32" class="img-fluid honto">
+>          </a>
+>        </div>
+>        <div class="c-banner-row__item p-store-banner__item">
+>          <a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20572625&etcaff=AFI-LS" class="c-banner-row__img-link -bordered">
+>            <img src="/themes/dengekibunko/images/components/shops/honyaClub.svg" alt="honyaClubへ" width="90" height="24.06" class="img-fluid honey-club">
