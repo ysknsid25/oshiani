@@ -83,7 +83,6 @@ const readBody = (bodyText, saledate) => {
         }
         //タイトル
         if (isContainKeyWord(lineText, _KEY_OF_TITLE)) {
-            console.log("@@1");
             tmpObj.title = getTargetText(
                 lineText,
                 _BEGIN_OF_TITLE,
