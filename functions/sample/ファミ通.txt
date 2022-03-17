@@ -1,0 +1,933 @@
+>  <!DOCTYPE html>
+>  <html class="no-js" lang="ja">
+>  <head>
+>    <meta charset="UTF-8">
+>    <title>2022/03 | 書籍 | ファミ通文庫 | KADOKAWA</title>
+> 
+>    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+>  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>  <meta property="og:url" content="https://famitsubunko.jp/product/">
+>  <meta property="og:site_name" content="ファミ通文庫 | KADOKAWA">
+>  <meta property="og:title" content="2022/03 | 書籍 | ファミ通文庫 | KADOKAWA">
+>  <meta property="og:type" content="article">
+>  <meta property="og:image" content="https://famitsubunko.jp/archives/001/202003/e57bdfc8d7da478e128803ae0c1d79d3.png">
+>  <meta property="og:description" content="キミのリアルと仮想を繋ぐ物語！　ファミ通文庫は毎月30日発売！　公式Ｗｅｂサイトではファミ通文庫の最新情報をお届けします！">
+>  <meta name="description" content="キミのリアルと仮想を繋ぐ物語！　ファミ通文庫は毎月30日発売！　公式Ｗｅｂサイトではファミ通文庫の最新情報をお届けします！">
+>  <meta name="keywords" content="">
+>  <meta name="format-detection" content="telephone=no">
+>  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+>  <meta name="theme-color" content="">
+> 
+> 
+>    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://famitsubunko.jp/rss2.xml">
+>  <link rel="stylesheet" href="/themes/system/css/acms-admin.min.css?date=20200218030250">
+>  <link rel="stylesheet" href="/themes/system/css/acms.min.css?date=20200218030250">
+>  <link rel="stylesheet" href="/themes/kadokawa/dest/bootstrap.min.css?date=20200407020548">
+>  <link rel="stylesheet" href="/themes/kadokawa/dest/bundle.min.css?date=20200407020549">
+>  <link rel="stylesheet" href="/themes/kadokawa/dest/bundle.css?date=20200630003459">
+>  <link rel="stylesheet" href="/themes/kadokawa/dest/nav.css?date=20200407020549">
+>  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap" rel="stylesheet">
+>  <script type="application/ld+json">
+>  {
+>       "@context": "http://schema.org",
+>       "@type": "BreadcrumbList",
+>       "itemListElement":
+>       [
+>       {
+>               "@type": "ListItem",
+>               "position": 1,
+>               "item":
+>               {
+>               "@id": "https://famitsubunko.jp/",
+>               "name": "ホーム"
+>               }
+>       },{
+>               "@type": "ListItem",
+>               "position": 2,
+>               "item":
+>               {
+>               "@id": "https://famitsubunko.jp/product/",
+>               "name": "書籍"
+>               }
+>       }
+>       ]
+>  }
+>  </script>
+>    
+> 
+> 
+>  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+>  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+>  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+>  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+>  })(window,document,'script','dataLayer','GTM-TLZ727G');</script>
+>  <script src="/js/library/jquery/jquery-3.4.1.min.js" charset="UTF-8"></script>
+>  <script src="/themes/kadokawa/lib/modernizr.js?date=20200407020549"></script>
+>  <script src="/themes/kadokawa/dest/bundle.js?date=20200407020549" charset="UTF-8"></script>
+>  <script src="/acms.js?uaGroup=PC&amp;domains=famitsubunko.jp&amp;jsDir=js/&amp;themesDir=/themes/&amp;bid=3&amp;bcd=product&amp;googleApiKey=AIzaSyAkH79hCeXjqzzhcXHDSZf-xtkVfqxBHz0&amp;jQuery=3.4.1&amp;jQueryMigrate=migrate-3.0.1&amp;v=57d658a9fc1ee63e7842062503a0f8bc&amp;umfs=50M&amp;pms=100M&amp;mfu=50&amp;lgImg=width:1400&amp;jpegQuality=95&amp;mediaLibrary=off&amp;edition=standard&amp;urlPreviewExpire=48&amp;timemachinePreviewDefaultDevice=PC&amp;scriptRoot=/" charset="UTF-8" id="acms-js"></script>
+>  <script src="/themes/kadokawa/dest/common.js?date=20200413181438" charset="UTF-8"></script>
+>  <script src="/themes/kadokawa/dest/autoheight.js?date=20200407020549" charset="UTF-8"></script>
+>  <script src="/themes/kadokawa/src/js/returntop.js?date=20200407020555" charset="UTF-8"></script>
+> 
+>  <script type="text/javascript" src="/js/dest/vendor.chunk.js?date=20200218030244" charset="UTF-8" async defer></script>
+>  <script type="text/javascript" src="/js/dest/index.js?date=20200218030244" charset="UTF-8" async defer></script>
+>  <meta name="generator" content="a-blog cms" />
+>  </head>
+>  <body>
+>  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLZ727G"
+>  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+>  <div id="fb-root"></div>
+>  <script>(function(d, s, id) {
+>    var js, fjs = d.getElementsByTagName(s)[0];
+>    if (d.getElementById(id)) return;
+>    js = d.createElement(s); js.id = id;
+>    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
+>    fjs.parentNode.insertBefore(js, fjs);
+>  }(document, 'script', 'facebook-jssdk'));</script>
+>  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+>  <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+>    {lang: "ja"}
+>  </script>
+>  <div id="search" class="p-search-header js-search-box">
+>    <form action="/product/search.html" method="post" name="searchForm" class="c-search__form" role="search" aria-label="検索フォーム">
+>      <div class="c-search__action">
+>        <input type="search" id="searchHeaderForm" name="keyword" value="" size="15" class="c-search__input p-search-header__input" placeholder="書籍検索">
+>        <input type="hidden" name="query" value="keyword">
+>        <span class="c-search__side-btn"><button type="submit" name="ACMS_POST_2GET" class="c-search__btn p-search-header__btn"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">検索</span></button></span>
+>        <input type="hidden" name="bid" value="3">
+>      </div>
+>    <input type="hidden" name="formToken" value="42b51008dea95e975c5ca7a55e9285f27abfa8f4">
+>  </form>
+>  </div>
+>  <div class="body-inner">
+>  <header class="g-header">
+>    <div class="g-header-mobile-nav__wrap">
+>      <div class="g-header-mobile-nav">
+> 
+>        <div class="g-header-mobile-nav__title">
+> 
+>          <p class="g-header-mobile-nav__title-main"><a href="https://famitsubunko.jp/"><img src="/themes/kadokawa/images/global/logo2.png" alt="ファミ通文庫 | KADOKAWA">
+>  </a></p >
+>        </div>
+>        <nav class="g-header-mobile-nav__menu">
+>          <a href="#offcanvas" class="g-header-mobile-nav__menu-btn js-offcanvas-btn js-offcanvas-btn-r" aria-label="メニュー">
+>            <span class="g-header-mobile-nav__menu-btn-bar"></span>
+>          </a>
+>        </nav>
+> 
+>      </div>
+>    </div>
+>    <div class="g-header-desktop-nav">
+>      <div class="container">
+>        <div class="g-header-desktop-nav__inner">
+>          <div class="g-header-desktop-nav__title">
+> 
+>            <p class="g-header-desktop-nav__title-main"><a href="https://famitsubunko.jp/"><img src="/themes/kadokawa/images/global/logo.png" alt="ファミ通文庫 | KADOKAWA">
+>  </a></p>
+>          </div>
+> 
+>          <div class="g-header-search-wrap">
+> 
+>            <div class="p-side-section">
+>    <form action="/product/search.html" method="post" name="searchForm" class="c-search__form" role="search" aria-label="検索フォーム">
+>      <div class="c-search__action">
+>        <input type="search" id="searchForm" name="keyword" value="" size="15" class="c-search__input" placeholder="書籍検索">
+>        <input type="hidden" name="query" value="keyword">
+>        <span class="c-search__side-btn"><button type="submit" name="ACMS_POST_2GET" class="c-search__btn"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">検索</span></button></span>
+>        <input type="hidden" name="bid" value="3">
+>      </div>
+>    <input type="hidden" name="formToken" value="42b51008dea95e975c5ca7a55e9285f27abfa8f4">
+>  </form>
+>  </div>
+>          </div>
+>        </div>
+>        <div class="g-header-desktop-nav__menu">
+> 
+>          <nav class="g-header__navbar" aria-label="メインメニュー">
+> 
+>            <ul>
+>            <li  class="js-link_match_location-full">
+>              <a href="https://famitsubunko.jp/product/new-release.html" target=""  class=" js-viewing-indelible" >
+>                新刊情報
+>              </a>
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>              </li>
+> 
+> 
+> 
+>            <li  class="js-link_match_location-full">
+>              <a href="https://famitsubunko.jp/product/" target=""  class=" js-viewing-indelible" >
+>                書籍情報
+>              </a>
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>              </li>
+> 
+> 
+> 
+>            <li  class="js-link_match_location-full">
+>              <a href="https://famitsubunko.jp/special/" target=""  class=" js-viewing-indelible" >
+>                特設サイト
+>              </a>
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>              </li>
+> 
+> 
+> 
+>            <li  class="js-link_match_location-full">
+>              <a href="https://famitsubunko.jp/news/" target=""  class=" js-viewing-indelible" >
+>                ニュース
+>              </a>
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>              </li>
+> 
+> 
+> 
+>            <li  class="js-link_match_location-full">
+>              <a href="https://famitsubunko.jp/award/top.html" target=""  class=" js-viewing-indelible" >
+>                新人賞
+>              </a>
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>              </li>
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>            </ul>
+> 
+>          </nav>
+> 
+> 
+>          <nav class="g-header__social-nav">
+>            <div>
+> 
+>              <ul class="g-header__social-list">
+> 
+> 
+> 
+>              </ul>
+>            </div>
+>          </nav>
+>        </div>
+>      </div>
+>    </div>
+>  </header>
+>  <div class="c-page-title">
+>    <div class="container">
+>      <p class="c-page-title__heading">検索結果</p>
+>  </div>
+>  </div>
+>  <nav aria-label="現在位置" class="c-topicpath">
+>    <div class="container">
+>      <ul class="c-topicpath__list">
+>        <li class="c-topicpath__item"><a href="https://famitsubunko.jp/" class="c-topicpath__link">ホーム</a></li>
+>        <li class="c-topicpath__item"><a href="https://famitsubunko.jp/product/" class="c-topicpath__link">書籍</a></li>
+>      </ul>
+>    </div>
+>  </nav>
+>  <main>
+>    <div class="content">
+>      <div class="container">
+>        <div class="row">
+>          <div class="col-lg-9">
+> 
+> 
+>            <div class="p-search-area">
+>    
+>    <form action="/product/" method="post" id="archive_search" class="acms-form" role="search" aria-label="既刊検索フォーム">
+>      <div class="p-search-area__row">
+>        <p class="p-search-area__title">既刊検索</p>
+>        <div class="p-search-area__col -full">
+>          <div class="c-search__action">
+>            <input type="search" id="searchForm" name="keyword" value="" size="15" class="c-search__input" placeholder="フリーワード">
+>            <input type="hidden" name="query" value="keyword">
+>            <span class="c-search__side-btn"><button type="submit" name="ACMS_POST_2GET" class="c-search__btn"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">検索</span></button></span>>            <input type="hidden" name="bid" value="3">
+>          </div>
+>        </div>
+>      </div>
+>    <input type="hidden" name="formToken" value="42b51008dea95e975c5ca7a55e9285f27abfa8f4">
+>  </form>
+>    <form action="/product/" method="post" id="archive_search_sort" class="acms-form" role="search" aria-label="並べ替え">
+>      <input type="hidden" name="keyword" value="" />
+>      <input type="hidden" name="tag" value="" />
+>      <input type="hidden" name="field[]" value="title_kana" />
+>      <input type="hidden" name="title_kana@operator" value="nem" />
+>      <input type="hidden" id="search_date" name="date" value="2022/03" />
+>      <div class="p-search-area__row">
+>        <p class="p-search-area__title">発売年月</p>
+>        <div class="p-search-area__col -full">
+>          <select class="c-form-select" id="select_year" name="date_year">
+>            <option value="">全て</option>
+> 
+> 
+>            <option value="2022" selected>2022</option>
+> 
+>            <option value="2021">2021</option>
+> 
+>            <option value="2020">2020</option>
+> 
+>            <option value="2019">2019</option>
+> 
+>            <option value="2018">2018</option>
+> 
+>            <option value="2017">2017</option>
+> 
+>            <option value="2016">2016</option>
+> 
+>            <option value="2015">2015</option>
+> 
+>            <option value="2014">2014</option>
+> 
+>            <option value="2013">2013</option>
+> 
+>            <option value="2012">2012</option>
+> 
+>            <option value="2011">2011</option>
+> 
+>            <option value="2010">2010</option>
+> 
+>            <option value="2009">2009</option>
+> 
+>            <option value="2008">2008</option>
+> 
+>            <option value="2007">2007</option>
+> 
+>            <option value="2006">2006</option>
+> 
+>            <option value="2005">2005</option>
+> 
+>            <option value="2004">2004</option>
+> 
+>            <option value="2003">2003</option>
+> 
+>            <option value="2002">2002</option>
+> 
+>            <option value="2001">2001</option>
+> 
+>            <option value="2000">2000</option>
+> 
+>            <option value="1999">1999</option>
+> 
+>            <option value="1998">1998</option>
+> 
+>            <option value="1997">1997</option>
+> 
+>            <option value="1996">1996</option>
+> 
+> 
+>          </select>
+>          年
+>          <select class="c-form-select" id="select_month" name="date_month">
+>            <option value="">全て</option>
+>            <option value="01">1</option>
+>            <option value="02">2</option>
+>            <option value="03" selected>3</option>
+>            <option value="04">4</option>
+>            <option value="05">5</option>
+>            <option value="06">6</option>
+>            <option value="07">7</option>
+>            <option value="08">8</option>
+>            <option value="09">9</option>
+>            <option value="10">10</option>
+>            <option value="11">11</option>
+>            <option value="12">12</option>
+>          </select>
+>          月
+>        </div>
+>      </div>
+>      <div class="p-search-area__row">
+>        <p class="p-search-area__title">並べ替え</p>
+>        <div class="p-search-area__col -full">
+>          <select class="c-form-select" id="select_order" name="order">
+>            <option value="">発売日新着順</option>
+>            <option value="field-asc">タイトル順(昇順)</option>
+>            <option value="field-desc">タイトル順(降順)</option>
+>          </select>
+>        </div>
+>      </div>
+>      <input id="archive_search_sort_button" type="submit" name="ACMS_POST_2GET" style="display: none" value="検索" class="c-form-btn p-search-btn" />
+>    <input type="hidden" name="formToken" value="42b51008dea95e975c5ca7a55e9285f27abfa8f4">
+>  </form>
+>    <script>
+>      $(function(){
+>        $('#select_order').on('change',function() {
+>          $('#archive_search_sort_button').click();
+>        });
+>        $('#select_year,#select_month').on('change',function() {
+>          var date = $('#select_year').val();
+>          if (date != '') {
+>            var month = $('#select_month').val();
+>            if (month != '') {
+>              date += '/'+month;
+>            }
+>          }
+>          $('#search_date').val(date);
+>          $('#archive_search_sort_button').click();
+>        });
+>      });
+>    </script>
+> 
+>  </div>
+>  <div>
+> 
+>    <div>
+>      <h2 class="c-heading-large -line">おすすめタグ</h2>
+>    </div>
+> 
+>    <ul class="acms-list-inline js-random-tc tag-list">
+> 
+>      <li><span class="acms-label acms-label-success tagSize-3 tagLevel-25"><a href="https://famitsubunko.jp/product/tag/%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC/" title="728件">#ファンタジー</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-3 tagLevel-21"><a href="https://famitsubunko.jp/product/tag/%E3%83%90%E3%83%88%E3%83%AB/" title="542件">#バトル</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-2 tagLevel-14"><a href="https://famitsubunko.jp/product/tag/%E3%83%A9%E3%83%96%E3%82%B3%E3%83%A1/" title="313件">#ラブコメ</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-2 tagLevel-14"><a href="https://famitsubunko.jp/product/tag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%8C%96/" title="300件">#ゲーム化</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-2 tagLevel-13"><a href="https://famitsubunko.jp/product/tag/%E6%97%A5%E5%B8%B8/" title="268件">#日常</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-2 tagLevel-12"><a href="https://famitsubunko.jp/product/tag/%E7%8F%BE%E4%BB%A3%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC/" title="256件">#現
+代ファンタジー</a></span></li>
+>      
+>      <li><span class="acms-label acms-label-success tagSize-1 tagLevel-9"><a href="https://famitsubunko.jp/product/tag/%E6%81%8B%E6%84%9B/" title="172件">#恋愛</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-1 tagLevel-9"><a href="https://famitsubunko.jp/product/tag/SF/" title="157件">#SF</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-1 tagLevel-8"><a href="https://famitsubunko.jp/product/tag/%E3%82%B3%E3%83%9F%E3%82%AB%E3%83%A9%E3%82%A4%E3%82%BA/" title="153件">#コミカライズ</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-1 tagLevel-7"><a href="https://famitsubunko.jp/product/tag/%E7%95%B0%E4%B8%96%E7%95%8C/" title="128件">#異世界</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-1 tagLevel-4"><a href="https://famitsubunko.jp/product/tag/%E3%83%9F%E3%82%B9%E3%83%86%E3%83%AA%E3%83%BC/" title="79件">#ミステリー</a></span></li>     
+> 
+>      <li><span class="acms-label acms-label-success tagSize-1 tagLevel-4"><a href="https://famitsubunko.jp/product/tag/%E3%82%A2%E3%83%8B%E3%83%A1%E5%8C%96/" title="75件">#アニメ化</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-1 tagLevel-1"><a href="https://famitsubunko.jp/product/tag/%E3%83%9B%E3%83%A9%E3%83%BC/" title="34件">#ホラー</a></span></li>
+> 
+>      <li><span class="acms-label acms-label-success tagSize-1 tagLevel-1"><a href="https://famitsubunko.jp/product/tag/%E5%86%92%E9%99%BA/" title="31件">#冒険</a></span></li>
+>      
+>    </ul>
+>  </div>
+> 
+> 
+>  <div>
+> 
+>    
+> 
+>    <ul class="c-thumbnail-book row">
+> 
+> 
+>      <li class="js-dup-check c-thumbnail-book__item col-sm-4 col-md-3" data-title="八月のシンデレラナイン 白夜に揺蕩う追憶" data-isbn="9784047369658">
+>        
+>  <div class="c-thumbnail-book__image">
+>    <a href="https://famitsubunko.jp/product/322112000117.html" class="c-thumbnail-book__img-link">
+>      <div class="cover-wrap">
+> 
+>        <img src="https://cdn.kdkw.jp/cover_500/322112/322112000117.jpg" alt="書影：八月のシンデレラナイン 白夜に揺蕩う追憶" class="js-img-fallback c-thumbnail-book__img -border img-fluid">
+>        
+>      </div>
+> 
+>    </a>
+>  </div>
+>  <div class="c-thumbnail-book__detail">
+>    <a href="https://famitsubunko.jp/product/322112000117.html" class="c-thumbnail-book__title-link">
+> 
+>        <p class="c-thumbnail-book__title">八月のシンデレラナイン</p>
+> 
+>        <p class="c-thumbnail-book__title-sub">白夜に揺蕩う追憶</p>
+> 
+> 
+> 
+>    </a>
+> 
+> 
+>    <ul class="c-thumbnail__authors">
+> 
+>      <li class="c-thumbnail__author-item">原作・イラスト : <a href="https://famitsubunko.jp/product/keyword/Akatsuki">Akatsuki</a>
+>      
+>      <li class="c-thumbnail__author-item">原案 : <a href="https://famitsubunko.jp/product/keyword/山口　修平">山口　修平</a>
+> 
+>      <li class="c-thumbnail__author-item">執筆協力 : <a href="https://famitsubunko.jp/product/keyword/泉　遼平">泉　遼平</a>
+>      
+>    </ul>
+> 
+> 
+> 
+>  </div>
+>      </li>
+>      
+>      <li class="js-dup-check c-thumbnail-book__item col-sm-4 col-md-3" data-title="Vtuberってめんどくせえ！" data-isbn="9784047369351">
+> 
+>  <div class="c-thumbnail-book__image">
+>    <a href="https://famitsubunko.jp/product/322110001251.html" class="c-thumbnail-book__img-link">
+>      <div class="cover-wrap">
+>        
+>        <img src="https://cdn.kdkw.jp/cover_500/322110/322110001251.jpg" alt="書影：Vtuberってめんどくせえ！" class="js-img-fallback c-thumbnail-book__img -border img-fluid">
+> 
+>      </div>
+> 
+>    </a>
+>  </div>
+>  <div class="c-thumbnail-book__detail">
+>    <a href="https://famitsubunko.jp/product/322110001251.html" class="c-thumbnail-book__title-link">
+> 
+>        <p class="c-thumbnail-book__title">Vtuberってめんどくせえ！</p>
+>        
+> 
+> 
+>    </a>
+> 
+> 
+>    <ul class="c-thumbnail__authors">
+> 
+>      <li class="c-thumbnail__author-item">著 : <a href="https://famitsubunko.jp/product/keyword/烏丸　英">烏丸　英</a>
+> 
+>      <li class="c-thumbnail__author-item">イラスト : <a href="https://famitsubunko.jp/product/keyword/みこフライ">みこフライ</a>
+> 
+>    </ul>
+> 
+>    
+> 
+>  </div>
+>      </li>
+> 
+>      <li class="js-dup-check c-thumbnail-book__item col-sm-4 col-md-3" data-title="16年間魔法が使えず落ちこぼれだった俺が、科学者だった前世を思い出して異世界無双2" data-isbn="9784047369320">
+> 
+>  <div class="c-thumbnail-book__image">
+>    <a href="https://famitsubunko.jp/product/322110001210.html" class="c-thumbnail-book__img-link">
+>      <div class="cover-wrap">
+> 
+>        <img src="https://cdn.kdkw.jp/cover_500/322110/322110001210.jpg" alt="書影：16年間魔法が使えず落ちこぼれだった俺が、科学者だった前世を思い出して異世界無双2" class="js-img-fallback c-thumbnail-book__img -border img-fluid">
+>        
+>      </div>
+> 
+>    </a>
+>  </div>
+>  <div class="c-thumbnail-book__detail">
+>    <a href="https://famitsubunko.jp/product/322110001210.html" class="c-thumbnail-book__title-link">
+> 
+>        <p class="c-thumbnail-book__title">16年間魔法が使えず落ちこぼれだった俺が、科学者だった前世を思い出して異世界無双2</p>
+> 
+> 
+> 
+>    </a>
+> 
+> 
+>    <ul class="c-thumbnail__authors">
+> 
+>      <li class="c-thumbnail__author-item">著者 : <a href="https://famitsubunko.jp/product/keyword/ねぶくろ">ねぶくろ</a>
+> 
+>      <li class="c-thumbnail__author-item">イラスト : <a href="https://famitsubunko.jp/product/keyword/花ヶ田">花ヶ田</a>
+>      
+>    </ul>
+> 
+>    
+> 
+>  </div>
+>      </li>
+> 
+>      
+> 
+>      <li class="js-dup-check c-thumbnail-book__item col-sm-4 col-md-3" data-title="友人に500円貸したら借金のカタに妹をよこしてきたのだけれど、俺は一体どうすればいいんだろう２" data-isbn="9784047369313">
+> 
+>  <div class="c-thumbnail-book__image">
+>    <a href="https://famitsubunko.jp/product/322110001209.html" class="c-thumbnail-book__img-link">
+>      <div class="cover-wrap">
+> 
+>        <img src="https://cdn.kdkw.jp/cover_500/322110/322110001209.jpg" alt="書影：友人に500円貸したら借金のカタに妹をよこしてきたのだけれど、俺は一体どうすればいいんだろう２" class="js-img-fallback c-thumbnail-book__img -border img-fluid">
+> 
+>      </div>
+> 
+>    </a>
+>  </div>
+>  <div class="c-thumbnail-book__detail">
+>    <a href="https://famitsubunko.jp/product/322110001209.html" class="c-thumbnail-book__title-link">
+> 
+>        <p class="c-thumbnail-book__title">友人に500円貸したら借金のカタに妹をよこしてきたのだけれど、俺は一体どうすればいいんだろう２</p>
+> 
+> 
+> 
+>    </a>
+> 
+> 
+>    <ul class="c-thumbnail__authors">
+> 
+>      <li class="c-thumbnail__author-item">著者 : <a href="https://famitsubunko.jp/product/keyword/としぞう">としぞう</a>
+> 
+>      <li class="c-thumbnail__author-item">イラスト : <a href="https://famitsubunko.jp/product/keyword/雪子">雪子</a>
+> 
+>    </ul>
+>    
+> 
+> 
+>  </div>
+>      </li>
+> 
+>      <li class="js-dup-check c-thumbnail-book__item col-sm-4 col-md-3" data-title="幼女信長の異世界統一2" data-isbn="9784047369023">
+> 
+>  <div class="c-thumbnail-book__image">
+>    <a href="https://famitsubunko.jp/product/322110000112.html" class="c-thumbnail-book__img-link">
+>      <div class="cover-wrap">
+> 
+>        <img src="https://cdn.kdkw.jp/cover_500/322110/322110000112.jpg" alt="書影：幼女信長の異世界統一2" class="js-img-fallback c-thumbnail-book__img -border img-fluid">
+> 
+>      </div>
+> 
+>    </a>
+>  </div>
+>  <div class="c-thumbnail-book__detail">
+>    <a href="https://famitsubunko.jp/product/322110000112.html" class="c-thumbnail-book__title-link">
+> 
+>        <p class="c-thumbnail-book__title"><span class="size-b6">Ｂ６判</span>幼女信長の異世界統一2</p>
+> 
+> 
+> 
+>    </a>
+>    
+> 
+>    <ul class="c-thumbnail__authors">
+> 
+>      <li class="c-thumbnail__author-item">著者 : <a href="https://famitsubunko.jp/product/keyword/舞阪　洸">舞阪　洸</a>
+> 
+>      <li class="c-thumbnail__author-item">イラスト : <a href="https://famitsubunko.jp/product/keyword/tef">tef</a>
+> 
+>    </ul>
+> 
+> 
+> 
+>  </div>
+>      </li>
+> 
+> 
+>    </ul>
+> 
+>  </div>
+> 
+> 
+> 
+>          </div>
+>          <div class="col-lg-3">
+> 
+>  <div class="p-side-section">
+> 
+>    <h2 class="c-heading-large -line">新着記事</h2>
+>    <ul class="c-headline">
+> 
+>      <li class="c-headline__item">
+>        <a href="https://famitsubunko.jp/news/editor/entry-12697.html" class="c-headline__link">
+>          <div class="c-headline__main">
+>            <div class="c-headline__main-header">
+>              <time class="c-headline__date" datetime="2021-03-29">2021年03月29日</time>
+>              <p class="p-entry-category"><span class="c-label p-entry-category__label editor" style="background-color: #ffbb24;">編集部より</span></p>
+>            </div>
+>            <span class="c-headline__title">『家つくりスキルで異世界を生き延びろ３』刊行延期のお知らせ</span>
+>          </div>
+>        </a>
+>      </li>
+> 
+>      <li class="c-headline__item">
+>        <a href="https://famitsubunko.jp/news/entry-12638.html" class="c-headline__link">
+>          <div class="c-headline__main">
+>            <div class="c-headline__main-header">
+>              <time class="c-headline__date" datetime="2020-06-01">2020年06月01日</time>
+>            </div>
+>            <span class="c-headline__title">小鳥屋エム先生のサイン本があたる！　RTキャンペーン実施中！</span>
+>          </div>
+>        </a>
+>      </li>
+> 
+>      <li class="c-headline__item">
+>        <a href="https://famitsubunko.jp/news/editor/entry-12621.html" class="c-headline__link">
+>          <div class="c-headline__main">
+>            <div class="c-headline__main-header">
+>              <time class="c-headline__date" datetime="2020-04-22">2020年04月22日</time>
+>              <p class="p-entry-category"><span class="c-label p-entry-category__label editor" style="background-color: #ffbb24;">編集部より</span></p>
+>            </div>
+>            <span class="c-headline__title">野村美月新作２冊同時刊行決定＆広報ツイッター開始！</span>
+>          </div>
+>        </a>
+>      </li>
+> 
+>      <li class="c-headline__item">
+>        <a href="https://famitsubunko.jp/news/editor/entry-12618.html" class="c-headline__link">
+>          <div class="c-headline__main">
+>            <div class="c-headline__main-header">
+>              <time class="c-headline__date" datetime="2020-04-22">2020年04月22日</time>
+>              <p class="p-entry-category"><span class="c-label p-entry-category__label editor" style="background-color: #ffbb24;">編集部より</span></p>
+>            </div>
+>            <span class="c-headline__title">ファミ通文庫、新ロゴ＆新HPになりました！</span>
+>          </div>
+>        </a>
+>      </li>
+> 
+>    </ul>
+>  </div>
+>  <aside class="p-side-section">
+> 
+>    <div class="c-suggest-twitter">
+>       <h2 class="c-heading-large -line">Twitter</h2>
+>      <a class="twitter-timeline c-suggest-twitter__iframe" href="https://twitter.com/FB_twi" data-height="520" data-chrome="noheader nofooter"></a>
+>      <div class="c-suggest-twitter__footer">
+>        <p class="c-suggest-twitter__follow-btn"><a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Ffamitsubunko.jp%2F&ref_src=twsrc%5Etfw&screen_name=FB_twi&tw_p=followbutton" target="_blank">Follow @FB_twi</a></p>
+>      </div>
+>    </div>
+>  </aside>
+>  <div class="p-side-section">
+> 
+>    <ul class="c-thumbnail row js-random" data-show="3">
+> 
+>      <li class="c-thumbnail__item col-6 col-md-4 col-lg-12">
+>        <a href="https://famitsubunko.jp/specialcontents/mizisso/" class="c-thumbnail__link">
+>          <img src="/archives/001/202011/mode3_w290_h180-a59e9e5e0ebb9a7c7d684ce71d1442c6.jpg" width="290" height="180" alt="" class="c-thumbnail__img -border img-fluid">
+>          <p class="c-thumbnail__title">未実装のラスボス達が仲間になりました。</p>
+>        </a>
+>      </li>
+>      <li class="c-thumbnail__item col-6 col-md-4 col-lg-12">
+>        <a href="https://famitsubunko.jp/special/kenjanomago/" class="c-thumbnail__link">
+>          <img src="/archives/001/202004/mode3_w290_h180-12461b23391c7fa151724327da0d5d49.jpg" width="290" height="180" alt="" class="c-thumbnail__img -border img-fluid">
+>          <p class="c-thumbnail__title">賢者の孫</p>
+>        </a>
+>      </li>
+>      <li class="c-thumbnail__item col-6 col-md-4 col-lg-12">
+>        <a href="https://famitsubunko.jp/specialcontents/leadale/" class="c-thumbnail__link" target="_blank" rel="noopener noreferrer">
+>          <img src="/archives/001/202008/mode3_w290_h180-9ebaf8841c7fb327fbf1a23f19b92e8b.jpg" width="290" height="180" alt="" class="c-thumbnail__img -border img-fluid">
+>          <p class="c-thumbnail__title">リアデイルの大地にて</p>
+>        </a>
+>      </li>
+>      <li class="c-thumbnail__item col-6 col-md-4 col-lg-12">
+>        <a href="https://famitsubunko.jp/special/musubutohon/entry-12676.html" class="c-thumbnail__link">
+>          <img src="/archives/001/202011/mode3_w290_h180-02c0c8cbbc795fb700997ea864b5d1d4.jpg" width="290" height="180" alt="" class="c-thumbnail__img -border img-fluid">
+>          <p class="c-thumbnail__title">むすぶと本。</p>
+>        </a>
+>      </li>
+>      <li class="c-thumbnail__item col-6 col-md-4 col-lg-12">
+>        <a href="https://famitsubunko.jp/special/ietsukuri/entry-12635.html" class="c-thumbnail__link">
+>          <img src="/archives/001/202008/mode3_w290_h180-0fc60a19d6d6fa5a5ded7f4277e377f3.jpg" width="290" height="180" alt="" class="c-thumbnail__img -border img-fluid">
+>          <p class="c-thumbnail__title">家つくりスキルで異世界を生き延びろ</p>
+>        </a>
+>      </li>
+>      <li class="c-thumbnail__item col-6 col-md-4 col-lg-12">
+>        <a href="https://famitsubunko.jp/special/wataai/entry-12716.html" class="c-thumbnail__link">
+>          <img src="/archives/001/202108/mode3_w290_h180-31feb08c2424cd92808949dd07393ea0.jpg" width="290" height="180" alt="" class="c-thumbnail__img -border img-fluid">
+>          <p class="c-thumbnail__title">わたしを愛してもらえれば、傑作なんてすぐなんですけど!?</p>
+>        </a>
+>      </li>
+>    </ul>
+>  </div>
+>          </div>
+>        </div>
+> 
+> 
+>      </div>
+>    </div>
+>  </main>
+>  <footer class="g-footer">
+>    <div class="g-footer__inner -product">
+>      <div class="container">
+>        <p class="g-footer__notice"><span class="d-inline-block">本ホームページに掲載の文章・画像・写真などを無断で複製することは法律上禁じられています。</span><span class="d-inline-block">すべての著作権は株式会社
+KADOKAWAに帰属します。</span></p>
+>        <div class="g-footer__search">
+>          <a href="http://www.kadokawa.co.jp">
+>            <img src="/themes/kadokawa/images/global/logo_corporate.svg" alt="KADOKAWA" width="240" height="35" role="img">
+>          </a>
+>        </div>
+>        <p class="g-footer__copyright">(C) KADOKAWA CORPORATION. 2022</p>
+>      </div>
+>    </div>
+>  </footer>
+>  <div id="return-top"><a href="#"><img src="/themes/kadokawa/images/global/returntop.png" alt="ページTOPへ戻る"></a></div>
+>  </div>
+>  <nav id="offcanvas" class="js-offcanvas g-offcanvas" aria-label="メインメニュー">
+>    <div class="g-offcanvas-close js-offcanvas-close" ></div>
+>    <div class="g-offcanvas-nav" style="position: relative">
+> 
+>      <div class="p-offcanvas__close-btn-wrap">
+>        <div class="offcanvas__title">MENU</div>
+>        <div class="close-btn"><a class="js-offcanvas-close p-offcanvas__close-btn" href="#top"><span class="close-icon"></span></a></div>
+>      </div>
+> 
+> 
+> 
+>        <ul>
+>        <li  class="js-link_match_location-full">
+>        <a href="https://famitsubunko.jp/product/new-release.html" target=""  class=" js-viewing-indelible" >
+>          新刊情報
+>          </a>
+> 
+> 
+>        
+> 
+> 
+> 
+> 
+> 
+>        </li>
+> 
+> 
+> 
+>        <li  class="js-link_match_location-full">
+>        <a href="https://famitsubunko.jp/product/" target=""  class=" js-viewing-indelible" >
+>          書籍情報
+>          </a>
+> 
+> 
+> 
+> 
+> 
+>        
+> 
+> 
+>        </li>
+> 
+> 
+>        
+>        <li  class="js-link_match_location-full">
+>        <a href="https://famitsubunko.jp/special/" target=""  class=" js-viewing-indelible" >
+>          特設サイト
+>          </a>
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>        </li>
+> 
+> 
+> 
+>        <li  class="js-link_match_location-full">
+>        <a href="https://famitsubunko.jp/news/" target=""  class=" js-viewing-indelible" >
+>          ニュース
+>          </a>
+> 
+> 
+> 
+>        
+> 
+> 
+> 
+> 
+>        </li>
+> 
+> 
+> 
+>        <li  class="js-link_match_location-full">
+>        <a href="https://famitsubunko.jp/award/top.html" target=""  class=" js-viewing-indelible" >
+>          新人賞
+>          </a>
+> 
+> 
+>        
+> 
+> 
+> 
+> 
+> 
+>        </li>
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>        
+>        </ul>
+> 
+> 
+>      <div class="p-offcanvas-search-wrap">
+> 
+>        <div class="p-side-section">
+>    <form action="/product/search.html" method="post" name="searchForm" class="c-search__form" role="search" aria-label="検索フォーム">
+>      <div class="c-search__action">
+>        <input type="search" id="searchForm" name="keyword" value="" size="15" class="c-search__input" placeholder="書籍検索">
+>        <input type="hidden" name="query" value="keyword">
+>        <span class="c-search__side-btn"><button type="submit" name="ACMS_POST_2GET" class="c-search__btn"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">検索</span></button></span>    
+>        <input type="hidden" name="bid" value="3">
+>      </div>
+>    <input type="hidden" name="formToken" value="42b51008dea95e975c5ca7a55e9285f27abfa8f4">
+>  </form>
+>  </div>
+>      </div>
+>    </div>
+>  </nav>
+>  <script>
+>    $(function() {
+>      $(".js-offcanvas-close").unbind();
+>      $(".js-offcanvas-close").on("click touchend",function(e) {
+>        e.preventDefault();
+>        if (e.target)
+>        $(".js-acms-offcanvas-body").addClass("js-acms-offcanvas-body-moving");
+>        $(".js-acms-offcanvas-body").removeClass("js-acms-offcanvas-body-right");
+>        $(".js-acms-offcanvas-body").removeClass("js-acms-offcanvas-body-left");
+>        $(".js-acms-offcanvas-sidebar").removeClass("active");
+>        setTimeout(function(){
+>          $(".js-acms-offcanvas").removeClass("js-acms-offcanvas-open").attr("aria-hidden",true);
+>          $(".js-acms-offcanvas-body").removeClass("js-acms-offcanvas-body-moving");
+>          $(".js-acms-offcanvas-btn").attr("aria-expanded",false);
+>        },300);
+>        return false;
+>      });
+>    });
+>  </script>
+>  <script>
+>    (function() {
+>      var temp = [];
+> 
+>      $('.js-dup-check').each(function() {
+>        var title = $(this).data('title');
+>        var isbn = $(this).data('isbn');
+>        if ( temp.indexOf(title) !== -1 ) {
+>          if ( !/^978404/.test(isbn) ) {
+>            $(this).hide();
+>          } else {
+>            var filter = '[data-title="' + title + '"]';
+>            $(filter).hide();
+>            $(this).show();
+>          }
+>        }
+>        temp.push($(this).data('title'));
+>      });
+>    })();
+>  </script>
+>  </body>
+>  </html>

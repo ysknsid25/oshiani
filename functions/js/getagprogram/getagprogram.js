@@ -22,8 +22,8 @@ exports.gaScraiping = functions
 exports.testFunc = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
-        const scrai = require("./fantasia");
-        const retArr = await scrai.fantasiaScraiping(db);
+        const scrai = require("./famitsu");
+        const retArr = await scrai.famitsuScraiping(db);
         //console.log(retArr);
         functions.logger.info(retArr, { structuredData: true });
         res.send("fine");
@@ -92,6 +92,19 @@ exports.fantasiaScraiping = functions
     .onRun(async () => {
         const scrai = require("./fantasia");
         const retArr = await scrai.fantasiaScraiping(db);
+    });
+
+exports.famitsuScraiping = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 300,
+        memory: "1GB",
+    })
+    .pubsub.schedule("0 1 25 * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const scrai = require("./famitsu");
+        const retArr = await scrai.famitsuScraiping(db);
     });
 
 /**

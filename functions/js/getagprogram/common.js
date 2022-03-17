@@ -5,9 +5,11 @@
  */
 exports.setAuthor = (db, authorArr) => {
     authorArr.map((author) => {
-        db.collection("author")
-            .doc(author)
-            .set({ author: author });
+        if (typeof author !== "undefined") {
+            db.collection("author")
+                .doc(author)
+                .set({ author: author });
+        }
     });
 };
 
@@ -18,9 +20,11 @@ exports.setAuthor = (db, authorArr) => {
  */
 exports.setIllustrator = (db, illustratorArr) => {
     illustratorArr.map((illustrator) => {
-        db.collection("illustrator")
-            .doc(illustrator)
-            .set({ illustrator: illustrator });
+        if (typeof illustrator !== "undefined") {
+            db.collection("illustrator")
+                .doc(illustrator)
+                .set({ illustrator: illustrator });
+        }
     });
 };
 
