@@ -1,0 +1,420 @@
+>  <!DOCTYPE HTML>
+>  
+>  <html lang="ja">
+> 
+>  <head>
+> 
+>       <meta charset="UTF-8">
+>       <meta name="keywords" content="集英社,ダッシュエックス文庫,DX,ライトノベル,新人賞,刊行予定">
+>       <meta name="description" content="集英社,ダッシュエックス文庫,DX,刊行予定">
+>       <meta name="viewport" content="width=device-width,initial-scale=1">
+>       <meta name="format-detection" content="telephone=no">
+> 
+>       <meta property="fb:app_id" content="136248270492315">
+>       <meta property="og:type" content="website">
+>       <meta property="og:title" content="刊行予定｜ダッシュエックス文庫">
+>       <meta property="og:description" content="集英社,ダッシュエックス文庫,DX,刊行予定">
+>       <meta property="og:url" content="http://dash.shueisha.co.jp/release/future.php">
+>       <meta property="og:image" content="http://dash.shueisha.co.jp/images/ogp.png">
+> 
+>       <title>刊行予定 | ダッシュエックス文庫</title>
+> 
+>       <link rel="stylesheet" href="/css/bootstrap.min.css">
+>       <!-- ▼スマホサイズメニュー -->
+>       <link rel="stylesheet" href="/css/mmenu.all.css">
+>       <!-- ▼ライトボックス -->
+>       <link rel="stylesheet" href="/css/colorbox.css">
+> 
+>       <link rel="stylesheet" href="/css/default.css">
+>       <link rel="stylesheet" href="/css/release.css">
+> 
+>       <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+>       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+>       <script src="/js/bootstrap.min.js"></script>
+>       <!-- ▼スマホサイズメニュー -->
+>       <script src="/js/mmenu.all.min.js"></script>
+>       <!-- ▼ライトボックス -->
+>       <script src="/js/jquery.colorbox-min.js"></script>
+> 
+>       <!--[if lt IE 9]>
+>       <script src="js/html5shiv.js"></script>
+>       <![endif]-->
+> 
+>       <script>
+>  //▼スマホサイズメニュー
+>               $(function() {
+>                       $('nav#menu').mmenu({
+> 
+>       "offCanvas": {
+> 
+>       position: "left", //メニューのポジション: left(デフォルト), right, top, bottom
+> 
+>       zposition: "back", //メニューの表示タイプ: back(デフォルト), front, next
+> 
+>       },
+> 
+>       "slidingSubmenus": true,        //ネストメニューの動き：true（スライド）,false（ドロップダウン） */
+> 
+>       "extensions": [
+> 
+>  // ▼ メニューの色：　""（デフォルト）, theme-dark, theme-black, theme-white
+>       "",
+> 
+>  // ▼ メニューの現れ方：　effect-menu-fade, effect-menu-slide, effect-menu-zoom
+>       "effect-menu-slide",
+> 
+>  // ▼ 各メニューの現れ方：　effect-listitems-drop, effect-listitems-fade, effect-listitems-slide
+>       "effect-listitems-fade",
+> 
+>  // ▼ ネストメニューの現れ方：　effect-panels-slide-0, effect-panels-slide-100, effect-panels-zoom
+>       "effect-panels-slide-100",
+> 
+>  // ▼ コンテンツ部分をハイライト or 暗転：　effecpagedim-white, pagedim-black
+>       "pagedim-black"
+> 
+>       ],
+> 
+>       "counters": true,
+>       navbar  : {
+>                       title           : 'MENU'
+>                       },
+>       navbars : [{
+>                       position        : 'top',
+>                       content         : [ 'prev', 'title', 'close' ]
+>                       }]
+> 
+>       });
+> 
+>       });
+> 
+>  $(function() {
+>  $(".img_box").colorbox({
+>               rel:'img_box',
+>               });
+>       });
+> 
+>  //▼カルーセル
+>  var swiper;
+>  $(window).load(function() {
+>       swiper = new Swiper('.swiper-container', {
+>               loop: true,
+>               slidesPerView: 1,
+>               spaceBetween: 0,
+>               centeredSlides : true,
+>               speed: 1000,
+>               autoplay: 3000,
+>       //      pagination: '.swiper-pagination',
+>               nextButton: '.swiper-button-next',
+>               prevButton: '.swiper-button-prev',
+>               });
+>       });
+> 
+>       </script>
+> 
+> 
+>  <body id="future">
+> 
+> 
+>  <div class="content">
+> 
+>  <header>
+> 
+>  <div class="main_header">
+>  <div class="container">
+> 
+>  <!-- ▼SP メニューボタン▼ -->
+>  <div class="menu_sp">
+>       <a href="#menu"><span></span></a>
+>  </div>
+>  <!-- ▲SP メニューボタン▲ -->
+> 
+>       <div class="titleBox">
+>               <h1><a href="/"><img alt="DXデジタル これが僕らの新ライトノベル。" src="/images/DX_title.png" class="d-lg-block"><img alt="DXデジタル これが僕らの新ライトノベル。" src="/images/DX_title_sp.png" class="d-lg-none"></a></h1>
+>       </div>
+> 
+>               <form action="/library/index/kw/" method="post">
+>                       <input type="text" name="sdKeyword" id="sdKeyword" value="">
+>                       <input type="submit" value=" " class="searchSubmitBtn">
+>               </form>
+> 
+>               <p class="search-menu"><a href="#menu"><img alt="検索" src="/images/search_icon2.png"></a></p>
+> 
+>               <p class="searchCaption"><a href="/details/">詳細検索はこちら</a></p>
+> 
+>               <div class="twitter_share">
+>                       <a href="https://twitter.com/dx_bunko" target="_blank"><img alt="ダッシュエックス文庫編集部 ツイッター" src="/images/twitter.png"></a>
+>                       <p>編集部<br class="xxs-br">ツイッター</p>
+>               </div>
+> 
+>       <nav id="menu">
+> 
+>               <ul>
+> 
+>                       <li><a href="/">TOP</a></li>
+> 
+>                       <li><a href="/release/">新刊案内</a></li>
+> 
+>                       <li><a href="/release/future.php">刊行予定</a></li>
+> 
+>                       <li><a href="/special/">スペシャル！</a></li>
+> 
+>                       <li><a href="/comics/">コミックス</a></li>
+> 
+>                       <li><a href="/award/">集英社ライトノベル新人賞</a></li>
+> 
+>                       <li><a href="http://sdbunko.blogspot.jp/" target="_blank">編集部ブログ</a></li>
+> 
+>                       <li class="no-link"><span class="text">キーワードで検索</span><form action="/library/index/" method="post"><input type="text" name="sdKeyword" id="sdKeyword2" value=""><input type="submit" value="▶" class="searchSubmitBtn in_menu"></form></li>
+> 
+>                       <li class="no-link"><p class="searchCaption"><a href="/details/">詳細検索はこちら</a></p></li>
+> 
+>               </ul>
+> 
+>       </nav>
+> 
+>  </div>
+>  </div>
+> 
+> 
+>  <div class="menu">
+>  <div class="container">
+> 
+>       <ul>
+> 
+>               <li class="index"><a href="/">TOP</a></li>
+> 
+>               <li class="release"><a href="/release/">新刊案内</a></li>
+> 
+>               <li class="future"><a href="/release/future.php">刊行予定</a></li>
+> 
+>               <li class="special"><a href="/special/">スペシャル！</a></li>
+> 
+>               <li class="comics"><a href="/comics/">コミックス</a></li>
+> 
+>               <li class="award"><a href="/award/"><span>集英社</span><br>ライトノベル<br>新人賞</a></li>
+> 
+>               <li><a href="http://sdbunko.blogspot.jp/" target="_blank">編集部ブログ</a></li>
+> 
+>       </ul>
+> 
+>  </div>
+>  </div>
+> 
+>  </header>
+> 
+> 
+>  <div class="container mainCont">
+> 
+>       <div class="min-title"><p>FUTURE</p></div>
+>       <h2 class="mainTit">刊行予定<span class="red">2022年3月刊</span></h2>
+> 
+>  <div id="978-4-08-631460-2" class="page_link"></div>
+>       <section class="new_box">
+> 
+> 
+> 
+>               <div class="title_box">
+>  <h3>モンスター娘のお医者さん10</h3><p class="author"><span class="boldText">著者：折口 良乃</span><br><span class="boldText">イラスト：Ｚトン</span><br></p>
+>                               </div><!-- /title_box -->
+> 
+>       <div class="row">
+>               <div class="col-md-4">
+> 
+>  <div class="cover"><img src="/imagesBook/978-4-08-631460-2.jpg" alt="モンスター娘のお医者さん10"></div>
+>  <p class="credit kuchie_pc"><small>&copy;YOSHINO ORIGUCHI 2022</small></p>
+>  <div class="spbnrBox kuchie_pc">
+>  <p>▼特集・関連を見る</p>
+>  <p><a href="http://dash.shueisha.co.jp/feature/monmusu/" target="_blank">
+>  <img src="/imagesBook/978-4-08-631120-5-bn01.jpg" alt="特集・関連">
+>  </a></p><!-- /.spbnrBox --></div>
+> 
+>                                               </div><!-- /col-md-4 -->
+> 
+>  
+>               <div class="col-md-8 rightBox">
+>  
+>                       <div class="row">
+> 
+> 
+>                                               <ul class="share col-lg-3 col-md-4 order-md-2">
+> 
+>                                                       <li><a href="https://twitter.com/share?url=http://dash.shueisha.co.jp/bookDetail/index/978-4-08-631460-2&text=%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E5%A8%98%E3%81%AE%E3%81%8A%E5%8C%BB%E8%80%85%E3%81%95%E3%82%9310%ef%bd%9c%e3%83%80%e3%83%83%e3%82%b7%e3%83%a5%e3%82%a8%e3%83%83%e3%82%af%e3%82%b9%e6%96%87%e5%ba%ab&amp;ref_src=twsrc%5Etfw" target="_blank"><img alt=" 
+ツイートする" src="/images/twitter_share.png"></a></li>
+> 
+>                                                       <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//dash.shueisha.co.jp/bookDetail/index/978-4-08-631460-2" target="_blank"><img alt="Facebook" src="/images/Facebook_share.png"></a></li>
+> 
+>                                                       <li><a href="http://line.me/R/msg/text/?%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E5%A8%98%E3%81%AE%E3%81%8A%E5%8C%BB%E8%80%85%E3%81%95%E3%82%9310%ef%bd%9c%e3%83%80%e3%83%83%e3%82%b7%e3%83%a5%e3%82%a8%e3%83%83%e3%82%af%e3%82%b9%e6%96%87%e5%ba%ab%0D%0Ahttp://dash.shueisha.co.jp/bookDetail/index/978-4-08-631460-2" target="_blank"><img src="/images/LINE_Icon.png" alt="LINEで送る">
+>  </a></li>
+> 
+>                                               </ul>
+> 
+>  <ul class="genre col-lg-9 col-md-8 order-md-1">
+>  <li>ファンタジー</li>
+>  <li>日常</li>
+>  <li>ラブコメ</li>
+>  </ul>
+> 
+>                       <p class="col-12 order-md-3">
+>  <span class="boldText">定価：</span>792円（税込）<br><span class="boldText">ISBN：</span>978-4-08-631460-2
+>  <span class="boldText">判型：</span>A6<br>
+>  <span class="boldText">発売日：</span>2022年03月25日<br>
+>  <span class="boldText">レーベル</span>：ダッシュエックス文庫
+>  </span></p>
+>  </div><div class="row link_box">
+>  <p class="col-md-4"><a href="http://books.shueisha.co.jp/CGI/search/syousai_put.cgi?isbn_cd=978-4-08-631460-2" target="_blank">ご購入はこちら</a></p>
+>  <p class="col-md-4"><a href="/library/index/折口 良乃/1/">他の作品を見る</a></p>
+>  </div>
+>  <p class="boldText catch">モン娘診察奮闘記、堂々の完結!!</p><p class="boldText catch">物語は感動のフィナーレへ!!</p><p>デュラハンによる心臓のひと突きで命を落としたグレン。リンド・ヴルム中が悲嘆に暮れるなか、ラミ
+アのサーフェを始めとするグレンの婚約者たちはどうにかして彼の『魂』を取り戻すべく奔走を始める。一方、グレンはリンド・ヴルムとよく似ているがどこか違う世界を彷徨っていた。いつも診療所で共に働く妖精に導かれるままに、冥
+府の女王・エレと出会う。死を司る彼女が蝕まれている絶望的な病状を改善できれば、グレンは元の世界に戻れるらしい。文字通り命を懸けたグレンの診察が始まる――。生と死の世界の狭間で、いま愛の力が試される！　&quot;モン娘&quot;診察奮闘記、ここに堂々完結――!!</p><div class="d-md-none">
+>  <p class="credit"><small>&copy;YOSHINO ORIGUCHI 2022</small></p>
+>  <div class="spbnrBox">
+>  <p>▼特集・関連を見る</p>
+>  <p><a href="http://dash.shueisha.co.jp/feature/monmusu/" target="_blank">
+>  <img src="/imagesBook/978-4-08-631120-5-bn01.jpg" alt="特集・関連">
+>  </a></p><!-- /.spbnrBox --></div>
+>  </div>
+> 
+>                                       </div>
+>                               </div>
+> 
+>                               </section>
+> 
+>  <!--^^^^^^^^^^^^^^ BOOKDETAIL 書籍情報ここまで ^^^^^^^^^^^^^^-->
+>  <div id="978-4-08-631461-9" class="page_link"></div>
+>       <section class="new_box">
+> 
+> 
+> 
+>               <div class="title_box">
+>  <h3>SSランクパーティでパシリをさせられていた男。ボス戦で仲間に見捨てられたので、ヤケクソで敏捷を9999まで極振りしたら『光』になった……2</h3><p class="author"><span class="boldText">著者：LA軍</span><br><span class="boldText">イラスト：猫月 ユキ</span><br></p>
+>                               </div><!-- /title_box -->
+> 
+>       <div class="row">
+>               <div class="col-md-4">
+> 
+>  <div class="cover"><img src="/imagesBook/978-4-08-631461-9.jpg" alt="SSランクパーティでパシリをさせられていた男。ボス戦で仲間に見捨てられたので、ヤケクソで敏捷を9999まで極振りしたら『光』になった……2"></div>     
+>  <p class="credit kuchie_pc"><small>&copy;LAGUN 2022</small></p>
+> 
+>                                               </div><!-- /col-md-4 -->
+> 
+> 
+>               <div class="col-md-8 rightBox">
+>  
+>                       <div class="row">
+> 
+> 
+>                                               <ul class="share col-lg-3 col-md-4 order-md-2">
+> 
+>                                                       <li><a href="https://twitter.com/share?url=http://dash.shueisha.co.jp/bookDetail/index/978-4-08-631461-9&text=SS%E3%83%A9%E3%83%B3%E3%82%AF%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%81%A7%E3%83%91%E3%82%B7%E3%83%AA%E3%82%92%E3%81%95%E3%81%9B%E3%82%89%E3%82%8C%E3%81%A6%E3%81%84%E3%81%9F%E7%94%B7%E3%80%82%E3%83%9C%E3%82%B9%E6%88%A6%E3%81%A7%E4%BB%B2%E9%96%93%E3%81%AB%E8%A6%8B%E6%8D%A8%E3%81%A6%E3%82%89%E3%82%8C%E3%81%9F%E3%81%AE%E3%81%A7%E3%80%81%E3%83%A4%E3%82%B1%E3%82%AF%E3%82%BD%E3%81%A7%E6%95%8F%E6%8D%B7%E3%82%929999%E3%81%BE%E3%81%A7%E6%A5%B5%E6%8C%AF%E3%82%8A%E3%81%97%E3%81%9F%E3%82%89%E3%80%8E%E5%85%89%E3%80%8F%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E2%80%A6%E2%80%A62%ef%bd%9c%e3%83%80%e3%83%83%e3%82%b7%e3%83%a5%e3%82%a8%e3%83%83%e3%82%af%e3%82%b9%e6%96%87%e5%ba%ab&amp;ref_src=twsrc%5Etfw" 
+target="_blank"><img alt="ツイートする" src="/images/twitter_share.png"></a></li>
+> 
+>                                                       <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//dash.shueisha.co.jp/bookDetail/index/978-4-08-631461-9" target="_blank"><img alt="Facebook" src="/images/Facebook_share.png"></a></li>
+> 
+>                                                       <li><a href="http://line.me/R/msg/text/?SS%E3%83%A9%E3%83%B3%E3%82%AF%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%81%A7%E3%83%91%E3%82%B7%E3%83%AA%E3%82%92%E3%81%95%E3%81%9B%E3%82%89%E3%82%8C%E3%81%A6%E3%81%84%E3%81%9F%E7%94%B7%E3%80%82%E3%83%9C%E3%82%B9%E6%88%A6%E3%81%A7%E4%BB%B2%E9%96%93%E3%81%AB%E8%A6%8B%E6%8D%A8%E3%81%A6%E3%82%89%E3%82%8C%E3%81%9F%E3%81%AE%E3%81%A7%E3%80%81%E3%83%A4%E3%82%B1%E3%82%AF%E3%82%BD%E3%81%A7%E6%95%8F%E6%8D%B7%E3%82%929999%E3%81%BE%E3%81%A7%E6%A5%B5%E6%8C%AF%E3%82%8A%E3%81%97%E3%81%9F%E3%82%89%E3%80%8E%E5%85%89%E3%80%8F%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E2%80%A6%E2%80%A62%ef%bd%9c%e3%83%80%e3%83%83%e3%82%b7%e3%83%a5%e3%82%a8%e3%83%83%e3%82%af%e3%82%b9%e6%96%87%e5%ba%ab%0D%0Ahttp://dash.shueisha.co.jp/bookDetail/index/978-4-08-631461-9" target="_blank"><img src="/images/LINE_Icon.png" alt="LINEで送る">
+>  </a></li>
+> 
+>                                               </ul>
+> 
+>  <ul class="genre col-lg-9 col-md-8 order-md-1">
+>  <li>ファンタジー</li>
+>  <li>冒険</li>
+>  <li>アクション</li>
+>  </ul>
+> 
+>                       <p class="col-12 order-md-3">
+>  <span class="boldText">定価：</span>814円（税込）<br><span class="boldText">ISBN：</span>978-4-08-631461-9
+>  <span class="boldText">判型：</span>A6<br>
+>  <span class="boldText">発売日：</span>2022年03月25日<br>
+>  <span class="boldText">レーベル</span>：ダッシュエックス文庫
+>  </span></p>
+>  </div><div class="row link_box">
+>  <p class="col-md-4"><a href="http://books.shueisha.co.jp/CGI/search/syousai_put.cgi?isbn_cd=978-4-08-631461-9" target="_blank">ご購入はこちら</a></p>
+>  <p class="col-md-4"><a href="/library/index/LA軍/1/">他の作品を見る</a></p>
+>  </div>
+>  <p class="boldText catch">『最弱パシリ』は復讐を経て『最強光速砲』へ進化！？</p><p class="boldText catch">痛快、爽快な『復讐劇』と『ざまぁ』の嵐が巻き起こる！？</p><p>パーティで『敏捷特化のパシリ』という扱いを受
+けていたグエンは強敵との戦闘で仲間から囮として見捨てられる。死を覚悟した彼はヤケクソで残り全てのステータスを敏捷に叩き込み、限界値を超え『光速の最強勇者』へと覚醒する！　絶体絶命の窮地から奇跡の生還をしたグエンに待
+ち受ける新たな敵はギルド長＆冒険者＆元仲間⁉　グエンが必死に獲得した装備も金も全て取り上げようとする面々へいざ、『正義の鉄槌』を下す時！　『復讐』と『ざまぁ』を大展開した彼のもとに魔物のスタンピートの急報が舞い込む 
+。万を優に超える魔物の群衆にグエンは『人間兵器』へと進化を遂げる――！？　馬鹿にされてきた覚醒パシリの壮絶成り上がりストーリ－！</p><div class="d-md-none">
+>  <p class="credit"><small>&copy;LAGUN 2022</small></p>
+>  </div>
+> 
+>                                       </div>
+>                               </div>
+> 
+>                               </section>
+> 
+>  <!--^^^^^^^^^^^^^^ BOOKDETAIL 書籍情報ここまで ^^^^^^^^^^^^^^-->
+>      <!-- <div class="commonSpaces">
+>      <p>※10月に刊行を予定しておりました「都市伝説系彼女。〜永遠子さん救済倶楽部〜」は<br>
+>      イラストレーター急病により延期になります。刊行時期は未定です。</p>
+>      </div> -->
+> 
+>       </div>
+> 
+>  </div>
+>  <!-- /content -->
+>  
+> 
+>  <!-- ▼集英社・他バナー▼ -->
+>  <div id="other_banner">
+>  <div class="container">
+> 
+>       <div class="row">
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://www.shueisha.co.jp" target="_blank"><img src="/images_externallinks/bannerShueisha.gif" width="200" height="42" alt="集英社"></a></div>   
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://www.shueisha.co.jp/info/160422.html" target="_blank"><img src="/images_externallinks/bn_dx_kumamoto.jpg" alt="集英社・熊本地震災害 被災者 
+支援募金のお知らせ"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://j-books.shueisha.co.jp/" target="_blank"><img src="/images_externallinks/bn_jbooks.jpg" width="200" height="42" alt="JUMP j Books"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://jumpsq.shueisha.co.jp/" target="_blank"><img src="/images_externallinks/bn_jumpsq.jpg" alt="JUMP SQ"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://ultra.shueisha.co.jp/" target="_blank"><img src="/images_externallinks/bn_uj2.jpg" width="200" height="42" alt="ウルトラジャンプ"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://cobalt.shueisha.co.jp/" target="_blank"><img src="/images_externallinks/webmagaCobalt_DX.jpg" alt=""></a></div>
+>  
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://books.shueisha.co.jp/index.html" target="_blank"><img src="/images_externallinks/bannerBookNavi.gif" width="160" height="60" alt="BOOK NAVI"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://ebooks.shueisha.co.jp/sd/" target="_blank"><img src="/images_externallinks/bn_ebunko.gif" width="200" height="38"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="https://novel.pixiv.net/labels/29" target="_blank"><img src="/images_externallinks/bn_pxivnobel.jpg" alt="PIXIVノベル"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://estar.jp/.pc/?_from=globalheader" target="_blank"><img src="/images_externallinks/bn_estar.jpg" alt="E☆ブリスタ"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://www.ganganonline.com/contents/eiyuu/" target="_blank"><img src="/images_externallinks/bn_ganganonline.jpg" alt="ガンガンオンライン"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://seiga.nicovideo.jp/manga/official/dashcomic/" target="_blank"><img src="/images_externallinks/bn_dxcomic.jpg" alt="水曜日はまったりダッシ 
+ュエックスコミック"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="http://hatenaillusion-anime.com/" target="_blank"><img src="/images_externallinks/bn_hatenaAnime.jpg" alt="アニメ「はてな&#9734;イリュージョン」"></a></div>
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="https://syosetu.com/" target="_blank"><img src="/images_externallinks/bn_logo_narou.jpg" width="200" height="42" alt="小説家になろう"></a></div> 
+> 
+>               <div class="banner col-lg-3 col-md-4 col-6"><a href="https://www.abj.or.jp/tensai-ha-bakabon" target="_blank"><img src="/images_externallinks/bn_stopkaizokuban.jpg" alt="一般社団法人ABJ特設ページ"></a></div>
+> 
+>       </div>
+> 
+>  </div>
+>  </div>
+>  <!-- ▲集英社・他バナー▲ -->
+> 
+> 
+>  <footer>
+> 
+>               <div id="footerInner" class="container">
+>                       <div class="row">
+> 
+>                               <p class="col-md-9"><small>&copy;SHUEISHA Inc. All rights reserved. <br class="d-sm-none">無断転載禁止<span>&copy;集英社</span></small></p>
+> 
+>                               <p class="col-md-3 right"><small>
+>                                       <!--<span class="one"><a href="/mail/">編集部へメール</a></span>-->
+>                                       <span class="two"><a href="https://www2.shueisha.co.jp/privacy/privacy.html" target="_blank">個人情報</a></span><span class="three"><a href="https://www.shueisha.co.jp/allinquiry/" target="_blank">ご意見・ご感想</a></span></small></p>
+> 
+>                       </div>
+>               <!-- /#footerInner --></div>
+>  
+>       </footer>
+>       </body>
+>  </html>

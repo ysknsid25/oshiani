@@ -22,13 +22,16 @@ exports.gaScraiping = functions
 exports.testFunc = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
-        const scrai = require("./famitsu");
-        const retArr = await scrai.famitsuScraiping(db);
+        const scrai = require("./dashx");
+        const retArr = await scrai.dashxScraiping(db);
         //console.log(retArr);
         functions.logger.info(retArr, { structuredData: true });
         res.send("fine");
     });
 
+/**
+ * ファンタジア文庫のスクレイピング
+ */
 exports.gaScraiping = functions
     .region("asia-northeast1")
     .runWith({
@@ -42,6 +45,9 @@ exports.gaScraiping = functions
         await scrai.gaScraiping(db);
     });
 
+/**
+ * 電撃文庫のスクレイピング
+ */
 exports.lightningScraiping = functions
     .region("asia-northeast1")
     .runWith({
@@ -55,6 +61,9 @@ exports.lightningScraiping = functions
         await scrai.lightningScraiping(db);
     });
 
+/**
+ * ガガガ文庫のスクレイピング
+ */
 exports.gagagaScraiping = functions
     .region("asia-northeast1")
     .runWith({
@@ -68,6 +77,9 @@ exports.gagagaScraiping = functions
         const retArr = await scrai.gagagaScraiping(db);
     });
 
+/**
+ * スニーカー文庫のスクレイピング
+ */
 exports.sneakerScraiping = functions
     .region("asia-northeast1")
     .runWith({
@@ -81,6 +93,9 @@ exports.sneakerScraiping = functions
         const retArr = await scrai.sneakerScraiping(db);
     });
 
+/**
+ * ファンタジア文庫のスクレイピング
+ */
 exports.fantasiaScraiping = functions
     .region("asia-northeast1")
     .runWith({
@@ -94,6 +109,9 @@ exports.fantasiaScraiping = functions
         const retArr = await scrai.fantasiaScraiping(db);
     });
 
+/**
+ * ファミ通文庫のスクレイピング
+ */
 exports.famitsuScraiping = functions
     .region("asia-northeast1")
     .runWith({
@@ -105,6 +123,22 @@ exports.famitsuScraiping = functions
     .onRun(async () => {
         const scrai = require("./famitsu");
         const retArr = await scrai.famitsuScraiping(db);
+    });
+
+/**
+ * ダッシュエックス文庫のスクレイピング
+ */
+exports.dashxScraiping = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 300,
+        memory: "1GB",
+    })
+    .pubsub.schedule("0 0 20 * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const scrai = require("./dashx");
+        const retArr = await scrai.dashxScraiping(db);
     });
 
 /**
