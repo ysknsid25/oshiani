@@ -111,6 +111,9 @@ const readBody = (bodyText, saledate) => {
         //ひとつの書籍情報の終わり判定
         if (isContainKeyWord(lineText, _END_OF_BOOK_INFO)) {
             tmpObj.sabledate = saledate;
+            tmpObj.outlinetext = "";
+            tmpObj.catchtext = "";
+            tmpObj.price = "";
             resultArr.push(tmpObj);
             tmpObj = {};
             isBeginBook = false;

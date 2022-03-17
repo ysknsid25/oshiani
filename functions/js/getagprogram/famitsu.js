@@ -68,6 +68,9 @@ const readBody = (bodyText, saledate) => {
         //スクレイピングの終了判定
         if (isContainKeyWord(lineText, _END_OF_SCRAIPING)) {
             //! ファミ通文庫は本の終了部分を取れないので、最後の一回分をここで保存してから終わる
+            tmpObj.outlinetext = "";
+            tmpObj.catchtext = "";
+            tmpObj.price = "";
             tmpObj.saledate = saledate;
             resultArr.push(tmpObj);
             tmpObj = {};

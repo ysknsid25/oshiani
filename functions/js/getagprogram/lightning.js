@@ -140,7 +140,7 @@ const readBody = (bodyText) => {
         }
         //アウトラインテキスト
         if (isContainKeyWord(lineText, _BEGIN_OF_OUTLINETEXT)) {
-            tmpObj.catchtext = getTargetText(
+            tmpObj.outlinetext = getTargetText(
                 lineText,
                 _BEGIN_OF_OUTLINETEXT,
                 _END_OF_OUTLINETEXT
