@@ -1,13 +1,11 @@
-https://famitsubunko.jp/product/2022/04/field/title_kana/nem/
-
-<ul class="productList"> → スクレイピングの開始
-<div class="clearfix"> → 1冊の本
-js-img-fallback → 画像　<img src="から" class=の間
-<h3>→タイトル　">から</a></h3>の間
-著者　→　">から</a></li>の間
-イラスト　→　">から</a></li>の間
-発売日：　→　発売日：から</p>の間
-<p class="catch">→キャッチテキスト。<p class="catch">から</p>
-<p class="story">→アウトラインテキスト。<p class="story">から</p>
-<div class="shop">→一冊の本の終わり
-</section>スクレイピングの終わり
+<section id="schedule"> → スクレイピングの開始
+<li class="clearfix" 　→　一冊の本のはじまり
+<div class="detail ">の次の行の、">　から　</a></h2>がタイトル
+著者：　の　">　から　</a></li>までが著者
+イラスト：　の　">　から　</a></li>までがイラスト
+<p class="release">発売日：　から　</p>　までが発売日
+js-img-fallback　の　<img src="　から　" class="　が画像
+<p class="catch">　から　</p>　がキャッチテキスト
+<p class="story">　から　</p>　がアウトラインテキスト
+<ul class="btnList alpha">　一冊の本の終わり
+js-recently_viewed_template　スクレピングの終わり

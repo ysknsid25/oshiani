@@ -1,0 +1,985 @@
+>  <link rel="stylesheet" href="/themes/mf/dest/content.css?date=20211014143043">
+>  <script type="application/ld+json">
+>  {
+>       "@context": "http://schema.org",
+>       "@type": "BreadcrumbList",
+>       "itemListElement":
+>       [
+>       {
+>               "@type": "ListItem",
+>               "position": 1,
+>               "item":
+>               {
+>               "@id": "https://mfbunkoj.jp/",
+>               "name": "ホーム"
+>               }
+>       },{
+>               "@type": "ListItem",
+>               "position": 2,
+>               "item":
+>               {
+>               "@id": "https://mfbunkoj.jp/product/",
+>               "name": "書籍"
+>               }
+>       },
+>       {
+>               "@type": "ListItem",
+>               "position": 3,
+>               "item":
+>               {
+>               "@id": "https://mfbunkoj.jp/product/new-release.html",
+>               "name": "新刊情報"
+>               }
+>       }
+>       ]
+>  }
+>  </script>
+>  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+>  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+>  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+>  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+>  })(window,document,'script','dataLayer','GTM-5SVNPLN');</script>
+>  <script src="/js/library/jquery/jquery-2.2.3.min.js" charset="UTF-8"></script>
+>  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+>  <script src="/themes/mf/lib/modernizr.js?date=20200220160511"></script>
+>  <script src="/themes/mf/dest/bundle.js?date=20200220160510" charset="UTF-8"></script>
+>  <script src="/acms.js?domains=mfbunkoj.jp&amp;jsDir=js/&amp;themesDir=/themes/&amp;bid=3&amp;eid=8916&amp;bcd=product&amp;googleApiKey=AIzaSyAkH79hCeXjqzzhcXHDSZf-xtkVfqxBHz0&amp;jQuery=2.2.3&amp;jQueryMigrate=off&amp;fulltimeSSL=1&amp;v=3d76b519d52a529531b987255e8e08cd&amp;umfs=500M&amp;pms=500M&amp;mfu=1000&amp;lgImg=width:1400&amp;jpegQuality=95&amp;ecd=new-release.html&amp;scriptRoot=/" charset="UTF-8" id="acms-js"></script>
+>  <script src="/themes/mf/dest/velocity.min.js?date=20200220160510"></script>
+>  <script src="/themes/mf/dest/velocity.ui.min.js?date=20200220160510"></script>
+>  <script src="/themes/mf/dest/jquery.fit-sidebar.js?date=20200220160510"></script>
+>  <script src="/themes/mf/dest/common.js?date=20200220160510"></script>
+>  <meta name="generator" content="a-blog cms" />
+>  </head>
+>  <body>
+>  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SVNPLN"
+>  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+>  <div id="fb-root"></div>
+>  <script>(function(d, s, id) {
+>    var js, fjs = d.getElementsByTagName(s)[0];
+>    if (d.getElementById(id)) return;
+>    js = d.createElement(s); js.id = id;js.async = true;
+>    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
+>    fjs.parentNode.insertBefore(js, fjs);
+>  }(document, 'script', 'facebook-jssdk'));</script>
+>  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async = true;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+>  <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+>    {lang: "ja"}
+>  </script>
+>  <div id="search" class="p-search-header js-search-box">
+>  <form action="/product/search.html" method="post" name="searchForm" class="c-search__form" role="search" aria-label="検索フォーム">
+>  <div class="c-search__action">
+>  <input type="search" id="searchHeaderForm" name="keyword" value="" size="15" class="c-search__input p-search-header__input" placeholder="書籍検索">
+>  <input type="hidden" name="query" value="keyword">
+>  <span class="c-search__side-btn"><button type="submit" name="ACMS_POST_2GET" class="c-search__btn p-search-header__btn"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">検索</span></button></span>
+>  <input type="hidden" name="bid" value="3">
+>  </div>
+>  <input type="hidden" name="formToken" value="485ff7cb05574a02c7cf894aff5ef4fb56f1eb29">
+>  </form>
+>  </div>
+>  <header id="header">
+>  <div id="menu-open"></div>
+>  <div id="menu-close"></div>
+>  <div id="navigation">
+>  <div class="logo alpha"><a href="/" class="acms_no_rewrite"><img src="/themes/mf/images/global/menu-logo.png" srcset="/themes/mf/images/global/menu-logo.png 1x,/themes/mf/images/global/menu-logo@2x.png 2x" alt="MF文庫J"></a></div>
+>  <nav>
+>  <ul class="clearfix alpha">
+>  <li><a href="/product/new-release.html" class="acms_no_rewrite"><img src="/themes/mf/images/global/menu-nav1.svg" alt="新刊情報"></a></li>
+>  <li><a href="/product/" class="acms_no_rewrite"><img src="/themes/mf/images/global/menu-nav2.svg" alt="書籍情報"></a></li>
+>  <li><a href="/news/" class="acms_no_rewrite"><img src="/themes/mf/images/global/menu-nav3.svg" alt="ニュース"></a></li>
+>  <li><a href="/blog/" class="acms_no_rewrite"><img src="/themes/mf/images/global/menu-nav4.svg" alt="ブログ"></a></li>
+>  <li><a href="https://mfbunkoj.jp/rookie/award/"><img src="/themes/mf/images/global/menu-nav5.svg" alt="新人賞"></a></li>
+>  <li><a href="/product/search.html" class="acms_no_rewrite"><img src="/themes/mf/images/global/menu-nav6.svg" alt="検索"></a></li>
+>  </ul>
+>  </nav>
+>  </div>
+>  <div class="upper">
+>  <div class="inner">
+>  <div id="character" class="action2">
+>  <ul class="alpha">
+>  <li><a href="/product/aria/"><img src="/archives/001/201804/a7bed7c0b071599f60c977502ec8396a.png" alt="緋弾のアリア"></a></li>
+>  <li><a href="/product/rezero/"><img src="/archives/001/201804/7907b2a5f1ce59964de1076b858e9cea.png" alt="Re：ゼロから始める異世界生活"></a></li>
+>  <li><a href="/product/youzitsu/"><img src="/archives/001/202103/7778b2f40bba3e97f2f725e8d4f69a75.png" alt="ようこそ実力至上主義の教室へ"></a></li>
+>  <li><a href="/product/ngnl/"><img src="/archives/001/201804/2fabff1c59e5fc59d9dee4b04478545f.png" alt="ノーゲーム・ノーライフ"></a></li>
+>  <li><a href="/product/hensuki/"><img src="/archives/001/201804/025432d0b990b3e58d50c767b09ec5bb.png" alt="可愛ければ変態でも好きになってくれますか？"></a></li>
+>  <li><a href="/product/seikengakuin/"><img src="/archives/001/202103/e4a58944a0a6ec9d28d3c9875e0da00d.png" alt="聖剣学院の魔剣使い"></a></li>
+>  <li><a href="/product/liar-liar/"><img src="/archives/001/202103/2fcb5e42691aeb3a6387c28e8e687bf5.png" alt="ライアー・ライアー"></a></li>
+>  <li><a href="/product/tantei_dead/"><img src="/archives/001/202103/e0a5031063aec65fe4583867fe9cb99c.png" alt="探偵はもう、死んでいる。"></a></li>
+>  <li><a href="/product/bokutachi-remake/"><img src="/archives/001/202103/3a5e1d02f957732a64594dfb4fffa81c.png" alt="ぼくたちのリメイク"></a></li>
+>  <li><a href="/product/nishino/"><img src="/archives/001/202103/08968581ac72fb51d4eceb91ee3cadbe.png" alt="西野　～学内カースト最下位にして異能世界最強の少年～"></a></li>
+>  <li><a href="/product/gimaiseikatsu/"><img src="/archives/001/202103/a1ea5976820f828597c032717c2e78a4.png" alt="義妹生活"></a></li>
+>  <li><a href="/product/daikirai_kekkon/"><img src="/archives/001/202103/192e1fcdc73d52a3fbc50a4020479e7c.png" alt="クラスの大嫌いな女子と結婚することになった。"></a></li>
+>  </ul>
+>  <div class="catch"><img src="/themes/mf/images/common/character-catch-sp.png" alt=""></div>
+>  <div class="bg"></div>
+>  </div>
+>  <div class="logo alpha"><a href="/" class="acms_no_rewrite"><img src="/themes/mf/images/global/header-logo.png" srcset="/themes/mf/images/global/header-logo.png 1x,/themes/mf/images/global/header-logo@2x.png 2x" alt="MF文庫J ｜ 毎月25日発売!!" class="logoPC"><img src="/themes/mf/images/global/header-logo-sp.png" srcset="/themes/mf/images/global/header-logo-sp.png 1x,/themes/mf/images/global/header-logo-sp@2x.png 2x" alt="MF文庫J ｜ 毎月25日発売!!" class="logoSP"></a></div>
+>  <ul class="sns">
+>  <li class="facebook"><div class="fb-like" data-href="https://mfbunkoj.jp/product/new-release.html" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div></li> 
+>  <li class="twitter"><a class="twitter-share-button" data-size="small">Tweet</a>
+>  <li class="line"><div class="line-it-button" style="display: none;" data-type="share-a" data-lang="ja" ></div><script src="//scdn.line-apps.com/n/line_it/thirdparty/loader.min.js" async="async" defer="defer"></script></li>
+>  </ul>
+>  <form action="/product/" method="post" id="archive_search" class="acms-form acms_no_rewrite" role="search" aria-label="既刊検索フォーム">
+>  <div class="search">
+>  <div>検 索</div>
+>  <div><input type="search" name="keyword" value="" placeholder="書籍タイトル・著者名などを入力"></div>
+>  <div><input type="submit" name="ACMS_POST_2GET" value=""></div>
+>  <div class="detail"><a href="/product/search.html" class="acms_no_rewrite">詳細検索</a></div>
+>  <div class="sp alpha"><a href="/product/search.html" class="acms_no_rewrite"><img src="/themes/mf/images/global/btn-search-sp.svg" alt="さがす"></a></div>
+>  </div>
+>  <input type="hidden" name="formToken" value="485ff7cb05574a02c7cf894aff5ef4fb56f1eb29">
+>  </form>
+>  </div>
+>  </div>
+>  <nav id="gNav">
+>  <div class="inner">
+>  <ul>
+>  <li><a href="/product/new-release.html" class="acms_no_rewrite">新刊情報<img src="/themes/mf/images/global/header-nav1.svg" alt="新刊情報"></a></li>
+>  <li><a href="/product/" class="acms_no_rewrite">書籍情報<img src="/themes/mf/images/global/header-nav2.svg" alt="書籍情報"></a></li>
+>  <li><a href="/news/" class="acms_no_rewrite">ニュース<img src="/themes/mf/images/global/header-nav3.svg" alt="ニュース"></a></li>
+>  <li><a href="/blog/" class="acms_no_rewrite">ブログ<img src="/themes/mf/images/global/header-nav4.svg" alt="ブログ"></a></li>
+>  <li><a href="https://mfbunkoj.jp/rookie/award/">新人賞<img src="/themes/mf/images/global/header-nav5.svg" alt="新人賞"></a></li>
+>  </ul>
+>  </div>
+>  </nav>
+>  </header>
+>  <div id="wrapper" class="clearfix">
+>  <ol class="topicPath">
+>  <li><a href="https://mfbunkoj.jp/" class="c-topicpath__link">ホーム</a></li>
+>  <li><a href="https://mfbunkoj.jp/product/" class="c-topicpath__link">書籍</a></li>
+>  <li><a href="https://mfbunkoj.jp/product/new-release.html" class="c-topicpath__link">新刊情報</a></li>
+>  </ol>
+>  <div id="content">
+>  <section id="product">
+>  <h1><span class="month">2月</span>の新刊情報 <span class="release"><strong>毎月25日</strong>発売!!</span></h1>
+>  <ul class="productThumbList alpha scroll">
+>  <li>
+>  <a href="#isbn9784046807700">
+>  <img src="https://mfbunkoj.jp/image/sho/hensuki_rgb_500.jpg" class="js-img-fallback" alt="表紙：可愛ければ変態でも好きになってくれますか？ suneアートワークス">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046811851">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001116.jpg" class="js-img-fallback" alt="表紙：ようこそ実力至上主義の教室へ　２年生編６">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046811844">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001115.jpg" class="js-img-fallback" alt="表紙：さあ、脱獄を始めましょう">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046811806">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001111.jpg" class="js-img-fallback" alt="表紙：チヨダク王国ジャッジメント2 姉と俺とで異世界最高裁判所">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046810953">
+>  <img src="https://mfbunkoj.jp/image/sho/hitoma_shoei_rgb_500.jpg" class="js-img-fallback" alt="表紙：人外教室の人間嫌い教師　ヒトマ先生、私たちに人間を教えてくれますか……？">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046809971">
+>  <img src="https://cdn.kdkw.jp/cover_500/322108/322108000967.jpg" class="js-img-fallback" alt="表紙：ぼくたちのリメイク１０ エンドロール">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046811868">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001117.jpg" class="js-img-fallback" alt="表紙：聖剣学院の魔剣使い9">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046812858">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001005.jpg" class="js-img-fallback" alt="表紙：グッバイ、ドン・グリーズ！　オフショット">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046811813">
+>  <img src="https://mfbunkoj.jp/image/sho/toarutannteino_syoei_rgb_500.jpg" class="js-img-fallback" alt="表紙：とある名探偵と助手のラブコメ的日常@探偵はもう、死んでいる。">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046811820">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001113.jpg" class="js-img-fallback" alt="表紙：自称Fランクのお兄さまがゲームで評価される学園の頂点に君臨するそうですよ？１２">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046811790">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001110.jpg" class="js-img-fallback" alt="表紙：中学生の従妹と、海の見える喫茶店で。">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784046811837">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001114.jpg" class="js-img-fallback" alt="表紙：また殺されてしまったのですね、探偵様２">
+>  </a>
+>  </li>
+>  <li>
+>  <a href="#isbn9784040645902">
+>  <img src="https://cdn.kdkw.jp/cover_500/321912/321912000697.jpg" class="js-img-fallback" alt="表紙：ラピスリライツ 魔女たちのアルバム２ supernova編">
+>  </a>
+>  </li>
+>  </ul>
+>  <div>
+>  <ul class="productList">
+>  <li class="clearfix" data-title="可愛ければ変態でも好きになってくれますか？ suneアートワークス" data-isbn="9784046807700" id="isbn9784046807700">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/hensuki/entry-10152.html">可愛ければ変態でも好きになってくれますか？ suneアートワークス</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/ｓｕｎｅ/">ｓｕｎｅ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/hensuki/entry-10152.html">
+>  <img src="https://mfbunkoj.jp/image/sho/hensuki_rgb_500.jpg" class="js-img-fallback" alt="表紙：可愛ければ変態でも好きになってくれますか？ suneアートワークス">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">すべての変態、詰まってます。</p>
+>  <p class="story">新感覚変態湧いてくる系ラブコメ『可愛ければ変態でも好きになってくれますか？』の画集がついに登場！　sune先生が描かれた変好きの全てのイラスト、そして描きおろしイラストも多数収録の豪華決定版！</p>  
+>  <div class="pickup alpha"><a href="/archives/003/202202/677f8ccd3d0a394607c0c7adb02ad2d5.jpg" data-caption="可愛ければ変態でも好きになってくれますか？ suneアートワークス" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/677f8ccd3d0a394607c0c7adb02ad2d5.jpg" alt="可愛ければ変態でも好きになってくれますか？ suneアートワークス"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046807709/">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=aafd9004-1e56-4bb4-9ef3-13cdef7539e8&amp;cty=1" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="ようこそ実力至上主義の教室へ　２年生編６" data-isbn="9784046811851" id="isbn9784046811851">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/youzitsu/322110001116.html">ようこそ実力至上主義の教室へ　２年生編６</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/衣笠彰梧/">衣笠彰梧</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/トモセ　シュンサク/">トモセ　シュンサク</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/youzitsu/322110001116.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001116.jpg" class="js-img-fallback" alt="表紙：ようこそ実力至上主義の教室へ　２年生編６">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">「ねえ堀北さん。櫛田さんを残したのは本当に正しかったって言えるの？」</p>
+>  <p class="story">満場一致特別試験の代償は大きく、綾小路たちのクラスには大きな亀裂が入ってしまった。櫛田、長谷部、王の３人が学校を連続欠席。体育祭の詳細が発表されるが、堀北への反発からミーティングは紛糾、綾小路ク
+ラスは練習すら始められない。大きなポイントを得てクラス昇格を果たしたはずが、このままではマイナスの結果になりかねない。３人の生徒のクラス復帰に向けて堀北や平田が動き出すが……。一方個人の実力が大きく影響を及ぼす今回の
+体育祭。小野寺は最良の結果を求め、須藤との共闘を申し出て――!?　<br>「私は認めない。この先何人が堀北さんを認めたとしても、私は絶対に認めない」<br>選択の先に待つ未来は光か闇か。</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/c996aff92e0f608283061ac60cfaf2ee.jpg" data-caption="ようこそ実力至上主義の教室へ　２年生編６" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/c996aff92e0f608283061ac60cfaf2ee.jpg" alt="ようこそ実力至上主義の教室へ　２年生編６"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046811854?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=5c6d5b38-ba76-4ad2-bc67-06c3013256a7&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="さあ、脱獄を始めましょう" data-isbn="9784046811844" id="isbn9784046811844">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/datsugoku/322110001115.html">さあ、脱獄を始めましょう</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/藤川　恵蔵/">藤川　恵蔵</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/茨乃/">茨乃</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/datsugoku/322110001115.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001115.jpg" class="js-img-fallback" alt="表紙：さあ、脱獄を始めましょう">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">俺の暮らすこの町全体が一つの監獄！？　衝撃のバトルファンタジー！</p>
+>  <p class="story">都市パノプティコン。四方を山に囲まれた、美しい町。そこで暮らす少年ヴァンは、なんの変哲もない平凡な人生を送っていた。ところが、プラチナに輝く髪を持つ謎の少女・ダイヤと出会ってから、彼の人生は変わ
+り始める。<br><br>「ここは監獄。貴方は囚人で私は看守です」<br><br>これは、囚人と看守による巨大な監獄都市からの「脱獄」の物語。</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/61db47239f4dbc3675158664462cc94f.jpg" data-caption="さあ、脱獄を始めましょう" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/61db47239f4dbc3675158664462cc94f.jpg" alt="さあ、脱獄を始めましょう"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046811846?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=f58dbc59-32b5-440a-8acf-bc1675fd3cb8&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="チヨダク王国ジャッジメント2 姉と俺とで異世界最高裁判所" data-isbn="9784046811806" id="isbn9784046811806">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/chiyodaku/322110001111.html">チヨダク王国ジャッジメント2 姉と俺とで異世界最高裁判所</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/紅玉　ふくろう/">紅玉　ふくろう</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/jonsun/">jonsun</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/chiyodaku/322110001111.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001111.jpg" class="js-img-fallback" alt="表紙：チヨダク王国ジャッジメント2 姉と俺とで異世界最高裁判所">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">エクスタシア王女が被告人に！　さらに裁判官ツカサが死刑宣告!?</p>
+>  <p class="story">チヨダク王国の裁判官になったツカサとその補佐官になったアクト。ある日、王女エクスタシアがかつて召喚したビルが倒壊して死傷者が出てしまう。神官長が王女の責任を追及すると同時に日本の文化や法律を非難
+し、アクトやツカサたちの糾弾まで始める。エクスタシアを信愛するシロは王女弾劾とも言える裁判を受け入れることができず、妨害まがいの行為でツカサから退廷を命じられてしまった。みんながバラバラになりそうな状況のなか、アク
+トは神官長の言葉に違和感を覚えて調査を始めるが、その背後にあるツカサが裁くと宣言した「神」を狂信する組織の本性へと辿り着き――？　異世界最高裁判所ファンタジー、ここに再び開廷！</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/57be55c60409aadf6762b99b65cd5194.jpg" data-caption="チヨダク王国ジャッジメント2 姉と俺とで異世界最高裁判所" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/57be55c60409aadf6762b99b65cd5194.jpg" alt="チヨダク王国ジャッジメント2 姉と俺とで異世界最高裁判所"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046811803?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=0f6cfc7d-be89-4fea-a194-52d385e8ba63&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="人外教室の人間嫌い教師　ヒトマ先生、私たちに人間を教えてくれますか……？" data-isbn="9784046810953" id="isbn9784046810953">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/jingai_kyoshitsu/322109001110.html">人外教室の人間嫌い教師　ヒトマ先生、私たちに人間を教えてくれますか……？</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/来栖夏芽/">来栖夏芽</a></li>
+>  <li>イラストレーター：<a href="https://mfbunkoj.jp/product/keyword/泉彩/">泉彩</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/jingai_kyoshitsu/322109001110.html">
+>  <img src="https://mfbunkoj.jp/image/sho/hitoma_shoei_rgb_500.jpg" class="js-img-fallback" alt="表紙：人外教室の人間嫌い教師　ヒトマ先生、私たちに人間を教えてくれますか……？">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">彼女たちは人間じゃない。けれど、誰よりも人間に憧れている。</p>
+>  <p class="story">人間関係にトラウマを持つアラサーニート・人間零。そんな俺が、山中にある自然豊かな学校に転職をして、のんびりとリハビリ教師生活を送ろうと思ったら――なんとそこは人外が人間になるための女子校だった!?<br />
+>  人魚族の水月鏡花、人狼の尾々守一咲、ウサギの右左美彗、鳥の羽根田トバリ……そんな不思議な生徒たちと過ごす日々。何故人間になりたいのか、人間になって何をしたいのか――俺は彼女たちを通じて「人間」を学んでいく。<br />   
+>  これは、異世界ファンタジーでも、人生やり直し転生でもない。少し変わった学校で、人間を目指す人外女子たちと送る、ただの教師の物語だ。<br />
+>  <br />
+>  MF文庫Jの新文芸から、人ならざる女子たちによる学園ヒューマンドラマが今、幕を開ける！</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/73f1484ab5697207b2cedbcdceff6bde.jpg" data-caption="人外教室の人間嫌い教師　ヒトマ先生、私たちに人間を教えてくれますか……？" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/73f1484ab5697207b2cedbcdceff6bde.jpg" alt="人外教室の人間嫌い教師　ヒトマ先生、私たちに人間を教えてくれますか……？"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046810955/">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/deec8998d6-2282-4faf-943c-a5b5729b2670/?sample=1" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="ぼくたちのリメイク１０ エンドロール" data-isbn="9784046809971" id="isbn9784046809971">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/bokutachi-remake/322108000967.html">ぼくたちのリメイク１０ エンドロール</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/木緒　なち/">木緒　なち</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/えれっと/">えれっと</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/bokutachi-remake/322108000967.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322108/322108000967.jpg" class="js-img-fallback" alt="表紙：ぼくたちのリメイク１０ エンドロール">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">「これから何があったとしても、ゲームを……好きでいて欲しいんだ」</p>
+>  <p class="story">「僕には、何ができるんだろう」そう思い悩んで、頑張って、挫折して、そしてまた頑張って、いよいよ大芸大の４回生になった僕、橋場恭也。プロとして商業仕事も順調にこなすチームきたやまのメンバーたちとの
+距離を感じながらも、それでも自分の道を見つけ歩き始めた。皆と卒業制作を進めることになった僕たちはいま一つ方向性を定めることができず、なぜか河瀬川の愚痴に付き合う日々が続いていた。一方、バイト先のサクシードソフトでは
+会社の雰囲気、そして先輩の茉平さんの様子が何やらおかしくなり……。いま何かを頑張っているあなたの為にある青春作り直しストーリー、辿り着いた先の第１０巻。<br></p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/fb312080d592bb882e812e611aef4980.jpg" data-caption="ぼくたちのリメイク１０ エンドロール" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/fb312080d592bb882e812e611aef4980.jpg" alt="ぼくたちのリメイク１０ エンドロール"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046809973?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=ce345a6f-2e49-49ff-b7df-87785cb1f605&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="聖剣学院の魔剣使い9" data-isbn="9784046811868" id="isbn9784046811868">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/seikengakuin/322110001117.html">聖剣学院の魔剣使い9</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/志瑞祐/">志瑞祐</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/遠坂　あさぎ/">遠坂　あさぎ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/seikengakuin/322110001117.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001117.jpg" class="js-img-fallback" alt="表紙：聖剣学院の魔剣使い9">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">最強魔王、帰還！　大人気学園ソード・ファンタジー第9弾！</p>
+>  <p class="story">「――お待たせしました、セリアさん」<br>帝都へ帰還し、リーセリアと再会を果たしたレオニス。〈第〇八戦術都市〉を襲う〈ヴォイド〉の群れを鏖殺し、封印を解かれた第三の眷属と戦いを繰り広げるレオニスだが
+、その姿はある人物の知るところとなってしまう。帝弟アレクシオス――〈ヴォイド〉に対抗するため、魔王の力を利用しようと目論む彼は、無謀にもレオニスとの接触を試みる。一方、レギーナの姉、シャトレスの在籍する〈エリュシオン
+学院〉では、〈影の王国〉の女王が暗躍をはじめていた――！</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/89779fef8c2001b255885dd761289f69.jpg" data-caption="聖剣学院の魔剣使い9" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/89779fef8c2001b255885dd761289f69.jpg" alt="聖剣学院の魔剣使い9"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046811862?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=fb7a06b4-fd1a-494d-823e-c3e7f1b21f93&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="グッバイ、ドン・グリーズ！　オフショット" data-isbn="9784046812858" id="isbn9784046812858">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/goodbyedonguri/322111001005.html">グッバイ、ドン・グリーズ！　オフショット</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/庵田　定夏/">庵田　定夏</a></li>
+>  <li>口絵・本文イラスト：<a href="https://mfbunkoj.jp/product/keyword/青十紅/">青十紅</a></li>
+>  <li>原作：<a href="https://mfbunkoj.jp/product/keyword/Goodbye,DonGlees Project/">Goodbye,DonGlees Project</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/goodbyedonguri/322111001005.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001005.jpg" class="js-img-fallback" alt="表紙：グッバイ、ドン・グリーズ！　オフショット">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">『グッバイ、ドン・グリーズ！』本編では描かれなかったスピンオフ！</p>
+>  <p class="story">進学校に合格したトトは、高校から東京へ出ることに。ところが周囲のレベルが想像以上に高くて──！　東京デビューを迎えるトトを描いた『トーキョー・ハイスクール』、ロウマとドロップの出会いを描いた『サマ
+ー・エンカウンター』、チボリ視点でのドン・グリーズの存在を追う『チボリ・オケージョン』、大冒険の後のドロップを描いた『アフター・ザ・ドロップ』の四つのスピンオフ短編を収録。いしづかあつこ×MADHOUSEで贈る傑作劇場アニ 
+メの本編では描かれなかった生きざまを写し取る、感動必至のスピンオフ小説！</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/90f63ad3e0bee4e1b1fa66f99e6f3dd1.jpg" data-caption="グッバイ、ドン・グリーズ！　オフショット" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/90f63ad3e0bee4e1b1fa66f99e6f3dd1.jpg" alt="グッバイ、ドン・グリーズ！　オフショット"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046812850?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=d787ca0a-dd31-4fbe-b8f7-a5e896052563&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="とある名探偵と助手のラブコメ的日常@探偵はもう、死んでいる。" data-isbn="9784046811813" id="isbn9784046811813">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/tantei_dead/entry-10219.html">とある名探偵と助手のラブコメ的日常@探偵はもう、死んでいる。</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/二語十/">二語十</a></li>
+>  <li>キャラクター原案：<a href="https://mfbunkoj.jp/product/keyword/うみぼうず/">うみぼうず</a></li>
+>  <li>漫画：<a href="https://mfbunkoj.jp/product/keyword/炒芽　もやし/">炒芽　もやし</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/tantei_dead/entry-10219.html">
+>  <img src="https://mfbunkoj.jp/image/sho/toarutannteino_syoei_rgb_500.jpg" class="js-img-fallback" alt="表紙：とある名探偵と助手のラブコメ的日常@探偵はもう、死んでいる。">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">君塚とシエスタの日常を描いた #火曜日はたんもしツイ漫画 が書籍化！</p>
+>  <p class="story">探偵助手・君塚君彦と名探偵・シエスタのラブコメ的日常を描いた #火曜日はたんもしツイ漫画 が書籍化！　二語十書き下ろし小説 、うみぼうず描き下ろしカバーイラスト、炒芽もやし描き下ろし漫画収録の豪華仕
+様</p>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/%E3%81%A8%E3%81%82%E3%82%8B%E5%90%8D%E6%8E%A2%E5%81%B5%E3%81%A8%E5%8A%A9%E6%89%8B%E3%81%AE%E3%83%A9%E3%83%96%E3%82%B3%E3%83%A1%E7%9A%84%E6%97%A5%E5%B8%B8-%E6%8E%A2%E5%81%B5%E3%81%AF%E3%82%82%E3%81%86%E3%80%81%E6%AD%BB%E3%82%93%E3%81%A7%E3%81%84%E3%82%8B%E3%80%82-%E4%BA%8C%E8%AA%9E%E5%8D%81/dp/4046811811">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=84724d42-50ff-49ac-bbd8-f5b861118e5f&amp;cty=1" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="自称Fランクのお兄さまがゲームで評価される学園の頂点に君臨するそうですよ？１２" data-isbn="9784046811820" id="isbn9784046811820">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/f-rank/322110001113.html">自称Fランクのお兄さまがゲームで評価される学園の頂点に君臨するそうですよ？１２</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/三河　ごーすと/">三河　ごーすと</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/ねこめたる/">ねこめたる</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/f-rank/322110001113.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001113.jpg" class="js-img-fallback" alt="表紙：自称Fランクのお兄さまがゲームで評価される学園の頂点に君臨するそうですよ？１２">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">最強Ｆランク×学園ゲーム×頭脳バトル、堂々完結！</p>
+>  <p class="story">第三次大戦の惨禍を超えて成立した、遊戯ですべてが決まる新時代は終末に近づいていた。<br>《獣王遊戯祭》は最終段階に入り、紅蓮と透夜と可憐による世界の命運を賭けた戦いが幕を開ける。<br>裏世界最強と表
+世界の超天才を相手に勝ち筋を見出すべく、ひとり兄の真意を読み解くことに没頭した可憐が描いた答え、それは――。<br>「遊戯社会への憎悪により暴走している《共感覚モード》の強制停止。そして人脳共生型ＡＩの危険性の証明、そし
+て……破壊です」<br>かつての仲間達との破局、新生Ｆクラスの立ち上げ、妹との離別に至るまで、最終目的への見えない布石。<br>そうして今、すべての謎が明らかになる！<br>砕城紅蓮の物語、堂々完結！</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/09737a8817479b1ca700297d879dca98.jpg" data-caption="自称Fランクのお兄さまがゲームで評価される学園の頂点に君臨するそうですよ？１２" class="acms_no_rewrite" 
+data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/09737a8817479b1ca700297d879dca98.jpg" alt="自称Fランクのお兄さまがゲームで評価される学園の頂点に君臨するそうですよ？１２"></a></div>  
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/404681182X?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=2d68cb84-8867-42fb-986a-22c886d6f88f&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="中学生の従妹と、海の見える喫茶店で。" data-isbn="9784046811790" id="isbn9784046811790">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/itokotoumi/322110001110.html">中学生の従妹と、海の見える喫茶店で。</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/ツカサ/">ツカサ</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/猫屋敷　ぷしお/">猫屋敷　ぷしお</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/itokotoumi/322110001110.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001110.jpg" class="js-img-fallback" alt="表紙：中学生の従妹と、海の見える喫茶店で。">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">あの時の約束を、この海の見える喫茶店で思い出そう――</p>
+>  <p class="story">東京にある美術大学に進学したものの、都会での生活で自らの限界を迎え「熱」を失っていた間宮宗助。大学３年の夏休みに、亡くなった親戚の葬儀のため都会から逃げるように海沿いの田舎町――七登町へと辿り着く
+。そこには、事故で両親を失い、天涯孤独の身となってしまった少女・九谷唯奈がいた。<br>「お父さんとお母さんの喫茶店はあたしが継ぐって決めてたの……あたしの夢を守ってよ、宗にぃ……！」<br>記憶よりも大きくなった中学生の従妹
+と出会い、かつて交わした約束を思い出した宗助。幼き頃の思い出が残る喫茶店で、唯奈とともにこの夏を過ごすことになり――大人と子供の恋が、今ここで動き出す。</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/842ae6ead8f6913fa90760f597bff74f.jpg" data-caption="中学生の従妹と、海の見える喫茶店で。" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/842ae6ead8f6913fa90760f597bff74f.jpg" alt="中学生の従妹と、海の見える喫茶店で。"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/404681179X?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=4a6a1b39-0c2a-42ff-88c3-c32cd1cb99f6&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="また殺されてしまったのですね、探偵様２" data-isbn="9784046811837" id="isbn9784046811837">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/tanteisama/322110001114.html">また殺されてしまったのですね、探偵様２</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/てにをは/">てにをは</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/りいちゅ/">りいちゅ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/tanteisama/322110001114.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001114.jpg" class="js-img-fallback" alt="表紙：また殺されてしまったのですね、探偵様２">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">その探偵は、殺されてから推理を始める──極上の本格ミステリー、第二弾。</p>
+>  <p class="story">殺されても生き返る特殊能力を持つ半人前の高校生探偵・追月朔也。事件が起きる度になぜか被害者になってしまう彼は助手のリリテアと共に、父の残した探偵事務所を支えながら父の死に関わっていると思われる凶
+悪犯罪者《最初の七人》の行方を追う日々を過ごしていた。<br>そんな朔也たちに、ある日英国最高の探偵にして父の旧友・フィドから連絡が届く。<br>さらに朔也とフィドの目の前で「観覧車が一周する十分間に十五の密室で起きた」不
+可能犯罪が発生し!?　<br>遊園地で起こった猟奇的な事件を巡る『人食い観覧車の園』の他、ある犯罪者の視点を描く『Y・デリンジャーの挨拶』、孤島で起こる凄惨な殺人事件『画廊島の殺人』を収録。</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/7e11d89441b2c222800f47e1cd9dea71.jpg" data-caption="また殺されてしまったのですね、探偵様２" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/7e11d89441b2c222800f47e1cd9dea71.jpg" alt="また殺されてしまったのですね、探偵様２"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046811838?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=dffbe715-771f-4f67-b9ae-46cc272df17b&amp;cty=0" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="ラピスリライツ 魔女たちのアルバム２ supernova編" data-isbn="9784040645902" id="isbn9784040645902">
+>  <div class="detail">
+>  <h2><a href="https://mfbunkoj.jp/product/lapisrelights/321912000697.html">ラピスリライツ 魔女たちのアルバム２ supernova編</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/あさのハジメ/">あさのハジメ</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/Ｕ３５/">Ｕ３５</a></li>
+>  <li>原作：<a href="https://mfbunkoj.jp/product/keyword/Project PARALLEL/">Project PARALLEL</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年2月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/lapisrelights/321912000697.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/321912/321912000697.jpg" class="js-img-fallback" alt="表紙：ラピスリライツ 魔女たちのアルバム２ supernova編">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">魔女の頂点を目指す少女たちの思い出の１ページ！</p>
+>  <p class="story">魔女。それは、光。人々の脅威となる魔獣を浄化する存在。<br>そして希望の歌を届ける存在。<br>魔法学校の選抜クラスで、国内トップの人気を集める三人の少女たち、supernova。伝説のユニット「Ray」を目標に
+、共に学び、競い合い、ときには遊び、そしてケンカもした充実の一年を、彼女たちは振り返ることになり――。<br>「このころは思わなかったな。二人が私にとって、最高の悪友になるなんて」<br>「魔法」×「アイドル」をテーマにした 
+メディアミックスプロジェクト、「ラピスリライツ」の公式ノベライズ第二弾。supernovaの結成から人気ユニットへと駆け上がるまでの軌跡を描いたパラレルストーリーが登場！</p>
+>  <div class="pickup alpha"><a href="/archives/003/202202/d5b7fceb3fd07098a8808e34cdb6c887.jpg" data-caption="ラピスリライツ 魔女たちのアルバム２ supernova編" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202202/d5b7fceb3fd07098a8808e34cdb6c887.jpg" alt="ラピスリライツ 魔女たちのアルバム２ supernova編"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4040645901?tag=mfbunkojweb-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://viewer-trial.bookwalker.jp/03/13/viewer.html?cid=c685f8a0-5598-4313-84b8-c1af2e9bfe0c&amp;cty=1" target="_blank">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  </ul>
+>  </div>
+>  </section>
+>  <section id="schedule">
+>  <h1><span class="month">3月</span>の刊行予定 <span class="release"><strong>毎月25日</strong>発売!!</span></h1>
+>  <div>
+>  <ul class="productList">
+>  <li class="clearfix" data-title="泥の分際で私だけの大切を奪おうだなんて" data-isbn="9784046812902" id="isbn9784046812902">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/dorono_bunzai/entry-10237.html">泥の分際で私だけの大切を奪おうだなんて</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/真野真央/">真野真央</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/おむたつ/">おむたつ</a></li>
+>  <li>原作・監修：<a href="https://mfbunkoj.jp/product/keyword/ぷす/">ぷす</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/dorono_bunzai/entry-10237.html">
+>  <img src="https://mfbunkoj.jp/image/sho/doro_shoei_500.jpg" class="js-img-fallback" alt="表紙：泥の分際で私だけの大切を奪おうだなんて">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">大人気音楽ユニット・ツユの超名曲がノベライズ！</p>
+>  <p class="story">「非業の死を遂げる運命の少女を守れ」<br />
+>  それが、天界から私と【先輩】に与えられた使命。地上に降り、愚かな人間なんてものを守るのが仕事なんて……。<br />
+>  しかも、普通の少女を守る……？　なんで美しき天使である私たちがそんなことをしなくちゃいないの！？<br />
+>  【先輩】もずっとそう考えているに違いない。そう信じていたのに、なんであんな――。</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/2eb8d096a7901861f7bb43317b98210d.jpg" data-caption="泥の分際で私だけの大切を奪おうだなんて" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/2eb8d096a7901861f7bb43317b98210d.jpg" alt="泥の分際で私だけの大切を奪おうだなんて"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/%E6%B3%A5%E3%81%AE%E5%88%86%E9%9A%9B%E3%81%A7%E7%A7%81%E3%81%A0%E3%81%91%E3%81%AE%E5%A4%A7%E5%88%87%E3%82%92%E5%A5%AA%E3%81%8A%E3%81%86%E3%81%A0%E3%81%AA%E3%82%93%E3%81%A6-%E7%9C%9F%E9%87%8E%E7%9C%9F%E5%A4%AE/dp/4046812907/ref=sr_1_3?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2E264L0WOA9G9&keywords=%E6%B3%A5%E3%81%AE%E5%88%86%E9%9A%9B%E3%81%A7%E7%A7%81%E3%81%A0%E3%81%91%E3%81%AE%E5%A4%A7%E5%88%87%E3%82%92%E5%A5%AA%E3%81%8A%E3%81%86%E3%81%A0%E3%81%AA%E3%82%93%E3%81%A6&qid=1646384583&sprefix=%E6%B3%A5%E3%81%AE%E5%88%86%E9%9A%9B%E3%81%A7%E7%A7%81%E3%81%A0%E3%81%91%E3%81%AE%E5%A4%A7%E5%88%87%E3%82%92%E5%A5%AA%E3%81%8A%E3%81%86%E3%81%A0%E3%81%AA%E3%82%93%E3%81%A6%2Caps%2C495&sr=8-3">Amazonで購入する</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="konomi（きのこのみ） Art Works" data-isbn="9784046811875" id="isbn9784046811875">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/liar-liar/entry-10186.html">konomi（きのこのみ） Art Works</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/konomi（きのこのみ）/">konomi（きのこのみ）</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/liar-liar/entry-10186.html">
+>  <img src="https://mfbunkoj.jp/image/sho/konomigasyu_shoei_rgb_500.jpg" class="js-img-fallback" alt="表紙：konomi（きのこのみ） Art Works">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">超人気絵師・きのこのみのkonomi先生による初の商業画集が登場！</p>
+>  <p class="story">超人気絵師ユニット「きのこのみ」のkonomiによる初の商業画集が登場！『ライアー・ライアー』『クロス・コネクト』シリーズはもちろん、過去の商業イラストを多数収録。さらに、久追遥希先生による『ライアー
+・ライアー』と『クロス・コネクト』の夢のクロスオーバーショートストーリーも収録です。</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/97884ae52413c85fd0807f8d4f397719.jpg" data-caption="konomi（きのこのみ） Art Works" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/97884ae52413c85fd0807f8d4f397719.jpg" alt="konomi（きのこのみ） Art Works"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/konomi-%E3%81%8D%E3%81%AE%E3%81%93%E3%81%AE%E3%81%BF-Art-Works/dp/4046811870">Amazonで購入する</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="戦鬼と戦姫の聖災戦争" data-isbn="9784046812964" id="isbn9784046812964">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/senki/322111001016.html">戦鬼と戦姫の聖災戦争</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/鏡　遊/">鏡　遊</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/我美蘭/">我美蘭</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/senki/322111001016.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001016.jpg" class="js-img-fallback" alt="表紙：戦鬼と戦姫の聖災戦争">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">「もしも俺が人間に生まれてたら、おまえと一緒に──」</p>
+>  <p class="story">鬼と、鬼討。平安時代からの千年に亘る宿敵である彼らは、現代でも激しい闘争を続けていた。<br>鬼の始祖の末裔・童貴は伝説の鬼討“ライコウ”の子孫・一条朱璃と幾度となく戦いを繰り広げ、今宵も二人は邂逅し
+殺し合う──はずだったが、<br>（来てくれた──やっと、朱璃が俺を殺しに来てくれた！）<br>実は童貴は、強く美しい朱璃にベタ惚れだった。さらに朱璃も満更でもなさそうな雰囲気!?<br>童貴は想いを抑えきれず、朱璃が通う鬼討の養成
+機関“学院”への潜入を決意する。<br>しかし、再会した朱璃は"裏切りの鬼討"として両手両足を鎖で縛られていて──？<br>鬼の少年と鬼を狩る少女による和風ロミジュリ活劇、堂々開幕！</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/5a5461361487f2e60cffecb90f69c414.jpg" data-caption="戦鬼と戦姫の聖災戦争" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/5a5461361487f2e60cffecb90f69c414.jpg" alt="戦鬼と戦姫の聖災戦争"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046812966?tag=kadoofce-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/dec23b78db-cb60-4813-b3bf-0877748a17e8/?adpcnt=GDPL5fFi&sample=1">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="問二、永遠の愛を証明せよ。 思い出補正はないものとする。" data-isbn="9784046812940" id="isbn9784046812940">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/toiichi/322111001014.html">問二、永遠の愛を証明せよ。 思い出補正はないものとする。</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/かつび　圭尚/">かつび　圭尚</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/みすみ/">みすみ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/toiichi/322111001014.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001014.jpg" class="js-img-fallback" alt="表紙：問二、永遠の愛を証明せよ。 思い出補正はないものとする。">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">大切な思い出を人質にとられた、手に汗握る頭脳ゲームラブコメ！</p>
+>  <p class="story">初夏に友達から始め、少しずつ距離を縮めてきた青ヶ島さん──青ヶ島悠乃。<br>ある日偶然、久しぶりに再会した元カノの妹、朱鷺羽凪沙。<br>時間を積み重ねて育んだ青ヶ島さんとの関係よりも、なぜか一気に惹か
+れてしまった凪沙との関係を選んだ僕は、ギクシャクしながらも文化祭の準備を進めていった。<br>ところが文化祭当日。大切な記憶を賭けたゲーム『リメンバーラリー』に巻き込まれた僕らは、失われた記憶を取り戻すため学校中を駆け
+ずり回る。<br>そこに元カノ・朱鷺羽美凪と美凪の今カレ・優陽まで参加することで事態はますます混乱し！？<br>これは、青春の選択についての物語。今度こそ、僕は──</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/7864fb847e2a139b4a26bf244165054b.jpg" data-caption="問二、永遠の愛を証明せよ。 思い出補正はないものとする。" class="acms_no_rewrite" data-rel="smartPhoto" 
+data-id="0" data-index="0"><img src="/archives/003/202203/7864fb847e2a139b4a26bf244165054b.jpg" alt="問二、永遠の愛を証明せよ。 思い出補正はないものとする。"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/404681294X?tag=kadoofce-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/de86bb5861-4757-484e-813c-53ccc98e9327/?adpcnt=GDPL5fFi&sample=1">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="ライアー・ライアー10 嘘つき転校生は敗北の女神を騙し抜きます。" data-isbn="9784046812933" id="isbn9784046812933">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/liar-liar/322111001013.html">ライアー・ライアー10 嘘つき転校生は敗北の女神を騙し抜きます。</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/久追　遥希/">久追　遥希</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/konomi（きのこのみ）/">konomi（きのこのみ）</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/liar-liar/322111001013.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001013.jpg" class="js-img-fallback" alt="表紙：ライアー・ライアー10 嘘つき転校生は敗北の女神を騙し抜きます。">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">譲れないヒロインの座！絶対に負けられない学園頭脳ラブコメ第10弾！</p>
+>  <p class="story">ついに姿を現したアルビオンの黒幕・越智春虎（おち・はるとら）の「予言」に翻弄され終幕した「学年対抗戦」。来るべき決戦に向けてますます負けられない俺、篠原緋呂斗（しのはら・ひろと）の次なる戦いは──最強カップル決定戦！？　仕方なく相手を決めるべく彩園寺（さいおんじ）ら身近な女性陣からの猛烈なアプローチを受ける中、勝ち残るために姫路（ひめじ）とのペアで戦いに挑むつもりだったが──俺個人に課せられたゲーム上の理由で
+、特定の相手としか組めないことに。拗ねる姫路にサポートを仰ぎつつ、やっと決まった俺のペア候補は「敗北の女神」と呼ばれる少女で──これ、普通の決闘の方がいくらかマシな状況なんじゃないか……？</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/c3950d687e522af61a78c24ad52f47d0.jpg" data-caption="ライアー・ライアー10 嘘つき転校生は敗北の女神を騙し抜きます。" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/c3950d687e522af61a78c24ad52f47d0.jpg" alt="ライアー・ライアー10 嘘つき転校生は敗北の女神を騙し抜きます。"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046812931?tag=kadoofce-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/de0a937d12-59d2-4bfa-b39a-06cbbb9e34e0/?adpcnt=GDPL5fFi&sample=1">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="全力回避フラグちゃん！２" data-isbn="9784046812926" id="isbn9784046812926">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/flagchan/322111001012.html">全力回避フラグちゃん！２</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/壱日千次/">壱日千次</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/さとうぽて/">さとうぽて</a></li>
+>  <li>原作：<a href="https://mfbunkoj.jp/product/keyword/Plott/">Plott</a></li>
+>  <li>原作：<a href="https://mfbunkoj.jp/product/keyword/biki/">biki</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/flagchan/322111001012.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001012.jpg" class="js-img-fallback" alt="表紙：全力回避フラグちゃん！２">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">「（生存フラグも）立ったぞ」　YouTube発の大注目ラブコメ第２弾！</p>
+>  <p class="story">謎の人物「Ｘ」の仕業で、仮想世界から天界に戻れなくなってしまった死亡フラグちゃんと仲間たち。原因究明のためファンタジー風の異世界でしばらく生活することになり、フラグちゃんも奮闘。超速で最強の冒険
+者に成りあがる生存フラグ、異世界でもマイペースな恋愛フラグらと共同生活を送ることに。そして、そんな世界でもモブ男（お）は、様々なスキルを持つ冒険者の姿で湧いてきては多様なフラグを乱立させまくりで、フラグちゃんは振り
+回されてばかり。はたして死亡フラグちゃんは、閉じ込められた異世界から無事に戻ることができるのか!?　そして、気になる「Ｘ」の正体は誰なのか――？</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/672d1fd6aea571f3c1b8aa9f867f6cf9.jpg" data-caption="全力回避フラグちゃん！２" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/672d1fd6aea571f3c1b8aa9f867f6cf9.jpg" alt="全力回避フラグちゃん！２"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046812923?tag=kadoofce-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/de5a3a13d4-ac36-4ae5-8e26-dfbaf1fbfa3b/?adpcnt=GDPL5fFi&sample=1">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="お姉ちゃんといっしょに異世界を支配して幸せな家庭を築きましょ？２" data-isbn="9784046812919" id="isbn9784046812919">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/isekai_sister/322111001011.html">お姉ちゃんといっしょに異世界を支配して幸せな家庭を築きましょ？２</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/雨井　呼音/">雨井　呼音</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/みれあ/">みれあ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/isekai_sister/322111001011.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001011.jpg" class="js-img-fallback" alt="表紙：お姉ちゃんといっしょに異世界を支配して幸せな家庭を築きましょ？２">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">姉と妹を天秤にかける、時空を越えた姉弟ラブコメ！</p>
+>  <p class="story">「俺たちは、笈川葉桜をこちらの世界に帰さないといけないのだよ」<br>こちらの世界にやって来た使者の兄が言うには、手綱を握りやすい小織をあちらの支配者にすることができれば、葉桜を帰還させることができ
+るらしい。<br>彼らは暴君から解放され、小織は憧れの異世界で良い生活ができ、俺は最愛の姉を取り戻せる。すべてが丸く収まる素晴らしい方法だと協力を求められるが……。<br>葉桜を取り戻すために、小織を異世界の支配者にすげ替え
+ることは正しいのか？<br>最愛の姉と約束を交わした妹、どちらも手放せなく――。<br>自分の理想とする愛のカタチに悩む、世界線を越えた姉弟ラブコメ第二弾！</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/b61d269f16540c8948cc1f7930aac583.jpg" data-caption="お姉ちゃんといっしょに異世界を支配して幸せな家庭を築きましょ？２" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/b61d269f16540c8948cc1f7930aac583.jpg" alt="お姉ちゃんといっしょに異世界を支配して幸せな家庭を築きましょ？２"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046812915?tag=kadoofce-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/ded7299214-b762-4ee5-8907-3553b17d5be7/?adpcnt=GDPL5fFi&sample=1">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="悪逆大戦 地獄の王位簒奪者は罪人と踊る" data-isbn="9784046812896" id="isbn9784046812896">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/akugyaku/322111001009.html">悪逆大戦 地獄の王位簒奪者は罪人と踊る</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/綾里　けいし/">綾里　けいし</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/ろるあ/">ろるあ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/akugyaku/322111001009.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001009.jpg" class="js-img-fallback" alt="表紙：悪逆大戦 地獄の王位簒奪者は罪人と踊る">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">あらゆる「悪」を引き連れて、地獄の王位を奪い取る――。</p>
+>  <p class="story">地獄に堕ちた魂を救済するにはどうすればいいのだろうか？<br>罪もなく奈落の底まで堕とされた少女・櫻。その行方を追い、かつて地上へと逃げ出した俊は地獄へ舞い戻ることを決意する。<br>命がけで地獄の王の
+七番目の子、美しき怠惰の姫・ネロのもとへ行き助力を乞う。<br>しかし、地獄の最下層に送られた亡者の判決は、地獄の王以外には覆せないと聞かされ……。<br><br>「ならば、俺が王になる！」<br><br>伝説上の名だたる悪人を「駒」と
+して従え、少年は戦う。悪人同士の熾烈な決闘――王位継承戦を勝ち抜く、ダークファンタジー。<br>邪神も魔王も重罪人も、どんな「悪」だろうと従えてみせる。すべてはアイツの魂を救うために――。</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/8f738d6db1c224c0518e3058c8f8b02f.jpg" data-caption="悪逆大戦 地獄の王位簒奪者は罪人と踊る" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/8f738d6db1c224c0518e3058c8f8b02f.jpg" alt="悪逆大戦 地獄の王位簒奪者は罪人と踊る"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046812893?tag=kadoofce-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/de27bb768a-48bd-45f2-a70e-a357e83711af/?adpcnt=GDPL5fFi&sample=1">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="パシられ陰キャが実は最強だった件２" data-isbn="9784046812889" id="isbn9784046812889">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/pashirareinnkya/322111001008.html">パシられ陰キャが実は最強だった件２</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/マリパラ/">マリパラ</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/ふーみ/">ふーみ</a></li>
+>  <li>キャラクター原案・漫画：<a href="https://mfbunkoj.jp/product/keyword/六井調/">六井調</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/pashirareinnkya/322111001008.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001008.jpg" class="js-img-fallback" alt="表紙：パシられ陰キャが実は最強だった件２">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">「シズカは――俺が守る」</p>
+>  <p class="story">クラス委員長・シズカは、クラスメイトのアキラがいつもヤンキー３人組にパシられているのを心配していた――のだが、なんとアキラは市内で恐れられている凶悪なヤンキーを圧倒するほど強かった!?<br>大変な事件
+をキッカケに気持ちが通じ合った二人は交際することになり、ついに初めてのデートで遊園地に。<br>初めての私服姿にドキドキしながら楽しもうとした矢先――「──やっと見つけたわ。大人しくこっちに来なさい」怪しい全身黒ずくめの屈
+強な集団に追われることに！<br>「せっかくのデートなのに、なんで……！」</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/8515d95824b23f67acc656f4be439504.jpg" data-caption="パシられ陰キャが実は最強だった件２" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/8515d95824b23f67acc656f4be439504.jpg" alt="パシられ陰キャが実は最強だった件２"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046812885?tag=kadoofce-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/de8a41a58f-ca57-4fa2-ad14-64d1855d70e5/?adpcnt=GDPL5fFi&sample=1">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li class="clearfix" data-title="Ｒｅ：ゼロから始める異世界生活２９" data-isbn="9784046812865" id="isbn9784046812865">
+>  <div class="detail ">
+>  <h2><a href="https://mfbunkoj.jp/product/rezero/322111001006.html">Ｒｅ：ゼロから始める異世界生活２９</a></h2>
+>  <div class="info">
+>  <ul class="author">
+>  <li>著者：<a href="https://mfbunkoj.jp/product/keyword/長月　達平/">長月　達平</a></li>
+>  <li>イラスト：<a href="https://mfbunkoj.jp/product/keyword/大塚　真一郎/">大塚　真一郎</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月25日</p>
+>  <div class="cover alpha">
+>  <a href="https://mfbunkoj.jp/product/rezero/322111001006.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001006.jpg" class="js-img-fallback" alt="表紙：Ｒｅ：ゼロから始める異世界生活２９">
+>  </a>
+>  </div>
+>  </div>
+>  <p class="catch">「こいつは、ルイは……『暴食』の大罪司教だ」</p>
+>  <p class="story">『九神将』ヨルナ・ミシグレの調略のため、魔都カオスフレームへ向かったナツキ・スバルを未曽有の異変が襲う。<br>『幼児化』という危機に対し、異変を企てた敵が提案するのは、都市全域を舞台とした『かくれ
+んぼ』の勝負だった。<br>始まる新たな『死』の螺旋、縮んだ手足と焦燥感を引きずって走り続けるスバルは、ついに連れ歩く少女――ルイの正体の一端に触れることとなる。それは、許されざる"大罪"との向き合いを意味していて――。<br>「死にたくなかったら、俺から離れるな。俺も、お前を死なせたくない。……今は」<br>大人気Ｗｅｂ小説、無垢と退行の二十九幕。――俺を奮い立たせる。皆との絆と、君の声が。</p>
+>  <div class="pickup alpha"><a href="/archives/003/202203/f3140de8182e7be72535590cb4dfa4ff.jpg" data-caption="Ｒｅ：ゼロから始める異世界生活２９" class="acms_no_rewrite" data-rel="smartPhoto" data-id="0" data-index="0"><img src="/archives/003/202203/f3140de8182e7be72535590cb4dfa4ff.jpg" alt="Ｒｅ：ゼロから始める異世界生活２９"></a></div>
+>  <ul class="btnList alpha">
+>  <li class="buy"><a href="https://www.amazon.co.jp/dp/4046812869?tag=kadoofce-22">Amazonで購入する</a></li>
+>  <li class="trial"><a href="https://bookwalker.jp/de66a718a3-d2ab-40bb-bcab-4068710c271f/?adpcnt=GDPL5fFi&sample=1">試し読み</a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  </ul>
+>  </div>
+>  </section>
+>  <script type="text/template" id="js-recently_viewed_template">
+>       <section id="history">
+>               <div>
+>                       <h2><span>最近チェック</span>した書籍</h2>
+>                       <div class="arrows"></div>
+>                       <ul class="historyList clearfix alpha"><% _.each(items, function(item) { %>
+>                               <li data-title="{title}" data-isbn="{isbn}">
+>                                       <figure>
+>                                               <a href="<%= item.link %>">
+>                                                       <% if ( item.image ) { %>
+>                                                       <img src="<%= item.image %>" class="js-img-fallback" alt="<%= item.title %>">
+>                                                       <% } else { %>
+>                                                       <img src="/themes/mf/images/placeholder/noimage_book.png" alt="<%= item.title %>">
+>                                                       <% } %>
+>                                       </a>
+>                                       <figcaption><a href="<%= item.link %>"><%= item.title %></a></figcaption>
+>                               </figure>
+>                               </li><% }) %>
+>               </ul>
+>                       <div class="dots"></div>
+>               </div>
+>       </section>
+>  </script>
+>  <div id="js-recently_viewed"></div>
+>  </div>
+>  <aside id="aside">
+>  <div class="inner">
+>  <section id="lineup">
+>  <h2><span></span>オススメシリーズ</h2>
+>  <div class="arrows"></div>
+>  <ul class="lineupList">
+>  <li class="slick-slide"><a href="https://kimirano.jp/"><img src="/archives/001/201902/e036488040b880ed9064a79e42e9fb6d.jpg" alt="キミラノ"></a></li>
+>  <li class="slick-slide"><a href="https://youkosozitsuryoku-2nd.com/"><img src="/archives/001/202001/2a9b800f7d65de448c81f26225aae76b.jpg" alt="ようこそ実力至上主義の教室へ 2年生編"></a></li>
+>  <li class="slick-slide"><a href="https://www.lapisrelights.com/"><img src="/archives/001/202202/5fb87136f9947f2c6605667b916fd185.jpg" alt="ラピスリライツ 魔女たちのアルバム２ supernova編"></a></li>
+>  <li class="slick-slide"><a href="https://mfbunkoj.jp/rookie/15th-project/tantei/"><img src="/archives/001/202202/0bab6b506965de289d957d127099f383.jpg" alt="とある名探偵と助手のラブコメ的日常@探偵はもう、死んでい
+る。"></a></li>
+>  <li class="slick-slide"><a href="https://mfbunkoj.jp/special-contents/seikengakuin/sp.html"><img src="/archives/001/202202/e2b053f30d81474eec104718b4147609.jpg" alt="聖剣学院の魔剣使い9"></a></li>
+>  <li class="slick-slide"><a href="https://mfbunkoj.jp/special/remake/"><img src="/archives/001/202202/0a4c845e6041bb12b398a1cc55322af9.jpg" alt="ぼくたちのリメイク１０ エンドロール"></a></li>
+>  <li class="slick-slide"><a href="https://mfbunkoj.jp/special/frank/"><img src="/archives/001/202202/cb8e7512a68064ebdf88b9c7e0fad223.jpg" alt="自称Fランクのお兄さまがゲームで評価される学園の頂点に君臨するそうで 
+すよ？１２"></a></li>
+>  <li class="slick-slide"><a href="https://mfbunkoj.jp/special/hentai/"><img src="/archives/001/202202/7d9a4f2fad9ab0856e975b9c79077952.jpg" alt="可愛ければ変態でも好きになってくれますか？ suneアートワークス"></a></li>
+>  <li class="slick-slide"><a href="http://re-zero.com/"><img src="/archives/001/201804/21e610b8ec0e95b68357301dcdf51039.png" alt="Re:ゼロから始める異世界生活"></a></li>
+>  <li class="slick-slide"><a href="http://ngnl.jp/tv/"><img src="/archives/001/201804/2c23ca52649fce9289083f3f7d52c164.png" alt="ノーゲーム・ノーライフ"></a></li>
+>  </ul>
+>  <div class="link"><a href="/series/" class="acms_no_rewrite">シリーズ一覧へ</a></div>
+>  </section>
+>  <section id="asideBlog">
+>  <h2><span></span>ブログ新着記事</h2>
+>  <ul class="blogList alpha">
+>  <li>
+>  <figure>
+>  <a href="https://mfbunkoj.jp/blog/info/entry-10236.html">
+>  <img src="/themes/mf/images/placeholder/noimg_blog.jpg" alt="【お詫び】『『僕は友達が少ない』ブリキArt Works 初回限定版』発売中止について">
+>  </a>
+>  <figcaption><a href="https://mfbunkoj.jp/blog/info/entry-10236.html">【お詫び】『『僕は友達が少ない』ブリキArt Works 初回限定版』発売中止について</a></figcaption>
+>  </figure>
+>  </li>
+>  <li>
+>  <figure>
+>  <a href="https://mfbunkoj.jp/blog/award/entry-10223.html">
+>  <img src="/themes/mf/images/placeholder/noimg_blog.jpg" alt="【お知らせ】第18回ＭＦ文庫Ｊライトノベル新人賞第二期予備審査の結果を公開しました。">
+>  </a>
+>  <figcaption><a href="https://mfbunkoj.jp/blog/award/entry-10223.html">【お知らせ】第18回ＭＦ文庫Ｊライトノベル新人賞第二期予備審査の結果を公開しました。</a></figcaption>
+>  </figure>
+>  </li>
+>  <li>
+>  <figure>
+>  <a href="fair-2022winter-nya.html">
+>  <img src="/archives/014/202112/mode2_w196-56794834df752b12e37163d3d60b54f9.jpg" alt="MF文庫J「にゃんにゃんにゃんフェア」開催！(=^..^=)！">
+>  </a>
+>  <figcaption><a href="fair-2022winter-nya.html">MF文庫J「にゃんにゃんにゃんフェア」開催！(=^..^=)！</a></figcaption>
+>  </figure>
+>  </li>
+>  </ul>
+>  <div class="link"><a href="/blog/" class="acms_no_rewrite">ブログ記事一覧へ</a></div>
+>  </section>
+>  </div>
+>  </aside>
+>  </div>
+>  <footer id="footer">
+>  <div class="pageUp">
+>  <a href="#header"><span class="arrow"></span></a>
+>  </div>
+>  <div class="inner">
+>  <div class="logo alpha"><a href="/" class="acms_no_rewrite"><img src="/themes/mf/images/global/footer-logo.png" srcset="/themes/mf/images/global/footer-logo.png 1x,/themes/mf/images/global/footer-logo@2x.png 2x" alt="MF文庫J"></a></div>
+>  <nav id="fNav">
+>  <ul>
+>  <li><a href="https://mfbunkoj.jp/product/new-release.html">新刊情報</a></li>
+>  <li><a href="https://mfbunkoj.jp/product/">書籍情報</a></li>
+>  <li><a href="https://mfbunkoj.jp/series/">シリーズ一覧</a></li>
+>  <li><a href="https://mfbunkoj.jp/news/">ニュース</a></li>
+>  <li><a href="https://mfbunkoj.jp/blog/">編集部ブログ</a></li>
+>  <li><a href="https://mfbunkoj.jp/link.html">特設サイト</a></li>
+>  <li><a href="https://mfbunkoj.jp/rookie/award/">新人賞</a></li>
+>  <li><a href="https://group.kadokawa.co.jp/privacy_policy/main.html">プライバシーポリシー</a></li>
+>  </ul>
+>  </nav>
+>  <ul class="sns">
+>  <li class="facebook"><div class="fb-like" data-href="https://mfbunkoj.jp/product/new-release.html" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div></li> 
+>  <li class="twitter"><a class="twitter-share-button" data-size="small">Tweet</a>
+>  <li class="line"><div class="line-it-button" style="display: none;" data-type="share-a" data-lang="ja" ></div><script src="//scdn.line-apps.com/n/line_it/thirdparty/loader.min.js" async="async" defer="defer"></script></li>
+>  </ul>
+>  </div>
+>  <div>
+>  <ul class="bnrList alpha">
+>  <li>
+>  <a href="https://comic-flapper.com/" target="_blank"><img src="/archives/001/201711/3e3b8e382623e81b54f343a9543815fb.jpg" alt="コミックフラッパー"></a>
+>  </li>
+>  <li>
+>  <a href="https://comic-alive.jp/" target="_blank"><img src="/archives/001/201711/ac6617c10055aed94e29879442b20cab.jpg" alt="コミックアライブ"></a>
+>  </li>
+>  <li>
+>  <a href="https://comic-gene.com/" target="_blank"><img src="/archives/001/201711/2b6d74a9736c0556540835edd8cd9616.jpg" alt="コミックジーン"></a>
+>  </li>
+>  <li>
+>  <a href="https://ddnavi.com/" target="_blank"><img src="/archives/001/201711/cf53e6c21a32e53ddb07b11cccbeb475.jpg" alt="ダヴィンチ"></a>
+>  </li>
+>  <li>
+>  <a href="https://kakuyomu.jp/" target="_blank"><img src="/archives/001/201711/f39dab5dcdd11370641f31d97a19261d.jpg" alt="カクヨム"></a>
+>  </li>
+>  <li>
+>  <a href="https://bookwalker.jp/" target="_blank"><img src="/archives/001/201711/187559d609b5a418a7ca3dffdba5b632.jpg" alt="ブックウォーカー"></a>
+>  </li>
+>  <li>
+>  <a href="https://mediafactory.kadokawa.co.jp/" target="_blank"><img src="/archives/001/201711/68972469e4a2a03b2c2649ec063dcd62.jpg" alt="メディアファクトリー"></a>
+>  </li>
+>  <li>
+>  <a href="https://store.kadokawa.co.jp/shop/pages/mfj.aspx" target="_blank"><img src="/archives/001/202007/5864a80c0eaa3564ce1df0c2b5bd263e.jpg" alt="カドカワストア特設サイト"></a>
+>  </li>
+>  </ul>
+>  </div>
+>  <p><small>&copy; KADOKAWA CORPORATION 2022</small></p>
+>  </footer>
+>  <script>
+>    (function() {
+>      var temp = [];
+> 
+>      $('.js-dup-check').each(function() {
+>        var title = $(this).data('title');
+>        var isbn = $(this).data('isbn');
+>        if ( temp.indexOf(title) !== -1 ) {
+>          if ( !/^978404/.test(isbn) ) {
+>            $(this).hide();
+>          } else {
+>            var filter = '[data-title="' + title + '"]';
+>            $(filter).hide();
+>            $(this).show();
+>          }
+>        }
+>        temp.push($(this).data('title'));
+>      });
+>    })();
+>  </script>
+>  </body>
+>  </html>

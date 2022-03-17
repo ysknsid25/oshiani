@@ -22,8 +22,8 @@ exports.gaScraiping = functions
 exports.testFunc = functions
     .region("asia-northeast1")
     .https.onRequest(async (req, res) => {
-        const scrai = require("./dashx");
-        const retArr = await scrai.dashxScraiping(db);
+        const scrai = require("./mf");
+        const retArr = await scrai.mfScraiping(db);
         //console.log(retArr);
         functions.logger.info(retArr, { structuredData: true });
         res.send("fine");
@@ -139,6 +139,22 @@ exports.dashxScraiping = functions
     .onRun(async () => {
         const scrai = require("./dashx");
         const retArr = await scrai.dashxScraiping(db);
+    });
+
+/**
+ * MF文庫のスクレイピング
+ */
+exports.mfScraiping = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 300,
+        memory: "1GB",
+    })
+    .pubsub.schedule("0 1 20 * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const scrai = require("./mf");
+        const retArr = await scrai.mfScraiping(db);
     });
 
 /**
