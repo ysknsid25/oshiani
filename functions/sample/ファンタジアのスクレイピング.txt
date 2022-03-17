@@ -1,0 +1,878 @@
+>  <!DOCTYPE html>
+>  <html>
+>  <head>
+>  <meta charset="UTF-8">
+>  <title>新刊情報 | 書籍情報 | ファンタジア文庫</title>
+>  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+>  <link rel="canonical" href="https://fantasiabunko.jp/product/new-release.html">
+>  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>  <meta property="og:url" content="https://fantasiabunko.jp/product/new-release.html">
+>  <meta property="og:site_name" content="ファンタジア文庫">
+>  <meta property="og:title" content="新刊情報 | 書籍情報 | ファンタジア文庫">
+>  <meta property="og:type" content="article">
+>  <meta property="og:image" content="https://fantasiabunko.jp/archives/001/ogp.png">
+>  <meta property="og:description" content="">
+>  <meta name="description" content="">
+>  <meta name="format-detection" content="telephone=no">
+>  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+>  <meta name="theme-color" content="">
+>  <link rel="dns-prefetch" href="//connect.facebook.net">
+>  <link rel="dns-prefetch" href="//platform.twitter.com">
+>  <script src="/js/library/jquery/jquery-2.2.3.min.js"></script>
+>  <script src="/acms.js?domains=fantasiabunko.jp&amp;jsDir=js/&amp;themesDir=/themes/&amp;bid=3&amp;eid=11868&amp;bcd=product&amp;googleApiKey=AIzaSyAkH79hCeXjqzzhcXHDSZf-xtkVfqxBHz0&amp;jQuery=2.2.3&amp;jQueryMigrate=off&amp;fulltimeSSL=1&amp;v=b3ca6f2357b9e70aa71923aec229485f&amp;umfs=50M&amp;pms=100M&amp;mfu=50&amp;lgImg=width:1400&amp;jpegQuality=95&amp;mediaLibrary=off&amp;ecd=new-release.html&amp;scriptRoot=/" charset="UTF-8" id="acms-js"></script>
+>  <script src="/themes/fantasiabunko/dest/bundle.js?date=20190311222003"></script>
+>  <script src="/js/library/jquery/modal-video/js/modal-video.min.js"></script>
+>  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+>  <script src="/themes/fantasiabunko/dest/velocity.min.js?date=20190222144431"></script>
+>  <script src="/themes/fantasiabunko/dest/jquery.matchHeight-min.js?date=20190222144431"></script>
+>  <script src="/themes/fantasiabunko/dest/script.js?date=20190311213733"></script>
+>  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://fantasiabunko.jp/rss2.xml">
+>  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,500,700&amp;subset=japanese">
+>  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+>  <link rel="stylesheet" href="/themes/system/css/acms-admin.min.css?date=20190305122325">
+>  <link rel="stylesheet" href="/themes/fantasiabunko/dest/normalize.css?date=20190222144431">
+>  <link rel="stylesheet" href="/themes/fantasiabunko/dest/smartphoto.min.css?date=20190311223647">
+>  <link rel="stylesheet" href="https://fantasiabunko.jp/js/library/jquery/modal-video/css/modal-video.min.css">
+>  <link rel="stylesheet" href="/themes/fantasiabunko/dest/slick.css?date=20190222144431">
+>  <link rel="stylesheet" href="/themes/fantasiabunko/dest/style.css?date=20190328162759">
+>  <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-NBV6DB4",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");</script>
+>  <style>
+>      .acms-admin-form select,
+>      .acms-admin-form .acms-form-select {
+>          -webkit-appearance: none;
+>      }
+>  </style>
+>  <link rel="stylesheet" href="/themes/fantasiabunko/dest/pages.css?date=20190617141641">
+>  <script type="text/javascript" src="/js/dest/index.js?date=20190219154829" charset="UTF-8" async defer></script>
+>  <meta name="generator" content="a-blog cms" />
+>  </head>
+>  <body>
+>  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBV6DB4"
+>  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+>  <div id="menu"><img src="/themes/fantasiabunko/images/global/navigation/menu.png" srcset="/themes/fantasiabunko/images/global/navigation/menu.png 1x , /themes/fantasiabunko/images/global/navigation/menu@2x.png 2x" alt="メニューを開く"></div>
+>  <div id="navigation">
+>  <div class="close"><img src="/themes/fantasiabunko/images/global/navigation/close.png" srcset="/themes/fantasiabunko/images/global/navigation/close.png 1x , /themes/fantasiabunko/images/global/navigation/close@2x.png 2x" alt="メニューを閉じる"></div>
+>  <div class="logo hover"><a href="/" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/header/logo.png" srcset="/themes/fantasiabunko/images/global/header/logo.png 1x , /themes/fantasiabunko/images/global/header/logo@2x.png 2x" alt="富士見ファンタジア文庫"></a></div>
+>  <nav>
+>  <ul>
+>  <li><a href="/product/new-release.html" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/navigation/gnav1.png" alt="新刊情報"></a></li>
+>  <li><a href="/product/" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/navigation/gnav2.png" alt="書籍情報"></a></li>
+>  <li><a href="/blog/" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/navigation/gnav3.png" alt="編集部ブログ"></a></li>
+>  <li><a href="/magazine/new-magazine.html" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/navigation/gnav4.png" alt="ドラゴンマガジン"></a></li>
+>  <li><a href="https://www.fantasiataisho.com/"><img src="/themes/fantasiabunko/images/global/navigation/gnav5.png" alt="ファンタジア大賞"></a></li>
+>  <li><a href="/search.html" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/navigation/gnav6.png" alt="検索"></a></li>
+>  <li><a href="/news/" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/navigation/gnav7.png" alt="ニュース"></a></li>
+>  <li><a href="/product/calendar/"><img src="/themes/fantasiabunko/images/global/navigation/gnav8.png" alt="発売＆イベントカレンダー"></a></li>
+>  </ul>
+>  </nav>
+>  </div>
+>  <header id="header">
+>  <div class="inner">
+>  <div id="searchMenu"><a href="/search.html" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/navigation/search.png" srcset="/themes/fantasiabunko/images/global/navigation/search.png 1x , /themes/fantasiabunko/images/global/navigation/search@2x.png 2x" alt="検索"></a></div>
+>  <div class="logo hover"><a href="/" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/header/logo.png" srcset="/themes/fantasiabunko/images/global/header/logo.png 1x , /themes/fantasiabunko/images/global/header/logo@2x.png 2x" alt="ファンタジア文庫"></a></div>
+>  <nav>
+>  <ul class="gnav clearfix">
+>  <li><a href="/product/new-release.html" class="acms_no_rewrite">新刊情報</a></li>
+>  <li><a href="/product/" class="acms_no_rewrite">書籍情報</a></li>
+>  <li><a href="/blog/" class="acms_no_rewrite">編集部ブログ</a></li>
+>  <li><a href="/magazine/new-magazine.html" class="acms_no_rewrite">ドラゴンマガジン</a></li>
+>  <li><a href="https://www.fantasiataisho.com/">ファンタジア大賞</a></li>
+>  </ul>
+>  </nav>
+>  <form action="/product/" method="post" id="archive_search" class="acms-form acms_no_rewrite" role="search" aria-label="検索フォーム">
+>  <div class="search">
+>  <div><i class="fas fa-search"></i></div>
+>  <div><input type="search" name="keyword" value="" placeholder="書籍タイトル・著者名など"></div>
+>  <div><input type="submit" name="ACMS_POST_2GET" value="検 索"></div>
+>  <div class="detail"><a href="/search.html" class="acms_no_rewrite">詳細検索</a></div>
+>  </div>
+>  <input type="hidden" name="formToken" value="123fbba22218c3746bcc4aceb53d15bb91bc066c">
+>  </form>
+>  </div>
+>  </header>
+>  <main>
+>  <ol class="topicPath">
+>  <li><a href="https://fantasiabunko.jp/" class="c-topicpath__link">ホーム</a></li>
+>  <li><a href="https://fantasiabunko.jp/product/" class="c-topicpath__link">書籍情報</a></li>
+>  <li><a href="https://fantasiabunko.jp/product/new-release.html" class="c-topicpath__link">新刊情報</a></li>
+>  </ol>
+>  <article>
+>  <section id="newRelease">
+>  <div class="title">
+>  <h1>3月の新刊</h1>
+>  <div class="flag">3月19日発売</div>
+>  </div>
+>  <p class="bottom">画像選択で新刊情報へ</p>
+>  <ul class="productThumbList hover scroll">
+>  <li>
+>  <a href="#isbn9784040744834">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001058.jpg" class="js-img-fallback" alt="表紙：保健室のオトナな先輩、俺の前ではすぐデレる">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744841">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001059.jpg" class="js-img-fallback" alt="表紙：【翻訳】の才能で俺だけが世界を改変できる件 ～ハズレ才能【翻訳】で気付けば世界最強になってました～">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744735">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001048.jpg" class="js-img-fallback" alt="表紙：陽キャなカノジョは距離感がバグっている 出会って即お持ち帰りしちゃダメなの？">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744377">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001229.jpg" class="js-img-fallback" alt="表紙：私より強い男と結婚したいの 清楚な美人生徒会長（実は元番長）の秘密を知る陰キャ（実は彼女を超える最強のヤンキー）
+">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040743943">
+>  <img src="https://cdn.kdkw.jp/cover_500/322109/322109001129.jpg" class="js-img-fallback" alt="表紙：推しが俺を好きかもしれない２">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744742">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001049.jpg" class="js-img-fallback" alt="表紙：俺のお嫁さん、変態かもしれない２ ―結婚してみた幼馴染、慣れれば慣れるほどアブナさが増していくようです―">        
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744858">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001086.jpg" class="js-img-fallback" alt="表紙：勇者、辞めます２ ～次の職場は魔王城～">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744803">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001055.jpg" class="js-img-fallback" alt="表紙：古き掟の魔法騎士IV">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040742540">
+>  <img src="https://cdn.kdkw.jp/cover_500/322105/322105000775.jpg" class="js-img-fallback" alt="表紙：スパイ教室07 《氷刃》のモニカ">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744810">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001056.jpg" class="js-img-fallback" alt="表紙：ハイスクールＤ×Ｄ　ＤＸ．7 ご先祖さまはトリックスター!?">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040743912">
+>  <img src="https://cdn.kdkw.jp/cover_500/322109/322109001126.jpg" class="js-img-fallback" alt="表紙：史上最強の大魔王、村人Aに転生する 9.邪神の夢">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040742496">
+>  <img src="https://cdn.kdkw.jp/cover_500/322105/322105000770.jpg" class="js-img-fallback" alt="表紙：異世界でチート能力を手にした俺は、現実世界をも無双する10 ～レベルアップは人生を変えた～">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744773">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001052.jpg" class="js-img-fallback" alt="表紙：公女殿下の家庭教師11 歴史の幻影">
+>  </a>
+>  <li>
+>  <a href="#isbn9784040744438">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001235.jpg" class="js-img-fallback" alt="表紙：キミと僕の最後の戦場、あるいは世界が始まる聖戦13">
+>  </a>
+>  </li>
+>  </ul>
+>  <ul class="productList">
+>  <li id="isbn9784040744834">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202203otodere/322111001058.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001058.jpg" class="js-img-fallback" alt="表紙：保健室のオトナな先輩、俺の前ではすぐデレる">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/de763d5f6f-7199-49a0-9985-2fe4449db0c6/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/202203otodere/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202203otodere/322111001058.html">保健室のオトナな先輩、俺の前ではすぐデレる</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/滝沢　慧/">滝沢　慧</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/色谷　あすか/">色谷　あすか</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">余裕たっぷりで、みんなの憧れ。少し攻めればチョロインに!?</p>
+>  <p class="story">シリーズ累計55万部突破のヒット作「非オタの彼女が俺の持ってるエロゲに興味津々なんだが……」<br>滝沢慧<br>×<br>人気イラストレーター・色谷あすか<br>×<br>「じつは義妹でした。」「かまって新卒ちゃんが毎
+回誘ってくる。」<br>カノンの恋愛漫画<br><br>最強チームがおくる、この春。最も注目のラブコメ!!<br>------<br>「あら、真山くん。私に会えなくて寂しかったですか？」<br><br>　保健室常連の俺・真山恭二に顔を近付けるのは、保
+健委員の先輩・白瀬柚月。<br>みんな憧れる完璧優等生、オトナな魅力が評判の彼女だけど、<br>俺だけは知っている。彼女の本性は……<br><br>「なんなら、真山くんにキスしてあげても…」　　　　　　　　<br>「へぇ、してくれるんで 
+すか？」<br>「えっ!?　き、きしゅくらい！　ぜんぜんっ！」<br><br>なぜか俺に絡んできては自爆デレ、全力で背伸びしている女子だった。<br>じつは、白瀬柚月は……<br><br>（こいつ、子供のころに私をフったの、やっぱり覚えてない
+…！<br>「オトナ」になった私の魅力で、絶対デレさせるんだから！）<br><br>　これは大人になりたい先輩と俺の、素直になれない恋物語（いちゃラブコメ）！</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322111001058/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/de763d5f6f-7199-49a0-9985-2fe4449db0c6/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.animate-onlineshop.jp/pn/【小説】保健室のオトナな先輩、俺の前ではすぐデレる/pd/2060743/"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/animate.jpg" alt="ア
+ニメイト"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040744837?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744834"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744834"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://honto.jp/netstore/pd-book_31485657.html"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honto.jpg" alt="honto"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556334&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744834"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744841">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202203honyaku/322111001059.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001059.jpg" class="js-img-fallback" alt="表紙：【翻訳】の才能で俺だけが世界を改変できる件 ～ハズレ才能【翻訳】で気付けば世界最強になってました～">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/de271bf240-267c-4040-8b58-2f819929b92b/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/202203honyaku/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202203honyaku/322111001059.html">【翻訳】の才能で俺だけが世界を改変できる件 ～ハズレ才能【翻訳】で気付けば世界最強になってました～</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/蒼乃　白兎/">蒼乃　白兎</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/かなどめ　はじめ/">かなどめ　はじめ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">ハズレだと思われていた【翻訳】の才能で無自覚に無双する！</p>
+>  <p class="story">名門の魔法貴族アルデハイム家に生まれ将来を期待されたノアだったが、【翻訳】という戦闘には無縁のハズレ才能だということがわかり家族から冷遇される日々を過ごす。<br>15歳になり家を出たノアは【翻訳】の
+才能で古代魔導書を読みあさり、いつの間にか世界最強の魔法使いになっていたことを知らず冒険者となり――。<br>旅の先々で王女を助けたり、Ｓ級モンスターであるファフニールを手なずけたり、古代遺跡に眠っていた少女に懐かれたり
+と無自覚に誰もが驚く活躍をすることに！<br><br>古代魔法と才能の力で世界を解き明かし改変する【翻訳】無双ファンタジー開幕！</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322111001059/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/de271bf240-267c-4040-8b58-2f819929b92b/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.animate-onlineshop.jp/pn/【小説】【翻訳】の才能で俺だけが世界を改変できる件 ～ハズレ才能【翻訳】で気付けば世界最強になってました～/pd/2060744/"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/animate.jpg" alt="アニメイト"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040744845?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744841"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744841"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://honto.jp/netstore/pd-book_31485658.html"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honto.jpg" alt="honto"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556333&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744841"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744735">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202203bug/322111001048.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001048.jpg" class="js-img-fallback" alt="表紙：陽キャなカノジョは距離感がバグっている 出会って即お持ち帰りしちゃダメなの？">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/defdd3add5-7fda-4a5f-a9ee-3aa7db0b7dbc/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/202203bug/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202203bug/322111001048.html">陽キャなカノジョは距離感がバグっている 出会って即お持ち帰りしちゃダメなの？</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/枩　葉松/">枩　葉松</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/ハム/">ハム</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">大胆すぎるカノジョに翻弄される、青春スクールカーストラブコメ！</p>
+>  <p class="story">クラスの高嶺の花・佐々川綾乃。そんな彼女を偶然ナンパから助けたら――<br>「ありがとう、藤村」<br>って、日陰者な僕の名前をまさかの認知！　その上、妙に懐かれるようになり……!?<br>以来、休日には家に連れ
+込まれ、子どものように「褒めて？」と迫ってきたり、お泊りしたり。<br>陰キャぼっち生活を謳歌していたはずなのに、気付けば彼女の存在が日常になっていて……。<br><br>「今日も家来るでしょ？」<br>「ぼっち？　じゃあ私がひとり
+占めできるね！」<br>「……キミのこと、特別だと思っちゃダメなの？」<br><br>遠い世界の人だと思っていた彼女が、今となってはゼロ距離に。<br>大胆すぎる彼女に翻弄される、青春カーストラブコメ！</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322111001048/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/defdd3add5-7fda-4a5f-a9ee-3aa7db0b7dbc/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/404074473X?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744735"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744735"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556339&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744735"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744377">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202203watatsuyo/322110001229.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001229.jpg" class="js-img-fallback" alt="表紙：私より強い男と結婚したいの 清楚な美人生徒会長（実は元番長）の秘密を知る陰キャ（実は彼女を超える最強のヤンキー）
+">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/defa9bcbb6-e67e-4a59-9f15-ab170f063ca5/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/202203watatsuyo/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202203watatsuyo/322110001229.html">私より強い男と結婚したいの 清楚な美人生徒会長（実は元番長）の秘密を知る陰キャ（実は彼女を超える最強のヤンキー）</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/高橋　びすい/">高橋　びすい</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/Nagu/">Nagu</a></li>
+>  <li>キャラクター原案・漫画：<a href="https://fantasiabunko.jp/product/keyword/水平線/">水平線</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">YouTubeで累計700万回再生！　史上最強のカップルラブコメ開幕！</p>
+>  <p class="story">　美人生徒会長・高崎雫花は文武両道・才色兼備として全校生徒に尊敬されていた。ある日、万年ぼっちの高校生・小暮秋良は、彼女が元女番長であると知ってしまう。なぜ番長をしていたのか尋ねると「私ね――私よ
+り強い男と結婚したいの」。<br>　秘密の共有をきっかけに、秋良との仲を深めていく雫花。そのたびに「でも秋良くんは“強く”はない」と残念がる雫花だったが、じつは秋良こそが彼女を超える最強の男だった――！<br>「秋良くんこそ、
+私の白馬の王子様だ」その日から手作り弁当を作ったり、告白の練習をしたり、雫花のズレたアプローチが始まる！　元ヤン生徒会長と陰キャ番長の最強ラブコメ開幕！<br></p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322110001229/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/defa9bcbb6-e67e-4a59-9f15-ab170f063ca5/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040744373?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744377"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744377"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20533382&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744377"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040743943">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202107oshiore/322109001129.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322109/322109001129.jpg" class="js-img-fallback" alt="表紙：推しが俺を好きかもしれない２">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/deb8638f0f-6425-4bb5-95a7-72f6520a0e06/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/202107oshiore/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202107oshiore/322109001129.html">推しが俺を好きかもしれない２</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/川田　戯曲/">川田　戯曲</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/館田　ダン/">館田　ダン</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">陰キャ可愛い幽霊部員の檜原の推しって――え、俺なの？</p>
+>  <p class="story">俺を推してくれる女の子がいるなんて、思ってもなかった。<br><br>文芸部、廃部の危機。<br>居心地の良い場所を守りたい俺は、<br>幽霊部員だった檜原由女と活動実績を作ることになったのだが、<br><br>「あな
+たのことが――好き、だよ？」<br>唐突に、告白を受けてしまった。<br><br>部活やゲームをして段々近づいていく俺たちに、<br>大人気ボーカル、花房憂花(俺の推し)の様子もおかしくなっていき――<br><br>「あんたはこの夏、憂花ちゃん
+と花火大会に行くの」<br>えっ、推しからお誘い、二人きりで夏祭り！？　<br>推しとオタクの素直になれない両片想いは、新ヒロインの登場で急展開！<br></p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322109001129/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/deb8638f0f-6425-4bb5-95a7-72f6520a0e06/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040743946?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040743943"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040743943"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556340&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040743943"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744742">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202110oyomesan/322111001049.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001049.jpg" class="js-img-fallback" alt="表紙：俺のお嫁さん、変態かもしれない２ ―結婚してみた幼馴染、慣れれば慣れるほどアブナさが増していくようです―">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/deaec4420b-2334-42ce-8d9a-24899c27a7fc/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/202110oyomesan/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202110oyomesan/322111001049.html">俺のお嫁さん、変態かもしれない２ ―結婚してみた幼馴染、慣れれば慣れるほどアブナさが増していくようです―</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/くろい/">くろい</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/あゆま紗由/">あゆま紗由</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">涼香の変態が悪化!?　さらに義妹の登場で同居生活はカオスに！</p>
+>  <p class="story">　幼馴染の涼香と結婚し、同居生活を満喫していた裕樹。<br>　けれど近ごろ、お嫁さんの変態は悪化の一途をたどっていた！　<br>「ぷはぁあ～…！　やっぱり旦那さんのパンツは最高だぜ！」<br>　夜な夜なこっ 
+そり行われる大好き行為。<br>　そしてコスプレにハマったお嫁さんとの日常はいよいよ濃密で!?<br>　さらには涼香の妹・冬華も家に押しかけてきて、<br>嫁＆義妹とのカオスな同居生活がスタート。<br>　しかも「二人ともまだエッチ
+もしてないんですか?」と、<br>クールな冬華に焚き付けられて、二人のイチャイチャは加速していく――!<br>　愛され度1000％の甘々コメディ、熟成の第二弾</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322111001049/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/deaec4420b-2334-42ce-8d9a-24899c27a7fc/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040744748?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744742"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744742"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556338&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744742"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744858">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202202yamemasu/322111001086.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001086.jpg" class="js-img-fallback" alt="表紙：勇者、辞めます２ ～次の職場は魔王城～">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/de428ac911-5b11-4838-aeae-50134a9addca/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/202202yamemasu/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202202yamemasu/322111001086.html">勇者、辞めます２ ～次の職場は魔王城～</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/クオンタム/">クオンタム</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/天野　英/">天野　英</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">最強勇者は仕事も万能――！！　ボロボロ魔王城再建ファンタジー第二弾！</p>
+>  <p class="story">勇者を辞め、魔王軍の一員となったレオは、その知識を活かしエキドナの夢である魔界再生に乗り出す。<br>だが、ボロボロ魔王軍は準備だけでも大慌て!<br>ダンジョン化した城を攻略し、お肉がなくなったリリが 
+駄々をこね、更には近隣諸国に暴走した竜が攻撃を開始!?<br>やっと手に入れた平穏を守るため、勇者歴三千年の技能を使って次々に解決していくレオ。<br>だが、一連の事件(リリ除く)には元凶が存在しており―引退勇者は、かつて憧れ 
+た『勇者』と対峙する!</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322111001086/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/de428ac911-5b11-4838-aeae-50134a9addca/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.animate-onlineshop.jp/pn/【小説】勇者、辞めます(2) ～次の職場は魔王城～/pd/2060745/"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/animate.jpg" alt="アニメ
+イト"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040744853?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744858"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744858"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://honto.jp/netstore/pd-book_31491078.html"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honto.jpg" alt="honto"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20559355&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744858"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744803">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202012fairyknight/322111001055.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001055.jpg" class="js-img-fallback" alt="表紙：古き掟の魔法騎士IV">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/debd135a12-24ae-48fd-8716-6a18334beabd/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/202012fairyknight/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202012fairyknight/322111001055.html">古き掟の魔法騎士IV</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/羊太郎/">羊太郎</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/遠坂　あさぎ/">遠坂　あさぎ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">侵略を始めた帝国軍。問われるのは、アルヴィンの覚悟！</p>
+>  <p class="story">２年生に進学し、後輩たちに尊敬されながら成長するアルヴィンたち。一方、王国に未曾有の危機が訪れる。西の大国・ドラグニール帝国が侵略を始めたのだ。しかも、その皇帝はアルヴィンの最大の秘密を握ってい
+て……</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322111001055/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/debd135a12-24ae-48fd-8716-6a18334beabd/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.animate-onlineshop.jp/pn/【小説】古き掟の魔法騎士IV/pd/2060741/"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/animate.jpg" alt="アニメイト"></a></li>     
+>  <li><a href="https://www.amazon.co.jp/dp/4040744802?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744803"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744803"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://honto.jp/netstore/pd-book_31485655.html"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honto.jpg" alt="honto"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556336&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744803"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040742540">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/202001spy/322105000775.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322105/322105000775.jpg" class="js-img-fallback" alt="表紙：スパイ教室07 《氷刃》のモニカ">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/de45bd64be-dff8-4951-8af5-2c039687e646/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="http://fantasiataisho-sp.com/spy/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/202001spy/322105000775.html">スパイ教室07 《氷刃》のモニカ</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/竹町/">竹町</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/トマリ/">トマリ</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">大ヒット！スパイファンタジー第７巻！</p>
+>  <p class="story">「この世界を壊していけばいいんだろう？ ――汚れて醜い裏切り者として」 モニカの背反により半壊した『灯』は、真相を求めてフェンド連邦を駆ける。 これは窮地に追いやられた少女が、世界を敵に回す物語――。</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322105000775/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/de45bd64be-dff8-4951-8af5-2c039687e646/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040742540?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040742540"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040742540"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556342&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040742540"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744810">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/201104highschool/322111001056.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001056.jpg" class="js-img-fallback" alt="表紙：ハイスクールＤ×Ｄ　ＤＸ．7 ご先祖さまはトリックスター!?">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/deaba452cb-b8b7-4190-a9dc-f31bee7d18ea/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/sp/201104highschool/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/201104highschool/322111001056.html">ハイスクールＤ×Ｄ　ＤＸ．7 ご先祖さまはトリックスター!?</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/石踏　一榮/">石踏　一榮</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/みやま　零/">みやま　零</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">アザゼル杯の裏で、新たな波乱。グレモリーのご先祖復活!?</p>
+>  <p class="story">長きにわたって眠っていた初代グレモリー!?　そのフリーダムすぎる性格で、初対面のイッセーたちに無茶ぶりを始め……リアスが、「苦手な動物」の克服に挑戦する伝説のエピソードも収録した短編集7巻！</p>     
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322111001056/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/deaba452cb-b8b7-4190-a9dc-f31bee7d18ea/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.animate-onlineshop.jp/pn/【小説】ハイスクールD×D DX.7 ご先祖さまはトリックスター!?/pd/2060742/"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/animate.jpg" 
+alt="アニメイト"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040744810?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744810"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744810"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://honto.jp/netstore/pd-book_31485656.html"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honto.jpg" alt="honto"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556335&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744810"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040743912">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/201805shijyosaikyo/322109001126.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322109/322109001126.jpg" class="js-img-fallback" alt="表紙：史上最強の大魔王、村人Aに転生する 9.邪神の夢">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/de73f7fbcf-2835-44e9-b52b-34310fdde906/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/sp/201805shijyosaikyo/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/201805shijyosaikyo/322109001126.html">史上最強の大魔王、村人Aに転生する 9.邪神の夢</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/下等　妙人/">下等　妙人</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/水野　早桜/">水野　早桜</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">魔王vs邪神――最後の戦いが幕を開ける！</p>
+>  <p class="story">最凶の邪神・メフィストが、アードたちの魔法学園に襲来した。最愛の仲間たちは、メフィストの操り人形と化してしまい……「始めようか。君と僕の、ラスト・ゲームを」――魔王vs邪神、究極の最終決戦が始まる!!</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322109001126/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/de73f7fbcf-2835-44e9-b52b-34310fdde906/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040743911?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040743912"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040743912"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556341&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040743912"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040742496">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/201812cheatmusou/322105000770.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322105/322105000770.jpg" class="js-img-fallback" alt="表紙：異世界でチート能力を手にした俺は、現実世界をも無双する10 ～レベルアップは人生を変えた～">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/dedae68728-d4d1-4b92-8607-224ba20dd5fb/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/201812cheatmusou/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/201812cheatmusou/322105000770.html">異世界でチート能力を手にした俺は、現実世界をも無双する10 ～レベルアップは人生を変えた～</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/美紅/">美紅</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/桑島　黎音/">桑島　黎音</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">宇宙戦争を終結させた少年――次は……ついに《賢者》と邂逅する。</p>
+>  <p class="story">大波乱の宇宙戦争をも無双した天上優夜。邪悪なる謀略によって過去世界へと飛ばされた彼の前に……「なぜ、お前もその剣を持っている？」――優夜にすべてを授けた《賢者》が顕現！　最強の両雄、まさかの激突!?</p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322105000770/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>
+>  <li><a href="https://bookwalker.jp/dedae68728-d4d1-4b92-8607-224ba20dd5fb/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040742494?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040742496"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040742496"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556343&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040742496"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744773">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/201812koujodenka/322111001052.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322111/322111001052.jpg" class="js-img-fallback" alt="表紙：公女殿下の家庭教師11 歴史の幻影">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/de5cadf6c1-20a2-49b9-824d-81fca00ca998/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/201812koujodenka/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/201812koujodenka/322111001052.html">公女殿下の家庭教師11 歴史の幻影</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/七野りく/">七野りく</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/cura/">cura</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">兄様は初めて会ったあの日から、きちんと私をみてくれました。</p>
+>  <p class="story">アレンとリディヤのいない、王国南都。<br>公女殿下のリィネや義妹のカレンをはじめとした教え子たちは、<br>侯国との戦いを続けていた。<br><br>そこにもたらされたのは――凶報。<br>『水都で変事あり。王国と
+の講和に悪影響が起きそうだ』<br><br>「アレン様たちを急ぎ助けるためには――<br>『七塔要塞』を陥落させる必要があります」<br><br>難攻不落の敵要塞攻略のカギとなるのは――<br>『炎蛇』の短剣を授かり、力を示すリィネ！<br><br>陰謀渦巻く水都で敵の狙いを打ち砕く活躍をするアレンたちと、<br>強力無比な要塞を攻略する教え子たち。<br>無自覚規格外な家庭教師が画策した、空前絶後の二正面作戦、開幕！<br></p>
+>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322111001052/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/de5cadf6c1-20a2-49b9-824d-81fca00ca998/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040744772?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744773"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744773"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556337&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>   
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744773"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  <li id="isbn9784040744438">
+>  <div class="clearfix">
+>  <div class="cover">
+>  <figure class="hover">
+>  <a href="https://fantasiabunko.jp/product/201705kimitoboku/322110001235.html">
+>  <img src="https://cdn.kdkw.jp/cover_500/322110/322110001235.jpg" class="js-img-fallback" alt="表紙：キミと僕の最後の戦場、あるいは世界が始まる聖戦13">
+>  </a>
+>  </figure>
+>  <ul class="btnList hover">
+>  <li class="trial"><a href="https://bookwalker.jp/de201a8000-f916-4f81-a551-bca3245acc77/?adpcnt=GDPL5fFn&sample=1">試し読み</a></li>
+>  <li class="special"><a href="/special/201705kimitoboku/">特設サイト</a></li>
+>  </ul>
+>  </div>
+>  <div class="detail">
+>  <div class="head">
+>  <h3><a href="https://fantasiabunko.jp/product/201705kimitoboku/322110001235.html">キミと僕の最後の戦場、あるいは世界が始まる聖戦13</a></h3>
+>  <ul class="author">
+>  <li>著者：<a href="https://fantasiabunko.jp/product/keyword/細音　啓/">細音　啓</a></li>
+>  <li>イラスト：<a href="https://fantasiabunko.jp/product/keyword/猫鍋蒼/">猫鍋蒼</a></li>
+>  </ul>
+>  <p class="release">発売日：2022年3月19日</p>
+>  </div>
+>  <p class="catch">『あの魔女をああも変貌させた元凶についての話をしよう』</p>
+>  <p class="story">月は墜ちた。残されたキッシングは魔女への復讐を誓い、アリス達は真実を求め帝国へと赴く。姉の暴走を止めるべく奮戦する星に対し、残す太陽が暗躍を開始するも、魔女の鎮魂歌は荒涼たる世界に響き渡り――</p>>  </div>
+>  </div>
+>  <div class="shop">
+>  <p>購入はこちらから</p>
+>  <ul class="bnrList hover">
+>  <li><a href="https://store.kadokawa.co.jp/shop/g/g322110001235/?ref=fantasiabunko"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kadokawa.jpg" alt="カドカワストア" ></a></li>      
+>  <li><a href="https://bookwalker.jp/de201a8000-f916-4f81-a551-bca3245acc77/?adpcnt=GDPL5fFn"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/bookwalker.jpg" alt="BOOK WALKER"></a></li>
+>  <li><a href="https://www.amazon.co.jp/dp/4040744438?tag=fantasiabunkoweb-22"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/amazon.jpg" alt="アマゾン"></a></li>
+>  <li><a href="https://www.e-hon.ne.jp/bec/SA/Detail?refBook=9784040744438"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/ehon.jpg" alt="e-hon"></a></li>
+>  <li><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784040744438"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/kinokuniya.jpg" alt="紀伊国屋書店"></a></li>
+>  <li><a href="https://www.honyaclub.com/shop/goods/goods.aspx?goods=20556345&etcaff=AFI-LS"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/honyaclub.jpg" alt="HonyaClub"></a></li>
+>  <li><a href="https://hb.afl.rakuten.co.jp/hgc/14fc2867.62bf7380.14fc2868.6db20fcf/?pc=http%3a%2f%2fbooks.rakuten.co.jp%2frdt%2fitem%2f%3fsid%3d213310%26sno%3dISBN%3a9784040744438"><img src="https://fantasiabunko.jp/themes/fantasiabunko/images/global/banner/rakuten.jpg" alt="楽天ブックス"></a></li>
+>  </ul>
+>  </div>
+>  </li>
+>  </ul>
+>  </section>
+>  <script type="text/template" id="js-recently_viewed_template">
+>  <section id="history">
+>  <h1>最近チェックした書籍</h1>
+>  <ul class="historyList"><% _.each(items, function(item) { %>
+>  <li data-title="{title}" data-isbn="{isbn}">
+>  <figure>
+>  <div class="image hover">
+>  <a href="<%= item.link %>">
+>  <% if ( item.image ) { %>
+>  <img src="<%= item.image %>" class="js-img-fallback" alt="<%= item.title %>">
+>  <% } else { %>
+>  <img src="/themes/fantasiabunko/images/placeholder/noimg-cover.png" alt="<%= item.title %>">
+>  <% } %>
+>  </a></div>
+>  <figcaption><a href="<%= item.link %>"><%= item.title %></a></figcaption>
+>  </figure>
+>  </li><% }) %>
+>  </ul>
+>  </section>
+>  <div id="js-recently_viewed"></div>
+> 
+>  <script type="text/template" id="js-recently_viewed_template">
+>       <section id="history">
+>               <div>
+>                       <h2><span>最近チェック</span>した書籍</h2>
+>                       <div class="arrows"></div>
+>                       <ul class="historyList clearfix alpha"><% _.each(items, function(item) { %>
+>                               <li data-title="{title}" data-isbn="{isbn}">
+>                                       <figure>
+>                                               <a href="<%= item.link %>">
+>                                                       <% if ( item.image ) { %>
+>                                                       <img src="<%= item.image %>" class="js-img-fallback" alt="<%= item.title %>">
+>                                                       <% } else { %>
+>                                                       <img src="/themes/mf/images/placeholder/noimage_book.png" alt="<%= item.title %>">
+>                                                       <% } %>
+>                                       </a>
+>                                       <figcaption><a href="<%= item.link %>"><%= item.title %></a></figcaption>
+>                               </figure>
+>                               </li><% }) %>
+>               </ul>
+>                       <div class="dots"></div>
+>               </div>
+>       </section>
+>  </script>
+>  <div id="js-recently_viewed"></div>
+> 
+> 
+>  <!-- 確認用テンプレート -->
+> 
+> 
+>  </article>
+>  <aside>
+> 
+> 
+> 
+>  <section class="pickup">
+>  <h2>人気シリーズPICKUP!!!</h2>
+>  <div class="inner">
+>  <div class="slider">
+> 
+>  <div class="list">
+>  <figure>
+>  <a href="">
+>  <div class="topic hover"><a href="/sp/201103date/"><img src="/archives/001/201903/mode3_w576_h472-9326ecfc46c8289cd7da4799544136d6.png" alt="デート・ア・ライブ"></a></div>
+>  </div>
+> 
+>  <div class="list">
+>  <figure>
+>  <a href="">
+>  <div class="topic hover"><a href="/special/201705kimitoboku/"><img src="/archives/001/201911/mode3_w576_h472-cd8ba6ede8693fc880c253017b14f3c7.png" alt="キミと僕の最後の戦場、あるいは世界が始まる聖戦"></a></div> 
+>  </div>
+> 
+>  <div class="list">
+>  <figure>
+>  <a href="">
+>  <div class="topic hover"><a href="/sp/201211heroine/"><img src="/archives/001/201903/mode3_w576_h472-17dd9fe73986ec215b3da1e8c1be9522.png" alt="冴えない彼女の育てかた"></a></div>
+>  </div>
+> 
+>  <div class="list">
+>  <figure>
+>  <a href="">
+>  <div class="topic hover"><a href="/sp/201805shijyosaikyo/"><img src="/archives/001/202104/mode3_w576_h472-7e81fa917c33ceb4964950a5b56ebce9.png" alt="史上最強の大魔王、村人Aに転生する"></a></div>
+>  </div>
+> 
+>  </div>
+>  <div class="arrows"></div>
+>  </div>
+>  </section>
+> 
+> 
+> 
+>  
+> 
+>  <section class="banner">
+>  <ul class="bannerList">
+> 
+>  <li class="hover"><a href="/special/fantasiataisho34th/"><img src="/archives/001/202112/mode3_w780_h280-28bc2df5d49fc3303460a14515bf9c83.png" alt="第34回ファンタジア大賞スペシャルサイト"></a></li>
+> 
+>  <li class="hover"><a href="https://store.kadokawa.co.jp/shop/e/eti01522/"><img src="/archives/001/202110/mode3_w780_h280-205d359fe95ad9c09cca3f2a07019fac.jpg" alt="カドカワストア「ファンタジア文庫特集」"></a></li>
+>  
+>  <li class="hover"><a href="https://kimirano.jp/?utm_source=web&amp;utm_medium=site&amp;utm_campaign=fantasia"><img src="/archives/001/201907/mode3_w780_h280-86d6d7d0022c1198cff49a43a1253438.jpg" alt="キミラノ"></a></li>
+> 
+>  </ul>
+>  </section>
+> 
+> 
+>  </aside>
+>  </main>
+>  <footer id="footer">
+>  <div class="pagetop hover"><a href="#"><img src="/themes/fantasiabunko/images/global/footer/pagetop.png" srcset="/themes/fantasiabunko/images/global/footer/pagetop.png 1x , /themes/fantasiabunko/images/global/footer/pagetop@2x.png 2x" alt="ページの一番上へ"></a></div>
+>  <nav>
+>  <ul class="fnav">
+>  <li><a href="/product/new-release.html" class="acms_no_rewrite">新刊情報</a></li>
+>  <li><a href="/product/" class="acms_no_rewrite">既刊情報</a></li>
+>  <li><a href="/blog/" class="acms_no_rewrite">ブログ</a></li>
+>  <li><a href="/magazine/new-magazine.html" class="acms_no_rewrite">ドラゴンマガジン</a></li>
+>  <li><a href="https://www.fantasiataisho.com/">ファンタジア大賞</a></li>
+>  <li><a href="https://www.kadokawa.co.jp/support/">お問い合わせ</a></li>
+>  <li><a href="https://group.kadokawa.co.jp/privacy_policy/">プライバシーポリシー</a></li>
+>  </ul>
+>  </nav>
+>  <div class="logo hover"><a href="/" class="acms_no_rewrite"><img src="/themes/fantasiabunko/images/global/footer/logo.png" srcset="/themes/fantasiabunko/images/global/footer/logo.png 1x , /themes/fantasiabunko/images/global/footer/logo@2x.png 2x" alt="ファンタジア文庫"></a></div>
+>  <ul class="sns hover">
+>  <li><a href="http://twitter.com/share?url=https%3a%2f%2ffantasiabunko%2ejp%2f&text=%e3%83%95%e3%82%a1%e3%83%b3%e3%82%bf%e3%82%b8%e3%82%a2%e6%96%87%e5%ba%ab%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88"><img src="/themes/fantasiabunko/images/global/footer/btn-twitter.png" alt="Twitter"></a></li>
+>  <li><a href="http://www.facebook.com/share.php?u=https://fantasiabunko.jp/" onclick="window.open(encodeURI(decodeURI(this.href)), 'FBwindow', 'width=554, height=470, menubar=no, toolbar=no, scrollbars=yes'); return false;" rel="nofollow" onclick="ga('send', 'event', 'sns', 'click', 'facebook');"><img src="/themes/fantasiabunko/images/global/footer/btn-facebook.png" alt="Facebook"></a></li>
+>  <li><a href="http://line.me/R/msg/text/?%e3%83%95%e3%82%a1%e3%83%b3%e3%82%bf%e3%82%b8%e3%82%a2%e6%96%87%e5%ba%ab%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%20https%3a%2f%2ffantasiabunko%2ejp%2f"><img src="/themes/fantasiabunko/images/global/footer/btn-line.png" alt="Line"></a></li>
+>  </ul>
+> 
+>  <small>&copy; KADOKAWA CORPORATION 2022</small>
+>  </footer>
+>  </body>
+>  </html>

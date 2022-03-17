@@ -19,6 +19,7 @@ exports.gaScraiping = aAndg.gaScraiping;
 exports.lightningScraiping = aAndg.lightningScraiping;
 exports.gagagaScraiping = aAndg.gagagaScraiping;
 exports.sneakerScraiping = aAndg.sneakerScraiping;
+exports.fantasiaScraiping = aAndg.fantasiaScraiping;
 exports.getAandGProgramList = aAndg.getAandGProgramList;
 exports.getAandGProgramListHttp = aAndg.getAandGProgramListHttp;
 exports.notifyRegistedProgramHttp = aAndg.notifyRegistedProgramHttp;

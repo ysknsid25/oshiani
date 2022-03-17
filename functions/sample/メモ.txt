@@ -1,22 +1,13 @@
-js-summary-product-list-with-image p-product-media list-unstyled → スクレイピングの開始
-p-books-media02__wrap -border js-summary-product-list-item→本の開始かつ、一冊の情報の退避
-p-books-media02__img-wrap -label-true→画像の始まりフラグを立てる
-<img src=" → 画像フラグが立ってる場合にこれが出てきたら画像URLの取得開始。かつ、フラグをOFFにする
-" 画像の終わり
-p-books-media__title → タイトルがある行。<a href="で分割して、>から</a>の間の文字を取る
+https://famitsubunko.jp/product/2022/04/field/title_kana/nem/
 
-<ul class="p-books-media__authors">が著者・イラストの始まり
-著者：の2行先が著者
-イラスト：の2行先がイラストレーター
-class="p-books-media__authors-link"> と </a>の間の文字が欲しい情報
-</ul>が著者・イラストの終わり
-
-<p class="p-books-media__lead">がリード文。<p class="p-books-media__lead">から</p>の間がそう
-<p class="p-books-media__summary">が紹介文。<p class="p-books-media__summary">から</p>の間がそう
-
-<table class="p-books-media02__info d-none d-md-table">が定価とかの情報の始まりフラグを立てる
-<th>発売日</th>の次の行が発売日。始まりが<td>で終わりが</td>
-<th>定価</th>の次の行が定価。始まりが<td>で終わりが<span class="d-inline-block">
-</table>が来たらフラグOFFにして終わり
-
-p-books-media02__action d-none d-md-blockが来たら、本の終了
+<ul class="productList"> → スクレイピングの開始
+<div class="clearfix"> → 1冊の本
+js-img-fallback → 画像　<img src="から" class=の間
+<h3>→タイトル　">から</a></h3>の間
+著者　→　">から</a></li>の間
+イラスト　→　">から</a></li>の間
+発売日：　→　発売日：から</p>の間
+<p class="catch">→キャッチテキスト。<p class="catch">から</p>
+<p class="story">→アウトラインテキスト。<p class="story">から</p>
+<div class="shop">→一冊の本の終わり
+</section>スクレイピングの終わり

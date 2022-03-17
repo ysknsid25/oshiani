@@ -19,13 +19,23 @@ exports.gaScraiping = functions
     });
 */
 
+exports.testFunc = functions
+    .region("asia-northeast1")
+    .https.onRequest(async (req, res) => {
+        const scrai = require("./fantasia");
+        const retArr = await scrai.fantasiaScraiping(db);
+        //console.log(retArr);
+        functions.logger.info(retArr, { structuredData: true });
+        res.send("fine");
+    });
+
 exports.gaScraiping = functions
     .region("asia-northeast1")
     .runWith({
         timeoutSeconds: 300,
         memory: "1GB",
     })
-    .pubsub.schedule("0 0 12 * *")
+    .pubsub.schedule("5 0 10 * *")
     .timeZone("Asia/Tokyo")
     .onRun(async () => {
         const scrai = require("./ga");
@@ -38,7 +48,7 @@ exports.lightningScraiping = functions
         timeoutSeconds: 300,
         memory: "1GB",
     })
-    .pubsub.schedule("0 0 17 * *")
+    .pubsub.schedule("10 0 10 * *")
     .timeZone("Asia/Tokyo")
     .onRun(async () => {
         const scrai = require("./lightning");
@@ -51,7 +61,7 @@ exports.gagagaScraiping = functions
         timeoutSeconds: 300,
         memory: "1GB",
     })
-    .pubsub.schedule("0 0 17 * *")
+    .pubsub.schedule("15 0 10 * *")
     .timeZone("Asia/Tokyo")
     .onRun(async () => {
         const scrai = require("./gagaga");
@@ -64,11 +74,24 @@ exports.sneakerScraiping = functions
         timeoutSeconds: 300,
         memory: "1GB",
     })
-    .pubsub.schedule("0 0 17 * *")
+    .pubsub.schedule("0 0 25 * *")
     .timeZone("Asia/Tokyo")
     .onRun(async () => {
         const scrai = require("./sneaker");
         const retArr = await scrai.sneakerScraiping(db);
+    });
+
+exports.fantasiaScraiping = functions
+    .region("asia-northeast1")
+    .runWith({
+        timeoutSeconds: 300,
+        memory: "1GB",
+    })
+    .pubsub.schedule("0 0 18 * *")
+    .timeZone("Asia/Tokyo")
+    .onRun(async () => {
+        const scrai = require("./fantasia");
+        const retArr = await scrai.fantasiaScraiping(db);
     });
 
 /**
