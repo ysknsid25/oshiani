@@ -41,7 +41,7 @@
             }}</span>
           </v-avatar>
         </template>
-        <v-list v-if="logined" class="secondary">
+        <v-list v-if="logined">
           <div class="pb-3 pt-2">
             <v-avatar
               v-if="!logined"
@@ -83,7 +83,6 @@
           <!-- Profile -->
           <v-list-item
             link
-            class="secondary"
             v-for="constantMenuInfo in constantMenuInfoArr"
             :key="constantMenuInfo.icon"
             :to="constantMenuInfo.url"
@@ -118,7 +117,7 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
-        <v-list v-if="!logined" class="secondary">
+        <v-list v-if="!logined">
           <v-list-item
             link
             v-for="signInIconInfo in signInIconInfoArr"

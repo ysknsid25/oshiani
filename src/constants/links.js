@@ -2,6 +2,7 @@ export const noteUrl = "https://note.com/oshiani/";
 export const googleFormUrl = "https://forms.gle/PD5UiCAkRi41UTbL7";
 const twitterUtl = "https://twitter.com/intent/tweet?";
 export const releaseNoteUrl = "https://oshiani.net/ReleaseNote.html";
+export const untitledreportUrl = "https://untitledreport.com/";
 //const url = encodeURIComponent(location.href);
 const campainUrl =
     "https://oshiani.net/?utm_source=twitter&utm_medium=usershare&utm_campaign=twitterusershare";

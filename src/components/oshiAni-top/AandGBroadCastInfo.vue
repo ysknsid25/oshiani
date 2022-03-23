@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto secondary">
+  <v-card class="mx-auto">
     <v-card-title>
       <v-icon class="mr-4 primary--text">fas fa-broadcast-tower</v-icon>
       <span class="kagerou thirdColor--text">超!A&G Now ON Air</span>

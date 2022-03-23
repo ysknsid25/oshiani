@@ -2,6 +2,7 @@ import {
     getOshiAniRecomendTweetUrl,
     googleFormUrl,
     releaseNoteUrl,
+    untitledreportUrl,
 } from "./links";
 import { getNowYear, getNowSeason } from "../api/Annict";
 const tweetUrl = getOshiAniRecomendTweetUrl();
@@ -23,12 +24,6 @@ export const menulist = [
         url: "/WorkInfoList/year/" + nowYear + "/season/" + nowSeason,
     },
     {
-        name: "Blog",
-        icon: "far fa-newspaper",
-        iconColor: "primary",
-        url: "/Blog",
-    },
-    {
         name: "みんなの推しアニメ",
         icon: "fas fa-trophy",
         iconColor: "primary",
@@ -43,6 +38,12 @@ export const menulist = [
 ];
 
 export const constMenuLists = [
+    {
+        name: "管理人ブログ",
+        icon: "far fa-newspaper",
+        iconColor: "primary",
+        url: untitledreportUrl,
+    },
     {
         name: "リリースノート",
         icon: "far fa-sticky-note",
